@@ -1,12 +1,13 @@
 import React from "react";
-import polygonSVG from '../assets/Polygon 1.svg';
 import heroImage from '../assets/V2Mockup.png'
 import openIcon from '../assets/fluent_open-24-filled.svg';
+import { Link, Outlet } from "react-router-dom";
+import Tricon from './tricon.jsx';
 import "./card.css";
-function Card()
+export default function Card()
 {
 	return( 	
-		<div className="w-4xl h-2xl p-8 gap-x-16 gap-y-4 grid grid-cols-[3fr_1fr] rows-2 bg-neutral-100 rounded-lg shadow-[2px_11px_6px_-4px_rgba(136,136,136,0.25)] outline outline-offset-1px outline-zinc-500/40">
+		<div className="w-4xl h-2xl p-8 gap-x-16 gap-y-4 grid grid-cols-[3fr_1fr] rows-3 bg-neutral-100 rounded-lg shadow-[2px_11px_6px_-4px_rgba(136,136,136,0.25)] outline outline-offset-1px outline-zinc-500/40">
 
 			{/*--Hero Container--*/}
     		<div className="rounded-lg font-[Jetbrains Mono] text-left text-gray-700 relative overflow-visible">
@@ -25,7 +26,7 @@ function Card()
 			</div>
 
 			{/*--Platform info div "info"--*/}
-			<div className="p-8 bg-blue-500 rounded-lg flex flex-col items-center">
+			<div className="p-8 bg-orange-500 rounded-lg flex flex-col items-center">
 					<img src='src/assets/meteor-icons_desktop.svg' className ="" alt=""/>
 					<p className="text-neutral-100 mt-2 text-xs">Desktop</p>
 					<img src='src/assets/solar_tablet-outline.svg'className="" alt=""/>
@@ -34,6 +35,7 @@ function Card()
 					<p className="text-neutral-100 mt-2 text-xs">Mobile</p>
 					<h2 className="text-neutral-100 mt-8 text-base">Platforms</h2>
 			</div>
+
 				{/* Project description */}
     		<div className= "flex items-start">
       			<div className="self-end">
@@ -45,14 +47,17 @@ function Card()
         			</div>
       			</div>
 			</div>
+
 			{/*button */}
-            <div className="relative hover:scale-105">
+			<div className="relative hover:scale-105">
+				<Link to="FirstProjectComponent">
 				<img src={openIcon} className="w-8 h-8 absolute bottom-6 right-6 animate-bounce z-1" 
 				alt="Open button"/>
-				<img src={polygonSVG} className="size-28 absolute right-0 bottom-0" 
-				alt="Open button"/>
+				</Link>
+				<Tricon color="text-orange-500" hoverColor="hover:text-orange-600"  className="absolute right-6 bottom-6" size="w-16 h-16"/>
 			</div>
+			{/*-- Outlet for nested routes --*/}	
+			<Outlet className="col-span-2" />
 		</div>
     );
 }
-export default Card;
