@@ -40,7 +40,7 @@ export default function Card()
     		<div className= "flex items-start">
       			<div className="self-end">
         			<div className="justify-items-start font-medium">
-						<p className='text-gray-800 text-2xl'>Case Study: Neighborgood</p>
+						<p className='text-gray-800 text-2xl font-public-sans font-bold'>Case Study: Neighborgood</p>
           				<ul className="m-2 text-left list-disc text-sm text-gray-600">
             				<li>Neighborgood helps you make a mark in your community even if you're not sure where to start? Our new webservice makes it easy to find local areas perfect for creating community hubs, hosting outreach events, and volunteering. With just a few clicks, you'll be able to discover the best spots in your area to bring people together and make a positive impact on your community. ➡️</li>
           				</ul>
@@ -54,7 +54,7 @@ export default function Card()
 				<img src={openIcon} className="w-8 h-8 absolute bottom-6 right-6 animate-bounce z-1" 
 				alt="Open button"/>
 				</Link>
-				<Tricon color="text-orange-500" hoverColor="hover:text-orange-600"  className="absolute right-6 bottom-6" size="w-16 h-16"/>
+				<Tricon color="text-orange-500" hoverColor="hover:text-orange-700"  className="absolute right-6 bottom-6" size="w-16 h-16"/>
 			</div>
 			{/*-- Outlet for nested routes --*/}	
 			<Outlet className="col-span-2" />

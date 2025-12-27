@@ -15,8 +15,18 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {index: true, 
-        element:<div><h1>Hello and Welcome to My Portfolio.</h1><p>Use the header to navigate.</p></div>},
-      {path: "HeaderBar", element: <HeaderBar />},
+        element:<div>
+          <h1 className="font-public-sans">Hello and Thanks for viewing My Portfolio.</h1>
+        <div className="mt-6">
+          <p>I’m Majik Hudson, a Hells' Kitchen, N.Y.C. based Product Designer. I leverage Human Centered Design, Design Thinking and A.I. to produce desirable, viable, feasible products that not only fulfill user needs, but create engaging and enjoyable experiences for customers, users and stakeholders.
+
+        I'm currently available for hire.</p>
+        </div>
+        <div className="mt-4 text-blue-500">
+          <p>Use the navigation bar to navigate.</p>
+          </div>
+        </div>},
+              {path: "HeaderBar", element: <HeaderBar />},
       {path:"card",
         element: <Card />, 
         children:

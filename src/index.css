@@ -1,6 +1,10 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap');
+@theme {
+  --font-public-sans: "Public Sans", ui-sans-serif, system-ui, sans-serif;
+}
 :root {
-  font-family: Jetbrains Mono, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Jetbrains Mono, Public Sans, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
