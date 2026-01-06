@@ -2,6 +2,10 @@ import React from "react";
 import './FirstProjectComponent.css';
 import { Link } from "react-router-dom";
 import Nbgca from '../assets/nbgca.html?raw';
+import Barbara from '../assets/danie-franco-l9I93gZKTG4-unsplash.webp';
+import Andres from '../assets/andres-molina-J7sCh_kM9kQ-unsplash+thumbnail.webp';
+import Barbjourney from '../assets/Barbara-Journey-Map.jpg';
+import Andresjourney from '../assets/Andres-Journey-map.jpg';
 
 export default function FirstProjectComponent() {
     return (
@@ -26,17 +30,18 @@ export default function FirstProjectComponent() {
 
             {/* Design Process Overview */}
             <div className="text-left text-gray-600">
+                <h2 className="my-1 text-xl text-gray-900 font-semibold font-public-sans">The design process includes...</h2>
                 <ul className="list-disc my-4">
-                    <h2 className="my-1 text-xl text-gray-900 font-semibold font-public-sans">The design process includes...</h2>
                     <li>Problem Statement</li>
                     <li>Competitive Analysis</li>
                     <li>User Research</li>
-                    <li>Journey Mapping</li>
                     <li>Personas</li>
+                    <li>Journey Mapping</li>
+                    <li>Ideation</li>
                     <li>Wireframing</li>
                     <li>Prototyping</li>
                     <li>User Testing</li>
-                    <li>Visual Design</li>
+                    <li>Final Visual Design</li>
                     <li>Next steps</li>
                 </ul>
 
@@ -63,6 +68,7 @@ export default function FirstProjectComponent() {
                         <li><p className="font-semibold">Social Good Fit:</p> Emphasis on outreach, volunteering, activism.</li>
                         <li><p className="font-semibold">Pros/Cons:</p> High-level strengths/weaknesses for competitive edge.</li>
                     </ul>
+
                     {/*Competitive Analysis Table Placeholder*/}
                     <div className="my-8 overflow-x-auto border border-gray-400 rounded-lg shadow-xl">
                         <div className="inline-block " dangerouslySetInnerHTML={{__html: Nbgca}}></div>
@@ -74,17 +80,87 @@ export default function FirstProjectComponent() {
                 </div>
 
                 {/*User Research*/}
+
+                {/* Persona 1: Barbara Goode */}
                 <div className="my-4">
                 <h2 className="my-1 text-gray-900 font-semibold font-public-sans text-2xl">User Research</h2>
-                </div>
                 <div className="my-4">
                 <h2 className="my-1 text-gray-900 font-semibold font-public-sans">Target</h2>
                 <p className="">The target audience are community organizers, non-profit organizations, local government agencies, and individuals looking to host community events for social good. The platform aims to facilitate the process of finding and reserving spaces for various community activities and events, promoting social engagement and collaboration.</p>
+                <div className="row-span-2 my-4 flex flex-col md:flex-row items-center gap-6">
+                <div>
+                <p className="font-bold mb-1 text-gray-800">Barbara Goode</p>
+                <p className="text-gray-500 text-base md:text-lg leading-relaxed">
+                Age: 77<br/>
+                Education: High School<br/>
+                Occupation: Retired horticulturalist<br/>
+                Family: 2 feisty cats 😹<br/>
+                Hometown: Savannah, GA.<br/>
+                </p>
+                <p className=" mt-4"> 
+                Barb is a retired horticulturalist who is currently head of events in her communities assisted living facility. She would like a service that would allow her to search and locate adequate and accessible park spaces for her outdoor peer group activities based on a criteria. Including gardening, fitness and social gatherings.
+                </p>
+                <p className="italic font-semibold mt-4"> "The local parks are overcrowded. They do not accommodate elderly visitors. The Traffic and pollution are also dangerous for my groups age." -Barb
+                </p>
+                </div>
+                <img src={Barbara} alt="Barbara Goode Image" className="w-48 h-auto rounded-lg" />
+                </div>
+                <div className="row-span-2 my-4 flex flex-col md:flex-row items-center gap-6">
+                <div className="mt-6">
+                {/* Persona 2: Andres Pacheco */}
+                <p className="font-bold mb-1 text-gray-800">Andres Pacheco</p>
+                <p className="text-gray-500 text-base md:text-lg leading-relaxed">
+                Age: 37<br/>
+                Education: College Grad<br/>
+                Hometown: Salem, Oregon<br/>
+                Family: Girlfriend, 2 dogs<br/>
+                Occupation: Survivalist Trainer<br/>
+                </p>
+                <p className="mt-4"> 
+                Andres, his girlfriend and dog enjoy being outdoors. As a survivalist and nature educator, Andres enjoys immersing the youth in his community into as much wilderness as possible for better hands on survival training, teaching them about flora and fauna.</p>               
+                <p className="italic font-semibold mt-4">
+                “I’d like to give my students in my community  a well rounded education in nature, but I can’t find adequate places.” -Andres
+                </p>
+                </div>
+                <img src={Andres} alt="Andres Pacheco Image" className="w-48 h-64 rounded-lg object-cover" />
+                </div>
+                
+                {/* Journey Mapping */}
+                <div className="my-4">
+                <h2 className="my-1 text-gray-900 font-semibold font-public-sans text-2xl">Journey Mapping</h2>
+
+                <p>To better understand the user experience and identify pain points, a journey map was created outlining the typical steps a user would take when searching for and reserving a community space. This map highlighted key touchpoints, emotions, and potential obstacles that users might encounter throughout their journey.
+                </p>
+                <h2 className="font-semibold mt-6">Barbara's Goal</h2>
+                <p>Find locations that are accessible and can accommodate gardening and social spaces for the elderly.</p>
+                <h2 className="font-semibold mt-4">Problem Statement</h2>
+                <p>
+                Accommodations her peer groups access to nature and away from the overcrowding and noise of local parks.
+                Frustrations
+                Overcrowding, turbidity , noise lack of available spaces.
+                </p>
+                <div>
+                <img src={Barbjourney} alt="Barbaras Journey Map" className="w-auto h-auto rounded-lg mt-6 object-contain" />
+                </div>
+                <h2 className="font-semibold mt-8">Andres' Goal</h2>
+                <p>
+                Find adequate park locations for survival training and environmental education.
+                Frustrations
+                Cannot find suitable locations with biodiversity in order to educate youth in the field.
+                </p>
+                <h2 className="font-semibold mt-6">Problem Statement</h2>
+                <p>Andres is a survivalist who needs nature space to educate the community youth because current public spaces do not have the materials needed to teach his skills.
+                </p>
+                <div>
+                <img src={Andresjourney} alt="Andres Journey Map" className="w-auto h-auto rounded-lg mt-6" />
+                </div>
                 </div>
             </div>
-            <div>
+            <div className="py-6">
                 <Link to="/card" className="back-button">← Collapse Neighborgood Case Study</Link>
+            </div>
+            </div>
             </div>
         </div>
     );
-}  
+}

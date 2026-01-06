@@ -7,7 +7,7 @@ import "./card.css";
 export default function Card()
 {
 	return( 	
-		<div className="w-4xl h-2xl p-8 gap-x-16 gap-y-4 grid grid-cols-[3fr_1fr] rows-3 bg-neutral-100 rounded-lg shadow-[2px_11px_6px_-4px_rgba(136,136,136,0.25)] outline outline-offset-1px outline-zinc-500/40">
+		<div className="w-4xl h-2xl p-10 gap-x-16 gap-y-4 grid grid-cols-[3fr_1fr] rows-3 bg-neutral-100 rounded-lg shadow-[2px_11px_6px_-4px_rgba(136,136,136,0.25)] outline outline-offset-1px outline-zinc-500/40 mt-6">
 
 			{/*--Hero Container--*/}
     		<div className="rounded-lg font-[Jetbrains Mono] text-left text-gray-700 relative overflow-visible">
