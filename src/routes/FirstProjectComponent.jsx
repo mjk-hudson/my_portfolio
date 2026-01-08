@@ -6,6 +6,7 @@ import Barbara from '../assets/danie-franco-l9I93gZKTG4-unsplash.webp';
 import Andres from '../assets/andres-molina-J7sCh_kM9kQ-unsplash+thumbnail.webp';
 import Barbjourney from '../assets/Barbara-Journey-Map.jpg';
 import Andresjourney from '../assets/Andres-Journey-map.jpg';
+import {motion} from 'motion/react';
 
 export default function FirstProjectComponent() {
     return (
@@ -203,7 +204,7 @@ export default function FirstProjectComponent() {
                 <div>
                 <img src={Barbjourney} alt="Barbaras Journey Map" className="w-auto h-auto rounded-lg mt-6 object-contain" />
                 </div>
-                
+
                 <h2 className="font-semibold mt-8">Andres' Goal</h2>
                 <p>
                 Find adequate park locations for survival training and environmental education.
@@ -226,11 +227,14 @@ export default function FirstProjectComponent() {
                     Ideation
                 </h2>
                 <p>
-                Based on the insights gained from user research journey mapping and a competitive analysis, the next steps involve ideation, wireframing, prototyping, and user testing to refine the design and ensure it effectively meets the needs of the target audience.
+                    Using the insights gained from user research, journey mapping and a competitive analysis, the next steps involve ideation, wireframing, prototyping, and user testing to refine the design and ensure it effectively meets the needs of the target audience.
                 </p>
+
                 </div>
+
+                {/* Back Link */}
             <div className="py-6">
-            <Link to="/card" className="back-button">← Collapse Neighborgood Case Study</Link>
+                <Link to="/card" className="back-button">← Collapse Neighborgood Case Study</Link>
             </div>
             </div>
         </div>
