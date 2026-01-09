@@ -10,11 +10,11 @@ export default function Card()
 		<div className="w-4xl h-2xl p-10 gap-x-16 gap-y-4 grid grid-cols-[3fr_1fr] rows-3 bg-neutral-100 rounded-lg shadow-[2px_11px_6px_-4px_rgba(136,136,136,0.25)] outline outline-offset-1px outline-zinc-500/40 mt-6">
 
 			{/*--Hero Container--*/}
-    		<div className="rounded-lg font-[Jetbrains Mono] text-left text-gray-700 relative overflow-visible">
+    		<div className="rounded-lg text-left text-gray-700 relative overflow-visible">
 				<div className="absolute inset-0 rounded-lg shadow-[inset_4px_4px_7px_-2px_rgba(0,0,0,0.25)] bg-transparent pointer-events-none" />
 
 			{/*--project number --*/}
-			<p className="z-10 absolute top-2 left-2 font-[Jetbrains Mono] text-left text-gray-600 text-xl">01.</p>
+			<p className="z-10 absolute top-2 left-2 text-left text-gray-600 text-xl">01.</p>
 
 			{/*--project Title --*/}
 

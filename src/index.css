@@ -1,13 +1,14 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet');
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap');
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 @theme {
-  --font-public-sans: "Public Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-public-sans: "Cal Sans", ui-sans-serif, system-ui, sans-serif;
 }
 :root {
-  font-family: Jetbrains Mono, Public Sans, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Cal Sans, Public Sans, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 

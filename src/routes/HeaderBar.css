@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import "tailwindcss";
 
 :root {
-  font-family: Jetbrains Mono, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Cal Sans, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -14,3 +16,4 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+  
