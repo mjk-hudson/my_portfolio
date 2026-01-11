@@ -12,7 +12,8 @@ export default function FirstProjectComponent() {
     return (
         <div className="col-span-2 p-4">
             <div className="mb-6">
-                <h1 className="mb-1 font-public-sans text-gray-800 text-left font-semibold text-2xl">Neighborgood. A Responsive Web Application</h1>
+                <h1 className="mb-1 font-public-sans text-gray-800 text-left font-semibold text-2xl">Neighborgood.<br/> 
+                    A Responsive Web Application</h1>
                 <p className="text-left text-gray-600">
                     Neighborgood is a social media platform for outreach opportunities that allow individuals and groups find suitable locations for community engagement functions.
                 </p>
