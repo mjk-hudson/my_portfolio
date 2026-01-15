@@ -1,6 +1,6 @@
 @import 'tailwindcss';
 :root {
-  font-family: Jetbrains Mono, Public Sans, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Cal Sans, Lexend Deca, Public Sans, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -12,4 +12,21 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1{
+  text-align: start;
+}
+p{
+  text-align: start;
+  color: var(--color-slate-600);
+  font-family: Lexend Deca, sans-serif;
+  font-weight:300;
+}
+h2{
+  text-align: start;
+}
+ul{
+  text-align: start;
+  color: var(--color-slate-600);
 }
