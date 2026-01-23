@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet');
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import "tailwindcss";
 
 :root {
-  font-family: Cal Sans, Lexend Deca, Climate Crisis, Public Sans,system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Neonderthaw, Cal Sans, Lexend Deca, Climate Crisis, Public Sans,system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 

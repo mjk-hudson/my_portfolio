@@ -16,17 +16,24 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
-      {path: '/', 
+      {
+        path: '/',
         element:<HomeLayout />,
         children: [
-          {index: true, element:<Home />}
+          {
+            index: true, 
+            element:<Home />
+          }
         ]
       },
-      {path: "HeaderBar",element: <HeaderBar />},
-      {path:"card", element: <Card />, 
-        children:
-        [
-          {path: "FirstProjectComponent", element: <FirstProjectComponent />}
+      {
+        path:"card",
+        element: <Card />, 
+        children:[
+          {
+            path:"FirstProjectComponent",
+            element: <FirstProjectComponent />,
+          },
         ],
       },
     ]

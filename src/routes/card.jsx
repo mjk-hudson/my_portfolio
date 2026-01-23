@@ -1,13 +1,19 @@
 import React from "react";
 import heroImage from '../assets/V2Mockup.png'
 import openIcon from '../assets/fluent_open-24-filled.svg';
-import { Link, Outlet } from "react-router-dom";
-import Tricon from './tricon.jsx';
+import { Link, Outlet, useLocation } from "react-router-dom";
+import { AnimatePresence, motion } from "motion/react";
+//images imports
+import desktopIcon from '../assets/meteor-icons_desktop.svg';
+import tabletIcon from '../assets/solar_tablet-outline.svg';
+import phoneIcon from '../assets/proicons_phone.svg';
 import "./card.css";
+
 export default function Card()
-{
+{	const location = useLocation();
+
 	return( 	
-		<div className="p-10 gap-x-16 gap-y-4 bg-neutral-100/75 rounded-lg shadow-[2px_11px_6px_-4px_rgba(136,136,136,0.25)] outline outline-offset-1px outline-zinc-500/40 mt-12">
+		<div className="p-10 gap-x-16 gap-y-6 bg-neutral-100/75 rounded-lg shadow-[2px_11px_6px_-4px_rgba(136,136,136,0.25)] outline outline-2px outline-zinc-500/40 mt-12">
 
 			{/*--Hero image--*/}
 			<img src={heroImage} 
@@ -33,17 +39,17 @@ export default function Card()
 
 				<h2 className="mb-6 text-neutral-100 text-base">Platforms</h2>
 				{/*-- Icons --*/}
-					<img src='src/assets/meteor-icons_desktop.svg'
+					<img src={desktopIcon}
 					className ="block mx-auto"
 					alt="Desktop"/>
 					<p className="text-neutral-100 mt-2 text-xs">Desktop</p>
 
-					<img src='src/assets/solar_tablet-outline.svg'
+					<img src={tabletIcon}
 					className="block mx-auto"
 					alt="Tablet"/>
 					<p className="text-neutral-100 mt-2 text-xs">Tablet</p>
 
-					<img src='src/assets/proicons_phone.svg'
+					<img src={phoneIcon}
 					className="block mx-auto"
 					alt="Mobile"/>
 					<p className="text-neutral-100 mt-2 text-xs">Mobile</p>
@@ -52,15 +58,21 @@ export default function Card()
 
 			{/*button */}
 			<div className="">
-				<Link to="FirstProjectComponent">
-				<img src={openIcon} className="animate-pulse" 
-				alt="Open Case Study"/>
+				<Link 
+				to="FirstProjectComponent">
+				
+				<img 
+				src={openIcon} 
+				className="animate-pulse" 
+				alt="Open Case Study"
+				/>
+
 				</Link>
 			</div>
-
-			<div>
-				{/*-- Outlet for nested routes --*/}
-				<Outlet />
+			{/*-- Nested route for project component --*/}
+			<div key={location.pathname}>
+					{/*-- Outlet for nested routes --*/}
+					<Outlet />
 			</div>
 		</div>
     );

@@ -1,22 +1,39 @@
 import React from 'react';
+import { motion } from 'motion/react';
+
+
 export default function Home() {
   return (
-    <div className='min-h-screen flex items-center justify-center'>
+    <motion.div 
+    initial={{opacity: 0, x: -100}}
+    animate={{opacity: 1, x: 0}}
+    exit={{opacity: 0, x: 100}}
+    transition={{duration: 0.5, ease: 'anticipate'}}
+    className='min-h-screen flex items-center justify-center'>
+      
       <div className="max-w-7xl text-start">
         
-        <h1 className="text-4xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
+        <motion.h1
+        initial={{opacity: 0, y: +50}}
+        animate={{opacity: 1, y: 0}}
+        transition={{duration: 1, delay: 0.5}} 
+        className="text-2xl md:text-7xl font-bold bg-clip-text text-transparent bg-linear-to-b from-neutral-50 to-neutral-400">
           Thank you for visiting my portfolio.
-        </h1>
+        </motion.h1>
 
-        <p className="mt-6 text-neutral-300 max-w-2xl mx-auto text-start">
+        <motion.p
+        initial={{opacity: 0, y: 20}}
+        animate={{opacity: 1, y: 0}}
+        transition={{delay: 0.8, duration: 1.5}}
+        className="mt-6 text-neutral-100 max-w-2xl mx-auto text-start">
           I’m Majik Hudson, a Hell’s Kitchen, N.Y.C. based Product Designer. I leverage
           Human Centered Design, Design Thinking and A.I. to produce desirable,
-          viable, feasible products that create engaging experiences.
+          viable, feasible and engaging products and experiences. Have a look at some of my case studies to get an idea of my design process.
           <br /><br />
           I'm currently available for hire.
-        </p>
+        </motion.p>
 
       </div>
-    </div>
+    </motion.div>
   );
 }

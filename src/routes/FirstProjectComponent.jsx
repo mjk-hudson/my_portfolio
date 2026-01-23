@@ -6,17 +6,62 @@ import Barbara from '../assets/danie-franco-l9I93gZKTG4-unsplash.webp';
 import Andres from '../assets/andres-molina-J7sCh_kM9kQ-unsplash+thumbnail.webp';
 import Barbjourney from '../assets/Barbara-Journey-Map.jpg';
 import Andresjourney from '../assets/Andres-Journey-map.jpg';
-import {motion} from 'motion/react';
+import { motion } from 'motion/react';
+
+//Sketches imports
+import MobileSketch from '../assets/neighborgood_sketches/PXL_20220801_174421456.MP.webp';
+import MobileSketch2 from '../assets/neighborgood_sketches/PXL_20220801_174609290.webp'
+import MobileSketch3 from '../assets/neighborgood_sketches/PXL_20220801_174621091.webp'
+
+import DesignSketchMobile from '../assets/neighborgood_sketches/mobile sketch.png'
+import DesignSketchTablet from '../assets/neighborgood_sketches/wireframes/Tablet_Sketch.png'
+import DesignSketchDesktop from '../assets/neighborgood_sketches/wireframes/Desktop_Sketch.png'
+
+//Wireframe Image imports
+import MobileWireframe from '../assets/neighborgood_sketches/mobile wireframe.png';
+import TabletWireframe from '../assets/neighborgood_sketches/wireframes/Tablet_Wireframe.png';
+import DesktopWireframe from '../assets/neighborgood_sketches/wireframes/Desktop_Wireframe.png';
+
+//Breakpoint Image imports
+import MobileBreakpoint from '../assets/neighborgood_prototypes/home_mobile.webp';
+import TabletBreakpoint from '../assets/neighborgood_prototypes/home_Tablet.webp';
+import DesktopBreakpoint from '../assets/neighborgood_prototypes/home_Desktop.webp';
+import { useNavigate } from "react-router-dom";
+
 
 export default function FirstProjectComponent() {
+    // Function to handle the scroll when the link is clicked
+    const handleScrollUp = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
     return (
-        <div className="p-4">
+        <motion.div
+        // 1. Outer Animation: The Dropdown Slide
+        initial={{ height: 0, opacity: 0 }}
+        animate={{ height: 'auto', opacity: 1 }}
+        exit={{ height: 0, opacity: 0 }}
+        transition={{ duration: 0.5 }}
+
+        className="project-reveal-container">
+
             <div className="mb-6">
-                <h1 className="mb-1 text-gray-800 text-left font-semibold text-2xl">Neighborgood.<br/> 
-                    A Responsive Web Application</h1>
-                <p className="text-left text-gray-600">
+
+                <motion.h1
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.3 }} 
+                className="mb-1 text-gray-800 text-left font-semibold text-2xl">Neighborgood.<br/> 
+                    A Responsive Web Application
+                </motion.h1>
+
+                <motion.p 
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.5 }}
+                className="text-left text-gray-600">
                     Neighborgood is a social media platform for outreach opportunities that allow individuals and groups find suitable locations for community engagement functions.
-                </p>
+                </motion.p>
+
             </div>
             <div className="mb-6">
                 <div className="mb-6 text-left text-gray-700">
@@ -124,7 +169,7 @@ export default function FirstProjectComponent() {
                 </p>
                 <div className="my-4 gap-6">
 
-                <p className="font-bold mb-1 text-gray-800">Barbara Goode</p>
+                <p className="font-bold mb-1 text-gray-900">Barbara Goode</p>
 
                 <p className="text-gray-500 text-base md:text-lg leading-relaxed">
                 Age: 77<br/>
@@ -150,7 +195,7 @@ export default function FirstProjectComponent() {
                 {/* Persona 2: Andres Pacheco */}
                 <div className="my-4">
                 <div className="mt-6">
-                <p className="font-bold mb-1 text-gray-800">Andres Pacheco</p>
+                <p className="font-bold mb-1 text-gray-900">Andres Pacheco</p>
                 <p className="text-gray-500 text-base md:text-lg leading-relaxed">
                 Age: 37<br/>
                 Education: College Grad<br/>
@@ -181,11 +226,11 @@ export default function FirstProjectComponent() {
                 <p>To better understand the user experience and identify pain points, a journey map was created outlining the typical steps a user would take when searching for and reserving a community space. This map highlighted key touchpoints, emotions, and potential obstacles that users might encounter throughout their journey.
                 </p>
 
-                <h2 className="font-semibold mt-6">Barbara's Goal</h2>
+                <h2 className="font-semibold mt-6 text-gray-900">Barbara's Goal</h2>
 
                 <p>Find locations that are accessible and can accommodate gardening and social spaces for the elderly.</p>
 
-                <h2 className="font-semibold mt-4">Problem Statement</h2>
+                <h2 className="font-semibold mt-4 text-gray-900">Problem Statement</h2>
 
                 <p>
                 Accommodations her peer groups access to nature and away from the overcrowding and noise of local parks.
@@ -197,14 +242,14 @@ export default function FirstProjectComponent() {
                 <img src={Barbjourney} alt="Barbaras Journey Map" className="w-auto h-auto rounded-lg mt-6 object-contain" />
                 </div>
 
-                <h2 className="font-semibold mt-8">Andres' Goal</h2>
+                <h2 className="font-semibold mt-8 text-gray-900">Andres' Goal</h2>
                 <p>
                 Find adequate park locations for survival training and environmental education.
                 Frustrations
                 Cannot find suitable locations with biodiversity in order to educate youth in the field.
                 </p>
 
-                <h2 className="font-semibold mt-6">Problem Statement</h2>
+                <h2 className="font-semibold mt-6 text-gray-900">Problem Statement</h2>
 
                 <p>Andres is a survivalist who needs nature space to educate the community youth because current public spaces do not have the materials needed to teach his skills.
                 </p>
@@ -230,18 +275,15 @@ export default function FirstProjectComponent() {
         {/*Ideation - Crazy 8's*/}
         <div className="gap-4 my-8">
             <h2 className="my-1 text-gray-900 text-start font-semibold text-2xl">
-                Crazy 8's
+                Early Sketches
             </h2>
             <p className="text-start text-wrap text-gray-600">
-                Crazy 8’s sketching was used to progressively iterate design elements in order to maximize as much accessible relevant information as possible on multiple platforms.
+                Early sketching was used to progressively iterate design elements in order to maximize as much accessible relevant information as possible on multiple platforms.
             </p>
-            <div className="p-4 mt-6 gap-4">
-                <img src={''} alt="Crazy 8's Sketches" className="w-full h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
-                <img src={''} alt="Crazy 8's Sketches" className="w-full h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
-                <img src={''} alt="Crazy 8's Sketches" className="w-full h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
-                <img src={''} alt="Crazy 8's Sketches" className="w-full h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
-                <img src={''} alt="Crazy 8's Sketches" className="w-full h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
-                <img src={''} alt="Crazy 8's Sketches" className="w-full h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
+            <div className="p-4 gap-4">
+                <img src={MobileSketch} alt="Early Sketches" className="w-sm h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
+                <img src={MobileSketch2} alt="Early Sketches" className="w-sm h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
+                <img src={MobileSketch3} alt="Early Sketches" className="w-sm h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
                 </div>
                 <p>
                 These sketches helped to explore different solutions and options for user interface elements, allowing for quick iteration and refinement of ideas before moving on to more detailed wireframes and prototypes.
@@ -253,52 +295,48 @@ export default function FirstProjectComponent() {
                     The idea here is to design a product/service that will allow social networking for the user to find people, groups and adequate open space locations(or potential spaces) after a number of choices are made to get as close to an ideal location as possible(where available) and so initially I thought using a map application style interaction as the most familiar interface for location and travels searches.
                 </p>
                 {/* Initial Design Iterations Images */}
-                <div className="my-10">
-                    <img src={''} alt="Initial Design Iterations and solutions" className="w-full h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
-                    <img src={''} alt="Initial Design Iterations and solutions" className="w-full h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
-                    <img src={''} alt="Initial Design Iterations and solutions" className="w-full h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
-                    <img src={''} alt="Initial Design Iterations and solutions" className="w-full h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
-                    <img src={''} alt="Initial Design Iterations and solutions" className="w-full h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
-                    <img src={''} alt="Initial Design Iterations and solutions" className="w-full h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
+                <div className="">
+                    <img src={DesignSketchMobile} alt="Initial Design Iterations and solutions" className="w-sm h-auto rounded-lg mt-6 border border-gray-200 shadow-xl" />
+                    <img src={DesignSketchTablet} alt="Initial Design Iterations and solutions" className="w-sm h-auto rounded-lg mt-6 border border-gray-200 shadow-xl" />
+                    <img src={DesignSketchDesktop} alt="Initial Design Iterations and solutions" className="w-sm h-auto rounded-lg mt-6 border border-gray-200 shadow-xl" />
                 </div>
 
                 {/* Wireframing & Prototyping */}
-                <h2 className="my-1 text-gray-900 font-semibold text-2xl">
-                    Wireframing & Prototyping
+                <h2 className="mt-12 text-gray-900 font-semibold text-2xl">
+                    Wireframing & Breakpoints
                 </h2>
-                <p>
+                <p className="mt-4">
                     Based on the ideation phase, wireframes were created to outline the structure and layout of the application. These wireframes served as a blueprint for the design, allowing for quick iterations and adjustments based on user feedback. Prototypes were then developed to simulate the user experience and test the functionality of the design.
                 </p>
 
-                {/*Prototype Images*/}
-                <div className="my-10">
-                    <img src={''} alt="Wireframes" className="w-full h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
-                    <img src={''} alt="Wireframes" className="w-full h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
-                    <img src={''} alt="Wireframes" className="w-full h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
-                    <img src={''} alt="Wireframes" className="w-full h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
+                {/*Wireframes Images*/}
+                <div className="my-12">
+                    <img src={MobileWireframe} alt="Wireframes" className="my-12 w-sm h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
+                    <img src={TabletWireframe} alt="Wireframes" className="my-12 w-sm h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
+                    <img src={DesktopWireframe} alt="Wireframes" className="my-12 w-sm h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
                 </div>
 
                 {/*Lo-fi Prototyping Images*/}
-                <div className="my-10">
+                <div className="my-4">
                     <p>
-                        These prototypes represent different breakpoints demonstrating a user searching for open space locations using the data visualization interaction idiom to view data associated with a location and set of criteria.
+                        These images represent varying (Mobile, Tablet, Desktop) breakpoints demonstrating a user searching for open space locations using the data visualization interaction idiom to view data associated with a location and set of criteria.
                     </p>
                     <div>
-                        <img src={''} alt="Mobile View" className="w-full h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
-                        <p>
+                        <img src={MobileBreakpoint} alt="Mobile View" className="w-sm h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
+                        <p className="mt-4 font-semibold">
                             Mobile Breakpoint
                         </p>
                     </div>
                 </div>
 
-                <div className="my-10">
+                <div className="my-4">
                     <p>
                         Users will start with a localized map and begin their contextual search using the “+” action button for either an address, zip code, general municipalities.
                     </p>
                     <div>
-                        <img src={''} alt="Tablet View" className="w-full h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
-                        <p>
-                            Tablet Breakpoint
+                        <img src={TabletBreakpoint} alt="Tablet View" className="w-sm h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
+                        <p className="mt-4 font-semibold">
+                            Tablet (Portrait) Breakpoint
                         </p>
                     </div>
                 </div>
@@ -308,8 +346,8 @@ export default function FirstProjectComponent() {
                         Once a location is chosen the user is given filters to use in order to narrows the results to more relevant locations that will meet the users needs.
                     </p>
                     <div>
-                        <img src={''} alt="Desktop View" className="w-full h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
-                        <p>
+                        <img src={DesktopBreakpoint} alt="Desktop View" className="w-sm h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
+                        <p className="mt-4 font-semibold">
                             Desktop Breakpoint
                         </p>
                     </div>
@@ -335,9 +373,9 @@ export default function FirstProjectComponent() {
                     Next step information and guides that provide information on how processes that will help them secure these spaces for their purposes, as well as allowing communities to organize and participate
                 </p>
                 <ul className="list-decimal my-4">
-                    <p>Refining the Design</p>
+                    <p className="text-gray-900">Refining the Design</p>
 
-                    <li>
+                    <li> 
                         Mock-Ups
                     </li>
 
@@ -454,8 +492,12 @@ export default function FirstProjectComponent() {
         </div>
         {/* Back Link */}
         <div className="py-6">
-            <Link to="/card" className="back-button">← Collapse Neighborgood Case Study</Link>
+            <Link 
+            to="/card" 
+            className="back-button">← Collapse Neighborgood Case Study
+            onClick={handleScrollUp} {/*smooth scroll up */}
+            </Link>
         </div>
-        </div>
+        </motion.div>
     );
 }
