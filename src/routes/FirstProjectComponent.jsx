@@ -304,47 +304,47 @@ export default function FirstProjectComponent() {
                             </p>
                         </div>
                     </div>
-                    <div className="my-4">
-                        <p>
+                    <div className="gap-y-6">
+                        <p className="text-sm sm:text-base">
                             Users will start with a localized map and begin their contextual search using the “+” action button for either an address, zip code, general municipalities.
                         </p>
-                        <div>
-                            <img src={TabletBreakpoint} alt="Tablet View" className="w-sm h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
-                            <p className="mt-4 font-semibold">
+                        <div className="gap-y-6">
+                            <img src={TabletBreakpoint} alt="Tablet View" className="w-full max-w-sm h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
+                            <p className="text-sm sm:text-base font-semibold">
                                 Tablet (Portrait) Breakpoint
                             </p>
                         </div>
                     </div>
-                    <div className="my-10">
-                        <p>
+                    <div className="gap-y-6">
+                        <p className="text-sm sm:text-base">
                             Once a location is chosen the user is given filters to use in order to narrows the results to more relevant locations that will meet the users needs.
                         </p>
-                        <div>
-                            <img src={DesktopBreakpoint} alt="Desktop View" className="w-sm h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
-                            <p className="mt-4 font-semibold">
+                        <div className="gap-y-6">
+                            <img src={DesktopBreakpoint} alt="Desktop View" className="w-full max-w-sm h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
+                            <p className="mt-4 text-sm sm:text-base font-semibold">
                                 Desktop Breakpoint
                             </p>
                         </div>
                     </div>
                     {/* User Testing and Usability Studies */}
-                    <h1>
+                    <h1 className="my-1 text-gray-900 font-semibold text-lg sm:text-xl">
                         Usability Studies & User Testing
                     </h1>
-                    <h2>
+                    <h2 className=" text-gray-900 font-semibold text-base sm:text-lg">
                         Study Type: Unmoderated Usability Study Location: Remote Participants: 7 Length: 30 - 60 minutes
                     </h2>
-                    <p>
+                    <p className="text-sm sm:text-base">
                         Usability studies and user testing were conducted to gather feedback on the prototypes and identify areas for improvement. Participants were asked to complete specific tasks using the prototypes, and their interactions were observed and recorded. Feedback was collected through surveys and interviews to understand user satisfaction and identify pain points.
                     </p>
-                    <h2>
+                    <h2 className="text-gray-900 font-semibold text-base sm:text-lg">
                         Usability Study Insights
                     </h2>
-                    <p>
+                    <p className="text-sm sm:text-base">
                         More data, specifically related to crime, zoning, environmental and more detailed demographic data of the neighborhoods and communities of these locations.
                         Users wanted options that filtered more versatile locations that allow more ideas and different events for the locations.<br/>
                         Next step information and guides that provide information on how processes that will help them secure these spaces for their purposes, as well as allowing communities to organize and participate
                     </p>
-                    <ul className="list-decimal my-4">
+                    <ul className="list-decimal gap-y-6 ml-6 text-sm sm:text-base">
                         <p className="text-gray-900">Refining the Design</p>
                         <li>
                             Mock-Ups
@@ -357,75 +357,75 @@ export default function FirstProjectComponent() {
                         </li>
                     </ul>
                     {/* Mock-Ups */}
-                    <h1>
+                    <h1 className="gap-y-1 text-gray-900 font-semibold text-lg sm:text-xl">
                         Mock-Ups
                     </h1>
-                    <>
+                    <p className="text-sm sm:text-base">
                         Mobile Breakpoint: Iphone 14 Pro
-                    </>
-                    <div>
-                        <p>
+                    </p>
+                    <div className="gap-y-6">
+                        <p className="text-sm sm:text-base">
                             The initial mock-ups used a navigation style interaction design with a localized map and an F.A.B. as the entry point for finding new places right from the homepage.<br />
                             Initial Designs
                         </p>
-                        <img src={''} alt="Mobile Initial Design" className="w-sm h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
+                        <img src={''} alt="Mobile Initial Design" className="w-full max-w-sm h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
                     </div>
-                    <div>
-                        <p>
+                    <div className="gap-y-6">
+                        <p className="text-sm sm:text-base">
                         The Final mock-up provides an introduction and brief explanation to the product and service as well as any available local places, groups or initiatives on the homepage as well as providing a menu for additional features, services and information.<br/>
                         Final Designs
                         </p>
                         <img src={''} alt="Mobile Final Design" className="w-sm h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
                     </div>
                     {/* Tablet Mock-Ups */}
-                    <p>
+                    <p className="text-sm sm:text-base">
                         Tablet Breakpoint: iPad Pro 12.9"
                     </p>
-                    <div>
-                        <p>
+                    <div className="gap-y-6">
+                        <p className="text-sm sm:text-base">
                             Environmental information is gathered and added from databases. This additional information is identified through labeled icons.
                         </p>
-                        <img src={''} alt="Tablet Initial Design" className="w-sm h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
+                        <img src={''} alt="Tablet Initial Design" className="w-full max-w-sm h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
                     </div>
-                    <div>
-                        <p>
+                    <div className="gap-y-6">
+                        <p className="text-sm sm:text-base">
                             Additional information includes links local zoning, demographic, weather databases.
                         </p>
-                        <img src={''} alt="Tablet Final Design" className="w-sm h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
+                        <img src={''} alt="Tablet Final Design" className="w-full max-w-sm h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
                     </div>
                     {/* Desktop Mock-Ups */}
-                    <p>
+                    <p className="text-sm sm:text-base">
                         Desktop Breakpoint: Macbook Pro 16"
                     </p>
-                    <div>
-                        <p>
+                    <div className="gap-y-6">
+                        <p className="text-sm sm:text-base">
                             The initial mock-ups used a navigation style interaction design with a localized map and an F.A.B. as the entry point for finding new places right from the homepage.<br/>
                             Initial Designs
                         </p>
-                        <img src={''} alt="Desktop Initial Design" className="w-sm h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
+                        <img src={''} alt="Desktop Initial Design" className="w-full max-w-sm h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
                     </div>
-                    <div>
-                        <p>
+                    <div className="gap-y-6">
+                        <p className="text-sm sm:text-base">
                         The Final mock-up provides an introduction and brief explanation to the product and service as well as any available local places, groups or initiatives on the homepage as well as providing a menu for additional features, services and information.<br/>
                         Final Designs
                         </p>
-                        <img src={''} alt="Desktop Final Design" className="w-sm h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
+                        <img src={''} alt="Desktop Final Design" className="w-full max-w-sm h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
                     </div>
-                    <h1>
+                    <h1 className="gap-y-1 text-gray-900 font-semibold text-lg sm:text-xl">
                         Going Forward
                     </h1>
-                    <h2>
+                    <h2 className=" text-gray-900 font-semibold text-base sm:text-lg">
                         Take Aways & Impact
                     </h2>
-                    <p>
+                    <p className="text-sm sm:text-base">
                         Updates made to the design after user feedback improved overall usability of the website. Users where able to search and find results that were closer to the results they were expecting from this type of service.
                         What was learned?
                         With this product iteration having a larger assortment of options to choose from each category of questions made the service more inclusive for a wider range of public space scenarios. Among those choices are accessibility considerations, amenities etc. were appreciated and gave users more complete and narrow search results when looking for public space locations
                     </p>
-                    <h2>
+                    <h2 className=" text-gray-900 font-semibold text-base sm:text-lg">
                         Next Steps
                     </h2>
-                    <ul className="list-decimal my-4">
+                    <ul className="list-decimal gap-y-4 ml-6 text-sm sm:text-base">
                         <li>
                             Develop a comprehensive onboarding process to guide new users through the platform's features and functionalities.
                         </li>
@@ -448,10 +448,10 @@ export default function FirstProjectComponent() {
                             Include additional accessibility features to make the site more inclusive for people with disabilities.
                         </li>
                     </ul>
-                    <h1 className="my-1 text-gray-900 font-semibold text-2xl">
+                    <h1 className="gap-y-1 text-gray-900 font-semibold text-lgsm:text-xl">
                         Thank You!
                     </h1>
-                    <p>
+                    <p className="text-sm sm:text-base">
                         Feel free to reach out with any questions or feedback regarding this project. Your insights are valuable and appreciated!
                     </p>
             {/* End of Project Content */}
