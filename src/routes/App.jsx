@@ -21,8 +21,7 @@ export default function App ()
   const horizontalVariants = {
     initial: { opacity: 0, x: 20, y: 0 },
     animate: { opacity: 1, x: 0, y:0 },
-    exit: { opacity: 0, x: -20, y: 0 },
-    transition: { duration: 0.3 },
+    exit: { opacity: 0, x: -20, y: 0, transition: { duration: 0.5 } },
   };
   
   //2.Vertical slide (card <-> project)
@@ -30,7 +29,7 @@ export default function App ()
   initial: { opacity: 0, height: 0, y: 10 // A slight nudge for a smooth lift effect 
   },
   animate: { opacity: 1, height: "auto", y: 0 },
-  exit: { opacity: 0, height: 0, y: 10 },
+  exit: { opacity: 0, height: 0, y: 10, transition: { duration: 0.5 } },
   };
 
   //4.Robust path checking
@@ -54,7 +53,7 @@ export default function App ()
 
           //Different speeds for different directions
           transition={{
-            duration: isProjectPage ? 0.5 : 0.3, 
+            duration: isProjectPage ? 0.5 : 0.5, 
             ease: 'easeInOut'}}
           style={{ overflow: 'hidden' }}
           className="w-full"

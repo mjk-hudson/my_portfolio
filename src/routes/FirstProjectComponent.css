@@ -14,25 +14,4 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1 {
-  text-align: start;
-}
-h2 {
-  text-align: start;
-}
-ul {
-  text-align: start;
-  color: var(--color-slate-600);
-}
 
-.project-reveal-container {
-  width: 100%;
-  background-color: transparent; /* blends with the page bacground*/
-  margin-top: 1rem; /*space between the card the revealed info*/
-  overflow: hidden; /* hide overflow to prevent scrollbars and important for the height animation*/
-}
-
-/*Ensure the card above it doesn't get pushed away */
-.card-container {
-  transition: transform 0.3s ease;
-}

@@ -22,10 +22,10 @@ export default function Card()
 
     		<div className= "">
       			<div className="">
-        			<div className="font-medium">
+        			<div className="">
 
 						{/*--project Title --*/}
-						<h1 className='text-gray-800 text-2xl font-bold'>Case Study: Neighborgood
+						<h1 className='text-gray-800 text-left text-2xl font-bold'>Case Study: Neighborgood
 						</h1>
 							{/* Project description */}
             				<p>Neighborgood helps you make a mark in your community even if you're not sure where to start? Our new webservice makes it easy to find local areas perfect for creating community hubs, hosting outreach events, and volunteering. With just a few clicks, you'll be able to discover the best spots in your area to bring people together and make a positive impact on your community. ➡️
@@ -35,24 +35,29 @@ export default function Card()
 			</div>
 
 			{/*--Platform info div "info"--*/}
-			<div className="mt-8 p-6 bg-orange-500 rounded-lg">
+			<div className="justify justify-items-center mt-8 bg-orange-500 rounded-lg">
 
-				<h2 className="mb-6 text-neutral-100 text-base">Platforms</h2>
+				<div className="outline-2 outline-neutral-200 rounded-md">
+					<h2 className="mb-6 text-neutral-100 text-base">Platforms</h2>
+				</div>
 				{/*-- Icons --*/}
-					<img src={desktopIcon}
-					className ="block mx-auto"
-					alt="Desktop"/>
-					<p className="text-neutral-100 mt-2 text-xs">Desktop</p>
+					<div className="outline-2 outline-neutral-200 rounded-md">
+						<img src={desktopIcon}
+						alt="Desktop"/>
+						<p className="text-neutral-100 mt-2 text-xs">Desktop</p>
+					</div>
 
-					<img src={tabletIcon}
-					className="block mx-auto"
-					alt="Tablet"/>
-					<p className="text-neutral-100 mt-2 text-xs">Tablet</p>
+					<div className="outline-2 outline-neutral-200 rounded-md">
+						<img src={tabletIcon}
+						alt="Tablet"/>
+						<p className="text-neutral-100 mt-2 text-xs">Tablet</p>
+					</div>
 
-					<img src={phoneIcon}
-					className="block mx-auto"
-					alt="Mobile"/>
-					<p className="text-neutral-100 mt-2 text-xs">Mobile</p>
+					<div className="outline-2 outline-neutral-200 rounded-md">
+						<img src={phoneIcon}
+						alt="Mobile"/>
+						<p className="text-neutral-100 mt-2 text-xs">Mobile</p>
+					</div>
 
 			</div>
 
@@ -68,11 +73,11 @@ export default function Card()
 				/>
 
 				</Link>
-			</div>
 			{/*-- Nested route for project component --*/}
-			<div key={location.pathname}>
+			<motion.div key={location.pathname}>
 					{/*-- Outlet for nested routes --*/}
 					<Outlet />
+			</motion.div>
 			</div>
 		</div>
     );
