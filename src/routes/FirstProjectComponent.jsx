@@ -41,7 +41,7 @@ export default function FirstProjectComponent() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     };
     return (
-        <div className="p-6 md:p-10 gap-6 bg-neutral-100/75 rounded-lg shadow-[2px_11px_6px_-4px_rgba(136,136,136,0.25)] outline outline-2px outline-zinc-500/40 mt-6 mx-auto max-w-6xl">
+        <div className="p-6 md:p-4 gap-6 bg-neutral-100/75 rounded-lg shadow-[2px_11px_6px_-4px_rgba(136,136,136,0.25)] outline outline-2px outline-zinc-500/40 mt-6 mx-auto max-w-6xl">
             <motion.div
             // 1. Outer Animation: The Dropdown Slide
             key={ isProjectPage ? verticalVariants : horizontalVariants }
@@ -55,7 +55,7 @@ export default function FirstProjectComponent() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.3 }}
-                    className="mb-1 text-gray-800 text-left font-semibold text-xl sm:text-2xl">Neighborgood.<br/>
+                    className=" text-gray-800 text-left font-semibold text-xl sm:text-2xl">Neighborgood.<br/>
                         A Responsive Web Application
                     </motion.h1>
                     <motion.p
@@ -141,10 +141,17 @@ export default function FirstProjectComponent() {
                             </li>
                         </ul>
                         {/*Competitive Analysis Spreadsheet*/}
-                        <div className="my-8 overflow-x-auto border border-gray-400 rounded-lg shadow-xl p-2">
-                        <div className="inline-block w-full min-w-max" dangerouslySetInnerHTML={{__html: Nbgca}}></div>
-                        </div>
-                    </div>
+                        <div className="my-8 w-full border border-gray-300 rounded-xl shadow-lg overflow-hidden">
+                            <div className="relative w-full pt-[56.25%]"> {/* 16:9 – adjust ratio as needed */}
+                                <iframe
+                                srcDoc={Nbgca}           // ← use srcDoc instead of dangerouslySetInnerHTML
+                                title="Embedded content"
+                                className="absolute inset-0 w-full h-full border-0"
+                                sandbox="allow-scripts allow-same-origin" // adjust sandbox carefully
+                                loading="lazy"
+                                />
+                            </div>
+                        </div>                    </div>
             
                     <div className="my-4 p-0">
                     <h2 className="text-left text-gray-900 font-semibold text-base sm:text-lg">
@@ -257,7 +264,7 @@ export default function FirstProjectComponent() {
                 <h2 className=" text-gray-900 text-left font-semibold text-base sm:text-xl">
                     Early Sketches
                 </h2>
-                < className="text-start text-wrap text-gray-600 text-sm sm:text-base">
+                <p className="text-start text-wrap text-gray-600 text-sm sm:text-base">
                     Early sketching was used to progressively iterate design elements in order to maximize as much accessible relevant information as possible on multiple platforms.
                 </p>
                 <div className="gap-4 sm:grid sm:grid-cols-3 sm:gap-4">
@@ -270,7 +277,7 @@ export default function FirstProjectComponent() {
                     </p>
                     {/*Initial Design Iterations and solutions*/}
                     <h2 className="text-gray-900 font-semibold text-lg sm:text-xl">First Design Iterations</h2>
-                    <p class>
+                    <p className="text-sm sm:text-base">
                         The idea here is to design a product/service that will allow social networking for the user to find people, groups and adequate open space locations(or potential spaces) after a number of choices are made to get as close to an ideal location as possible(where available) and so initially I thought using a map application style interaction as the most familiar interface for location and travels searches.
                     </p>
                     {/* Initial Design Iterations Images */}

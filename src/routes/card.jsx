@@ -20,44 +20,40 @@ export default function Card()
 				alt="Neighborgood Platform image"
 				className="w-full h-auto rounded-lg"/>
 
-    		<div className= "">
-      			<div className="">
-        			<div className="">
-
+    		<div className= "">      			
 						{/*--project Title --*/}
 						<h1 className='text-gray-800 text-left text-2xl font-bold'>Case Study: Neighborgood
 						</h1>
 							{/* Project description */}
             				<p>Neighborgood helps you make a mark in your community even if you're not sure where to start? Our new webservice makes it easy to find local areas perfect for creating community hubs, hosting outreach events, and volunteering. With just a few clicks, you'll be able to discover the best spots in your area to bring people together and make a positive impact on your community. ➡️
-							</p>
-        			</div>
-      			</div>
+							</p>      			
 			</div>
 
-			{/*--Platform info div "info"--*/}
-			<div className="justify justify-items-center mt-8 bg-orange-500 rounded-lg">
+			{/*--Platform info graphic "info"--*/}
+			<div className=" p-6 justify-content-center flex row-span-1 gap-6 bg-orange-500 rounded-lg">
 
-				<div className="outline-2 outline-neutral-200 rounded-md">
-					<h2 className="mb-6 text-neutral-100 text-base">Platforms</h2>
+				<div className="">
+					<h2 className=" text-neutral-100 text-base">Platforms</h2>
 				</div>
+				
 				{/*-- Icons --*/}
-					<div className="outline-2 outline-neutral-200 rounded-md">
-						<img src={desktopIcon}
-						alt="Desktop"/>
-						<p className="text-neutral-100 mt-2 text-xs">Desktop</p>
-					</div>
+				<div className="flex row-span-1 gap-2">
+					<img src={desktopIcon}
+					alt="Desktop"/>
+					<p className="text-neutral-100 mt-2 text-xs">Desktop</p>
+				</div>
 
-					<div className="outline-2 outline-neutral-200 rounded-md">
-						<img src={tabletIcon}
-						alt="Tablet"/>
-						<p className="text-neutral-100 mt-2 text-xs">Tablet</p>
-					</div>
+				<div className="flex row-span-1 gap-2">
+					<img src={tabletIcon}
+					alt="Tablet"/>
+					<p className="text-neutral-100 mt-2 text-xs">Tablet</p>
+				</div>
 
-					<div className="outline-2 outline-neutral-200 rounded-md">
-						<img src={phoneIcon}
-						alt="Mobile"/>
-						<p className="text-neutral-100 mt-2 text-xs">Mobile</p>
-					</div>
+				<div className="flex row-span-1 gap-2">
+					<img src={phoneIcon}
+					alt="Mobile"/>
+					<p className="text-neutral-100 mt-2 text-xs">Mobile</p>
+				</div>
 
 			</div>
 

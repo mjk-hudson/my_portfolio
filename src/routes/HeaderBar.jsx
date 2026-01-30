@@ -35,7 +35,7 @@ export default function HeaderBar()
 {
   return(
     <div>
-        <div className="flex p-4 border-b border-b-violet-300/20 bg-gray-900/75 shadow-md absolute top-0 left-0 w-full">
+        <div className="flex p-4 absolute top-0 left-0 w-full">
             <motion.h1
             initial={{opacity: 0}}
             animate={{opacity: 1}}
@@ -46,7 +46,7 @@ export default function HeaderBar()
             variants={navVariants}
             initial="hidden"
             animate="visible" 
-            className='flex flex-row gap-x-8 ml-auto'>
+            className='flex flex-row gap-x-2 ml-auto text-sm sm:text-base'>
 
                 <motion.li variants={itemVariants}><Link to="/">Home</Link></motion.li>
                 <motion.li variants={itemVariants}><Link to="/card">Case Studies</Link></motion.li>
