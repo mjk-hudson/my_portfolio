@@ -3,7 +3,7 @@ import { createBrowserRouter, RouterProvider, } from 'react-router-dom'
 import App from './routes/App.jsx'
 import HeaderBar from './routes/HeaderBar.jsx'
 import { createRoot } from 'react-dom/client'
-import FirstProjectComponent from './routes/FirstProjectComponent.jsx'
+import ProjectDetails from './routes/ProjectDetails.jsx'
 import Card from './routes/card.jsx'
 import ErrorPage from './ErrorPage.jsx'
 import './index.css'
@@ -29,12 +29,6 @@ const router = createBrowserRouter([
       {
         path:"card",
         element: <Card />, 
-        children:[
-          {
-            path:"FirstProjectComponent",
-            element: <FirstProjectComponent />,
-          },
-        ],
       },
     ]
   },

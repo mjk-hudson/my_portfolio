@@ -5,7 +5,7 @@ import { motion } from "motion/react";
   export const horizontalVariants = {
     initial: { opacity: 0, x: 20, y: 0 },
     animate: { opacity: 1, x: 0, y:0 },
-    exit: { opacity: 0, x: -20, y: 0, transition: { duration: 0.5 } },
+    exit: { opacity: 0, x: -20, y: 0, transition: { duration: 1.5 } },
   };
   
   //2.Vertical slide (card <-> project)
@@ -13,6 +13,6 @@ import { motion } from "motion/react";
   initial: { opacity: 0, height: 0, y: 10 // A slight nudge for a smooth lift effect 
 },
   animate: { opacity: 1, height: "auto", y: 0 },
-  exit: { opacity: 0, height: 0, y: 10, transition: { duration: 0.5 } },
+  exit: { opacity: 0, height: 0, y: 10, transition: { duration: 1.5 } },
   };
 

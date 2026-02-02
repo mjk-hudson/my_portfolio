@@ -12,56 +12,33 @@ export default function App ()
 
   //Reset scroll position on route changes
   useEffect(() => {
-    //ONLY reset scroll if we're not going to a project page
-   if (!location.pathname.includes("FirstProjectComponent")) 
-    {window.scrollTo(0, 0);}
-  }, [location.pathname]);
-  
-  //1.Horizontal slide (home<-> card)
-  const horizontalVariants = {
-    initial: { opacity: 0, x: 20, y: 0 },
-    animate: { opacity: 1, x: 0, y:0 },
-    exit: { opacity: 0, x: -20, y: 0, transition: { duration: 0.5 } },
-  };
-  
-  //2.Vertical slide (card <-> project)
-  const verticalVariants = {
-  initial: { opacity: 0, height: 0, y: 10 // A slight nudge for a smooth lift effect 
-  },
-  animate: { opacity: 1, height: "auto", y: 0 },
-  exit: { opacity: 0, height: 0, y: 10, transition: { duration: 0.5 } },
-  };
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, [location.pathname]); 
 
-  //4.Robust path checking
-  const isProjectPage = location.pathname.includes("FirstProjectComponent");
-
+  const pageVariants = {
+      initial: { opacity: 0, x: 20 },
+      animate: { opacity: 1, x: 0 },
+      exit: { opacity: 0, x: -20, transition: { duration: 0.4 } },
+    };
 
   return (
     <>
       <HeaderBar />
-      <div className="pt-20 px-4 relative min-h-screen overflow-x-hidden">
 
+      <div className="pt-20 px-4 min-h-screen">
         <AnimatePresence mode="wait">
           <motion.div
-          key={location.pathname}
-
-          //Dynamically swap animation variants
-          variants={ isProjectPage ? verticalVariants : horizontalVariants }
-          initial='initial'
-          animate='animate'
-          exit='exit'
-
-          //Different speeds for different directions
-          transition={{
-            duration: isProjectPage ? 0.5 : 0.5, 
-            ease: 'easeInOut'}}
-          style={{ overflow: 'hidden' }}
-          className="w-full"
-          >
+            key={location.pathname}
+            variants={pageVariants}
+            initial="initial"
+            animate="animate"
+            exit="exit"
+            transition={{ duration: 1.5, ease: "easeOut" }}
+            className="w-full">
             {outlet}
           </motion.div>
         </AnimatePresence>
-      </div>
+      </div>    
     </>
   );
 }

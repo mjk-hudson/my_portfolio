@@ -1,5 +1,5 @@
 import React from "react";
-import './FirstProjectComponent.css';
+import './ProjectDetails.css';
 import { Link } from "react-router-dom";
 import Nbgca from '../assets/nbgca.html?raw';
 import Barbara from '../assets/danie-franco-l9I93gZKTG4-unsplash.webp';
@@ -7,6 +7,7 @@ import Andres from '../assets/andres-molina-J7sCh_kM9kQ-unsplash+thumbnail.webp'
 import Barbjourney from '../assets/Barbara-Journey-Map.jpg';
 import Andresjourney from '../assets/Andres-Journey-map.jpg';
 import { motion } from 'motion/react';
+import { useLocation } from "react-router-dom";
 
 //Sketches imports
 import MobileSketch from '../assets/neighborgood_sketches/PXL_20220801_174421456.MP.webp';
@@ -26,45 +27,19 @@ import DesktopWireframe from '../assets/neighborgood_sketches/wireframes/Desktop
 import MobileBreakpoint from '../assets/neighborgood_prototypes/home_mobile.webp';
 import TabletBreakpoint from '../assets/neighborgood_prototypes/home_Tablet.webp';
 import DesktopBreakpoint from '../assets/neighborgood_prototypes/home_Desktop.webp';
-//Animation imports
-import { verticalVariants, horizontalVariants } from '../components/transitions.jsx';
-import { useLocation } from "react-router-dom";
 
 
-export default function FirstProjectComponent() {
-      //4.Robust path checking
-      const location = useLocation();
-    const isProjectPage = location.pathname==="/FirstProjectComponent";
-    
-    // Function to handle the scroll when the link is clicked
-    const handleScrollUp = () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    };
+export default function ProjectDetails() {
     return (
-        <div className="p-6 md:p-4 gap-6 bg-neutral-100/75 rounded-lg shadow-[2px_11px_6px_-4px_rgba(136,136,136,0.25)] outline outline-2px outline-zinc-500/40 mt-6 mx-auto max-w-6xl">
-            <motion.div
-            // 1. Outer Animation: The Dropdown Slide
-            key={ isProjectPage ? verticalVariants : horizontalVariants }
-            variants={isProjectPage ? verticalVariants : horizontalVariants}
-            initial='initial'
-            animate='animate'
-            exit='exit'
-            className="w-full gap-4">
+        <div className="p-6 md:p-4 gap-6 bg-neutral-100 rounded-lg shadow-[2px_11px_6px_-4px_rgba(136,136,136,0.25)] mt-6 mx-auto max-w-6xl">
+            <div className="w-full gap-4 bg-neutral-100">
                 <div className="gap-4">
-                    <motion.h1
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.3 }}
-                    className=" text-gray-800 text-left font-semibold text-xl sm:text-2xl">Neighborgood.<br/>
+                    <h1 className="text-gray-800 text-left font-semibold text-xl sm:text-2xl">Neighborgood.<br/>
                         A Responsive Web Application
-                    </motion.h1>
-                    <motion.p
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 0.5 }}
-                    className="text-left text-gray-600 text-sm sm:text-base">
+                    </h1>
+                    <p className="text-left text-gray-600 text-sm sm:text-base">
                         Neighborgood is a social media platform for outreach opportunities that allow individuals and groups find suitable locations for community engagement functions.
-                    </motion.p>
+                    </p>
                 </div>
                 <div className="gap-4">
                     <div className="mb-6 text-left text-gray-700 gap-2">
@@ -151,8 +126,8 @@ export default function FirstProjectComponent() {
                                 loading="lazy"
                                 />
                             </div>
-                        </div>                    </div>
-            
+                        </div>
+                    </div>            
                     <div className="my-4 p-0">
                     <h2 className="text-left text-gray-900 font-semibold text-base sm:text-lg">
                         Competitive Analysis Insights
@@ -163,7 +138,7 @@ export default function FirstProjectComponent() {
                     </div>
                     {/*User Research*/}
                     {/* Persona 1: Barbara Goode */}
-                    <div className="grid-cols-1 sm:grid-cols-2gap-4">
+                    <div className="grid-cols-1 sm:grid-cols-2 gap-4">
                     <h2 className="my-1 text-gray-900 font-semibold text-lg sm:text-xl">
                         User Research
                     </h2>
@@ -172,12 +147,12 @@ export default function FirstProjectComponent() {
                     <p className="text-sm sm:text-base">
                         The target audience are community organizers, non-profit organizations, local government agencies, and individuals looking to host community events for social good. The platform aims to facilitate the process of finding and reserving spaces for various community activities and events, promoting social engagement and collaboration.
                     </p>
-                    <div className="gap-4 flex flex-col sm:flex-row sm:items-center sm:gap-6">
-                    <div className="grid-cols-1">
+                    <div className="gap-4 grid grid-cols-1 items-start sm:gap-6">
+                    <div className="">
                         <p className="font-bold text-gray-900">Barbara Goode</p>
                         <p className="text-gray-500 text-sm sm:text-base leading-relaxed">
                         Age: 77<br/>
-                        Education: High School<br/>
+                        Education: High School Graduate<br/>
                         Occupation: Retired horticulturalist<br/>
                         Family: 2 feisty cats 😹<br/>
                         Hometown: Savannah, GA.<br/>
@@ -463,15 +438,7 @@ export default function FirstProjectComponent() {
                     </p>
             {/* End of Project Content */}
             </div>
-            {/* Back Link */}
-            <div className="py-6">
-                <Link
-                to="/card"
-                className="back-button">← Collapse Neighborgood Case Study
-                onClick={handleScrollUp} {/*smooth scroll up */}
-                </Link>
             </div>
-            </motion.div>
         </div>
     );
 }

@@ -3,24 +3,30 @@ import heroImage from '../assets/V2Mockup.png'
 import openIcon from '../assets/fluent_open-24-filled.svg';
 import { Link, Outlet, useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "motion/react";
+import { useState } from 'react';
 //images imports
 import desktopIcon from '../assets/meteor-icons_desktop.svg';
 import tabletIcon from '../assets/solar_tablet-outline.svg';
 import phoneIcon from '../assets/proicons_phone.svg';
+import ProjectDetails from "./ProjectDetails.jsx";
 import "./card.css";
 
 export default function Card()
-{	const location = useLocation();
+{	const [isExpanded, setIsExpanded] = useState(false);
+	
+	const toggleExpand = () => {
+		setIsExpanded(prev => !prev);
+	};
 
 	return( 	
-		<div className="p-10 gap-x-16 gap-y-6 bg-neutral-100/75 rounded-lg shadow-[2px_11px_6px_-4px_rgba(136,136,136,0.25)] outline outline-2px outline-zinc-500/40 mt-12">
+		<div className="p-10 gap-x-16 gap-y-6 bg-neutral-100 rounded-lg shadow-[2px_11px_6px_-4px_rgba(136,136,136,0.25)] outline outline-2px outline-zinc-500/40 mt-12 overflow-hidden">
 
 			{/*--Hero image--*/}
 			<img src={heroImage} 
 				alt="Neighborgood Platform image"
 				className="w-full h-auto rounded-lg"/>
 
-    		<div className= "">      			
+    		<div>      			
 						{/*--project Title --*/}
 						<h1 className='text-gray-800 text-left text-2xl font-bold'>Case Study: Neighborgood
 						</h1>
@@ -30,7 +36,7 @@ export default function Card()
 			</div>
 
 			{/*--Platform info graphic "info"--*/}
-			<div className=" p-6 justify-content-center flex row-span-1 gap-6 bg-orange-500 rounded-lg">
+			<div className=" p-4 justify-center flex row-span-1 gap-2 bg-orange-500 rounded-lg">
 
 				<div className="">
 					<h2 className=" text-neutral-100 text-base">Platforms</h2>
@@ -57,24 +63,35 @@ export default function Card()
 
 			</div>
 
-			{/*button */}
-			<div className="">
-				<Link 
-				to="FirstProjectComponent">
-				
-				<img 
-				src={openIcon} 
-				className="animate-pulse" 
-				alt="Open Case Study"
-				/>
+		{/* Expand / Collapse button */}
+		<button
+			onClick={toggleExpand}
+			className="mt-6 flex items-center gap-3 text-orange-600 hover:text-orange-800 transition-colors focus:outline-none">
+			<img 
+			src={openIcon} 
+			className={`w-8 h-8 transition-transform duration-300 ${isExpanded ? 'rotate-180' : ''}`}
+			alt={isExpanded ? "Collapse case study" : "Expand case study"}
+			/>
+			<span className="font-medium">
+			{isExpanded ? "Collapse Case Study" : "View Full Case Study"}
+			</span>
+		</button>
 
-				</Link>
-			{/*-- Nested route for project component --*/}
-			<motion.div key={location.pathname}>
-					{/*-- Outlet for nested routes --*/}
-					<Outlet />
+		{/* Animated details section */}
+		<AnimatePresence>
+			{isExpanded && (
+			<motion.div
+				initial={{ height: 0, opacity: 0 }}
+				animate={{ height: "auto", opacity: 1 }}
+				exit={{ height: 0, opacity: 0 }}
+				transition={{ duration: 0.7, ease: "easeInOut" }}
+				className="overflow-hidden">
+				<div className="pt-8 border-t border-gray-200">
+				<ProjectDetails />
+				</div>
 			</motion.div>
-			</div>
-		</div>
-    );
+			)}
+		</AnimatePresence>
+		</div>    
+	);
 }
