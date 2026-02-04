@@ -2,6 +2,9 @@ import React from 'react';
 import './HeaderBar.css';
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
+import Majik from '../assets/Majik-Hudson.jpg';
+import {FaLinkedin} from 'react-icons/fa';
+import {FaGithub} from 'react-icons/fa';
 
 //List parent animation
 const navVariants = {
@@ -40,14 +43,14 @@ export default function HeaderBar()
             initial={{opacity: 0}}
             animate={{opacity: 1}}
             transition={{duration: 0.5, delay: 0.2}} 
-            className="mr-12 text-gray-200 font-neonderthaw">Majik</motion.h1>
+            className="mr-12"><Majik /></motion.h1>
 
             <motion.ul
             variants={navVariants}
             initial="hidden"
             animate="visible" 
             className='flex flex-row gap-x-2 ml-auto text-sm sm:text-base'>
-
+                {/*Will be converted to social media icons and links later*/}
                 <motion.li variants={itemVariants}><Link to="/">Home</Link></motion.li>
                 <motion.li variants={itemVariants}><Link to="/card">Case Studies</Link></motion.li>
                 <motion.li variants={itemVariants}><Link to="/about">About</Link></motion.li>

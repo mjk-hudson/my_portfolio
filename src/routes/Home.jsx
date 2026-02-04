@@ -17,8 +17,8 @@ export default function Home() {
         initial={{opacity: 0, y: +50}}
         animate={{opacity: 1, y: 0}}
         transition={{duration: 1, delay: 0.5}} 
-        className="text-2xl md:text-7xl font-bold bg-clip-text text-transparent bg-linear-to-b from-neutral-50 to-neutral-400">
-          Thank you for visiting my portfolio.
+        className="text-2xl md:text-7xl font-bold bg-clip-text text-transparent bg-linear-to-r from-pink-300 via-slate-500 to-purple-500 tracking-tight">
+          UX Designer.
         </motion.h1>
 
         <motion.p
