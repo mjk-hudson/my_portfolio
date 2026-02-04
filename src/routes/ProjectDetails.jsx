@@ -28,6 +28,11 @@ import MobileBreakpoint from '../assets/neighborgood_prototypes/home_mobile.webp
 import TabletBreakpoint from '../assets/neighborgood_prototypes/home_Tablet.webp';
 import DesktopBreakpoint from '../assets/neighborgood_prototypes/home_Desktop.webp';
 
+//Final Design Image imports
+import DesktopFinal from '../assets/Directory-Leaders.gif'; 
+import TabletFinal from '../assets/Tablet-Recommendations.gif';
+import MobileFinal from '../assets/Events-Mobile-Final.gif';
+
 
 export default function ProjectDetails() {
     return (
@@ -357,7 +362,7 @@ export default function ProjectDetails() {
                         The Final mock-up provides an introduction and brief explanation to the product and service as well as any available local places, groups or initiatives on the homepage as well as providing a menu for additional features, services and information.<br/>
                         Final Designs
                         </p>
-                        <img src={''} alt="Mobile Final Design" className="w-sm h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
+                        <img src={MobileFinal} alt="Mobile Final Design" className="w-full max-w-xs h-auto rounded-4xl mt-6 border border-gray-400 shadow-xl" />
                     </div>
                     {/* Tablet Mock-Ups */}
                     <p className="text-sm sm:text-base">
@@ -373,7 +378,7 @@ export default function ProjectDetails() {
                         <p className="text-sm sm:text-base">
                             Additional information includes links local zoning, demographic, weather databases.
                         </p>
-                        <img src={''} alt="Tablet Final Design" className="w-full max-w-sm h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
+                        <img src={TabletFinal} alt="Tablet Final Design" className="w-full max-w-xl h-auto rounded-4xl mt-6 border border-gray-400 shadow-xl" />
                     </div>
                     {/* Desktop Mock-Ups */}
                     <p className="text-sm sm:text-base">
@@ -391,7 +396,7 @@ export default function ProjectDetails() {
                         The Final mock-up provides an introduction and brief explanation to the product and service as well as any available local places, groups or initiatives on the homepage as well as providing a menu for additional features, services and information.<br/>
                         Final Designs
                         </p>
-                        <img src={''} alt="Desktop Final Design" className="w-full max-w-sm h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
+                        <img src={DesktopFinal} alt="Desktop Final Design" className="w-full max-w-full h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
                     </div>
                     <h1 className="gap-y-1 text-gray-900 font-semibold text-lg sm:text-xl">
                         Going Forward
