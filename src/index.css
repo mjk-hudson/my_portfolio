@@ -8,11 +8,6 @@
 @custom-variant dark (&:is(.dark *));
 @theme {
   --font-cal-sans: "Cal Sans", ui-sans-serif, system-ui, sans-serif;
-  --font-neonderthaw: "Neonderthaw", ui-sans-serif, system-ui, sans-serif;
-}
-@keyframes melt {
-  from {font-variation-settings: "YEAR" 1979;}
-  to {font-variation-settings: "YEAR" 2050;}
 }
 :root {
   font-family: Cal Sans, Lexend Deca, Climate Crisis, Public Sans,system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -22,6 +17,7 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
+  overflow-x: hidden;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

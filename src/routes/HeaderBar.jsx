@@ -2,7 +2,7 @@ import React from 'react';
 import './HeaderBar.css';
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
-import Majik from '../assets/Majik-Hudson.jpg';
+import Majik from '../assets/Majik_logo_clipped.svg';
 import {FaLinkedin} from 'react-icons/fa';
 import {FaGithub} from 'react-icons/fa';
 
@@ -38,12 +38,14 @@ export default function HeaderBar()
 {
   return(
     <div>
-        <div className="flex p-4 absolute top-0 left-0 w-full">
-            <motion.h1
+        <div className="top-0 left-0 w-full">
+          <motion.img
             initial={{opacity: 0}}
             animate={{opacity: 1}}
             transition={{duration: 0.5, delay: 0.2}} 
-            className="mr-12"><Majik /></motion.h1>
+            className='w-40 h-auto rounded-xl'
+            src={Majik}
+            alt="Profile Image"/>
 
             <motion.ul
             variants={navVariants}
