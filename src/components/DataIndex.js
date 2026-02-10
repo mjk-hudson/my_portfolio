@@ -103,14 +103,14 @@ export const Projects = [
     image: project2,
     description:
       "a mobile app for film fans featuring AR scene remixing, collaborative playlists, and mood-based discovery.",
-    technologies: ["Figma", "HTML", "CSS", "React", "Tailwind CSS"],
+    technologies: ["Figma", "HTML", "CSS", "Javascript", "React", "Tailwind CSS"],
   },
   {
     title: "Investment Dashboard",
     image: project3,
     description:
       "A responsive web dashboard for novice information investors with scenario sliders, narrative risk profiles, ESG scores, and offline PWA support.",
-    technologies: ["Figma", "HTML", "CSS", "React", "Tailwind CSS", "Docker"],
+    technologies: ["Figma", "HTML", "CSS", "React", "Tailwind CSS", "Webpack"],
   },
   {
     title: "Neighborgood (New York, N.Y.)",
