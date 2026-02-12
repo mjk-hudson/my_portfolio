@@ -19,16 +19,16 @@ export default function Card()
 	};
 
 	return( 	
-		<div className="p-10 gap-x-16 gap-y-6 bg-neutral-100 rounded-lg shadow-[2px_11px_6px_-4px_rgba(136,136,136,0.25)] outline outline-2px outline-zinc-500/40 mt-12 overflow-hidden">
+		<div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 mt-12 overflow-hidden">
 
 			{/*--Hero image--*/}
 			<img src={heroImage} 
 				alt="Neighborgood Platform image"
 				className="w-full h-auto rounded-lg"/>
 
-    		<div>      			
+    		<div className="space-y-3">      			
 						{/*--project Title --*/}
-						<h1 className='text-gray-800 text-left text-2xl font-bold'>Case Study: Neighborgood
+						<h1 className=' text-neutral-300 text-left text-2xl font-bold'>Neighborgood
 						</h1>
 							{/* Project description */}
             				<p>Neighborgood helps you make a mark in your community even if you're not sure where to start? Our new webservice makes it easy to find local areas perfect for creating community hubs, hosting outreach events, and volunteering. With just a few clicks, you'll be able to discover the best spots in your area to bring people together and make a positive impact on your community. ➡️

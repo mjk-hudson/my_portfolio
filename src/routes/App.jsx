@@ -36,7 +36,7 @@ export default function App ()
         </div>
       </div>
     </div>
-      <div className="pt-20 px-4 min-h-screen">
+      <div className="pt-45 px-4 min-h-screen">
         <AnimatePresence mode="wait">
           <motion.div
             key={location.pathname}

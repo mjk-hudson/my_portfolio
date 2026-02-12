@@ -36,8 +36,8 @@ import MobileFinal from '../assets/Events-Mobile-Final.gif';
 
 export default function ProjectDetails() {
     return (
-        <div className="p-6 md:p-4 gap-6 bg-neutral-100 rounded-lg shadow-[2px_11px_6px_-4px_rgba(136,136,136,0.25)] mt-6 mx-auto max-w-6xl">
-            <div className="w-full gap-4 bg-neutral-100">
+        <div className="p-6 md:p-4 gap-6 bg-slate-900/50 rounded-lg shadow-[2px_11px_6px_-4px_rgba(136,136,136,0.25)] mt-6 mx-auto max-w-6xl">
+            <div className="w-full gap-4">
                 <div className="gap-4">
                     <h1 className="text-gray-800 text-left font-semibold text-xl sm:text-2xl">Neighborgood.<br/>
                         A Responsive Web Application

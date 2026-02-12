@@ -1,7 +1,7 @@
 import project2 from "../assets/projects/project-2.jpg";
 import project1 from "../assets/projects/project-1.jpg";
 import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
+import project4 from "../assets/projects/project-4.png";
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
@@ -62,13 +62,13 @@ export const Skills = [
     dateRange: null, // N/A – ongoing
     role: "Soft Skills",
     company: null,
-    description: "Collaboration, Feedback, Communication, Leadership, Creative Thinking, Creative Problem Solving, Empathy, Critical Thinking, Adaptability."
+    description: "Collaboration, Feedback, Communication, Creative Thinking, Creative Problem Solving, Empathy, Critical Thinking, Adaptability."
   },
   {
     dateRange: null, // N/A – ongoing
     role: "Technical Skills",
     company: null,
-    description: "Design frameworks (Design Thinking, Lean UX, Double Diamond, UX Honeycomb, HEART, 5 Elements of UX, User-Centered Design, Agile UX), Product Design, Storyboarding, Figma / FigJam, Adobe Photoshop / XD, InVision Studio, JIRA, Google Workspace, Microsoft Office, UI/Visual Design, User Research & Testing, Zeplin, Sketch, Ideation, Prototyping (Low/High Fidelity), Wireframing, Mockups, Information Architecture, User Flows/Journeys, Interaction Design, Design Systems, Responsive Design, Webflow, Miro, Inclusive Design, Front-End (HTML5, CSS3, JavaScript), Python 3, Leading research/interviews/usability studies/design sprints."
+    description: "Design frameworks, Design Thinking, Lean UX, Double Diamond, HEART, 5 Elements of UX, User-Centered Design, Agile UX, Product Design, Storyboarding, Artificial Intelligence (A.I.), Figma, FigJam, Adobe Photoshop, Adobe XD, Adobe Illustrator, JIRA, Miro, Sketch, Google Workspace, Microsoft Office, User interace design, Visual Design, Motion Design, User Research, Testing, Ideation, Prototyping, Low Fidelity, High Fidelity, Wireframing, Mockups, Information Architecture, User Flows, User Journeys, Usability studies, design sprints, Interaction Design, Design Systems, Responsive Design,  Inclusive Design, Front-End web development, HTML5, CSS3, JavaScript, React, Node.js, Mongo Db, Webpack, Motion.dev, Tailwind CSS, Bootstrap, Git."
   }
 ];
 
@@ -77,11 +77,11 @@ export const Education = [
     dateRange: "August 2021 – July 2022",
     role: "Google UX Design Certificate",
     company: "Coursera",
-    description: "Entry-level UX program covering UX/UI design, responsive web, wireframing, prototyping, user research/testing, journey mapping, empathy maps, ideation, storyboarding, personas, and frameworks. Mastered Figma and Adobe CC; built online portfolio."
+    description: "User Experience Design program covering UX/UI design, responsive web, wireframing, prototyping, user research & testing, journey mapping, empathy maps, ideation, storyboarding, personas, and design frameworks. Mastered Figma and Adobe XD. Produced Online portfolio."
   },
   {
     dateRange: "September 2010 – May 2013",
-    role: "B.S. Product Design",
+    role: "B.S. Industrial Design",
     company: "University of Bridgeport – Shintaro Akatsu School of Design (SASD)",
     description: "IDSA NY Chapter member; Presidents’ Scholar 2013."
     }
@@ -122,7 +122,7 @@ export const Projects = [
 ];
 
 export const Contact = {
-  address: "767 Fifth Avenue, New York, NY 10153 ",
+  address: "605 W42nd St., New York, NY 10036 ",
   phoneNo: "+12 4555 666 00 ",
-  email: "me@example.com",
+  email: "majik.hudson@icloud.com",
 };
