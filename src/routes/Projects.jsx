@@ -5,7 +5,7 @@ import { motion } from 'motion/react';
 
 export default function Project () {
     return (
-        <div className="border-b border-neutral-900 pb-4">
+        <div className="border-b border-cyan-800 pb-4">
         <h2 className='my-20 text-start text-3xl text-indigo-500'>Recent Projects</h2>
             <div>
                 {Projects.map((project, index) =>(

@@ -18,7 +18,7 @@ export default function About() {
       </motion.div>
 
       {/*Profile Image*/}
-      <div className="border-b border-neutral-800 flex flex-col md:flex-row gap-10">
+      <div className="border-b border-cyan-800 flex flex-col md:flex-row gap-10 pb-20">
         <motion.div 
         whileInView={{opacity: 1, x: 0}}
         initial={{opacity: 0, x: -50}}
@@ -32,7 +32,7 @@ export default function About() {
         whileInView={{opacity: 1, x: 0 }}
         initial={{opacity: 0, x: 50}}
         transition={{duration: 1.5, delay: 0.5, ease: 'easeInOut'}}
-        className="md:w-1/2">
+        className="md:w-1/2 content-center">
           <p className="text-lg text-neutral-400 pb-4">I'm a passionate UX designer with 5+ years of experience in creating user-centered digital products and services with a strong foundation in frontend web technologies. My journey in design began with a curiosity about how things work, creating viable products and services and it has evolved into a career where I build solutions that are both functional, useful, interactive and elegant.</p>
           <p className="text-lg text-neutral-400 pb-4">I specialize in creating digital products and services as cross-platform responsive web applications using modern frameworks like React and Tailwind CSS, while also having experience with backend technologies such as Node.js and MongoDb. My approach to design is centered around viability, user experience, and continuous improvement.</p>
         </motion.div>
@@ -52,7 +52,7 @@ export default function About() {
       </div>
 
       {/*Dates, Role, Company, Description*/}
-      <div className="border-b border-neutral-800 gap-10">
+      <div className="border-b border-cyan-800 gap-10">
 
           {/*Date Range*/}
             {Experience.map((experience, index) => (
@@ -87,7 +87,7 @@ export default function About() {
       </div>
 
       {/*Skill Information*/}
-      <div className="border-b border-neutral-800 gap-10">
+      <div className="border-b border-cyan-800 gap-10">
         <motion.h2
         whileInView={{opacity: 1, x: 0}}
         initial={{opacity: 0, x: -50}}

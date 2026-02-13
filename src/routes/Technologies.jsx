@@ -25,7 +25,7 @@ const iconVariants = (duration) => ({
 });
 export default function Technologies() {
   return (
-    <div className="border-b border-purple-900 items-center justify-center pb-20">
+    <div className="border-b border-cyan-800 items-center justify-center pb-20">
 
       <h2 className="text-3xl text-start text-font-semibold text-indigo-500 pb-10">Technologies & Frameworks.</h2>
 

@@ -93,7 +93,7 @@ export const Education = [
 
 export const Projects = [
   {
-    title: "AI Fintech",
+    title: "Budget Wise (A.I. Fintech)",
     image: project1,
     description:"Mobile budgeting app for gig workers using AI nudges and gamified savings to prevent overspending.",
     technologies: ['Figma', 'HTML', "CSS", "React", "Node.js", "MongoDB", 'Tailwind CSS',],
