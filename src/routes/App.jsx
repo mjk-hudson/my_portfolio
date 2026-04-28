@@ -24,7 +24,7 @@ export default function App ()
 
   return (
     <>
-    <WaitingMobile initialSeconds={60}/>
+    {/*<WaitingMobile initialSeconds={60}/>}*/}
     <HeaderBar />
     <div className='fixed inset-0 -z-10 overflow-x-hidden text-neutral-200 selection:bg-pink-300 selection:text-pink-800 pointer-events-none'>
       {/*App Background */}
