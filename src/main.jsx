@@ -1,5 +1,5 @@
 import { StrictMode } from 'react'
-import { createBrowserRouter, RouterProvider, } from 'react-router-dom'
+import { createHashRouter, RouterProvider, } from 'react-router-dom'
 import App from './routes/App.jsx'
 import { createRoot } from 'react-dom/client'
 import ProjectDetails from './routes/ProjectDetails.jsx'
@@ -10,9 +10,9 @@ import Home from './routes/Home.jsx'
 import HomeLayout from './routes/HomeLayout.jsx'
 import About from './routes/About.jsx'
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
-    path: import.meta.env.BASE_URL,
+    path: '/',
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
