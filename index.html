@@ -7,6 +7,28 @@
     <title>my_portfolio</title>
   </head>
   <body>
+    <script type="text/javascript">
+  (function(l) {
+    if (l.search[1] === '_' ) {
+      var decoded = l.search.slice(1).split('&').map(function(s) { 
+        return s.replace(/~and~/g, '&') 
+      }).reduce(function(obj, p) {
+        var key = p.split('=');
+        var value = p.split('=');
+        obj[key] = value;
+        return obj;
+      }, {});
+      if (decoded._p !== undefined) {
+        window.history.replaceState(null, null,
+          l.pathname.slice(0, -1) + (decoded._p ? '/' + decoded._p : '') +
+          (decoded._q ? '?' + decoded._q : '') +
+          l.hash
+        );
+      }
+    }
+  }(window.location));
+</script>
+
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
