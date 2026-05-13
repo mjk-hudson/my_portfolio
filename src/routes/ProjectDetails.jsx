@@ -1,5 +1,5 @@
 import React from "react";
-import './ProjectDetails.css';
+import './projectDetails.css';
 import { Link } from "react-router-dom";
 import Nbgca from '../assets/nbgca.html?raw';
 import Barbara from '../assets/danie-franco-l9I93gZKTG4-unsplash.webp';
