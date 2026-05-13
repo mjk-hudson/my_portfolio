@@ -5,23 +5,26 @@ on:
     branches:
       - portfolio_edits
 
+# Explicit permissions required to write to public gh-pages branches
 permissions:
   contents: write
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true # Force-clears system runtime warnings
     steps:
       - name: Checkout code
-        uses: actions/checkout@v5 # Upgraded to modern Node 24 baseline
+        uses: actions/checkout@v4
 
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 24 # Swapped to native Node 24 execution
+          node-version: 24
           cache: 'npm'
 
-      - name: Install dependencies
+      - name: Clean install dependencies
         run: npm ci
 
       - name: Build application
@@ -32,3 +35,4 @@ jobs:
         with:
           folder: dist
           branch: gh-pages
+          token: ${{ secrets.GITHUB_TOKEN }} # Passes security tokens directly to the plugin
