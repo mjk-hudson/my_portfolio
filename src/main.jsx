@@ -35,9 +35,6 @@ const router = createBrowserRouter([
       },
     ],
   },
-  {
-    basename: '/my_portfolio',
-  }
 ]);
 
 createRoot(document.getElementById('root')).render(
