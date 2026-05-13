@@ -3,22 +3,22 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - portfolio_edits # Listens specifically to your edits branch
+      - portfolio_edits
 
 permissions:
-  contents: write # Grants GitHub permission to generate the gh-pages deployment branch
+  contents: write
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5 # Upgraded to modern Node 24 baseline
 
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24 # Swapped to native Node 24 execution
           cache: 'npm'
 
       - name: Install dependencies
@@ -30,5 +30,5 @@ jobs:
       - name: Deploy to GitHub Pages 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: dist # Vite output directory
-          branch: gh-pages # Live production deployment target branch
+          folder: dist
+          branch: gh-pages
