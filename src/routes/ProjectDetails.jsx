@@ -5,7 +5,7 @@ import Nbgca from '../assets/nbgca.html?raw';
 import Barbara from '../assets/danie-franco-l9I93gZKTG4-unsplash.webp';
 import Andres from '../assets/andres-molina-J7sCh_kM9kQ-unsplash+thumbnail.webp';
 import Barbjourney from '../assets/Barbara-Journey-Map.jpg';
-import Andresjourney from '../assets/Andres-Journey-map.jpg';
+import Andresjourney from '../assets/Andres-Journey-Map.jpg';
 import { motion } from 'motion/react';
 import { useLocation } from "react-router-dom";
 
