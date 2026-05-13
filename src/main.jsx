@@ -35,10 +35,10 @@ const router = createBrowserRouter([
         element: <About />,
       },
     ],
-    {
-      basename: '/my_portfolio',
-    }
   },
+  {
+    basename: '/my_portfolio',
+  }
 ]);
 
 createRoot(document.getElementById('root')).render(
