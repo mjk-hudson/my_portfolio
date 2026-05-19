@@ -32,14 +32,10 @@ const Techs = [
     {name: 'CSS3', duration:3.5, color: "text-orange-500", icon: <DiCss3Full className="text-2xl text-orange-500" />},
     {name: 'JavaScript', duration:4, color: "text-yellow-400", icon: <DiJsBadge className="text-2xl text-yellow-400" />},
     {name: 'React.js', duration:4.5, color: "text-cyan-400", icon: <RiReactjsLine className="text-2xl text-cyan-400" />},
-    {name: 'TypeScript', duration:4.5, color: "text-blue-700", icon: <SiTypescript className="text-2xl text-blue-700" />},
     {name: 'Git', duration:3, color: "text-neutral-400", icon: <DiGit className="text-2xl text-neutral-400" />},
     {name: 'Bootstrap CSS', duration:2.5, color: "text-blue-700", icon: <SiBootstrap className="text-2xl text-blue-700" />},
-    {name: 'MongoDB', duration:3.5, color: "text-green-500", icon: <SiMongodb  className="text-2xl text-green-500" />},
     {name: 'Tailwind CSS', duration:2.5, color: "text-indigo-500", icon: <SiTailwindcss className="text-2xl text-indigo-500" />},
-    {name: 'Node.js', duration:2, color: "text-green-400", icon: <FaNodeJs className="text-2xl text-green-400" />},
     {name: 'Motion.dev', duration:3.5, color: "text-purple-500", icon: <TbBrandFramerMotion className="text-2xl text-purple-500" />},
-    {name: 'Webpack', duration:2.5, color: "text-blue-500", icon: <SiWebpack className="text-2xl text-blue-500" />},
 ];
 
 export default function Technologies() {

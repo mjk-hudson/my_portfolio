@@ -36,9 +36,6 @@ export default function Home() {
         <div className="mt-20 text-center">
          <Technologies />
        </div>
-       <div>
-        <Project />
-       </div>
       </div>
     </motion.div>
   );
