@@ -173,7 +173,7 @@ export default function Card()
 						<h1 className=' text-neutral-200 text-left text-2xl font-bold'>Vibe Space
 						</h1>
 							{/* Project description */}
-            				<p className="text-neutral-300">Vibe Space is a responsive web based event space-networking platform that connects people with similar interests and creates opportunities for meaningful interactions in local communities. By leveraging AI and user-generated content, Vibe Space helps users discover and join local events, activities, and groups that align with their passions. Whether you're looking to meet new friends, find a workout buddy, or explore new hobbies, Vibe Space is your go-to platform for building connections and fostering a sense of belonging in your community.
+            				<p className="text-neutral-300">Vibe Space is a responsive web based event matching-networking platform that connects people with similar interests and creates opportunities for meaningful interactions in local communities. By leveraging AI and user-generated content, Vibe Space helps users discover and join local events, activities, and groups that align with their passions. Whether you're looking to meet new friends, find a workout buddy, or explore new hobbies, Vibe Space is your go-to platform for building connections and fostering a sense of belonging in your community.
 							</p>      			
 			</div>
 

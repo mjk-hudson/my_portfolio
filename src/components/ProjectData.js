@@ -62,9 +62,9 @@ export const Project = {
         },
         Prototype:
         {
-            prototypeIntro:'',
+            prototypeIntro:'I developed some interactive prototypes to visualize the Bledger app and test its core functionalities. The prototypes included key features such as the predictive AI dashboard, agentic automation settings, and gamified savings challenges. These prototypes were designed to be user-friendly and visually appealing, with a focus on providing a seamless user experience.',
             iterationImages: '',
-            rationale:'',
+            rationale:'I used scale to serve as vusal hierarchy, with the most important information (like account balances and spending alerts) prominently displayed in the center of the screen. The use of bold, warm colors and minimal typography was intentional to draw attention to key actions and notifications without overwhelming the user with visual clutter. This design approach ensures that users can quickly understand their financial status and take action based on the insights provided by the app. Thew= scale of the arrows are clear distincition between the different levels of information, with the most critical information being the largest and most prominent warm colors that prjoject, while secondary information is smaller and less visually dominant with cooler colors that recede.',
             finalImages: '',
         },
         Test:
@@ -108,16 +108,14 @@ export const Project = {
         },
         define:
         {
-            problemStatement: '',
-            HypothesisStatement:'',
+            problemStatement: '"Professional event attendees experience high friction and low ROI during networking events because static scheduling cannot account for real-world human behavior (no-shows and late arrivals). This results in \'dead time,\' awkward waiting periods, and a loss of momentum, ultimately leading to platform abandonment."',
+            HypothesisStatement:'I\'m proposing the implementation of a mandatory pre-session "Check-In" gate along with an automated, state-aware JIT (Just-In-Time) rerouting system to enhance the user experience during sessions.',
             designPrinciples: ' ',
-            valueProposition: '',
-            competitiveAudit: '',
-            competitiveAuditImage: 'https://via.placeholder.com/150',
+            valueProposition: '"The Self-Healing Network" For: High-stakes professional networkers and event organizers. Who: Are tired of wasted sessions, empty rooms, and the "spreadsheet hell" of manual rerouting. My Platform is: A dynamic matching ecosystem. That: Automatically detects no-shows and reroutes "stranded" attendees to new, verified partners in real-time. Unlike: Legacy event apps that rely on static calendars and leave you staring at a blank screen. It Provides: Guaranteed engagement and "Context-First" connections that ensure not one minute of your event is ever wasted.',
             informationArchitecture:'https://via.placeholder.com/150',
             userFlows:'https://via.placeholder.com/150',
             wireframes:'https://via.placeholder.com/150',
-            defineSummary: ''
+            defineSummary: 'Summary of the "Win" By solving the No-Show problem through this specific IA and UX, you aren\'t just building a "matching app"— I\'m building Reliability as a Service. In a world where attention is the most expensive currency, my platform\'s biggest selling point is: "We won\'t waste your time while waiting."'
 
         },
         Ideate:
@@ -137,20 +135,21 @@ export const Project = {
         },
         Prototype:
         {
-            prototypeIntro:'',
+            prototypeIntro:'I\'ve chosen simplistic visual design that organizes and prioritizes import event-matching information in a way that\'s easy to scan at a glance. The design is intentionally minimal to let the dynamic, real-time nature of the platform shine through without overwhelming users with unnecessary visual noise. The prototype includes key features such as the mandatory pre-session "Check-In" gate, the automated JIT rerouting system, and a clean analytics dashboard for event organizers.',
             iterationImages: '',
-            rationale:'',
+            rationale:'The key information is presented in the center of the layout giving users a clear focal point to quickly understand their current status and next steps. The use of bold warm colors and typography is minimal but strategic, with important actions and notifications highlighted to draw attention without creating visual clutter. This design approach ensures that users can easily navigate the platform and stay informed about their connections and sessions in real-time.',
             finalImages: '',
         },
         Test:
         { 
-            testMethod:'Simulated Usability Testing',
-            testDescription:' ',
-            testResults:'',
-            dataInsights: ' ',
-            resultInsights:'',
-            testSummary: ' ',
-            conclusion:''
+            testMethod:'Usability Testing',
+            testDescription:' Our study revolves around the hypothesis that by introducing these systems, session completion rates and attendee satisfaction will see a significant increase. The aim is to transform "waiting anxiety" into "active momentum," prioritizing attendee\'s time over a fixed schedule. Through this usability study, we will delve into the impact of these changes on user engagement and overall satisfaction levels.',
+            competitiveAudit: '',
+            competitiveAuditImage: 'https://via.placeholder.com/150',
+            testResults:'1. Participant 1: - The mandatory pre-session "Check-In" gate was efficient and helped me settle in before the event started. - The state-aware JIT rerouting system reduced my anxiety as it ensured I didn\'t miss any important sessions. 2. Participant 2:- I appreciated the flexibility of the automated rerouting system, but I didn\'t feel like my time was prioritized over the schedule. - The "Check-In" gate was smooth, but I think some improvements can be made. 3. Participant 3: - Both the "Check-In" gate and the automated rerouting system contributed to a better event experience for me. - My completion rate for sessions definitely improved due to these systems. 4. Participant 4: - The automated rerouting system was a game-changer for me in terms of time management during the event. - I would highly recommend this event-matching/networking web application to others because of the improved systems. 5. Participant 5: - The event felt more organized and tailored to my needs with the "Check-In" gate and rerouting system in place. - I felt more engaged with the event content and didn\'t miss out on any important sessions.',
+            resultInsights:'Participant 1: - Appreciated the efficiency of the mandatory pre-session "Check-In" gate. - Found reassurance in the state-aware JIT rerouting system. Participant 2: - Valued the flexibility of the automated rerouting system but felt time prioritization could be improved. - Suggested possible enhancements for the "Check-In" gate. Participant 3: - Acknowledged the positive impact of both the "Check-In" gate and the automated rerouting system on their event experience. - Noticed an increase in session completion rate due to these systems. Participant 4: - Considered the automated rerouting system crucial for better time management during the event. - Recommended the event-matching/networking web application to others based on the improved systems. Participant 5: - Recognized the increased organization and customization of the event with the "Check-In" gate and rerouting system. - Felt more engaged with event content and did not miss any essential sessions.',
+            testSummary: '- Participants appreciated the efficiency of the mandatory pre-session "Check-In" gate. - The state-aware JIT rerouting system was valued for reducing anxiety and ensuring no important sessions were missed.- Flexibility of the automated rerouting system was acknowledged, but time prioritization could be improved. - Participants recommended enhancements for the "Check-In" gate. - The systems led to an increase in session completion rates. - The automated rerouting system was considered crucial for better time management. - The event\'s organization and customization were recognized with the "Check-In" gate and rerouting system, leading to increased engagement with the event content.',
+            conclusion:'- Overall, the combination of the "Check-In" gate and automated rerouting system positively impacted the event experience for participants. - Recommendations for improvements include enhancing time prioritization in the automated rerouting system and making enhancements to the "Check-In" gate. - Participants found value in the increased organization, customization, and engagement facilitated by the systems implemented. - The event-matching/networking web application was highly recommended based on the improved systems.'
         },
     },
 };
