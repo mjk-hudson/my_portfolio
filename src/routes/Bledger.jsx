@@ -7,6 +7,7 @@ import ProjectData from '../components/ProjectData.js';
 
 export default function Bledger()
 {
+    
     return(
         <>
             {/*--Intro--*/}
@@ -31,27 +32,28 @@ export default function Bledger()
                 <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p1.empathy.StudyDescription}</div>
                 {/*User Research*/}
                 <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p1.empathy.userResearch}</div>
-            </div>
 
-            {/*Personas*/}
-            <div>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p1.empathy.personaIntro}</div>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p1.empathy.persona1}</div>
-                <img src={ProjectData.p1.empathy.personaImage} alt="Bledger User Persona" className='w-full h-auto rounded-lg mb-10'/>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p1.empathy.persona2}</div>
-                <img src={ProjectData.p1.empathy.persona2Image} alt="Bledger User Persona" className='w-full h-auto rounded-lg mb-10'/>
-            </div>
-            
-            {/*User Journey Mapping*/}
-            <div>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p1.empathy.journeyMapping}</div>
-                <img src={ProjectData.p1.empathy.journeyMapImage} alt="Bledger User Journey Map" className='w-full h-auto rounded-lg mb-10'/>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p1.empathy.painsGains}</div>
-                {/*Empathy Map*/}
-                <img src={ProjectData.p1.empathy.empathyMapImage} alt="Bledger User Pains and Gains" className='w-full h-auto rounded-lg mb-10'/>
-                {/*Insights and Summary*/}
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p1.empathy.insights}</div>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p1.empathy.summary}</div>
+                {/*Personas*/}
+                <div>
+                    <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p1.empathy.personaIntro}</div>
+                    <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p1.empathy.persona1}</div>
+                    <img src={ProjectData.p1.empathy.personaImage} alt="Bledger User Persona" className='w-full h-auto rounded-lg mb-10'/>
+                    <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p1.empathy.persona2}</div>
+                    <img src={ProjectData.p1.empathy.persona2Image} alt="Bledger User Persona" className='w-full h-auto rounded-lg mb-10'/>
+                </div>
+                
+                {/*User Journey Mapping*/}
+                <div>
+                    <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p1.empathy.journeyMapping}</div>
+                    <img src={ProjectData.p1.empathy.journeyMapImage} alt="Bledger User Journey Map" className='w-full h-auto rounded-lg mb-10'/>
+                    <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p1.empathy.painsGains}</div>
+                    {/*Empathy Map*/}
+                    <img src={ProjectData.p1.empathy.empathyMapImage} alt="Bledger User Pains and Gains" className='w-full h-auto rounded-lg mb-10'/>
+                    {/*Insights and Summary*/}
+                    <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p1.empathy.insights}</div>
+                    <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p1.empathy.summary}</div>
+                </div>
+                
             </div>
 
             {/*Define*/} 
