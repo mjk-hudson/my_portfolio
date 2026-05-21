@@ -1,15 +1,15 @@
+import BledgerHero from '../assets/Bledger-board.png';
 
 
 
-
-export const Project = {
+export const ProjectData = {
     p1:{
         intro:
         {
             title: 'Bledger',
             technologies: 'Figma, TensorFlow Lite, iOS/Android,',
             studyDescription: 'Designed and prototyped Bledger, a mobile Agentic budgeting app for gig workers using AI and gamification to prevent overspending. Led full UX cycle: user research (10+ interviews), Figma prototypes with micro-interactions, WCAG 2.1 AA compliance, and on-device AI (TensorFlow Lite). Simulated testing projected 25% engagement increase; created ethical-AI-focused portfolio case study.',
-            image: 'https://via.placeholder.com/150',
+            image: BledgerHero,
             productDescription: 'Bledger is an Agentic budgeting app designed to help gig workers manage their finances effciently. It uses AI and gamification to encourage savings, budgeting and investing. Bledger offers features to prevent overspending and encourage better financial habits. The app provides personalized budgeting advice based on user behavior, expenses and financial goals, making it easier for people to stay on top of their finances.'
         },
         empathy:
@@ -47,7 +47,7 @@ export const Project = {
         },
         Ideate:
         {
-            IdeationMethods: 'Brainstorming, "How Might We?" Questions, Concept Development and Crazy 8s Sketching',  
+            ideationMethods: 'Brainstorming, "How Might We?" Questions, Concept Development and Crazy 8s Sketching',  
             designChallenge: 'How might we create an intuitive budgeting app that uses AI to help gig workers manage their finances effectively, providing real-time insights and proactive recommendations to prevent overspending and encourage savings?',
             crazy8s: 'I generated a wide range of ideas for features and design elements, such as predictive spending alerts, automated bill payments, gamified savings challenges, and a minimalist dashboard for quick insights.',
             earlySketches:'https://via.placeholder.com/150',
@@ -56,16 +56,28 @@ export const Project = {
             crazy8Images2: 'https://via.placeholder.com/150',
             crazy8Images3: 'https://via.placeholder.com/150',
             ideationSummary: 'Through a structured ideation process, I was able to generate and refine innovative ideas for Bledger that directly address the needs and challenges of gig workers. This phase was crucial in shaping the overall design and functionality of the app, ensuring it provides real value to its users.',
-            iterationImages:'https://via.placeholder.com/150',
-            iterationDescription: 'Based on feedback from initial prototypes, I iterated on the design to enhance usability and address any identified issues. This iterative process involved refining the user interface, improving the AI recommendations, and ensuring that the gamification elements were engaging and effective in encouraging better financial habits.'
+            iterationImage1:'https://via.placeholder.com/150',
+            iterationImage2:'https://via.placeholder.com/150',
+            iterationImage3:'https://via.placeholder.com/150',
+            iterationImage4:'https://via.placeholder.com/150',
+            iterationDescription: 'Based on feedback from initial prototypes, I iterated on the design to enhance usability and address any identified issues. This iterative process involved refining the user interface, improving the AI recommendations, and ensuring that the gamification elements were engaging and effective in encouraging better financial habits.',
+            finalImage1:'https://via.placeholder.com/150',
+            finalImage2:'https://via.placeholder.com/150',
+            finalImage3:'https://via.placeholder.com/150',
+            finalImage4:'https://via.placeholder.com/150',
 
         },
         Prototype:
         {
             prototypeIntro:'I developed some interactive prototypes to visualize the Bledger app and test its core functionalities. The prototypes included key features such as the predictive AI dashboard, agentic automation settings, and gamified savings challenges. These prototypes were designed to be user-friendly and visually appealing, with a focus on providing a seamless user experience.',
-            iterationImages: '',
+            prototypeImage2: 'https://via.placeholder.com/150',
+            prototypeImage1: 'https://via.placeholder.com/150',
+            prototypeImage3: 'https://via.placeholder.com/150',
             rationale:'I used scale to serve as vusal hierarchy, with the most important information (like account balances and spending alerts) prominently displayed in the center of the screen. The use of bold, warm colors and minimal typography was intentional to draw attention to key actions and notifications without overwhelming the user with visual clutter. This design approach ensures that users can quickly understand their financial status and take action based on the insights provided by the app. Thew= scale of the arrows are clear distincition between the different levels of information, with the most critical information being the largest and most prominent warm colors that prjoject, while secondary information is smaller and less visually dominant with cooler colors that recede.',
-            finalImages: '',
+            finalImage1: 'https://via.placeholder.com/150',
+            finalImage2: 'https://via.placeholder.com/150',
+            finalImage3: 'https://via.placeholder.com/150',
+            finalImage4: 'https://via.placeholder.com/150',
         },
         Test:
         { 
