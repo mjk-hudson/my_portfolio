@@ -10,8 +10,8 @@ export default function Bledger()
     
     return(
         <>
-            {/*--Intro--*/}
-            <div>
+        {/*--Intro--*/}
+        <div>
 
             {/*--Hero Image--*/}
             <img src={ProjectData.p1.intro.image} alt="Bledger App" className='w-full h-auto rounded-lg mb-10'/>
@@ -53,7 +53,7 @@ export default function Bledger()
                     <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p1.empathy.insights}</div>
                     <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p1.empathy.summary}</div>
                 </div>
-                
+
             </div>
 
             {/*Define*/} 
@@ -160,7 +160,7 @@ export default function Bledger()
 
             </div>
 
-            </div> 
+        </div> 
         </>
     );
 }
