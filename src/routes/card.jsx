@@ -11,7 +11,7 @@ import tabletIcon from '../assets/solar_tablet-outline.svg';
 import phoneIcon from '../assets/proicons_phone.svg';
 import ProjectDetails from "../routes/ProjectDetails.jsx";
 import "./card.css";
-import bledgerBoard from '../assets/Bledger-Board.png';
+import bledgerBoard from '../assets/Bledger-board.png';
 import vibeSpaceHero from '../assets/Vibe-Space-Hero.png';
 import Bledger from './Bledger.jsx';
 import VibeSpace from './VibeSpace.jsx';
