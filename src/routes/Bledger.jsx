@@ -115,36 +115,47 @@ export default function Bledger()
                         <img src={ProjectData.p1.define.wireframes} alt="Bledger Wireframes" className='w-full h-auto rounded-lg mb-10'/>
                         <h2 className="text-start text-slate-300 text-base sm:text-lg">Define Summary
                         </h2>
-                        <p className='text-left text-slate-'>{ProjectData.p1.define.defineSummary}
+                        <p className='text-left text-slate-400 text-small sm:text-base'>{ProjectData.p1.define.defineSummary}
                         </p>
                     </div>
+                </div>
                 {/*Ideation*/}
                 <div classname='gap-4'>
-                    <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p1.ideate.ideationMethods}
-                    </div>
-                    <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p1.ideate.designChallenge}
-                    </div>
-                    <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p1.ideate.crazy8s}
-                    </div>
+                    <h1 className="text-start text-slate-200 font-semibold text-lg sm:text-xl">Ideation
+                    </h1>
+                    <p className='text-left text-slate-400 text-small sm:text-base'>{ProjectData.p1.ideate.ideationMethods}
+                    </p>
+                    <h2 className="text-start text-slate-300 text-base sm:text-lg">Design Challenge
+                    </h2>
+                    <p className='text-left text-slate-400 text-small sm:text-base'>{ProjectData.p1.ideate.designChallenge}
+                    </p>
+                    <h2 className="text-start text-slate-300 text-base sm:text-lg">Crazy 8s
+                    </h2>
+                    <img src={ProjectData.p1.ideate.crazy8s} alt="Bledger Crazy 8s" className='w-full h-auto rounded-lg mb-10'/>
                     <div classname='gap-4'>
                         <img src={ProjectData.p1.ideate.earlySketches} alt="Bledger Early Sketches" className='w-full h-auto rounded-lg mb-10'/>
                     </div>
-                    <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p1.ideate.conceptDevelopment}
-                    </div>
+                    <p className='text-left text-slate-400 text-small sm:text-base'>{ProjectData.p1.ideate.conceptDevelopment}
+                    </p>
+                </div>
 
                     {/*Crazy 8 Images*/}
-                    <div>
+                    <div classname='gap-4'>
                         <img src={ProjectData.p1.ideate.crazy8Images1} alt="Bledger Concept Sketches" className='w-full h-auto rounded-lg mb-10'/>
                         <img src={ProjectData.p1.ideate.crazy8Images2} alt="Bledger Concept Sketches" className='w-full h-auto rounded-lg mb-10'/>
                         <img src={ProjectData.p1.ideate.crazy8Images3} alt="Bledger Concept Sketches" className='w-full h-auto rounded-lg mb-10'/>
                     </div>
 
                     {/*ideate Summary*/}
-                    <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p1.ideate.ideationSummary}
-                    </div>
+                    <h2 className="text-start text-slate-300 text-base sm:text-lg">Ideation Summary
+                    </h2>
+                    <p className='text-left text-slate-400 text-small sm:text-base'>{ProjectData.p1.ideate.ideationSummary}
+                    </p>
 
                     {/*Iteration Images*/}
-                    <div>
+                    <h2 className="text-start text-slate-300 text-base sm:text-lg">Iterations
+                    </h2>
+                    <div classname='gap-4'>
                         <img src={ProjectData.p1.ideate.iterationImage1} alt="Bledger Selected Concept" className='w-full h-auto rounded-lg mb-10'/>
                         <img src={ProjectData.p1.ideate.iterationImage2} alt="Bledger Selected Concept" className='w-full h-auto rounded-lg mb-10'/>
                         <img src={ProjectData.p1.ideate.iterationImage3} alt="Bledger Selected Concept" className='w-full h-auto rounded-lg mb-10'/>
@@ -152,61 +163,80 @@ export default function Bledger()
                     </div>
 
                     {/*Iteration description*/}
-                    <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p1.ideate.iterationDescription}
-                    </div>
-
+                    <h2 className="text-start text-slate-300 text-base sm:text-lg">Iteration Description
+                    </h2>
+                    <p className='text-left text-slate-400 text-small sm:text-base'>{ProjectData.p1.ideate.iterationDescription}
+                    </p>
                     {/*Final Iteration Images*/}
-                    <div>
+                    <h2 className="text-start text-slate-300 text-base sm:text-lg">Final Iteration Images
+                    </h2>
+                    <div classname='gap-4'>
                         <img src={ProjectData.p1.ideate.finalImage1} alt="Bledger Iteration Sketches" className='w-full h-auto rounded-lg mb-10'/>
                         <img src={ProjectData.p1.ideate.finalImage2} alt="Bledger Iteration Sketches" className='w-full h-auto rounded-lg mb-10'/>
                         <img src={ProjectData.p1.ideate.finalImage3} alt="Bledger Iteration Sketches" className='w-full h-auto rounded-lg mb-10'/>
                         <img src={ProjectData.p1.ideate.finalImage4} alt="Bledger Iteration Sketches" className='w-full h-auto rounded-lg mb-10'/>
                     </div>
+            </div>
+            {/*Prototype*/}
+            <div classname='gap-4'>
+                <h1 className="text-start text-slate-200 font-semibold text-lg sm:text-xl">Prototype
+                </h1>
+                <p className="text-left text-slate-400 text-small sm:text-base ">{ProjectData.p1.prototype.prototypeIntro}
+                </p>
+
+                {/*Prototype Images*/}
+                <div classname='gap-4'>
+                    <img src={ProjectData.p1.prototype.prototypeImage1} alt="Bledger Prototype Iterations" className='w-full h-auto rounded-lg mb-10'/>
+                    <img src={ProjectData.p1.prototype.prototypeImage2} alt="Bledger Prototype Iterations" className='w-full h-auto rounded-lg mb-10'/>
+                    <img src={ProjectData.p1.prototype.prototypeImage3} alt="Bledger Prototype Iterations" className='w-full h-auto rounded-lg mb-10'/>
                 </div>
 
-                {/*Prototype*/}
+                {/*Rationale*/}
+                <h2 className="text-start text-slate-300 text-base sm:text-lg">Rationale
+                </h2>
+                <p className="text-left text-slate-400 text-small sm:text-base">
+                    {ProjectData.p1.prototype.rationale}
+                </p>
+
+                {/*Final Prototype Images*/}
                 <div>
-                    <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p1.prototype.prototypeIntro}
-                    </div>
-
-                    {/*Prototype Images*/}
-                    <div>
-                        <img src={ProjectData.p1.prototype.prototypeImage1} alt="Bledger Prototype Iterations" className='w-full h-auto rounded-lg mb-10'/>
-                        <img src={ProjectData.p1.prototype.prototypeImage2} alt="Bledger Prototype Iterations" className='w-full h-auto rounded-lg mb-10'/>
-                        <img src={ProjectData.p1.prototype.prototypeImage3} alt="Bledger Prototype Iterations" className='w-full h-auto rounded-lg mb-10'/>
-                    </div>
-
-                    {/*Rationale*/}
-                    <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p1.prototype.rationale}
-                    </div>
-
-                    {/*Final Prototype Images*/}
-                    <div>
-                        <img src={ProjectData.p1.prototype.finalImage1} alt="Bledger Final Prototype" className='w-full h-auto rounded-lg mb-10'/>
-                        <img src={ProjectData.p1.prototype.finalImage2} alt="Bledger Final Prototype" className='w-full h-auto rounded-lg mb-10'/>
-                        <img src={ProjectData.p1.prototype.finalImage3} alt="Bledger Final Prototype" className='w-full h-auto rounded-lg mb-10'/>
-                        <img src={ProjectData.p1.prototype.finalImage4} alt="Bledger Final Prototype" className='w-full h-auto rounded-lg mb-10'/>
-                    </div>
-                </div>
-
-                {/*Test*/}
-                <div>
-                    <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p1.test.testMethod}
-                    </div>
-                    <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p1.test.testDescription}
-                    </div>
-                    <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p1.test.testResults}
-                    </div>
-                    <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p1.test.dataInsights}
-                    </div>
-                    <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p1.test.resultsInsights}
-                    </div>
-                    <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p1.test.testSummary}
-                    </div>
-                    <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p1.test.conclusion}
-                    </div>
+                    <img src={ProjectData.p1.prototype.finalImage1} alt="Bledger Final Prototype" className='w-full h-auto rounded-lg mb-10'/>
+                    <img src={ProjectData.p1.prototype.finalImage2} alt="Bledger Final Prototype" className='w-full h-auto rounded-lg mb-10'/>
+                    <img src={ProjectData.p1.prototype.finalImage3} alt="Bledger Final Prototype" className='w-full h-auto rounded-lg mb-10'/>
+                    <img src={ProjectData.p1.prototype.finalImage4} alt="Bledger Final Prototype" className='w-full h-auto rounded-lg mb-10'/>
                 </div>
             </div>
+
+            {/*Test*/}
+            <div classname='gap-4'>
+                <h1 className="text-start text-slate-200 font-semibold text-lg sm:text-xl">Test
+                </h1>
+                <h2 className="text-start text-slate-300 text-base sm:text-lg">Testing Methods
+                </h2>
+                <p className="text-left text-slate-400 text-small sm:text-base">{ProjectData.p1.test.testMethod}
+                </p>
+                <p className="text-left text-slate-400 text-small sm:text-base">{ProjectData.p1.test.testDescription}
+                </p>
+                <h2 className="text-start text-slate-300 text-base sm:text-lg">Test Results
+                </h2>
+                <p className="text-left text-slate-400 text-small sm:text-base">{ProjectData.p1.test.testResults}
+                </p>
+                <h2 className="text-start text-slate-200 font-semibold text-lg sm:text-xl">Data Insights
+                </h2>
+                <p className="text-left text-slate-400 text-small sm:text-base">{ProjectData.p1.test.dataInsights}
+                </p>
+                <h2 className="text-start text-slate-200 font-semibold text-lg sm:text-xl">Results Insights
+                </h2>
+                <p className="text-left text-slate-400 text-small sm:text-base">{ProjectData.p1.test.resultInsights}
+                </p>
+                <h2 className="text-start text-slate-200 font-semibold text-lg sm:text-xl">Test Summary
+                </h2>
+                <p className="text-left text-slate-400 text-small sm:text-base">{ProjectData.p1.test.testSummary}
+                </p>
+                <h2 className="text-start text-slate-200 font-semibold text-lg sm:text-xl">Conclusion
+                </h2>
+                <p className="text-left text-slate-400 text-small sm:text-base">{ProjectData.p1.test.conclusion}
+                </p>
             </div>
         </>
     );
