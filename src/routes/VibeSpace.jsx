@@ -3,7 +3,7 @@ import { Link, Outlet, useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "motion/react";
 import { useState } from 'react';
 import vibeSpaceHero from '../assets/Vibe-Space-Hero.png';
-import ProjectData from '../data/ProjectData';
+import {ProjectData} from '../components/ProjectData.js';
 
 
 export default function VibeSpace ()
@@ -83,6 +83,7 @@ export default function VibeSpace ()
                 <img src={ProjectData.p2.define.wireframes} alt="Wireframes"/>
                 </div>
                 <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p2.define.defineSummary}
+                </div>
 
                 {/*Design*/}
                 <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p2.Ideate.ideationMethods}

@@ -6,6 +6,7 @@ import { AnimatePresence, motion } from 'motion/react';
 import './App.css'
 import WaitingMobile from '../components/WaitingMobile';
 
+
 export default function App ()
 {
   const location = useLocation();

@@ -13,7 +13,6 @@ import { useLocation } from "react-router-dom";
 import MobileSketch from '../assets/neighborgood_sketches/PXL_20220801_174421456.MP.webp';
 import MobileSketch2 from '../assets/neighborgood_sketches/PXL_20220801_174609290.webp'
 import MobileSketch3 from '../assets/neighborgood_sketches/PXL_20220801_174621091.webp'
-
 import DesignSketchMobile from '../assets/neighborgood_sketches/mobile sketch.png'
 import DesignSketchTablet from '../assets/neighborgood_sketches/wireframes/Tablet_Sketch.png'
 import DesignSketchDesktop from '../assets/neighborgood_sketches/wireframes/Desktop_Sketch.png'
@@ -355,7 +354,7 @@ export default function ProjectDetails() {
                             The initial mock-ups used a navigation style interaction design with a localized map and an F.A.B. as the entry point for finding new places right from the homepage.<br />
                             Initial Designs
                         </p>
-                        <img src={''} alt="Mobile Initial Design" className="w-full max-w-sm h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
+                        <img src={"null"} alt="Mobile Initial Design" className="w-full max-w-sm h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
                     </div>
                     <div className="gap-y-6">
                         <p className="text-sm sm:text-base text-slate-400">
@@ -372,7 +371,7 @@ export default function ProjectDetails() {
                         <p className="text-sm sm:text-base text-slate-400">
                             Environmental information is gathered and added from databases. This additional information is identified through labeled icons.
                         </p>
-                        <img src={''} alt="Tablet Initial Design" className="w-full max-w-sm h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
+                        <img src={'null'} alt="Tablet Initial Design" className="w-full max-w-sm h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
                     </div>
                     <div className="gap-y-6">
                         <p className="text-sm sm:text-base text-slate-400">
@@ -389,7 +388,7 @@ export default function ProjectDetails() {
                             The initial mock-ups used a navigation style interaction design with a localized map and an F.A.B. as the entry point for finding new places right from the homepage.<br/>
                             Initial Designs
                         </p>
-                        <img src={''} alt="Desktop Initial Design" className="w-full max-w-sm h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
+                        <img src={'null'} alt="Desktop Initial Design" className="w-full max-w-sm h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
                     </div>
                     <div className="gap-y-6">
                         <p className="text-sm sm:text-base text-slate-400">

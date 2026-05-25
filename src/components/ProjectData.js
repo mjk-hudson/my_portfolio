@@ -26,7 +26,7 @@ export const ProjectData = {
             personaImage2: 'https://via.placeholder.com/150',
             journeyMapping: 'Mapped the user journey for a typical gig worker, highlighting key touchpoints where Bledger could provide value, such as during income fluctuations, bill payments, and savings goals.',
             journeyMapImage:'https://via.placeholder.com/150',
-            painGains: 'Identified common pain points such as irregular income, difficulty tracking expenses, and lack of financial planning tools and practical advice. These insights informed the design of Bledger\'s features to address these specific challenges and benefits that include...Fragmented Tracking, Multiple accounts and cards make it impossible to see the "big picture", but a Unified Snapshot Plaid integration and minimal UI provide one "source of truth." Income Volatility, traditional budgets don\'t work when you don\'t have a fixed salary. Predictive AI, predicting overspending based on historical averages and current trends. "Ghost" Subscriptions, forgetting about recurring bills and rent.(Bledger detects and reminds users about these "ghost" expenses). Agentic Oversight AI ensures funds are present or alerts the user before a transaction hits. Analysis Paralysis Knowing they should invest but not knowing where to start. Automated Action, Agentic AI can buy stocks/crypto or automatically move funds between eligable accounts on the user\'s behalf based on their goals and permissions.',
+            painGains: 'I identified common pain points such as irregular income, difficulty tracking expenses, and lack of financial planning tools and practical advice. These insights informed the design of Bledger\'s features to address these specific challenges and benefits that include...Fragmented Tracking, Multiple accounts and cards make it impossible to see the "big picture", but a Unified Snapshot Plaid integration and minimal UI provide one "source of truth." Income Volatility, traditional budgets don\'t work when you don\'t have a fixed salary. Predictive AI, predicting overspending based on historical averages and current trends. "Ghost" Subscriptions, forgetting about recurring bills and rent.(Bledger detects and reminds users about these "ghost" expenses). Agentic Oversight AI ensures funds are present or alerts the user before a transaction hits. Analysis Paralysis Knowing they should invest but not knowing where to start. Automated Action, Agentic AI can buy stocks/crypto or automatically move funds between eligable accounts on the user\'s behalf based on their goals and permissions.',
             empathyMapImage: 'https://via.placeholder.com/150',
             insights:'I gained insights into the emotional and psychological aspects of gig workers relationship with money, including stress, uncertainty, and the desire for control and autonomy.Given the target audience (Gen Z/Millennials) and the complexity of agentic AI, the "glanceable" design you mentioned is your most critical asset. Users in this demographic value transparency. While they want the AI to do the work, they need to feel they can "intervene" or "veto" an AI-suggested purchase at a glance.',
             summary: 'Through extensive user research, I gained deep insights into the financial struggles of gig workers. This empathy-driven approach allowed me to design Bledger in a way that truly addresses their unique needs and challenges, ensuring the app is both useful and user-friendly.'
@@ -34,7 +34,7 @@ export const ProjectData = {
         define:
         {
             problemStatement: 'Jamal is a freelance gig worker with a fluctuating income who needs a predictive, automated way to manage volatile cash flow because manual tracking is too time-consuming and often fails to prevent overdrafts before they happen.',
-            HypothesisStatement:'If we provide Majik with a glanceable, agentic AI dashboard that predicts overspending and autonomously safeguards bill payments, then he will experience reduced financial anxiety and fewer late fees, regardless of his weekly income volatility.',
+            HypothesisStatement:'If we provide Jamal with a glanceable, agentic AI dashboard that predicts overspending and autonomously safeguards bill payments, then he will experience reduced financial anxiety and fewer late fees, regardless of his weekly income volatility.',
             designPrinciples: '1. Simplicity: The app should be easy to use and understand, with a clean and intuitive interface that minimizes cognitive load. 2. Transparency: Users should feel in control of the AI features, with clear explanations of how recommendations are generated and the ability to intervene or veto suggestions. 3. Personalization: The app should provide tailored advice and insights based on individual user behavior, preferences, and financial goals. 4. Proactivity: The app should anticipate user needs and provide timely notifications and recommendations to help prevent financial issues before they arise. 5. Inclusivity: The design should be accessible to a diverse range of users, including those with varying levels of financial literacy and different types of gig work.',
             valueProposition: 'This defines why a user would choose Bledger over a traditional competitor like Mint or Rocket Money. Predictive Foresight, Unlike apps that tell you what you already spent, Bledger uses AI to warn you about spending "thresholds" before you cross them.Agentic Automation, The "Co-Pilot" mode goes beyond alerts by autonomously ensuring rent is covered and executing micro-investments in stocks or crypto based on your goals.Minimalist Clarity, A "glanceable" UI designed for high-speed decision-making, removing the "financial fog" of complex banking spreadsheets.Gamified Discipline, Micro-challenges and reward points turn the chore of saving into a feedback loop that encourages long-term financial health.',
             competitiveAudit: 'Compared to traditional budgeting apps like Mint or Rocket Money, Bledger offers a unique value proposition with its predictive AI capabilities and agentic automation features. While Mint provides comprehensive budgeting tools and financial tracking, it lacks proactive insights and automation that can help users manage volatile income effectively. Rocket Money focuses on subscription management and expense tracking but does not offer the same level of predictive foresight or personalized financial advice. Bledger stands out by providing a more dynamic and user-centric approach to financial management, specifically tailored for gig workers with fluctuating incomes.',
@@ -45,7 +45,7 @@ export const ProjectData = {
             defineSummary: 'By clearly defining the problem statement, hypothesis, design principles, and value proposition, I was able to establish a strong foundation for the design of Bledger. This structured approach ensured that every design decision was aligned with the core needs of the target users and the unique challenges they face in managing their finances as gig workers.'
 
         },
-        Ideate:
+        ideate:
         {
             ideationMethods: 'Brainstorming, "How Might We?" Questions, Concept Development and Crazy 8s Sketching',  
             designChallenge: 'How might we create an intuitive budgeting app that uses AI to help gig workers manage their finances effectively, providing real-time insights and proactive recommendations to prevent overspending and encourage savings?',
@@ -67,7 +67,7 @@ export const ProjectData = {
             finalImage4:'https://via.placeholder.com/150',
 
         },
-        Prototype:
+        prototype:
         {
             prototypeIntro:'I developed some interactive prototypes to visualize the Bledger app and test its core functionalities. The prototypes included key features such as the predictive AI dashboard, agentic automation settings, and gamified savings challenges. These prototypes were designed to be user-friendly and visually appealing, with a focus on providing a seamless user experience.',
             prototypeImage2: 'https://via.placeholder.com/150',
@@ -79,7 +79,7 @@ export const ProjectData = {
             finalImage3: 'https://via.placeholder.com/150',
             finalImage4: 'https://via.placeholder.com/150',
         },
-        Test:
+        test:
         { 
             testMethod:'Simulated Usability Testing',
             testDescription:'Conducted simulated usability testing of the Bledger prototype with a group of gig workers to evaluate its usability, effectiveness, and impact on financial management. The testing involved scenarios that mimicked real-life financial situations, allowing me to gather feedback on the app\'s features and user experience.',

@@ -9,10 +9,12 @@ import { useState } from 'react';
 import desktopIcon from '../assets/meteor-icons_desktop.svg';
 import tabletIcon from '../assets/solar_tablet-outline.svg';
 import phoneIcon from '../assets/proicons_phone.svg';
-import ProjectDetails from "./ProjectDetails.jsx";
+import ProjectDetails from "../routes/ProjectDetails.jsx";
 import "./card.css";
-import bledgerBoard from '../assets/bledger-board.png';
+import bledgerBoard from '../assets/Bledger-Board.png';
 import vibeSpaceHero from '../assets/Vibe-Space-Hero.png';
+import Bledger from './Bledger.jsx';
+import VibeSpace from './VibeSpace.jsx';
 
 export default function Card()
 {	const [isExpanded, setIsExpanded] = useState(false);
@@ -154,7 +156,7 @@ export default function Card()
 				transition={{ duration: 0.7, ease: "easeInOut" }}
 				className="overflow-hidden">
 				<div className="pt-8 border-t border-gray-200">
-				<ProjectDetails />
+				<Bledger />
 				</div>
 			</motion.div>
 			)}
@@ -229,7 +231,7 @@ export default function Card()
 				transition={{ duration: 0.7, ease: "easeInOut" }}
 				className="overflow-hidden">
 				<div className="pt-8 border-t border-gray-200">
-				<ProjectDetails />
+				<VibeSpace />
 				</div>
 			</motion.div>
 			)}
