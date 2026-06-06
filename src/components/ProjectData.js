@@ -1,7 +1,75 @@
 import BledgerHero from '../assets/Bledger-board.png';
+import BledgerSketches from '../assets/Bledger-sketches.png';
+import BledgerAudit from '../assets/Bledger-competitive-audit.png';
+import BledgerEmpathy from '../assets/Bledger-empathy-map.png';
+import BledgerHome from '../assets/Bledger-home.png';
+import BledgerHomeDark from '../assets/Bledger-home-dark.png';
+import BledgerHomeFinal from '../assets/Bledger-home-final.png';
+import BledgerIA from '../assets/Bledger-info-arch.png';
+import BledgerInsights from '../assets/Bledger-insights.png';
+import BledgerInsightDark from '../assets/Bledger-insights-dark-mode.png';
+import BledgerInsightsFinal from '../assets/Bledger-insights-final.png';
+import BledgerV1 from '../Bledger-iteration1.png';
+import BledgerV2 from '../Bledger-iteration2.png';
+import BledgerV3 from '../Bledger-iteration3.png';
+import BledgerV4 from '../Bledger-iteration4.png';
+import BledgerJamal from '../Bledger-jamal-thompson.png';
+import BledgerJourney from '../Bledger-journey-map.png';
+import BledgerMaya from '../Bledger-maya-rodriguez.png';
+import BledgerSettings from '../assets/Bledger-settings.png';
+import BledgerSettingsDark from '../assets/Bledger-settings-dark-mode.png';
+import BledgerSettingsFinal from '../assets/Bledger-settings-final.png';
+import Bledgertracker from '../assets/Bledger-tracker.png';
+import BledgerTrackerDark from '../assets/Bledger-tracker-dark.png';
+import BledgerTrackerFinal from '../assets/Bledger-tracker-final.png';
+//Bledger Mock-ups
+import BledgerHomeDMock from '../assets/bledger/mockups/iPhone-3q-view1.png'; 
+import BledgerInsightsMock from '../assets/bledger/mockups/iPhone-3q-view2.png';
+import BledgerTrackerMock from '../assets/bledger/mockups/iPhone-3q-view3.png';
+import BledgerHomeMockFull from '../assets/bledger/mockups/iPhone-gray.png';
+import BledgerTrackerMockFull from '../assets/bledger/mockups/iPhone-gray-1.png';
+import BledgerInsightsMockFull from '../assets/bledger/mockups/iPhone-gray-2.png';
+import BledgerSettingsMockFull from '../assets/bledger/mockups/iPhone-gray-3.png';
+import BledgerSettings3QDark from '../assets/bledger/mockups/iPhone-gray-3q.png';
+import BledgerHome2QLIght from '../assets/bledger/mockups/iPhone-gray-3q1.png';
+import BledgerTracker3QDark from '../assets/bledger/mockups/iPhone-gray-3q4.png';
+import BledgerSettings3QLight from '../assets/bledger/mockups/iPhone-gray-3q5.png';
+import BledgerInsights3QDark from '../assets/bledger/mockups/iPhone-gray-3qview.png';
+import BledgerHomeDarkFull from '../assets/bledger/mockups/iPhone-gray-4.png';
+import BledgertrackerDarkFull from '../assets/bledger/mockups/iPhone-gray5.png';
+import BledgerInsightsDarkFull from '../assets/bledger/mockups/iPhone-gray-6.png';
+import BledgerSettingsDarkFull from '../assets/bledger/mockups/iPhone-gray-7.png';
 
-
-
+//Vibe Space Design Images
+import LobbyDesktopDark from '../assets/vibe-space/lobby desktop-Dark Mode.png';
+import LobbyDesktopLight from '../assets/vibe-space/lobby desktop.png';
+import LobbyMobileDark from '../assets/vibe-space/lobby mobile-Dark Mode.png';
+import ReadyMobileDark from '../assets/vibe-space/lobby Ready mobile-Dark Mode.png';
+import ReadyMobileLight from '../assets/vibe-space/Lobby Ready mobile.png';
+import MatchDesktopDark from '../assets/vibe-space/new match desktop-Dark Mode.png';
+import MatchDesktopLight from '../assets/vibe-space/new match desktop.png';
+import MatchMobileDark from '../assets/vibe-space/new match mobile-Dark Mode.png';
+import MatchMobileLight from '../assets/vibe-space/new match mobile.png';
+import VibeCompetitiveAudit from '../assets/vibe-space/Vibe-space-ca-image.jpg';
+import VibeEmpathyMap1 from '../assets/vibe-space/Vibe-space-emp-map1.png';
+import VibeEmpathyMap2 from '../assets/vibe-space/Vibe-space-emp-map2.png';
+ import VibeEmpathyMap3 from '../assets/vibe-space/Vibe-space-emp-map3.png';
+ import VibeInfoArch from '../assets/vibe-space/Vibe-space-Info-arch.png';
+ import VibeIterationMobile1 from '../assets/vibe-space/Vibespace-iteration1-mobile.png';
+import VibeIterationMobile2 from '../assets/vibe-space/Vibespace-iteration2-mobile.png';
+import VibeIterationMobile3 from '../assets/vibe-space/Vibespace-iteration3-mobile.png';
+import VibeDesktopIteration1 from '../assets/vibe-space/Vibespace-iteration4-desktop.png';
+import VibeDesktopIteration2 from '../assets/vibe-space/Vibespace-iteration5-desktop.png';
+import VibeDesktopIteration3 from '../assets/vibe-space/Vibespace-iteration6-desktop.png';
+import VibeJourneyMap from '../assets/vibe-space/Vibe-space-journey-map.png';
+import VibePersona1 from '../assets/vibe-space/Vibe-space-persona1.png';
+import VibePersona2 from '../assets/vibe-space/Vibe-space-persona2.png';
+import VibeStudy from '../assets/vibe-space/Vibe-space-study-image.png';
+import VibeWireframes from '../assets/vibe-space/Vibe-space-wireframes.png';
+import VibeWaitingDesktopDark from '../assets/vibe-space/waiting desktop-Dark Mode.png';
+import VibeWaitingDesktopLight from '../assets/vibe-space/waiting desktop.png';
+import VibeWaitingMobileDark from '../assets/vibe-space/waiting mobile-Dark Mode.png';
+//Vibe Space Mock-ups
 
 export const ProjectData = {
     p1:{
