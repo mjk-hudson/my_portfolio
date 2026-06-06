@@ -10,154 +10,216 @@ export default function VibeSpace ()
 {
     return (
         <>
-            <div>   
+            <div classname="w-full p-6 md:p-4 gap-6 bg-slate-900/50 rounded-lg shadow-[2px_11px_6px_-4px_rgba(136,136,136,0.25)] mt-6 mx-auto max-w-6xl">   
                 {/*Vibe Space Hero Image*/}
                 <img src={vibeSpaceHero} alt="Vibe Space Hero" />
 
                 {/*Vibe Space Intro*/}
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p2.intro.title}
-                </div>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p2.intro.technologies}
-                </div>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p2.intro.studydescription}
-                </div>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">
+                <h1 className="text-start text-3xl font-bold text-white mb-4">{ProjectData.p2.intro.title}
+                </h1>
+                <h2 className="text-start text-2xl font-bold text-white">Technologies and Platforms:
+                </h2>
+                <p className='text-start text-lg text-gray-300'>{ProjectData.p2.intro.technologies}
+                </p>
+                <h2 className="text-start text-2xl font-bold text-white">Study description:
+                </h2>
+                <p className="text-start text-slate-400 text-small sm:text-base">{ProjectData.p2.intro.studyDescription}
+                </p>
+                <div className="gap-4 ">
                 <img src={ProjectData.p2.intro.image} alt="Vibe Space Study" />
                 </div>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p2.intro.productdescription}
-                </div>
+                <h2 className="text-start text-2xl font-bold text-white">Product description:
+                </h2>
+                <p className="text-start text-slate-400 text-small sm:text-base mb-4">{ProjectData.p2.intro.productDescription}
+                </p>
 
                 {/*Vibe Empathy*/}
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p2.empathy.title}
-                </div>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p2.empathy.methods}
-                </div>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p2.empathy.studydescription}
-                </div>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">
+                <h1 className="text-start text-3xl font-bold text-white">{ProjectData.p2.empathy.title}
+                </h1>
+                <h2 className="text-start text-2xl font-bold text-white">Method: Usability Study
+                </h2>
+                <p className="text-start text-slate-400 text-small sm:text-base">{ProjectData.p2.empathy.studyDescription}
+                </p>
+                <div className="gap-4 ">
                 <img src={ProjectData.p2.empathy.image} alt="Vibe Space Empathy" />
                 </div>
 
                 {/*Personas*/}
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p2.empathy.personaIntro}
+                <h2 className="text-start text-2xl font-bold text-white">Personas:
+                </h2>
+                <p className="text-start text-slate-400 text-small sm:text-base">{ProjectData.p2.empathy.personaIntro}
+                </p>
+                <h2 className="text-start text-2xl font-bold text-white">Maya Chen: {ProjectData.p2.empathy.persona1Title}
+                </h2>
+                <p className="text-start text-slate-400 text-small sm:text-base">{ProjectData.p2.empathy.persona1}
+                </p>
+                <div className="gap-4">
+                    <img src={ProjectData.p2.empathy.personaImage1} alt="Vibe Space Persona Image 1" />
                 </div>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p2.empathy.persona1}
+                <img src={ProjectData.p2.empathy.empathyImage1} alt="Vibe Space Empathy Image 1" />
+                
+                <h2 className="text-start text-2xl font-bold text-white">Marcus Vance:
+                </h2>
+                <p className="text-start text-slate-400 text-small sm:text-base">{ProjectData.p2.empathy.persona2}
+                </p>
+                <div className="gap-4">
+                    <img src={ProjectData.p2.empathy.personaImage2} alt="Vibe Space Persona Image 2" />
                 </div>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden"><img src={ProjectData.p2.empathy.personaImage1} alt="Vibe Space Persona Image 1" />
+                <img src={ProjectData.p2.empathy.empathyImage2} alt="Vibe Space Empathy Image 2" />
+                <h2 className="text-start text-2xl font-bold text-white">Elena Rostova:
+                </h2>
+                <p className="text-start text-slate-400 text-small sm:text-base">
+                {ProjectData.p2.empathy.persona3}
+                </p>
+                <div className="gap-4">
+                    <img src={ProjectData.p2.empathy.personaImage3} alt="Vibe Space Persona Image 3" />
                 </div>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p2.empathy.empathyImage1}
+                <div className="gap-4">
+                    <img src={ProjectData.p2.empathy.empathyMapImage3} alt="Vibe Space Empathy Image 3" />
                 </div>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p2.empathy.persona2}
-                </div>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden"><img src={ProjectData.p2.empathy.personaImage2} alt="Vibe Space Persona Image 2" />
-                </div>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p2.empathy.empathyImage2}
-                </div>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p2.empathy.persona3}
-                </div>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden"><img src={ProjectData.p2.empathy.personaImage3} alt="Vibe Space Persona Image 3" />
-                </div>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p2.empathy.empathyImage3}
-                </div>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p2.empathy.insights}
-                </div>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p2.empathy.summary}
-                </div>
+                <h2 className="text-start text-2xl font-bold text-white">Key Insights and Summary:
+                </h2>
+                <p className="text-start text-slate-400 text-small sm:text-base">
+                {ProjectData.p2.empathy.insights}
+                </p>
+                <p className="text-start text-slate-400 text-small sm:text-base mb-4">
+                {ProjectData.p2.empathy.summary}
+                </p>
 
                 {/*Define*/}
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p2.define.problemStatement}
-                </div>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p2.define.hypothesisStatement}
-                </div>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p2.define.designPrinciples}
-                </div>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p2.define.valueProposition}
-                </div>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">
+                <h1 className="text-start text-3xl font-bold text-white">Define
+                </h1>
+                <p className="text-start text-slate-400 text-small sm:text-base mb-2">
+                {ProjectData.p2.define.problemStatement}
+                </p>
+                <h2 className="text-start text-2xl font-bold text-white">Hypothesis Statement:
+                </h2>
+                <p className="text-start text-slate-400 text-small sm:text-base">
+                {ProjectData.p2.define.hypothesisStatement}
+                </p>
+                <p className="text-start text-slate-400 text-small sm:text-base">
+                {ProjectData.p2.define.designPrinciples}
+                </p>
+                <h2 className="text-start text-2xl font-bold text-white">Value Proposition:
+                </h2>
+                <p className="text-start text-slate-400 text-small sm:text-base">
+                {ProjectData.p2.define.valueProposition}
+                </p>
+                <div className="gap-4 mb-4">
                 <img src={ProjectData.p2.define.informationArchitecture} alt="Information Architecture"/>
                 </div>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">
+                <div className="gap-4">
                 <img src={ProjectData.p2.define.userFlows} alt="User Flows"/>
                 </div>
                 <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">
                 <img src={ProjectData.p2.define.wireframes} alt="Wireframes"/>
                 </div>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p2.define.defineSummary}
-                </div>
+                <h2 className="text-start text-2xl font-bold text-white">Define Summary:
+                </h2>
+                <p className="text-start text-slate-400 text-small sm:text-base mb-4">
+                {ProjectData.p2.define.defineSummary}
+                </p>
 
                 {/*Design*/}
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p2.Ideate.ideationMethods}
-                </div>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p2.Ideate.designChallenge}
-                </div>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">
+                <h1 className="text-start text-3xl font-bold text-white">Ideation
+                </h1>
+                <h2 className="text-start text-2xl font-bold text-white">Ideation Methods:
+                </h2>
+                <h3 className="text-start text-white">{ProjectData.p2.Ideate.ideationMethods}
+                </h3>
+                <p className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p2.Ideate.designChallenge}
+                </p>
+                <div className="gap-4">
                 <img src={ProjectData.p2.Ideate.crazy8s} alt="Crazy 8s"/>
                 </div>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">
+                <div className="gap-4">
                 <img src={ProjectData.p2.Ideate.earlySketches} alt="Early Sketches"/>
                 </div>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p2.Ideate.conceptDevelopment}
-                </div>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">
+                <h3 className="text-start text-white">Concept Development:
+                </h3>
+                <p className="text-start text-slate-400 text-small sm:text-base">
+                {ProjectData.p2.Ideate.conceptDevelopment}
+                </p>
+                <div className="gap-4">
                 <img src={ProjectData.p2.Ideate.crazy8Images1} alt="Crazy 8s Images"/>
                 </div>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">
+                <div className="gap-4">
                 <img src={ProjectData.p2.Ideate.crazy8Images2} alt="Crazy 8s Images"/>
                 </div>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">
+                <div className="gap-4">
                 <img src={ProjectData.p2.Ideate.crazy8Images3} alt="Crazy 8s Images"/>
                 </div>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p2.Ideate.ideationSummary}
-                </div>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p2.Ideate.iterationDescription}
-                </div>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p2.Ideate.iterationDescription}
-                </div>
+                <p className="text-start text-slate-400 text-small sm:text-base">
+                {ProjectData.p2.Ideate.ideationSummary}
+                </p>
+                <p className="text-start text-slate-400 text-small sm:text-base mb-4">
+                {ProjectData.p2.Ideate.iterationDescription}
+                </p>
 
                 {/*Prototype*/}
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p2.Prototype.prototypeIntro}
-                </div>
+                <h1 className="text-start text-3xl font-bold text-white">Prototype
+                </h1>
+                <p className="text-start text-slate-400 text-small sm:text-base">
+                {ProjectData.p2.Prototype.prototypeIntro}
+                </p>
 
                 {/*Iteration Images and Rationale*/}
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">
+                <div className="gap-4">
                 <img src={ProjectData.p2.Prototype.iterationImage1} alt="Iteration Images"/>
                 </div>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">
+                <div className="gap-4">
                 <img src={ProjectData.p2.Prototype.iterationImage2} alt="Iteration Images"/>
                 </div>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">
+                <div className="gap-4">
                 <img src={ProjectData.p2.Prototype.iterationImage3} alt="Iteration Images"/>
                 </div>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p2.Prototype.rationale}
-                </div>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">
+                <p className="text-start text-slate-400 text-small sm:text-base">
+                {ProjectData.p2.Prototype.rationale}
+                </p>
+                <div className="gap-4">
                 <img src={ProjectData.p2.Prototype.finalImage1} alt="Final Images"/>
                 </div>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">
+                <div className="gap-4">
                 <img src={ProjectData.p2.Prototype.finalImage2} alt="Final Images"/>
                 </div>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">
+                <div className="gap-4">
                 <img src={ProjectData.p2.Prototype.finalImage3} alt="Final Images"/>
                 </div>
 
                 {/*Testing*/}
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p2.Test.testMethods}
-                </div>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p2.Test.testDescription}
-                </div>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">
+                <h1 className="text-start text-3xl font-bold text-white">Testing
+                </h1>
+                <h2 className="text-start text-2xl font-bold text-white">
+                {ProjectData.p2.Test.testMethod}
+                </h2>
+                <p className="text-start text-slate-400 text-small sm:text-base">
+                {ProjectData.p2.Test.testDescription}
+                </p>
+                <div className="gap-4">
                 <img src={ProjectData.p2.Test.competitiveAudit} alt="Competitive Audit"/>
                 </div>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">
+                <div className="gap-4">
                 <img src={ProjectData.p2.Test.competitiveAuditImage} alt="Test Findings"/>
                 </div>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p2.Test.testResults}
+                <h3 className="text-start text-2xl font-bold text-white">Test Results:
+                </h3>
+                <p className="text-start text-slate-400 text-small sm:text-base">
+                {ProjectData.p2.Test.testResults}
+                </p>
+                <h3 className="text-start text-2xl font-bold text-white">Key Insights:
+                </h3>
+                <p className="text-start text-slate-400 text-small sm:text-base">
+                {ProjectData.p2.Test.resultInsights}
+                </p>
+                <h3 className="text-start text-2xl font-bold text-white">Test Summary:
+                </h3>
+                <div className="text-start text-slate-400 text-small sm:text-base">
+                {ProjectData.p2.Test.testSummary}
                 </div>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p2.Test.resultInsights}
-                </div>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p2.Test.testSummary}
-                </div>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p2.Test.conclusion}
+                <h3 className="text-start text-2xl font-bold text-white">Conclusion:
+                </h3>
+                <div className="text-start text-slate-400 text-small sm:text-base">
+                {ProjectData.p2.Test.conclusion}
                 </div>
             </div>
         </>

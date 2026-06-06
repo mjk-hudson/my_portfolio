@@ -51,13 +51,13 @@ export default function Bledger()
                         {/*First Persona*/}
                         <h2 className="text-start text-slate-300 text-base sm:text-lg">Mya Rodriguez</h2>
                         <p className="text-left text-slate-400 text-small sm:text-base">{ProjectData.p1.empathy.persona1}</p>
-                        <img src={ProjectData.p1.empathy.personaImage} alt="Bledger User Persona" className='w-full h-auto rounded-lg mb-10'/>
+                        <img src={ProjectData.p1.empathy.personaImage1} alt="Bledger User Persona" className='w-full h-auto rounded-lg mb-10'/>
 
                         {/*Second Persona*/}
                         <h2 className="text-start text-slate-300 text-base sm:text-lg">Jamal Johnson</h2>
                         <p className="text-left text-slate-400 text-small sm:text-base">{ProjectData.p1.empathy.persona2}
                         </p>
-                        <img src={ProjectData.p1.empathy.persona2Image} alt="Bledger User Persona" className='w-full h-auto rounded-lg mb-10'/>
+                        <img src={ProjectData.p1.empathy.personaImage2} alt="Bledger User Persona" className='w-full h-auto rounded-lg mb-10'/>
                     </div>
                     
                     {/*User Journey Mapping*/}
