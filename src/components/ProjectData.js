@@ -70,6 +70,30 @@ import VibeWaitingDesktopDark from '../assets/vibe-space/waiting desktop-Dark Mo
 import VibeWaitingDesktopLight from '../assets/vibe-space/waiting desktop.png';
 import VibeWaitingMobileDark from '../assets/vibe-space/waiting mobile-Dark Mode.png';
 //Vibe Space Mock-ups
+import LobbyDesk3QLight from '../assets/vibe space/mockups/Lobby-desktop-3q-light.png';
+import LobbyMobileQDark from '../assets/vibe space/mockups/lobby-mobile-dark.png';
+import LobbyMobileDarkFull from '../assets/vibe space/mockups/lobby-mobile-dark-full.png';
+import LobbyMobileLight from '../assets/vibe space/mockups/lobby-mobile-light.png';
+import LobbyMobileLightFull from '../assets/vibe space/mockups/lobby-mobile-light-full.png';
+import LobbyTabletDark3Q from '../assets/vibe space/mockups/lobby-tablet-dark.png';
+import LobbyTabletDarkFull from '../assets/vibe space/mockups/lobby-tablet-dark-full.png';
+import LobbyTabletLightFull from '../assets/vibe space/mockups/lobby-tablet-light-full.png';
+import MatchDesktop3QLight from '../assets/vibe space/mockups/match-desktop-light-3q.png';
+import MatchMobileDark3Q from '../assets/vibe space/mockups/match-mobile-dark-3q.png';
+import MatchMobileDarkFull from '../assets/vibe space/mockups/match-mobile-dark-full.png';
+import MatchMobileLightFull from '../assets/vibe space/mockups/match-mobile-light-Full.png';
+import MatchTabletDark3Q from '../assets/vibe space/mockups/match-tablet-dark-3q.png';
+import MatchTabletDarkFull from '../assets/vibe space/mockups/match-tablet-dark-full.png';
+import MatchTabletLight3Q from '../assets/vibe space/mockups/match-tablet-light-3q.png';
+import MatchTabletLightFull from '../assets/vibe space/mockups/match-tablet-light-full.png';
+import MatchMobileLight3Q from '../assets/vibe space/mockups/New Match-3Q.png';
+import WaitingDesktopDark3Q from '../assets/vibe space/mockups/waiting-desktop-dark-3q.png';
+import WaitingMobiledarkFull from '../assets/vibe space/mockups/waiting-mobile-dark-full.png';
+import WaitingMobileLightFull from '../assets/vibe space/mockups/waiting-mobile-light-full.png';
+import WaitingtabletDarkFull from '../assets/vibe space/mockups/waiting-tablet-dark-full.png';
+import WaitingTabletLightFull from '../assets/vibe space/mockups/waiting-tablet-light-full.png';
+import WaitingMobileDark3Q from '../assets/vibe space/mockups/waiting-mobile-dark-3q.png';
+import WaitingMobileLight3Q from '../assets/vibe space/mockups/waiting-mobile-light-3q.png';    
 
 export const ProjectData = {
     p1:{
