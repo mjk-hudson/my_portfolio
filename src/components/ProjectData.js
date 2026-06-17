@@ -3,7 +3,7 @@ import BledgerSketches from '../assets/bledger/Bledger-Sketchbook.png';
 import BledgerAudit from '../assets/bledger/Bledger-competitive-audit.png';
 import BledgerEmpathy from '../assets/bledger/Bledger-empathy-map.png';
 import BledgerHome from '../assets/bledger/Bledger-Home.png';
-import BledgerHomeDark from '../assets/bledger/Bledger-home-dark.png';
+import BledgerHomeDark from '../assets/bledger/Bledger-home-dark-mode.png';
 import BLedgerWireframe1 from '../assets/bledger/bledger-wireframe1.png';
 import BledgerWireframe2 from '../assets/bledger/bledger-wireframe2.png';
 import BledgerHomeFinal from '../assets/bledger/Bledger-home-final.png';
