@@ -11,7 +11,7 @@ import BledgerIA from '../assets/bledger/Bledger-info-arch.png';
 import BledgerInsights from '../assets/bledger/Bledger-Insights.png';
 import BledgerInsightDark from '../assets/bledger/Bledger-insights-dark-mode.png';
 import BledgerInsightsFinal from '../assets/bledger/Bledger-insights-final.png';
-import BledgerV1 from '../assets/bledger/Bledger-iteration 1.png';
+import BledgerV1 from '../assets/bledger/Bledger-iteration1.png';
 import BledgerV2 from '../assets/bledger/Bledger-iteration2.png';
 import BledgerV3 from '../assets/bledger/Bledger-iteration3.png';
 import BledgerV4 from '../assets/bledger/Bledger-iteration4.png';
