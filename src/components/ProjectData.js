@@ -1,5 +1,5 @@
 import BledgerHero from '../assets/Bledger-board.png';
-import BledgerSketches from '../assets/bledger/Bledger-sketches.png';
+import BledgerSketches from '../assets/bledger/Bledger-Sketchebook.png';
 import BledgerAudit from '../assets/bledger/Bledger-competitive-audit.png';
 import BledgerEmpathy from '../assets/bledger/Bledger-empathy-map.png';
 import BledgerHome from '../assets/bledger/Bledger-home.png';
