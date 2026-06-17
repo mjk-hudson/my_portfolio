@@ -17,7 +17,7 @@ import BledgerV3 from '../assets/bledger/Bledger-iteration3.png';
 import BledgerV4 from '../assets/bledger/Bledger-iteration4.png';
 import BledgerJamal from '../assets/bledger/Bledger-jamal-thompson.png';
 import BledgerJourney from '../assets/bledger/Bledger-journey-map.png';
-import BledgerMaya from '../assets/bledger/maya-rodriguez.png';
+import BledgerMaya from '../assets/bledger/Bledger-maya-rodriguez.png';
 import BledgerSettings from '../assets/bledger/Bledger-settings.png';
 import BledgerSettingsDark from '../assets/bledger';
 import BledgerSettingsFinal from '../assets/bledger';
