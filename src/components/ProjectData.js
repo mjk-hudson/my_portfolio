@@ -44,7 +44,7 @@ import BledgerInsightsDarkFull from '../assets/bledger/mockups/iPhone-gray-6.png
 import BledgerSettingsDarkFull from '../assets/bledger/mockups/iPhone-gray-7.png';
 
 //Vibe Space Design Images
-import LobbyDesktopDark from '../assets/vibe-space/lobby desktop-Dark Mode.png';
+import LobbyDesktopDark from '../assets/vibe-space/Lobby desktop - Dark Mode.png';
 import LobbyDesktopLight from '../assets/vibe-space/lobby desktop.png';
 import LobbyMobileDark from '../assets/vibe-space/lobby mobile-Dark Mode.png';
 import ReadyMobileDark from '../assets/vibe-space/lobby Ready mobile-Dark Mode.png';
