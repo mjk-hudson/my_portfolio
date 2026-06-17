@@ -33,7 +33,7 @@ import BledgerHomeMockFull from '../assets/bledger/mockups/iPhone-gray.png';
 import BledgerTrackerMockFull from '../assets/bledger/mockups/iPhone-gray-1.png';
 import BledgerInsightsMockFull from '../assets/bledger/mockups/iPhone-gray-2.png';
 import BledgerSettingsMockFull from '../assets/bledger/mockups/iPhone-gray-3.png';
-import BledgerSettings3QDark from '../assets/bledger/mockups/iPhone-gray-3q.png';
+import BledgerSettings3QDark from '../assets/bledger/mockups/iPhone-gray-3q-view.png';
 import BledgerHome2QLIght from '../assets/bledger/mockups/iPhone-gray-3q1.png';
 import BledgerTracker3QDark from '../assets/bledger/mockups/iPhone-gray-3q4.png';
 import BledgerSettings3QLight from '../assets/bledger/mockups/iPhone-gray-3q5.png';
