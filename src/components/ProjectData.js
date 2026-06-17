@@ -8,7 +8,7 @@ import BLedgerWireframe1 from '../assets/bledger/bledger-wireframe1.png';
 import BledgerWireframe2 from '../assets/bledger/bledger-wireframe2.png';
 import BledgerHomeFinal from '../assets/bledger/Bledger-home-final.png';
 import BledgerIA from '../assets/bledger/Bledger-info-arch.png';
-import BledgerInsights from '../assets/bledger/Bledger-insights.png';
+import BledgerInsights from '../assets/bledger/Bledger-Insights.png';
 import BledgerInsightDark from '../assets/bledger/Bledger-insights-dark-mode.png';
 import BledgerInsightsFinal from '../assets/bledger/Bledger-insights-final.png';
 import BledgerV1 from '../assets/bledger/Bledger-iteration1.png';
