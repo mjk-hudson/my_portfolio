@@ -44,10 +44,10 @@ import BledgerInsightsDarkFull from '../assets/bledger/mockups/iPhone-gray-6.png
 import BledgerSettingsDarkFull from '../assets/bledger/mockups/iPhone-gray-7.png';
 
 //vibespace Design Images
-import LobbyDesktopDark from '../assets/vibespace/lobby-desktop-darkmode.png';
+import LobbyDesktopDark from '../assets/vibespace/lobby-desktopdarkmode.png';
 import LobbyDesktopLight from '../assets/vibespace/lobby-desktop.png';
 import LobbyMobileDark from '../assets/vibespace/lobby-mobile-DarkMode.png';
-import ReadyMobileDark from '../assets/vibespace/lobby-ready-mobile - Dark Mode.png';
+import ReadyMobileDark from '../assets/vibespace/lobby-ready-mobiledarkmode.png';
 import ReadyMobileLight from '../assets/vibespace/lobby-ready-mobile.png';
 import MatchDesktopDark from '../assets/vibespace/new-match-desktop-Dark Mode.png';
 import MatchDesktopLight from '../assets/vibespace/new-match-desktop.png';
