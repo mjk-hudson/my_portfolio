@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, Outlet} from 'react-router-dom';
 import { AnimatePresence, motion } from "motion/react";
 import { useState } from 'react';
-import {ProjectData} from '../components/ProjectData.js';
+import {ProjectData} from '../components/ProjectData.jsx';
 
 
 export default function Bledger()
