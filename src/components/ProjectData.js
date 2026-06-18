@@ -44,15 +44,15 @@ import BledgerInsightsDarkFull from '../assets/bledger/mockups/iPhone-gray-6.png
 import BledgerSettingsDarkFull from '../assets/bledger/mockups/iPhone-gray-7.png';
 
 //vibespace Design Images
-import LobbyDesktopDark from '../assets/vibespace/Lobby desktop-DarkMode.png';
-import LobbyDesktopLight from '../assets/vibespace/Lobby desktop.png';
-import LobbyMobileDark from '../assets/vibespace/Lobby mobile-DarkMode.png';
-import ReadyMobileDark from '../assets/vibespace/Lobby Ready mobile - Dark Mode.png';
-import ReadyMobileLight from '../assets/vibespace/Lobby Ready mobile.png';
-import MatchDesktopDark from '../assets/vibespace/new match desktop-Dark Mode.png';
-import MatchDesktopLight from '../assets/vibespace/new match desktop.png';
-import MatchMobileDark from '../assets/vibespace/new match mobile-Dark Mode.png';
-import MatchMobileLight from '../assets/vibespace/new match mobile.png';
+import LobbyDesktopDark from '../assets/vibespace/lobby-desktop-darkmode.png';
+import LobbyDesktopLight from '../assets/vibespace/lobby desktop.png';
+import LobbyMobileDark from '../assets/vibespace/lobby-mobile-DarkMode.png';
+import ReadyMobileDark from '../assets/vibespace/lobby-ready-mobile - Dark Mode.png';
+import ReadyMobileLight from '../assets/vibespace/lobby-ready-mobile.png';
+import MatchDesktopDark from '../assets/vibespace/new-match-desktop-Dark Mode.png';
+import MatchDesktopLight from '../assets/vibespace/new-match-desktop.png';
+import MatchMobileDark from '../assets/vibespace/new-match-mobile-Dark Mode.png';
+import MatchMobileLight from '../assets/vibespace/new-match-mobile.png';
 import VibeCompetitiveAudit from '../assets/vibespace/vibe space-ca-image.jpg';
 import VibeEmpathyMap1 from '../assets/vibespace/vibe space-emp-map1.png';
 import VibeEmpathyMap2 from '../assets/vibespace/vibe space-emp-map2.png';
