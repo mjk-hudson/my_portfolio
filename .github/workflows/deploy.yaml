@@ -27,6 +27,15 @@ jobs:
       - name: Clean install dependencies
         run: npm ci
 
+      - name: Debug File System
+        run: |
+          echo "=== Where am I right now? ==="
+          pwd
+          echo "=== Checking src/components contents ==="
+          ls -la src/components
+          echo "=== Checking assets contents ==="
+          ls -R src/assets
+
       - name: Build application
         run: npm run build
 
