@@ -53,7 +53,7 @@ import MatchDesktopDark from '../assets/vibespace/new-match-desktopdarkmode.png'
 import MatchDesktopLight from '../assets/vibespace/new-match-desktop.png';
 import MatchMobileDark from '../assets/vibespace/new-match-mobile-darkmode.png';
 import MatchMobileLight from '../assets/vibespace/new-match-mobile.png';
-import VibeCompetitiveAudit from '../assets/vibespace/vibe space-ca-image.jpg';
+import VibeCompetitiveAudit from '../assets/vibespace/vibe-space-ca-image.jpg';
 import VibeEmpathyMap1 from '../assets/vibespace/vibe space-emp-map1.png';
 import VibeEmpathyMap2 from '../assets/vibespace/vibe space-emp-map2.png';
  import VibeEmpathyMap3 from '../assets/vibespace/vibe space-emp-map3.png';
