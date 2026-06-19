@@ -69,12 +69,12 @@ import VibePersona1 from '../assets/vibespace/Vibe-space-persona1.png';
 import VibePersona2 from '../assets/vibespace/Vibe-space-persona2.png';
 import VibeStudy from '../assets/vibespace/Vibe-space-study-image.png';
 import VibeWireframes from '../assets/vibespace/Vibe-space-wireframes.png';
-import VibeWaitingDesktopDark from '../assets/Vibespace/waiting desktop-Dark Mode.png';
-import VibeWaitingDesktopLight from '../assets/vibespace/waiting desktop.png';
-import VibeWaitingMobileDark from '../assets/vibespace/waiting mobile-Dark Mode.png';
+import VibeWaitingDesktopDark from '../assets/Vibespace/waiting-desktop-dark-mode.png';
+import VibeWaitingDesktopLight from '../assets/vibespace/waiting-desktop.png';
+import VibeWaitingMobileDark from '../assets/vibespace/waiting-mobile-darkmode.png';
 
 //Vibe Space Mock-ups
-import LobbyDesk3QLight from '../assets/vibespace/mockups/Lobby-desktop-3q-light.png';
+import LobbyDesk3QLight from '../assets/vibespace/mockups/lobby-desktop3q-light.png';
 import LobbyMobileQDark from '../assets/vibespace/mockups/lobby-mobile-dark.png';
 import LobbyMobileDarkFull from '../assets/vibespace/mockups/lobby-mobile-dark-full.png';
 import LobbyMobileLight from '../assets/vibespace/mockups/lobby-mobile-light.png';
