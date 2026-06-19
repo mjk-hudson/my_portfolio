@@ -64,12 +64,12 @@ import VibeIterationMobile3 from '../assets/vibespace/Vibespace-iteration3-mobil
 import VibeDesktopIteration1 from '../assets/vibespace/Vibespace-iteration4-desktop.png';
 import VibeDesktopIteration2 from '../assets/vibespace/Vibespace-iteration5-desktop.png';
 import VibeDesktopIteration3 from '../assets/vibespace/Vibespace-iteration6-desktop.png';
-import VibeJourneyMap from '../assets/vibespace/vibe-space-journey-map.png';
-import VibePersona1 from '../assets/vibespace/vibe-space-persona1.png';
-import VibePersona2 from '../assets/vibespace/vibe-space-persona2.png';
-import VibeStudy from '../assets/vibespace/vibe-space-study-image.png';
-import VibeWireframes from '../assets/vibespace/vibe-space-wireframes.png';
-import VibeWaitingDesktopDark from '../assets/vibespace/waiting desktop-Dark Mode.png';
+import VibeJourneyMap from '../assets/vibespace/Vibe-space-journey-map.png';
+import VibePersona1 from '../assets/vibespace/Vibe-space-persona1.png';
+import VibePersona2 from '../assets/vibespace/Vibe-space-persona2.png';
+import VibeStudy from '../assets/vibespace/Vibe-space-study-image.png';
+import VibeWireframes from '../assets/vibespace/Vibe-space-wireframes.png';
+import VibeWaitingDesktopDark from '../assets/Vibespace/waiting desktop-Dark Mode.png';
 import VibeWaitingDesktopLight from '../assets/vibespace/waiting desktop.png';
 import VibeWaitingMobileDark from '../assets/vibespace/waiting mobile-Dark Mode.png';
 
