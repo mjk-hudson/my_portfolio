@@ -69,7 +69,7 @@ import VibePersona1 from '../assets/vibespace/Vibe-space-persona1.png';
 import VibePersona2 from '../assets/vibespace/Vibe-space-persona2.png';
 import VibeStudy from '../assets/vibespace/Vibe-space-study-image.png';
 import VibeWireframes from '../assets/vibespace/Vibe-space-wireframes.png';
-import VibeWaitingDesktopDark from '../assets/Vibespace/waiting-desktop-dark-mode.png';
+import VibeWaitingDesktopDark from '../assets/vibespace/waiting-desktop-dark-mode.png';
 import VibeWaitingDesktopLight from '../assets/vibespace/waiting-desktop.png';
 import VibeWaitingMobileDark from '../assets/vibespace/waiting-mobile-darkmode.png';
 
