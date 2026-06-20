@@ -86,7 +86,7 @@ import LobbyTabletLightFull from '../assets/vibespace/mockups/lobby-tablet-light
 import MatchDesktop3QLight from '../assets/vibespace/mockups/match-desktop-light-3q.png';
 import MatchMobileDark3Q from '../assets/vibespace/mockups/match-mobile-dark-3q.png';
 import MatchMobileDarkFull from '../assets/vibespace/mockups/match-mobile-dark-full.png';
-import MatchMobileLightFull from '../assets/vibespace/mockups/match-mobile-light-Full.png';
+import MatchMobileLightFull from '../assets/vibespace/mockups/match_mobile_light_full.png';
 import MatchTabletDark3Q from '../assets/vibespace/mockups/match-tablet-dark-3q.png';
 import MatchTabletDarkFull from '../assets/vibespace/mockups/match-tablet-dark-full.png';
 import MatchTabletLight3Q from '../assets/vibespace/mockups/match-tablet-light-3q.png';
