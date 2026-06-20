@@ -75,9 +75,9 @@ import VibeWaitingMobileDark from '../assets/vibespace/waiting_mobile_darkmode.p
 import VibeWaitingMobile from '../assets/vibespace/waiting_mobile.png';
 
 //Vibe Space Mock-ups
-import LobbyDesk3QLight from '../assets/vibespace/mockups/lobby-desktop3q-light.png';
-import LobbyMobileQDark from '../assets/vibespace/mockups/lobby-mobile-dark.png';
-import LobbyMobileDarkFull from '../assets/vibespace/mockups/lobby-mobile-dark-full.png';
+import LobbyDesk3QLight from '../assets/vibespace/mockups/lobby_desktop3q_light.png';
+import LobbyMobileQDark from '../assets/vibespace/mockups/lobby_mobile_dark.png';
+import LobbyMobileDarkFull from '../assets/vibespace/mockups/lobby_mobile_dark_full.png';
 import LobbyMobileLight from '../assets/vibespace/mockups/lobby-mobile-light.png';
 import LobbyMobileLightFull from '../assets/vibespace/mockups/lobby-mobile-light-full.png';
 import LobbyTabletDark3Q from '../assets/vibespace/mockups/lobby-tablet-dark.png';
