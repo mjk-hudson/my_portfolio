@@ -56,9 +56,9 @@ import MatchMobileLight from '../assets/vibespace/new-match-mobile.png';
 import VibeCompetitiveAudit from '../assets/vibespace/Vibe-space-ca-image.jpg';
 import VibeEmpathyMap1 from '../assets/vibespace/Vibe-space-emp-map1.png';
 import VibeEmpathyMap2 from '../assets/vibespace/Vibe-space-emp-map2.png';
- import VibeEmpathyMap3 from '../assets/vibespace/Vibe-space-emp-map3.png';
- import VibeInfoArch from '../assets/vibespace/Vibe-space-Info-arch.png';
- import VibeIterationMobile1 from '../assets/vibespace/Vibespace-iteration1-mobile.png';
+import VibeEmpathyMap3 from '../assets/vibespace/Vibe-space-emp-map3.png';
+import VibeInfoArch from '../assets/vibespace/Vibe-space-Info-arch.png';
+import VibeIterationMobile1 from '../assets/vibespace/Vibespace-iteration1-mobile.png';
 import VibeIterationMobile2 from '../assets/vibespace/Vibespace-iteration2-mobile.png';
 import VibeIterationMobile3 from '../assets/vibespace/Vibespace-iteration3-mobile.png';
 import VibeDesktopIteration1 from '../assets/vibespace/Vibespace-iteration4-desktop.png';
@@ -69,9 +69,10 @@ import VibePersona1 from '../assets/vibespace/Vibe-space-persona1.png';
 import VibePersona2 from '../assets/vibespace/Vibe-space-persona2.png';
 import VibeStudy from '../assets/vibespace/Vibe-space-study-image.png';
 import VibeWireframes from '../assets/vibespace/Vibe-space-wireframes.png';
-import VibeWaitingDesktopDark from '../assets/vibespace/waiting-desktop-dark-mode.png';
-import VibeWaitingDesktopLight from '../assets/vibespace/waiting-desktop.png';
-import VibeWaitingMobileDark from '../assets/vibespace/waiting-mobile-darkmode.png';
+import VibeWaitingDesktopDark from '../assets/vibespace/waiting_desktop_darkmode.png';
+import VibeWaitingDesktopLight from '../assets/vibespace/waiting_desktop.png';
+import VibeWaitingMobileDark from '../assets/vibespace/waiting_mobile_darkmode.png';
+import VibeWaitingMobile from '../assets/vibespace/waiting_mobile.png';
 
 //Vibe Space Mock-ups
 import LobbyDesk3QLight from '../assets/vibespace/mockups/lobby-desktop3q-light.png';
