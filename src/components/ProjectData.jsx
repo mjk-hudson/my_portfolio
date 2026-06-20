@@ -91,7 +91,7 @@ import MatchTabletDark3Q from '../assets/vibespace/mockups/match-tablet-dark-3q.
 import MatchTabletDarkFull from '../assets/vibespace/mockups/match-tablet-dark-full.png';
 import MatchTabletLight3Q from '../assets/vibespace/mockups/match-tablet-light-3q.png';
 import MatchTabletLightFull from '../assets/vibespace/mockups/match-tablet-light-full.png';
-import MatchMobileLight3Q from '../assets/vibespace/mockups/New Match-3Q.png';
+import MatchMobileLight3Q from '../assets/vibespace/mockups/new_match_3q.png';
 import WaitingDesktopDark3Q from '../assets/vibespace/mockups/waiting-desktop-dark-3q.png';
 import WaitingMobiledarkFull from '../assets/vibespace/mockups/waiting-mobile-dark-full.png';
 import WaitingMobileLightFull from '../assets/vibespace/mockups/waiting-mobile-light-full.png';
