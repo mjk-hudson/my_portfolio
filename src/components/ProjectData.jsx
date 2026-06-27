@@ -67,7 +67,7 @@ import VibeSketch6 from '../assets/vibespace/vibesketchtablet3.png';
 import VibeSketch7 from '../assets/vibespace/vibesketchtablet4.png';
 import VibeSketch8 from '../assets/vibespace/vibewebiteration1.png'; 
 import VibeSketch9 from '../assets/vibespace/vibewebiteration2.png';
-import VibeJourneyMap from '../assets/vibespace/Vibe-space-journey-map.png';
+import VibeJourneyMap from '../assets/vibespace/vibespacejourneymap.png';
 import VibePersona1 from '../assets/vibespace/Vibe-space-persona1.png';
 import VibePersona2 from '../assets/vibespace/Vibe-space-persona2.png';
 import VibePersona3 from '../assets/vibespace/vibespacepersona3.png';
