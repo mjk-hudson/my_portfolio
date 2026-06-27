@@ -112,7 +112,8 @@ export default function Bledger()
                     <div classname='gap-4'>
                         <img src={ProjectData.p1.define.informationArchitecture} alt="Bledger Information Architecture" className='w-full h-auto rounded-lg mb-10'/>
                         <img src={ProjectData.p1.define.userFlows} alt="Bledger User Flows" className='w-full h-auto rounded-lg mb-10'/>
-                        <img src={ProjectData.p1.define.wireframes} alt="Bledger Wireframes" className='w-full h-auto rounded-lg mb-10'/>
+                        <img src={ProjectData.p1.define.wireframe1} alt="Bledger Wireframes" className='w-full h-auto rounded-lg mb-10'/>
+                        <img src={ProjectData.p1.define.wireframe2} alt="Bledger Wireframes" className='w-full h-auto rounded-lg mb-10'/>
                         <h2 className="text-start text-slate-300 text-base sm:text-lg">Define Summary
                         </h2>
                         <p className='text-left text-slate-400 text-small sm:text-base'>{ProjectData.p1.define.defineSummary}
@@ -131,7 +132,8 @@ export default function Bledger()
                     </p>
                     <h2 className="text-start text-slate-300 text-base sm:text-lg">Crazy 8s
                     </h2>
-                    <img src={ProjectData.p1.ideate.crazy8s} alt="Bledger Crazy 8s" className='w-full h-auto rounded-lg mb-10'/>
+                    <p className='text-left text-slate-400 text-small sm:text-base'>{ProjectData.p1.ideate.crazy8s}
+                    </p>
                     <div classname='gap-4'>
                         <img src={ProjectData.p1.ideate.earlySketches} alt="Bledger Early Sketches" className='w-full h-auto rounded-lg mb-10'/>
                     </div>
@@ -141,9 +143,9 @@ export default function Bledger()
 
                     {/*Crazy 8 Images*/}
                     <div classname='gap-4'>
-                        <img src={ProjectData.p1.ideate.crazy8Images1} alt="Bledger Concept Sketches" className='w-full h-auto rounded-lg mb-10'/>
-                        <img src={ProjectData.p1.ideate.crazy8Images2} alt="Bledger Concept Sketches" className='w-full h-auto rounded-lg mb-10'/>
-                        <img src={ProjectData.p1.ideate.crazy8Images3} alt="Bledger Concept Sketches" className='w-full h-auto rounded-lg mb-10'/>
+                        <img src={ProjectData.p1.ideate.crazy8Image1} alt="Bledger Concept Sketches" className='w-full h-auto rounded-lg mb-10'/>
+                        <img src={ProjectData.p1.ideate.crazy8Image2} alt="Bledger Concept Sketches" className='w-full h-auto rounded-lg mb-10'/>
+                        <img src={ProjectData.p1.ideate.crazy8Image3} alt="Bledger Concept Sketches" className='w-full h-auto rounded-lg mb-10'/>
                     </div>
 
                     {/*ideate Summary*/}
@@ -189,6 +191,7 @@ export default function Bledger()
                     <img src={ProjectData.p1.prototype.prototypeImage1} alt="Bledger Prototype Iterations" className='w-full h-auto rounded-lg mb-10'/>
                     <img src={ProjectData.p1.prototype.prototypeImage2} alt="Bledger Prototype Iterations" className='w-full h-auto rounded-lg mb-10'/>
                     <img src={ProjectData.p1.prototype.prototypeImage3} alt="Bledger Prototype Iterations" className='w-full h-auto rounded-lg mb-10'/>
+                    <img src={ProjectData.p1.prototype.prototypeImage4} alt="Bledger Prototype Iterations" className='w-full h-auto rounded-lg mb-10'/>
                 </div>
 
                 {/*Rationale*/}

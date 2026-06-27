@@ -56,7 +56,7 @@ export default function VibeSpace ()
                 <div className="gap-4">
                     <img src={ProjectData.p2.empathy.personaImage1} alt="Vibe Space Persona Image 1" />
                 </div>
-                <img src={ProjectData.p2.empathy.empathyImage1} alt="Vibe Space Empathy Image 1" />
+                <img src={ProjectData.p2.empathy.VibeEmpathyMap1} alt="Vibe Space Empathy Image 1" />
                 
                 <h2 className="text-start text-2xl font-bold text-white">Marcus Vance:
                 </h2>
@@ -65,7 +65,7 @@ export default function VibeSpace ()
                 <div className="gap-4">
                     <img src={ProjectData.p2.empathy.personaImage2} alt="Vibe Space Persona Image 2" />
                 </div>
-                <img src={ProjectData.p2.empathy.empathyImage2} alt="Vibe Space Empathy Image 2" />
+                <img src={ProjectData.p2.empathy.VibeEmpathyMap2} alt="Vibe Space Empathy Image 2" />
                 <h2 className="text-start text-2xl font-bold text-white">Elena Rostova:
                 </h2>
                 <p className="text-start text-slate-400 text-small sm:text-base">
@@ -75,7 +75,7 @@ export default function VibeSpace ()
                     <img src={ProjectData.p2.empathy.personaImage3} alt="Vibe Space Persona Image 3" />
                 </div>
                 <div className="gap-4">
-                    <img src={ProjectData.p2.empathy.empathyMapImage3} alt="Vibe Space Empathy Image 3" />
+                    <img src={ProjectData.p2.empathy.VibeEmpathyMap3} alt="Vibe Space Empathy Image 3" />
                 </div>
                 <h2 className="text-start text-2xl font-bold text-white">Key Insights and Summary:
                 </h2>
@@ -130,10 +130,10 @@ export default function VibeSpace ()
                 <p className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p2.Ideate.designChallenge}
                 </p>
                 <div className="gap-4">
-                <img src={ProjectData.p2.Ideate.crazy8s} alt="Crazy 8s"/>
+                <p className="text-start text-slate-400 text-small sm:text-base">{ProjectData.p2.Ideate.crazy8s}</p>
                 </div>
                 <div className="gap-4">
-                <img src={ProjectData.p2.Ideate.earlySketches} alt="Early Sketches"/>
+                <p className="text-start text-slate-400 text-small sm:text-base">{ProjectData.p2.Ideate.earlySketches}</p>
                 </div>
                 <h3 className="text-start text-white">Concept Development:
                 </h3>
@@ -148,10 +148,19 @@ export default function VibeSpace ()
                 </div>
                 <div className="gap-4">
                 <img src={ProjectData.p2.Ideate.crazy8Images3} alt="Crazy 8s Images"/>
+                <img src={ProjectData.p2.Ideate.crazy8Images4} alt="Crazy 8s Images"/>
+                <img src={ProjectData.p2.Ideate.crazy8Images5} alt="Crazy 8s Images"/>
+                <img src={ProjectData.p2.Ideate.crazy8Images6} alt="Crazy 8s Images"/>
+                <img src={ProjectData.p2.Ideate.crazy8Images7} alt="Crazy 8s Images"/>
                 </div>
                 <p className="text-start text-slate-400 text-small sm:text-base">
                 {ProjectData.p2.Ideate.ideationSummary}
                 </p>
+                <div className="gap-4">
+                <img src={ProjectData.p2.Ideate.ideation1} alt="Early Sketches"/>
+                <img src={ProjectData.p2.Ideate.ideation2} alt="Early Sketches"/>
+                <img src={ProjectData.p2.Ideate.ideation3} alt="Early Sketches"/>
+                </div>
                 <p className="text-start text-slate-400 text-small sm:text-base mb-4">
                 {ProjectData.p2.Ideate.iterationDescription}
                 </p>
@@ -172,6 +181,9 @@ export default function VibeSpace ()
                 </div>
                 <div className="gap-4">
                 <img src={ProjectData.p2.Prototype.iterationImage3} alt="Iteration Images"/>
+                <img src={ProjectData.p2.Prototype.iterationImage4} alt="Iteration Images"/>
+                <img src={ProjectData.p2.Prototype.iterationImage5} alt="Iteration Images"/>
+                <img src={ProjectData.p2.Prototype.iterationImage6} alt="Iteration Images"/>
                 </div>
                 <p className="text-start text-slate-400 text-small sm:text-base">
                 {ProjectData.p2.Prototype.rationale}
@@ -184,6 +196,35 @@ export default function VibeSpace ()
                 </div>
                 <div className="gap-4">
                 <img src={ProjectData.p2.Prototype.finalImage3} alt="Final Images"/>
+
+                <img src={ProjectData.p2.Prototype.finalImage4} alt="Final Images"/>
+
+                <img src={ProjectData.p2.Prototype.finalImage5} alt="Final Images"/>
+
+                <img src={ProjectData.p2.Prototype.finalImage6} alt="Final Images"/>
+                </div>
+
+                //Mock-Ups
+                <h1 className="text-start text-3xl font-bold text-white">Mock-Ups
+                </h1>
+                <div className="gap-4">
+                    <img src={ProjectData.p2.Prototype.Mock1} alt="Mock-Ups"/>
+                    <img src={ProjectData.p2.Prototype.Mock2} alt="Mock-Ups"/>
+                    <img src={ProjectData.p2.Prototype.Mock3} alt="Mock-Ups"/>
+                    <img src={ProjectData.p2.Prototype.Mock4} alt="Mock-Ups"/>
+                    <img src={ProjectData.p2.Prototype.Mock5} alt="Mock-Ups"/>
+                    <img src={ProjectData.p2.Prototype.Mock6} alt="Mock-Ups"/>
+                </div>
+                <p className="text-start text-slate-400 text-small sm:text-base mb-4">
+                {ProjectData.p2.Prototype.darkmode}
+                </p>
+                <div className="gap-4">
+                    <img src={ProjectData.p2.Prototype.Mock7} alt="Mock-Ups"/>
+                    <img src={ProjectData.p2.Prototype.Mock8} alt="Mock-Ups"/>
+                    <img src={ProjectData.p2.Prototype.Mock9} alt="Mock-Ups"/>
+                    <img src={ProjectData.p2.Prototype.Mock10} alt="Mock-Ups"/>
+                    <img src={ProjectData.p2.Prototype.Mock11} alt="Mock-Ups"/>
+                    <img src={ProjectData.p2.Prototype.Mock12} alt="Mock-Ups"/>
                 </div>
 
                 {/*Testing*/}
@@ -196,7 +237,9 @@ export default function VibeSpace ()
                 {ProjectData.p2.Test.testDescription}
                 </p>
                 <div className="gap-4">
-                <img src={ProjectData.p2.Test.competitiveAudit} alt="Competitive Audit"/>
+                    <p className="text-start text-slate-400 text-small sm:text-base">
+                    {ProjectData.p2.Test.competitiveAudit}
+                    </p>
                 </div>
                 <div className="gap-4">
                 <img src={ProjectData.p2.Test.competitiveAuditImage} alt="Test Findings"/>

@@ -17,6 +17,7 @@ import BledgerV3 from '../assets/bledger/Bledger-iteration3.png';
 import BledgerV4 from '../assets/bledger/Bledger-iteration4.png';
 import BledgerJamal from '../assets/bledger/Bledger-jamal-thompson.png';
 import BledgerJourney from '../assets/bledger/Bledger-journey-map.png';
+import BledgerUserFlow from '../assets/vibespace/bledgeruserflow.png';
 import BledgerMaya from '../assets/bledger/Bledger-maya-rodriguez.png';
 import BledgerSettings from '../assets/bledger/Bledger-settings.png';
 import BledgerSettingsDark from '../assets/bledger/Bledger-setting-darkmode.png';
@@ -46,7 +47,6 @@ import BledgerSettingsDarkFull from '../assets/bledger/mockups/iPhone-gray-7.png
 //vibespace Design Images
 import LobbyDesktopDark from '../assets/vibespace/lobby-desktopdarkmode.png';
 import LobbyDesktopLight from '../assets/vibespace/lobby-desktop.png';
-import LobbyMobileDark from '../assets/vibespace/lobby-mobile-darkmode.png';
 import ReadyMobileDark from '../assets/vibespace/lobby-ready-mobiledarkmode.png';
 import ReadyMobileLight from '../assets/vibespace/lobby-ready-mobile.png';
 import MatchDesktopDark from '../assets/vibespace/new-match-desktopdarkmode.png';
@@ -58,17 +58,27 @@ import VibeEmpathyMap1 from '../assets/vibespace/Vibe-space-emp-map1.png';
 import VibeEmpathyMap2 from '../assets/vibespace/Vibe-space-emp-map2.png';
 import VibeEmpathyMap3 from '../assets/vibespace/Vibe-space-emp-map3.png';
 import VibeInfoArch from '../assets/vibespace/Vibe-space-Info-arch.png';
-import VibeIterationMobile1 from '../assets/vibespace/Vibespace-iteration1-mobile.png';
-import VibeIterationMobile2 from '../assets/vibespace/Vibespace-iteration2-mobile.png';
-import VibeIterationMobile3 from '../assets/vibespace/Vibespace-iteration3-mobile.png';
-import VibeDesktopIteration1 from '../assets/vibespace/Vibespace-iteration4-desktop.png';
-import VibeDesktopIteration2 from '../assets/vibespace/Vibespace-iteration5-desktop.png';
-import VibeDesktopIteration3 from '../assets/vibespace/Vibespace-iteration6-desktop.png';
+import VibeSketch1 from '../assets/vibespace/vibesketch1mobile.png';
+import VibeSketch2 from '../assets/vibespace/vibesketch2mobile.png';
+import VibeSketch3 from '../assets/vibespace/vibesketch3mobile.png';
+import VibeSketch4 from '../assets/vibespace/vibesketchtablet1.png';
+import VibeSketch5 from '../assets/vibespace/vibesketchtablet2.png';
+import VibeSketch6 from '../assets/vibespace/vibesketchtablet3.png';
+import VibeSketch7 from '../assets/vibespace/vibesketchtablet4.png';
+import VibeSketch8 from '../assets/vibespace/vibespacewebiteration1.png'; 
+import VibeSketch9 from '../assets/vibespace/vibespacewebiteration2.png';
 import VibeJourneyMap from '../assets/vibespace/Vibe-space-journey-map.png';
 import VibePersona1 from '../assets/vibespace/Vibe-space-persona1.png';
 import VibePersona2 from '../assets/vibespace/Vibe-space-persona2.png';
+import VibePersona3 from '../assets/vibespace/vibespacepersona3.png';
 import VibeStudy from '../assets/vibespace/Vibe-space-study-image.png';
 import VibeWireframes from '../assets/vibespace/Vibe-space-wireframes.png';
+import VibeIteration1 from '../assets/vibespace/vibespaceiteration1mobile.png';
+import VibeIteration2 from '../assets/vibespace/vibespaceiteration2mobile.png';
+import VibeIteration3 from '../assets/vibespace/vibespaceiteration3mobile.png';
+import VibeIteration4 from '../assets/vibespace/vibespaceiteration4desktop.png';
+import VibeIteration5 from '../assets/vibespace/vibespaceiteration5desktop.png';
+import VibeIteration6 from '../assets/vibespace/vibespaceiteration6desktop.png';
 import VibeWaitingDesktopDark from '../assets/vibespace/waiting_desktop_darkmode.png';
 import VibeWaitingDesktopLight from '../assets/vibespace/waiting_desktop.png';
 import VibeWaitingMobileDark from '../assets/vibespace/waiting_mobile_darkmode.png';
@@ -76,7 +86,7 @@ import VibeWaitingMobile from '../assets/vibespace/waiting_mobile.png';
 
 //Vibe Space Mock-ups
 import LobbyDesk3QLight from '../assets/vibespace/mockups/lobby_desktop3q_light.png';
-import LobbyMobileQDark from '../assets/vibespace/mockups/lobby_mobile_dark.png';
+import LobbyMobileDark from '../assets/vibespace/mockups/lobby_mobile_dark.png';
 import LobbyMobileDarkFull from '../assets/vibespace/mockups/lobby_mobile_dark_full.png';
 import LobbyMobileLight from '../assets/vibespace/mockups/lobby-mobile-light.png';
 import LobbyMobileLightFull from '../assets/vibespace/mockups/lobby-mobile-light-full.png';
@@ -89,7 +99,7 @@ import MatchMobileDarkFull from '../assets/vibespace/mockups/match-mobile-dark-f
 import MatchMobileLightFull from '../assets/vibespace/mockups/match_mobile_light_full.png';
 import MatchTabletDark3Q from '../assets/vibespace/mockups/match-tablet-dark-3q.png';
 import MatchTabletDarkFull from '../assets/vibespace/mockups/match-tablet-dark-full.png';
-import MatchTabletLight3Q from '../assets/vibespace/mockups/match-tablet-light-3q.png';
+import WaitTabletLight3Q from '../assets/vibespace/mockups/waitingtabletlight3q.png';
 import MatchTabletLightFull from '../assets/vibespace/mockups/match-tablet-light-full.png';
 import MatchMobileLight3Q from '../assets/vibespace/mockups/new_match_3q.png';
 import WaitingDesktopDark3Q from '../assets/vibespace/mockups/waiting-desktop-dark-3q.png';
@@ -139,7 +149,7 @@ export const ProjectData = {
             competitiveAudit: 'Compared to traditional budgeting apps like Mint or Rocket Money, Bledger offers a unique value proposition with its predictive AI capabilities and agentic automation features. While Mint provides comprehensive budgeting tools and financial tracking, it lacks proactive insights and automation that can help users manage volatile income effectively. Rocket Money focuses on subscription management and expense tracking but does not offer the same level of predictive foresight or personalized financial advice. Bledger stands out by providing a more dynamic and user-centric approach to financial management, specifically tailored for gig workers with fluctuating incomes.',
             competitiveAuditImage: BledgerAudit,
             informationArchitecture:BledgerIA,
-            userFlows:'https://via.placeholder.com/150',
+            userFlows:BledgerUserFlow,
             wireframe1: BLedgerWireframe1,
             wireframe2: BledgerWireframe2,
             defineSummary: 'By clearly defining the problem statement, hypothesis, design principles, and value proposition, I was able to establish a strong foundation for the design of Bledger. This structured approach ensured that every design decision was aligned with the core needs of the target users and the unique challenges they face in managing their finances as gig workers.'
@@ -152,32 +162,34 @@ export const ProjectData = {
             crazy8s: 'I generated a few ideas for features and design directions, such as predictive spending alerts, automated bill payments, gamified savings challenges, and a minimalist dashboard for quick insights.',
             earlySketches: BledgerSketches,
             conceptDevelopment: 'Selected the most promising ideas from the how might we session and developed them into more detailed concepts, including user flows, wireframes, and interactive prototypes.',
-            crazy8Images1: 'https://via.placeholder.com/150',
-            crazy8Images2: 'https://via.placeholder.com/150',
-            crazy8Images3: 'https://via.placeholder.com/150',
+            crazy8Image1: 'https://via.placeholder.com/150',
+            crazy8Image2: 'https://via.placeholder.com/150',
+            crazy8Image3: 'https://via.placeholder.com/150',
             ideationSummary: 'Through a structured ideation process, I was able to generate and refine innovative ideas for Bledger that directly address the needs and challenges of gig workers. This phase was crucial in shaping the overall design and functionality of the app, ensuring it provides real value to its users.',
             iterationImage1:BledgerV1,
             iterationImage2:BledgerV2,
             iterationImage3:BledgerV3,
             iterationImage4:BledgerV4,
             iterationDescription: 'Based on feedback from initial prototypes, I iterated on the design to enhance usability and address any identified issues. This iterative process involved refining the user interface, improving the AI recommendations, and ensuring that the gamification elements were engaging and effective in encouraging better financial habits.',
-            finalImage1:'https://via.placeholder.com/150',
-            finalImage2:'https://via.placeholder.com/150',
-            finalImage3:'https://via.placeholder.com/150',
-            finalImage4:'https://via.placeholder.com/150',
+            finalImage1:BledgerHomeFinal,
+            finalImage2:BledgerSettingsFinal,
+            finalImage3:BledgerInsightsFinal,
+            finalImage4:BledgerTrackerFinal,
 
         },
         prototype:
         {
             prototypeIntro:'I developed some interactive prototypes to visualize the Bledger app and test its core functionalities. The prototypes included key features such as the predictive AI dashboard, agentic automation settings, and gamified savings challenges. These prototypes were designed to be user-friendly and visually appealing, with a focus on providing a seamless user experience.',
-            prototypeImage2: 'https://via.placeholder.com/150',
-            prototypeImage1: 'https://via.placeholder.com/150',
-            prototypeImage3: 'https://via.placeholder.com/150',
+            prototypeImage1: BledgerV2,
+            prototypeImage2: BledgerV1,
+            prototypeImage3: BledgerV3,
+            prototypeImage4: BledgerV4,
             rationale:'I used scale to serve as vusal hierarchy, with the most important information (like account balances and spending alerts) prominently displayed in the center of the screen. The use of bold, warm colors and minimal typography was intentional to draw attention to key actions and notifications without overwhelming the user with visual clutter. This design approach ensures that users can quickly understand their financial status and take action based on the insights provided by the app. Thew= scale of the arrows are clear distincition between the different levels of information, with the most critical information being the largest and most prominent warm colors that prjoject, while secondary information is smaller and less visually dominant with cooler colors that recede.',
-            finalImage1: 'https://via.placeholder.com/150',
-            finalImage2: 'https://via.placeholder.com/150',
-            finalImage3: 'https://via.placeholder.com/150',
-            finalImage4: 'https://via.placeholder.com/150',
+            finalImage1: BledgerHomeFinal,
+            finalImage2: BledgerSettingsFinal,
+            finalImage3: BledgerInsightsFinal,
+            finalImage4: BledgerTrackerFinal,
+            //include gifs for each screen to show micro-interactions and transitions
         },
         test:
         { 
@@ -204,19 +216,19 @@ export const ProjectData = {
             title: 'Empathy',
             methods: 'User Research, Empathy Maps, competitive audit, Insights',
             studyDescription: 'I conducted 10+ user interviews with gig workers to understand their financial challenges and needs. Developed detailed user personas and journey maps to identify pain points and opportunities for Bledger\'s design.',
-            image: 'https://via.placeholder.com/150',
-            competitiveAudit: 'https://via.placeholder.com/150',
-            competitiveAuditImage: 'https://via.placeholder.com/150',
+            VibeStudyImage: VibeStudy,
+            competitiveAudit:'Conducted a competitive audit of existing event matching platforms to identify strengths, weaknesses, and opportunities for differentiation. Analyzed features, user experience, and market positioning to inform the design of Vibe Space.',
+            competitiveAuditImage: VibeCompetitiveAudit,
             personaIntro: 'Personas were created to represent and to understand exactly how this platform shifts the market. So I looked at  three distinct archetypes who feel the pain of traditional networking apps and platforms and find immediate relief in a self-healing, dynamic ecosystem.',
             persona1:'The High-Stakes Career Transition:"If I get ghosted one more time after spending an hour preparing for a portfolio review, I\'m just going back to cold-messaging people on LinkedIn".Name: Lena Chen Role: Aspiring Product Designer / Front-End Developer Age: 21 Tech Stack/Tools: Figma, React, Tailwind CSS. The Context Lena is a self-taught designer building out her first major portfolio. She attends virtual industry matchmaking events specifically to find high-quality portfolio feedback, mentorship, and potential junior roles. She is highly motivated but has a limited amount of time outside of her current job. Her Pain Points: The Empty Room: She prepares tailored questions for a specific match, only for the partner to no-show. She sits staring at her own webcam for 10 minutes, feeling rejected and anxious.The "Black Box" Match: When a match does connect, she has no idea why they were paired. The first 4 minutes of a 10-minute session are wasted on awkward, generic small talk ("So... what do you do?"). Onboarding Fatigue: She abandons platforms that require her to fill out long, tedious 30-question surveys just to get a basic match. How the JIT Platform Saves Her Day If her mentor no-shows, the Pivot Transition seamlessly routes her to an active, verified fallback match within 45 seconds—no dead time. The Context Card populates on her screen instantly, showing that her match also works with React and fine arts. The system gives her an instant icebreaker question, maximizing her 10 minutes.',
-            personaImage1: 'https://via.placeholder.com/150',
-            empathyMapImage1: 'https://via.placeholder.com/150',
+            personaImage1: VibePersona1,
+            empathyMapImage1: VibeEmpathyMap1,
             persona2:' The Time-Poor Industry Mentor: "My calendar is budgeted down to the minute. If I dedicate two hours to scouting talent or mentoring, every single session needs to be active and relevant." Name: Marcus Vance Role: Cybersecurity Engineering Manager & Scholarship Board Member Age: 34 Tech Stack/Tools: Cloud Architecture, Threat Intelligence, Enterprise CRMs. The Context Marcus is deeply passionate about bringing fresh, diverse talent into the cybersecurity and engineering space. He participates in elite networking events to scout potential scholarship candidates and junior talent. His time is incredibly expensive. His Pain Points, Disrespect of Time: Traditional apps lock him into a rigid schedule. If an attendee drops out, Marcus is trapped in a useless block of time where he could be answering critical security tickets. Identity vs. Intent: He gets matched with people who just want a general chat, rather than candidates whose specific skill gaps align with his precise engineering expertise. Post-Event Amnesia: After meeting 15 people in two hours, their names and faces blur together. He loses track of the standout candidates because there’s no easy way to export their info. How the JIT Platform Saves His Day: The platform\'s Pre-Flight Lounge filters out inactive users before the round starts, ensuring Marcus is only paired with attendees who have actively checked in. The Vector-Based Match Logic pairs him with candidates whose trajectory specifically targets cybersecurity and technical design, making the conversations immediately impactful. Post-event, he receives a structured Digital Goodie Bag with one-click CRM integration to instantly advance top talent to the interview pipeline.',
-            personaImage2: 'https://via.placeholder.com/150',
-            empathyMapImage2: 'https://via.placeholder.com/150',
+            personaImage2: VibePersona2,
+            empathyMapImage2: VibeEmpathyMap2,
             persona3: 'The Stressed Event Organizer" I’m tired of paying for \'premium\' networking software only to spend the entire night manually fixing broken schedules on a backup spreadsheet." Name: Elena Rostova Role: VP of Operations at TechSummit Global Age: 41 Tech Stack/Tools: Eventbrite, Hubspot, Notion, Excel (Too much Excel) The Context: Elena designs and executes large-scale virtual and hybrid conferences for thousands of tech professionals. The high-fidelity networking track is her event’s primary selling point and major revenue driver. Her Pain Points: The Spreadsheet Nightmare: When attendees ghost, she gets flooded with angry customer support messages from people who were left waiting. She has to manually re-stitch schedules in real-time mid-event. Tanking Retention Rates: If the networking segment feels clunky or broken, attendees don’t return the following year, which directly impacts ticket sales and sponsor renewals. Data Silos: She can’t easily prove ROI to her corporate sponsors because traditional platform metrics only show "Logins," not actual successful connection rates. How the JIT Platform Saves Her Day. The Self-Healing State Machine automates crisis management. The system self-corrects and reshuffles broken matches instantly without Elena or her team ever lifting a finger. She gains access to a clean analytics dashboard showing Active Engagement Metrics (e.g., 94% session completion rate, zero orphaned users), which she can hand directly to sponsors to secure next year\'s funding.',
-            personaImage3: 'https://via.placeholder.com/150',
-            empathyMapImage3: 'https://via.placeholder.com/150',
+            personaImage3: VibePersona3,
+            empathyMapImage3: VibeEmpathyMap3,
             insights:'',
             summary: ''
         },
@@ -226,9 +238,9 @@ export const ProjectData = {
             hypothesisStatement:'I\'m proposing the implementation of a mandatory pre-session "Check-In" gate along with an automated, state-aware JIT (Just-In-Time) rerouting system to enhance the user experience during sessions.',
             designPrinciples: ' ',
             valueProposition: '"The Self-Healing Network" For: High-stakes professional networkers and event organizers. Who: Are tired of wasted sessions, empty rooms, and the "spreadsheet hell" of manual rerouting. My Platform is: A dynamic matching ecosystem. That: Automatically detects no-shows and reroutes "stranded" attendees to new, verified partners in real-time. Unlike: Legacy event apps that rely on static calendars and leave you staring at a blank screen. It Provides: Guaranteed engagement and "Context-First" connections that ensure not one minute of your event is ever wasted.',
-            informationArchitecture:'https://via.placeholder.com/150',
-            userFlows:'https://via.placeholder.com/150',
-            wireframes:'https://via.placeholder.com/150',
+            informationArchitecture:VibeInfoArch,
+            userFlows:VibeJourneyMap,
+            wireframes:VibeWireframes,
             defineSummary: 'Summary of the "Win" By solving the No-Show problem through this specific IA and UX, you aren\'t just building a "matching app"— I\'m building Reliability as a Service. In a world where attention is the most expensive currency, my platform\'s biggest selling point is: "We won\'t waste your time while waiting."'
 
         },
@@ -236,27 +248,53 @@ export const ProjectData = {
         {
             ideationMethods: 'Brainstorming, "How Might We?" Questions, Concept Development and Crazy 8s Sketching',  
             designChallenge: '',
-            crazy8s: 'https://via.placeholder.com/150',
-            earlySketches:'https://via.placeholder.com/150',
+            crazy8s: 'Crazy 8s Sketches were generated to explore a wide range of ideas and potential solutions for the event matching platform. The sketches focused on different aspects of the user experience, including the check-in process, rerouting system, and overall interface design. Each sketch aimed to address the pain points identified during the empathy phase and provide innovative ways to enhance user engagement and satisfaction.',
+            earlySketches: 'The early digital sketches represent initial ideas and concepts for the Vibe Space platform, exploring various layouts, interactions, and visual designs. These sketches served as a foundation for further development and refinement of the user experience.',
             conceptDevelopment: 'I selected the most promising ideas from the how might we session and developed them into more detailed concepts, including user flows, wireframes, and interactive prototypes.',
-            crazy8Images1: 'https://via.placeholder.com/150',
-            crazy8Images2: 'https://via.placeholder.com/150',
-            crazy8Images3: 'https://via.placeholder.com/150',
+            crazy8Images1: VibeSketch1,
+            crazy8Images2: VibeSketch2,
+            crazy8Images3: VibeSketch3,
+            crazy8Images4: VibeSketch4,
+            crazy8Images5: VibeSketch5,
+            crazy8Images6: VibeSketch6,
+            crazy8Images7: VibeSketch7,
             ideationSummary: 'A summary of the ideation process and the selected concepts.',
-            ideationImages: 'https://via.placeholder.com/150',
-            iterationDescription: 'Description of the iteration process and improvements made.'
+            ideation1: VibeSketch1,
+            ideation2: VibeSketch8,
+            ideation3: VibeSketch9,
+            iterationDescription: '(Description of the iteration process and each iteration choice made.)'
 
         },
         Prototype:
         {
             prototypeIntro:'I\'ve chosen simplistic visual design that organizes and prioritizes import event-matching information in a way that\'s easy to scan at a glance. The design is intentionally minimal to let the dynamic, real-time nature of the platform shine through without overwhelming users with unnecessary visual noise. The prototype includes key features such as the mandatory pre-session "Check-In" gate, the automated JIT rerouting system, and a clean analytics dashboard for event organizers.',
-            iterationImage1: 'https://via.placeholder.com/150',
-            iterationImage2: 'https://via.placeholder.com/150',
-            iterationImage3: 'https://via.placeholder.com/150',
+            iterationImage1: VibeIteration1,
+            iterationImage2: VibeIteration2,
+            iterationImage3: VibeIteration3,
+            iterationImage4: VibeIteration4,
+            iterationImage5: VibeIteration5,
+            iterationImage6: VibeIteration6,
             rationale:'The key information is presented in the center of the layout giving users a clear focal point to quickly understand their current status and next steps. The use of bold warm colors and typography is minimal but strategic, with important actions and notifications highlighted to draw attention without creating visual clutter. This design approach ensures that users can easily navigate the platform and stay informed about their connections and sessions in real-time.',
-            finalImage1: 'https://via.placeholder.com/150',
-            finalImage2: 'https://via.placeholder.com/150',
-            finalImage3: 'https://via.placeholder.com/150',
+            finalImage1: LobbyMobileLightFull,
+            finalImage2: MatchMobileLightFull,
+            finalImage3: WaitingMobileLightFull,
+            finalImage4: LobbyTabletLightFull,
+            finalImage5: MatchTabletLightFull,
+            finalImage6: WaitingTabletLightFull,
+            MockUpInfo:'The mock-ups showcase the final design of the Vibe Space platform, highlighting the key features and user interface elements that enhance the event matching experience. The design emphasizes clarity, ease of use, and real-time responsiveness to ensure users can effectively engage with the platform during networking events.',
+            Mock1: LobbyDesk3QLight,
+            Mock2: LobbyMobileLight,
+            Mock3: WaitTabletLight3Q,
+            Mock4: WaitingMobileLight3Q,
+            Mock5: MatchMobileLight,
+            Mock6: MatchDesktop3QLight,
+            darkmode: 'The dark mode mock-ups demonstrate the platforms adaptability to different user preferences and lighting conditions. The design maintains clarity and usability while providing a visually appealing alternative to the light mode, ensuring that users can comfortably interact with the platform in various environments.',
+            Mock7: LobbyMobileDark,
+            Mock8: LobbyTabletDark3Q,
+            Mock9:MatchMobileDark3Q,
+            Mock10:MatchTabletDark3Q,
+            Mock11:WaitingMobileDark3Q,
+            Mock12:WaitingDesktopDark3Q
         },
         Test:
         { 
