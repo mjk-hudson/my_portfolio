@@ -35,7 +35,7 @@ import BledgerTrackerMockFull from '../assets/bledger/mockups/iPhone-gray-1.png'
 import BledgerInsightsMockFull from '../assets/bledger/mockups/iPhone-gray-2.png';
 import BledgerSettingsMockFull from '../assets/bledger/mockups/iPhone-gray-3.png';
 import BledgerSettings3QDark from '../assets/bledger/mockups/iPhone-gray-3Q.png';
-import BledgerHome2QLIght from '../assets/bledger/mockups/iPhone-gray-3q1.png';
+import BledgerHome2QLight from '../assets/bledger/mockups/iPhone-gray-3q1.png';
 import BledgerTracker3QDark from '../assets/bledger/mockups/iPhone-gray-3q4.png';
 import BledgerSettings3QLight from '../assets/bledger/mockups/iPhone-gray-3q5.png';
 import BledgerInsights3QDark from '../assets/bledger/mockups/iPhone-gray-3q-view.png';
@@ -160,22 +160,22 @@ export const ProjectData = {
             ideationMethods: 'Brainstorming, "How Might We?" Questions, Concept Development and Crazy 8s Sketching',  
             designChallenge: 'How might we create an intuitive budgeting app that uses AI to help gig workers manage their finances effectively, providing real-time insights and proactive recommendations to prevent overspending and encourage savings?',
             crazy8s: 'I generated a few ideas for features and design directions, such as predictive spending alerts, automated bill payments, gamified savings challenges, and a minimalist dashboard for quick insights.',
-            earlySketches: BledgerSketches,
             conceptDevelopment: 'Selected the most promising ideas from the how might we session and developed them into more detailed concepts, including user flows, wireframes, and interactive prototypes.',
-            crazy8Image1: 'https://via.placeholder.com/150',
-            crazy8Image2: 'https://via.placeholder.com/150',
-            crazy8Image3: 'https://via.placeholder.com/150',
+            earlySketches: BledgerSketches,
             ideationSummary: 'Through a structured ideation process, I was able to generate and refine innovative ideas for Bledger that directly address the needs and challenges of gig workers. This phase was crucial in shaping the overall design and functionality of the app, ensuring it provides real value to its users.',
             iterationImage1:BledgerV1,
             iterationImage2:BledgerV2,
             iterationImage3:BledgerV3,
             iterationImage4:BledgerV4,
             iterationDescription: 'Based on feedback from initial prototypes, I iterated on the design to enhance usability and address any identified issues. This iterative process involved refining the user interface, improving the AI recommendations, and ensuring that the gamification elements were engaging and effective in encouraging better financial habits.',
-            finalImage1:BledgerHomeFinal,
-            finalImage2:BledgerSettingsFinal,
-            finalImage3:BledgerInsightsFinal,
-            finalImage4:BledgerTrackerFinal,
-
+            finalImage1:BledgerHome2QLight,
+            finalImage2:BledgerHomeDMock,
+            finalImage3:BledgerInsightsMock,
+            finalImage4:BledgerInsights3QDark,
+            finalImage5:BledgerTrackerMock,
+            finalImage6:BledgerTracker3QDark,
+            finalImage7:BledgerSettings3QLight,
+            finalImage8:BledgerSettings3QDark,
         },
         prototype:
         {

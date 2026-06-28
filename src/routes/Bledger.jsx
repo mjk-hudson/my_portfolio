@@ -202,11 +202,15 @@ export default function Bledger()
                 </p>
 
                 {/*Final Prototype Images*/}
-                <div>
+                <div classname='gap-4'>
                     <img src={ProjectData.p1.prototype.finalImage1} alt="Bledger Final Prototype" className='w-full h-auto rounded-lg mb-10'/>
                     <img src={ProjectData.p1.prototype.finalImage2} alt="Bledger Final Prototype" className='w-full h-auto rounded-lg mb-10'/>
                     <img src={ProjectData.p1.prototype.finalImage3} alt="Bledger Final Prototype" className='w-full h-auto rounded-lg mb-10'/>
                     <img src={ProjectData.p1.prototype.finalImage4} alt="Bledger Final Prototype" className='w-full h-auto rounded-lg mb-10'/>
+                    <img src={ProjectData.p1.prototype.finalImage5} alt="Bledger Final Prototype" className='w-full h-auto rounded-lg mb-10'/>
+                    <img src={ProjectData.p1.prototype.finalImage6} alt="Bledger Final Prototype" className='w-full h-auto rounded-lg mb-10'/>
+                    <img src={ProjectData.p1.prototype.finalImage7} alt="Bledger Final Prototype" className='w-full h-auto rounded-lg mb-10'/>
+                    <img src={ProjectData.p1.prototype.finalImage8} alt="Bledger Final Prototype" className='w-full h-auto rounded-lg mb-10'/>
                 </div>
             </div>
 
