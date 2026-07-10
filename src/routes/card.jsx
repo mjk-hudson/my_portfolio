@@ -17,10 +17,10 @@ import Bledger from './Bledger.jsx';
 import VibeSpace from './VibeSpace.jsx';
 
 export default function Card()
-{	const [isExpanded, setIsExpanded] = useState(false);
+{	const [expandedProject, setExpandedProject] = useState(null);
 	
-	const toggleExpand = () => {
-		setIsExpanded(prev => !prev);
+	const toggleExpand = (projectName) => {
+		setExpandedProject(prev => prev === projectName ? null : projectName);
 	};
 
 	return( 
@@ -72,21 +72,21 @@ export default function Card()
 
 		{/* Expand / Collapse button */}
 		<button
-			onClick={toggleExpand}
+			onClick={() => toggleExpand("Neighborgood")}
 			className="mt-6 flex items-center gap-3 text-orange-600 hover:text-orange-800 transition-colors focus:outline-none">
 			<img 
 			src={openIcon} 
-			className={`w-8 h-8 transition-transform duration-300 ${isExpanded ? 'rotate-180' : ''}`}
-			alt={isExpanded ? "Collapse case study" : "Expand case study"}
+			className={`w-8 h-8 transition-transform duration-300 ${expandedProject ? 'rotate-180' : ''}`}
+			alt={expandedProject ? "Collapse case study" : "Expand case study"}
 			/>
 			<span className="font-medium">
-			{isExpanded ? "Collapse Case Study" : "View Full Case Study"}
+			{expandedProject === "Neighborgood" ? "Collapse Case Study" : "View Full Case Study"}
 			</span>
 		</button>
 
 		{/* Animated details section */}
 		<AnimatePresence>
-			{isExpanded && (
+			{expandedProject === "Neighborgood" && (
 			<motion.div
 				initial={{ height: 0, opacity: 0 }}
 				animate={{ height: "auto", opacity: 1 }}
@@ -134,21 +134,21 @@ export default function Card()
 
 		{/* Expand / Collapse button */}
 		<button
-			onClick={toggleExpand}
+			onClick={() => toggleExpand("Bledger")}
 			className="mt-6 flex items-center gap-3 text-cyan-600 hover:text-cyan-800 transition-colors focus:outline-none">
 			<img 
 			src={openIcon} 
-			className={`w-8 h-8 transition-transform duration-300 ${isExpanded ? 'rotate-180' : ''}`}
-			alt={isExpanded ? "Collapse case study" : "Expand case study"}
+			className={`w-8 h-8 transition-transform duration-300 ${expandedProject === "Bledger" ? 'rotate-180' : ''}`}
+			alt={expandedProject === "Bledger" ? "Collapse case study" : "Expand case study"}
 			/>
 			<span className="font-medium">
-			{isExpanded ? "Collapse Case Study" : "View Full Case Study"}
+			{expandedProject === "Bledger" ? "Collapse Case Study" : "View Full Case Study"}
 			</span>
 		</button>
 
 		{/* Animated details section */}
 		<AnimatePresence>
-			{isExpanded && (
+			{expandedProject === "Bledger" && (
 			<motion.div
 				initial={{ height: 0, opacity: 0 }}
 				animate={{ height: "auto", opacity: 1 }}
@@ -209,21 +209,21 @@ export default function Card()
 
 		{/* Expand / Collapse button */}
 		<button
-			onClick={toggleExpand}
+			onClick={() => toggleExpand("vibespace")}
 			className="mt-6 flex items-center gap-3 text-rose-600 hover:text-rose-800 transition-colors focus:outline-none">
 			<img 
 			src={openIcon} 
-			className={`w-8 h-8 transition-transform duration-300 ${isExpanded ? 'rotate-180' : ''}`}
-			alt={isExpanded ? "Collapse case study" : "Expand case study"}
+			className={`w-8 h-8 transition-transform duration-300 ${expandedProject === "vibespace" ? 'rotate-180' : ''}`}
+			alt={expandedProject === "vibespace" ? "Collapse case study" : "Expand case study"}
 			/>
 			<span className="font-medium">
-			{isExpanded ? "Collapse Case Study" : "View Full Case Study"}
+			{expandedProject === "vibespace" ? "Collapse Case Study" : "View Full Case Study"}
 			</span>
 		</button>
 
 		{/* Animated details section */}
 		<AnimatePresence>
-			{isExpanded && (
+			{expandedProject === "vibespace" && (
 			<motion.div
 				initial={{ height: 0, opacity: 0 }}
 				animate={{ height: "auto", opacity: 1 }}
