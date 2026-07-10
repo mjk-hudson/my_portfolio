@@ -13,7 +13,7 @@ export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer w
 export const resumeData ={
   name: "Majik Hudson",
   email: "majikhudson@gmail.com",
-  website: "www.majikhudson.com",
+  website: "https://mjk-hudson.github.io/my_portfolio/",
   linkedin: "www.linkedin.com/in/majik-hudson",
 };
 
@@ -122,6 +122,6 @@ export const Projects = [
 
 export const Contact = {
   address: "605 W42nd St., New York, NY 10036 ",
-  phoneNo: "+12 4555 666 00 ",
-  email: "majik.hudson@icloud.com",
+  phoneNo: "917 652-9826",
+  email: "majikhudson@gmail.com",
 };

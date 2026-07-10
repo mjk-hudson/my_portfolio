@@ -33,8 +33,8 @@ export default function About() {
         initial={{opacity: 0, x: 50}}
         transition={{duration: 1.5, delay: 0.5, ease: 'easeInOut'}}
         className="md:w-1/2 content-center">
-          <p className="text-lg text-neutral-400 pb-4">I'm a passionate UX designer with 5+ years of experience in creating user-centered digital products and services with a strong foundation in frontend web technologies. My journey in design began with a curiosity about how things work, creating viable products and services and it has evolved into a career where I build solutions that are both functional, useful, interactive and elegant.</p>
-          <p className="text-lg text-neutral-400 pb-4">I specialize in creating digital products and services as cross-platform responsive web applications using modern frameworks like React and Tailwind CSS, while also having experience with backend technologies such as Node.js and MongoDb. My approach to design is centered around viability, user experience, and continuous improvement.</p>
+          <p className="text-lg text-neutral-400 pb-4">I'm a passionate UX designer with 5+ years of experience in creating user-centered digital products and services with a strong foundation in frontend web development and technologies. My journey in design began with a curiosity about how things work, creating viable products and services and it has evolved into a career where I build solutions that are both functional, useful, interactive and elegant.</p>
+          <p className="text-lg text-neutral-400 pb-4">I specialize in creating digital products and services as cross-platform responsive web and mobile applications using modern frameworks like React and Tailwind CSS and motion.dev. I also have experience with backend technologies such as Node.js. My approach to design is centered around viability, user experience & delight, and continuous improvement.</p>
         </motion.div>
       </div>
 
@@ -146,8 +146,7 @@ export default function About() {
         initial={{opacity: 0, y: -20}}
         transition={{ duration: 0.8, delay: 0.8, ease: 'easeInOut'}}
         className="text-lg mb-4 text-start">
-          <p className="text-neutral-400">{Contact.address}</p>
-          <p className="text-neutral-400">{Contact.phone}</p>
+          <p className="text-neutral-400">{Contact.phoneNo}</p>
           <h2 className="text-cyan-400">{Contact.email}</h2>
         </motion.div>
       </div>
