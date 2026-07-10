@@ -26,7 +26,6 @@ export default function VibeSpace ()
                 <p className="text-start text-slate-400 text-small sm:text-base">{ProjectData.p2.intro.studyDescription}
                 </p>
                 <div className="gap-4 ">
-                <img src={ProjectData.p2.intro.image} alt="Vibe Space Study" />
                 </div>
                 <h2 className="text-start text-2xl font-bold text-white">Product description:
                 </h2>
@@ -41,7 +40,7 @@ export default function VibeSpace ()
                 <p className="text-start text-slate-400 text-small sm:text-base">{ProjectData.p2.empathy.studyDescription}
                 </p>
                 <div className="gap-4 ">
-                <img src={ProjectData.p2.empathy.image} alt="Vibe Space Empathy" />
+                <img src={ProjectData.p2.empathy.VibeStudyImage} alt="Vibe Space Empathy" />
                 </div>
 
                 {/*Personas*/}
@@ -49,14 +48,14 @@ export default function VibeSpace ()
                 </h2>
                 <p className="text-start text-slate-400 text-small sm:text-base">{ProjectData.p2.empathy.personaIntro}
                 </p>
-                <h2 className="text-start text-2xl font-bold text-white">Maya Chen: {ProjectData.p2.empathy.persona1Title}
+                <h2 className="text-start text-2xl font-bold text-white">Maya Chen:
                 </h2>
                 <p className="text-start text-slate-400 text-small sm:text-base">{ProjectData.p2.empathy.persona1}
                 </p>
                 <div className="gap-4">
                     <img src={ProjectData.p2.empathy.personaImage1} alt="Vibe Space Persona Image 1" />
+                    <img src={ProjectData.p2.empathy.empathyMapImage1} alt="Vibe Space Empathy Image 1"/>
                 </div>
-                <img src={ProjectData.p2.empathy.VibeEmpathyMap1} alt="Vibe Space Empathy Image 1" />
                 
                 <h2 className="text-start text-2xl font-bold text-white">Marcus Vance:
                 </h2>
@@ -65,7 +64,7 @@ export default function VibeSpace ()
                 <div className="gap-4">
                     <img src={ProjectData.p2.empathy.personaImage2} alt="Vibe Space Persona Image 2" />
                 </div>
-                <img src={ProjectData.p2.empathy.VibeEmpathyMap2} alt="Vibe Space Empathy Image 2" />
+                <img src={ProjectData.p2.empathy.empathyMapImage2} alt="Vibe Space Empathy Image 2" />
                 <h2 className="text-start text-2xl font-bold text-white">Elena Rostova:
                 </h2>
                 <p className="text-start text-slate-400 text-small sm:text-base">
@@ -75,7 +74,7 @@ export default function VibeSpace ()
                     <img src={ProjectData.p2.empathy.personaImage3} alt="Vibe Space Persona Image 3" />
                 </div>
                 <div className="gap-4">
-                    <img src={ProjectData.p2.empathy.VibeEmpathyMap3} alt="Vibe Space Empathy Image 3" />
+                    <img src={ProjectData.p2.empathy.empathyMapImage3} alt="Vibe Space Empathy Image 3" />
                 </div>
                 <h2 className="text-start text-2xl font-bold text-white">Key Insights and Summary:
                 </h2>
@@ -106,15 +105,12 @@ export default function VibeSpace ()
                 {ProjectData.p2.define.valueProposition}
                 </p>
                 <div className="gap-4 mb-4">
-                <img src={ProjectData.p2.define.informationArchitecture} alt="Information Architecture"/>
+                    <img src={ProjectData.p2.define.informationArchitecture} alt="Information Architecture"/>
                 </div>
                 <div className="gap-4">
-                <img src={ProjectData.p2.define.userFlows} alt="User Flows"/>
+                    <img src={ProjectData.p2.define.userFlows} alt="User Flows"/>
                 </div>
-                <div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">
-                <img src={ProjectData.p2.define.wireframes} alt="Wireframes"/>
-                </div>
-                <h2 className="text-start text-2xl font-bold text-white">Define Summary:
+                <h2 className="mt-4 text-start text-2xl font-bold text-white">Define Summary:
                 </h2>
                 <p className="text-start text-slate-400 text-small sm:text-base mb-4">
                 {ProjectData.p2.define.defineSummary}
@@ -123,11 +119,12 @@ export default function VibeSpace ()
                 {/*Design*/}
                 <h1 className="text-start text-3xl font-bold text-white">Ideation
                 </h1>
-                <h2 className="text-start text-2xl font-bold text-white">Ideation Methods:
+                <h2 className="text-start text-2xl font-bold text-white mt-4">Ideation Methods:
                 </h2>
-                <h3 className="text-start text-white">{ProjectData.p2.Ideate.ideationMethods}
+                <h3 className="text-start text-white mt-1">{ProjectData.p2.Ideate.ideationMethods}
                 </h3>
-                <p className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">{ProjectData.p2.Ideate.designChallenge}
+                <p className="text-start text-slate-400 text-small sm:text-base">
+                {ProjectData.p2.Ideate.designChallenge}
                 </p>
                 <div className="gap-4">
                 <p className="text-start text-slate-400 text-small sm:text-base">{ProjectData.p2.Ideate.crazy8s}</p>
@@ -135,96 +132,122 @@ export default function VibeSpace ()
                 <div className="gap-4">
                 <p className="text-start text-slate-400 text-small sm:text-base">{ProjectData.p2.Ideate.earlySketches}</p>
                 </div>
-                <h3 className="text-start text-white">Concept Development:
+                <h3 className="text-start text-white mt-1">Concept Development:
                 </h3>
                 <p className="text-start text-slate-400 text-small sm:text-base">
                 {ProjectData.p2.Ideate.conceptDevelopment}
                 </p>
-                <div className="gap-4">
-                <img src={ProjectData.p2.Ideate.crazy8Images1} alt="Crazy 8s Images"/>
+                <div className="gap-4 mt-6">
+                <img className="rounded-xl" src={ProjectData.p2.Ideate.crazy8Images1} alt="Crazy 8s Images"/>
                 </div>
-                <div className="gap-4">
-                <img src={ProjectData.p2.Ideate.crazy8Images2} alt="Crazy 8s Images"/>
+                <div className="gap-4 mt-6">
+                <img className="rounded-xl" src={ProjectData.p2.Ideate.crazy8Images2} alt="Crazy 8s Images"/>
                 </div>
-                <div className="gap-4">
-                <img src={ProjectData.p2.Ideate.crazy8Images3} alt="Crazy 8s Images"/>
-                <img src={ProjectData.p2.Ideate.crazy8Images4} alt="Crazy 8s Images"/>
-                <img src={ProjectData.p2.Ideate.crazy8Images5} alt="Crazy 8s Images"/>
-                <img src={ProjectData.p2.Ideate.crazy8Images6} alt="Crazy 8s Images"/>
-                <img src={ProjectData.p2.Ideate.crazy8Images7} alt="Crazy 8s Images"/>
+                <div className="gap-4 mt-6">
+                    <img className="rounded-xl" src={ProjectData.p2.Ideate.crazy8Images3} alt="Crazy 8s Images"/>
+                    <img className="rounded-xl mt-6" src={ProjectData.p2.Ideate.crazy8Images4} alt="Crazy 8s Images"/>
+                    <img className="rounded-xl mt-6" src={ProjectData.p2.Ideate.crazy8Images5} alt="Crazy 8s Images"/>
+                    <img className="rounded-xl mt-6" src={ProjectData.p2.Ideate.crazy8Images6} alt="Crazy 8s Images"/>
+                    <img className="rounded-xl mt-6" src={ProjectData.p2.Ideate.crazy8Images7} alt="Crazy 8s Images"/>
                 </div>
-                <p className="text-start text-slate-400 text-small sm:text-base">
+                <p className="my-5 text-start text-slate-400 text-small sm:text-base">
                 {ProjectData.p2.Ideate.ideationSummary}
                 </p>
                 <div className="gap-4">
-                <img src={ProjectData.p2.Ideate.ideation1} alt="Early Sketches"/>
-                <img src={ProjectData.p2.Ideate.ideation2} alt="Early Sketches"/>
-                <img src={ProjectData.p2.Ideate.ideation3} alt="Early Sketches"/>
+                <img className="rounded-xl mt-6" src={ProjectData.p2.Ideate.ideation1} alt="Early Sketches"/>
+                <img className="rounded-xl mt-6" src={ProjectData.p2.Ideate.ideation2} alt="Early Sketches"/>
+                <img className="rounded-xl mt-6" src={ProjectData.p2.Ideate.ideation3} alt="Early Sketches"/>
                 </div>
+
                 <p className="text-start text-slate-400 text-small sm:text-base mb-4">
                 {ProjectData.p2.Ideate.iterationDescription}
                 </p>
 
+                <div className="gap-4 mt-6">
+                </div>
+                <div className="gap-4 mt-6 place-items-center">
+                <img className="w-1/2" src={ProjectData.p2.Prototype.iterationImage1} alt="Iteration Images"/>
+                <img className="w-full mt-6" src={ProjectData.p2.Prototype.iterationImage2} alt="Iteration Images"/>
+                </div>
+                <div className="gap-4 mt-6">
+                <img src={ProjectData.p2.Prototype.iterationImage3} alt="Iteration Images"/>
+                <img className="w-full place-items-center mt-6" src={ProjectData.p2.Prototype.iterationImage4} alt="Iteration Images"/>
+                <img className="w-full place-items-center mt-6" src={ProjectData.p2.Prototype.iterationImage5} alt="Iteration Images"/>
+                <img className="w-full place-items-center mt-6" src={ProjectData.p2.Prototype.iterationImage6} alt="Iteration Images"/>
+                </div>
+
                 {/*Prototype*/}
-                <h1 className="text-start text-3xl font-bold text-white">Prototype
+                <h1 className="text-start text-3xl font-bold text-white mt-6">Prototype
                 </h1>
-                <p className="text-start text-slate-400 text-small sm:text-base">
+                <p className="mt-4 text-start text-slate-400 text-small sm:text-base">
                 {ProjectData.p2.Prototype.prototypeIntro}
                 </p>
 
                 {/*Iteration Images and Rationale*/}
-                <div className="gap-4">
-                <img src={ProjectData.p2.Prototype.iterationImage1} alt="Iteration Images"/>
-                </div>
-                <div className="gap-4">
-                <img src={ProjectData.p2.Prototype.iterationImage2} alt="Iteration Images"/>
-                </div>
-                <div className="gap-4">
-                <img src={ProjectData.p2.Prototype.iterationImage3} alt="Iteration Images"/>
-                <img src={ProjectData.p2.Prototype.iterationImage4} alt="Iteration Images"/>
-                <img src={ProjectData.p2.Prototype.iterationImage5} alt="Iteration Images"/>
-                <img src={ProjectData.p2.Prototype.iterationImage6} alt="Iteration Images"/>
-                </div>
+
                 <p className="text-start text-slate-400 text-small sm:text-base">
                 {ProjectData.p2.Prototype.rationale}
                 </p>
-                <div className="gap-4">
-                <img src={ProjectData.p2.Prototype.finalImage1} alt="Final Images"/>
+
+                <div className="gap-4 mt-6 place-items-center">
+                    <img className="w-1/2 h-auto" src={ProjectData.p2.Prototype.finalImage1} alt="Final Images"/>
                 </div>
-                <div className="gap-4">
-                <img src={ProjectData.p2.Prototype.finalImage2} alt="Final Images"/>
+                <div className="gap-4 mt-6 place-items-center">
+                    <img className="w-1/2 h-auto" src={ProjectData.p2.Prototype.finalImage2} alt="Final Images"/>
                 </div>
-                <div className="gap-4">
-                <img src={ProjectData.p2.Prototype.finalImage3} alt="Final Images"/>
+                <div className="gap-4 mt-6 place-items-center">
+                    <img className="w-1/2 h-auto" src={ProjectData.p2.Prototype.finalImage3} alt="Final Images"/>
 
-                <img src={ProjectData.p2.Prototype.finalImage4} alt="Final Images"/>
+                    <img className="w-1/2 h-auto mt-6 place-items-center" src={ProjectData.p2.Prototype.finalImage4} alt="Final Images"/>
 
-                <img src={ProjectData.p2.Prototype.finalImage5} alt="Final Images"/>
+                    <img className="w-1/2 h-auto mt-6 place-items-center" src={ProjectData.p2.Prototype.finalImage5} alt="Final Images"/>
 
-                <img src={ProjectData.p2.Prototype.finalImage6} alt="Final Images"/>
+                    <img className="w-1/2 h-auto mt-6 place-items-center" src={ProjectData.p2.Prototype.finalImage6} alt="Final Images"/>
                 </div>
 
-                //Mock-Ups
+                {/*Mock-Ups*/}
                 <h1 className="text-start text-3xl font-bold text-white">Mock-Ups
                 </h1>
-                <div className="gap-4">
-                    <img src={ProjectData.p2.Prototype.Mock1} alt="Mock-Ups"/>
-                    <img src={ProjectData.p2.Prototype.Mock2} alt="Mock-Ups"/>
-                    <img src={ProjectData.p2.Prototype.Mock3} alt="Mock-Ups"/>
-                    <img src={ProjectData.p2.Prototype.Mock4} alt="Mock-Ups"/>
-                    <img src={ProjectData.p2.Prototype.Mock5} alt="Mock-Ups"/>
-                    <img src={ProjectData.p2.Prototype.Mock6} alt="Mock-Ups"/>
+                <div className="gap-4 grid grid-cols-2">
+                    <img className="w-full h-auto" src={ProjectData.p2.Prototype.Mock1} alt="Mock-Ups"/>
+                    <img className="w-full h-auto" src={ProjectData.p2.Prototype.Mock2} alt="Mock-Ups"/>
                 </div>
-                <p className="text-start text-slate-400 text-small sm:text-base mb-4">
+                <div className="gap-4 grid grid-cols-2">
+                    <img className="w-full h-auto" src={ProjectData.p2.Prototype.Mock3} alt="Mock-Ups"/>
+                    <img className="w-full h-auto" src={ProjectData.p2.Prototype.Mock4} alt="Mock-Ups"/>
+                </div>
+                <div className="gap-4 grid grid-cols-2 place-items-center">
+                    <img className="w-full" src={ProjectData.p2.Prototype.Mock5} alt="Mock-Ups"/>
+                </div>
+                    <img className="w-full h-auto" src={ProjectData.p2.Prototype.Mock6} alt="Mock-Ups"/>
+                
+                {/*Darkmode Mock-Ups*/}
+                <p className="text-start text-slate-400 text-small sm:text-base my-4">
                 {ProjectData.p2.Prototype.darkmode}
+
                 </p>
-                <div className="gap-4">
-                    <img src={ProjectData.p2.Prototype.Mock7} alt="Mock-Ups"/>
-                    <img src={ProjectData.p2.Prototype.Mock8} alt="Mock-Ups"/>
-                    <img src={ProjectData.p2.Prototype.Mock9} alt="Mock-Ups"/>
-                    <img src={ProjectData.p2.Prototype.Mock10} alt="Mock-Ups"/>
-                    <img src={ProjectData.p2.Prototype.Mock11} alt="Mock-Ups"/>
-                    <img src={ProjectData.p2.Prototype.Mock12} alt="Mock-Ups"/>
+                    <img className="w-1/2" src={ProjectData.p2.Prototype.Mock7} alt="Mock-Ups"/>
+
+                    <img className="w-full" src={ProjectData.p2.Prototype.Mock8} alt="Mock-Ups"/>
+
+                    <img className="w-1/2" src={ProjectData.p2.Prototype.Mock9} alt="Mock-Ups"/>
+
+                    <img className="w-full" src={ProjectData.p2.Prototype.Mock10} alt="Mock-Ups"/>
+
+                    <img className="w-1/2" src={ProjectData.p2.Prototype.Mock11} alt="Mock-Ups"/>
+
+                    <img className="w-full" src={ProjectData.p2.Prototype.Mock12} alt="Mock-Ups"/>
+
+                {/*Vibe Space GIFs*/}
+                <h2 className="text-start text-2xl font-bold text-white mt-4">Prototype user flow animations:</h2>
+                <p className="text-start text-slate-400 text-small sm:text-base my-4">
+                {ProjectData.p2.Prototype.Mockgifs}
+                </p>
+                <div className="gap-4 grid grid-cols-2 my-4">
+                    <img className="w-full h-auto" src={ProjectData.p2.Prototype.Mockgif1} alt="Mock-Ups"/>
+                    <img className="w-3/4 h-auto" src={ProjectData.p2.Prototype.Mockgif2} alt="Mock-Ups"/>
+                    <img className="w-3/4 h-auto" src={ProjectData.p2.Prototype.Mockgif3} alt="Mock-Ups"/>
+                    <img className="w-full h-auto" src={ProjectData.p2.Prototype.Mockgif4} alt="Mock-Ups"/>
                 </div>
 
                 {/*Testing*/}

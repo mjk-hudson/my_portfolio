@@ -11,10 +11,6 @@ import BledgerIA from '../assets/bledger/Bledger-info-arch.png';
 import BledgerInsights from '../assets/bledger/Bledger-Insights.png';
 import BledgerInsightDark from '../assets/bledger/Bledger-insights-dark-mode.png';
 import BledgerInsightsFinal from '../assets/bledger/Bledger-insights-final.png';
-import BledgerV1 from '../assets/bledger/Bledger-iteration1.png';
-import BledgerV2 from '../assets/bledger/Bledger-iteration2.png';
-import BledgerV3 from '../assets/bledger/Bledger-iteration3.png';
-import BledgerV4 from '../assets/bledger/Bledger-iteration4.png';
 import BledgerJamal from '../assets/bledger/Bledger-jamal-thompson.png';
 import BledgerJourney from '../assets/bledger/Bledger-journey-map.png';
 import BledgerUserFlow from '../assets/vibespace/bledgeruserflow.png';
@@ -25,6 +21,14 @@ import BledgerSettingsFinal from '../assets/bledger/Bledger-settings-final.png';
 import Bledgertracker from '../assets/bledger/Bledger-tracker.png';
 import BledgerTrackerDark from '../assets/bledger/Bledger-tracker-dark.png';
 import BledgerTrackerFinal from '../assets/bledger/Bledger-tracker-final.png';
+import BledgerIteration1 from '../assets/bledger/bledgeriteration1.png';
+import BledgerIteration2 from '../assets/bledger/bledgeriteration2.png';
+import BledgerIteration3 from '../assets/bledger/bledgeriteration3.png';
+import BledgerIteration4 from '../assets/bledger/bledgeriteration4.png';
+import BledgerHomeAnimation from '../assets/bledger/animations/homeanimated.gif';
+import BledgerTrackerDarkAnimated from '../assets/bledger/animations/trackerdarkanimated.gif';
+import BledgerInsightsAnimated from '../assets/bledger/animations/Insightsanimated.gif';
+import BledgerSettingsDarkAnimated from '../assets/bledger/animations/settingsdarkanimated.gif';
 
 //Bledger Mock-ups
 import BledgerHomeDMock from '../assets/bledger/mockups/iPhone-3q-view1.png'; 
@@ -54,9 +58,9 @@ import MatchDesktopLight from '../assets/vibespace/new-match-desktop.png';
 import MatchMobileDark from '../assets/vibespace/new-match-mobile-darkmode.png';
 import MatchMobileLight from '../assets/vibespace/new-match-mobile.png';
 import VibeCompetitiveAudit from '../assets/vibespace/Vibe-space-ca-image.jpg';
-import VibeEmpathyMap1 from '../assets/vibespace/Vibe-space-emp-map1.png';
-import VibeEmpathyMap2 from '../assets/vibespace/Vibe-space-emp-map2.png';
-import VibeEmpathyMap3 from '../assets/vibespace/Vibe-space-emp-map3.png';
+import VibeEmpathyMap1 from '../assets/vibespace/vibespaceempmap1.png';
+import VibeEmpathyMap2 from '../assets/vibespace/vibespaceempmap2.png';
+import VibeEmpathyMap3 from '../assets/vibespace/vibespaceempmap3.png';
 import VibeInfoArch from '../assets/vibespace/Vibe-space-Info-arch.png';
 import VibeSketch1 from '../assets/vibespace/vibesketch1mobile.png';
 import VibeSketch2 from '../assets/vibespace/vibesketch2mobile.png';
@@ -110,6 +114,11 @@ import WaitingTabletLightFull from '../assets/vibespace/mockups/waiting-tablet-l
 import WaitingMobileDark3Q from '../assets/vibespace/mockups/waiting-mobile-dark-3q.png';
 import WaitingMobileLight3Q from '../assets/vibespace/mockups/waiting-mobile-light-3q.png';    
 import Bledger from '@/routes/Bledger';
+//vibe space animations
+import LobbyDesktop from '../assets/vibespace/animations/lobby_desktop.gif';  
+import LobbyMobile from '../assets/vibespace/animations/lobby_mobile.gif';
+import MatchDesktop from '../assets/vibespace/animations/new_match_mobile_darkmode.gif';
+import WaitingDesktop from '../assets/vibespace/animations/vibe_waiting_desktop.gif';
 
 export const ProjectData = {
     p1:{
@@ -160,13 +169,13 @@ export const ProjectData = {
             ideationMethods: 'Brainstorming, "How Might We?" Questions, Concept Development and Crazy 8s Sketching',  
             designChallenge: 'How might we create an intuitive budgeting app that uses AI to help gig workers manage their finances effectively, providing real-time insights and proactive recommendations to prevent overspending and encourage savings?',
             crazy8s: 'I generated a few ideas for features and design directions, such as predictive spending alerts, automated bill payments, gamified savings challenges, and a minimalist dashboard for quick insights.',
-            conceptDevelopment: 'Selected the most promising ideas from the how might we session and developed them into more detailed concepts, including user flows, wireframes, and interactive prototypes.',
+            conceptDevelopment: 'I Selected the most promising ideas from the how might we session and developed them into more detailed screens',
             earlySketches: BledgerSketches,
             ideationSummary: 'Through a structured ideation process, I was able to generate and refine innovative ideas for Bledger that directly address the needs and challenges of gig workers. This phase was crucial in shaping the overall design and functionality of the app, ensuring it provides real value to its users.',
-            iterationImage1:BledgerV1,
-            iterationImage2:BledgerV2,
-            iterationImage3:BledgerV3,
-            iterationImage4:BledgerV4,
+            iterationImage1:BledgerIteration1,
+            iterationImage2:BledgerIteration2,
+            iterationImage3:BledgerIteration3,
+            iterationImage4:BledgerIteration4,
             iterationDescription: 'Based on feedback from initial prototypes, I iterated on the design to enhance usability and address any identified issues. This iterative process involved refining the user interface, improving the AI recommendations, and ensuring that the gamification elements were engaging and effective in encouraging better financial habits.',
             finalImage1:BledgerHome2QLight,
             finalImage2:BledgerHomeDMock,
@@ -180,10 +189,10 @@ export const ProjectData = {
         prototype:
         {
             prototypeIntro:'I developed some interactive prototypes to visualize the Bledger app and test its core functionalities. The prototypes included key features such as the predictive AI dashboard, agentic automation settings, and gamified savings challenges. These prototypes were designed to be user-friendly and visually appealing, with a focus on providing a seamless user experience.',
-            prototypeImage1: BledgerV2,
-            prototypeImage2: BledgerV1,
-            prototypeImage3: BledgerV3,
-            prototypeImage4: BledgerV4,
+            prototypeImage1:BledgerHomeAnimation,
+            prototypeImage2:BledgerTrackerDarkAnimated,
+            prototypeImage3:BledgerInsightsAnimated,
+            prototypeImage4:BledgerSettingsDarkAnimated,
             rationale:'I used scale to serve as vusal hierarchy, with the most important information (like account balances and spending alerts) prominently displayed in the center of the screen. The use of bold, warm colors and minimal typography was intentional to draw attention to key actions and notifications without overwhelming the user with visual clutter. This design approach ensures that users can quickly understand their financial status and take action based on the insights provided by the app. Thew= scale of the arrows are clear distincition between the different levels of information, with the most critical information being the largest and most prominent warm colors that prjoject, while secondary information is smaller and less visually dominant with cooler colors that recede.',
             finalImage1: BledgerHomeFinal,
             finalImage2: BledgerSettingsFinal,
@@ -247,7 +256,7 @@ export const ProjectData = {
         Ideate:
         {
             ideationMethods: 'Brainstorming, "How Might We?" Questions, Concept Development and Crazy 8s Sketching',  
-            designChallenge: '',
+            designChallenge: 'Developed varied concepts and solutions to address the identified pain points and enhance the user experience of the event matching platform.',
             crazy8s: 'Crazy 8s Sketches were generated to explore a wide range of ideas and potential solutions for the event matching platform. The sketches focused on different aspects of the user experience, including the check-in process, rerouting system, and overall interface design. Each sketch aimed to address the pain points identified during the empathy phase and provide innovative ways to enhance user engagement and satisfaction.',
             earlySketches: 'The early digital sketches represent initial ideas and concepts for the Vibe Space platform, exploring various layouts, interactions, and visual designs. These sketches served as a foundation for further development and refinement of the user experience.',
             conceptDevelopment: 'I selected the most promising ideas from the how might we session and developed them into more detailed concepts, including user flows, wireframes, and interactive prototypes.',
@@ -294,7 +303,13 @@ export const ProjectData = {
             Mock9:MatchMobileDark3Q,
             Mock10:MatchTabletDark3Q,
             Mock11:WaitingMobileDark3Q,
-            Mock12:WaitingDesktopDark3Q
+            Mock12:WaitingDesktopDark3Q,
+
+            Mockgifs: 'These images illustrate the micro-interactions and transitions within the Vibe Space platform, showcasing how users navigate through the check-in process, experience the automated rerouting system, and engage with the overall interface. The animations provide a dynamic view of the user experience, highlighting the responsiveness and fluidity of the platform in real-time scenarios.',
+            Mockgif1: LobbyDesktop,
+            Mockgif2: LobbyMobile,
+            Mockgif3: MatchDesktop,
+            Mockgif4: WaitingDesktop,
         },
         Test:
         { 
