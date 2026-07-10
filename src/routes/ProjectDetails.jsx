@@ -284,8 +284,8 @@ export default function ProjectDetails() {
                             These images represent varying (Mobile, Tablet, Desktop) breakpoints demonstrating a user searching for open space locations using the data visualization interaction idiom to view data associated with a location and set of criteria.
                         </p>
                         <div className="gap-y-2">
-                            <img src={MobileBreakpoint} alt="Mobile View" className="w-full max-w-sm h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
-                            <p className=" text-sm sm:text-base font-semibold text-slate-300">
+                            <img src={MobileBreakpoint} alt="Mobile View" className="w-1/4 max-w-sm h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
+                            <p className="mt-10 text-sm sm:text-base font-semibold text-slate-300">
                                 Mobile Breakpoint
                             </p>
                         </div>
@@ -295,19 +295,19 @@ export default function ProjectDetails() {
                             Users will start with a localized map and begin their contextual search using the “+” action button for either an address, zip code, general municipalities.
                         </p>
                         <div className="gap-y-6">
-                            <img src={TabletBreakpoint} alt="Tablet View" className="w-full max-w-sm h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
-                            <p className="text-sm sm:text-base font-semibold text-slate-300">
+                            <img src={TabletBreakpoint} alt="Tablet View" className="w-1/2 max-w-sm h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
+                            <p className="mt-10 text-sm sm:text-base font-semibold text-slate-300">
                                 Tablet (Portrait) Breakpoint
                             </p>
                         </div>
                     </div>
-                    <div className="gap-y-6">
+                    <div className="gap-y-4">
                         <p className="text-sm sm:text-base text-slate-400">
                             Once a location is chosen the user is given filters to use in order to narrows the results to more relevant locations that will meet the users needs.
                         </p>
-                        <div className="gap-y-6">
+                        <div className="gap-y-4">
                             <img src={DesktopBreakpoint} alt="Desktop View" className="w-full max-w-sm h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
-                            <p className="mt-4 text-sm sm:text-base font-semibold text-slate-300">
+                            <p className="mt-10 text-sm sm:text-base font-semibold text-slate-300">
                                 Desktop Breakpoint
                             </p>
                         </div>
@@ -354,8 +354,8 @@ export default function ProjectDetails() {
                             The initial mock-ups used a navigation style interaction design with a localized map and an F.A.B. as the entry point for finding new places right from the homepage.<br />
                             Initial Designs
                         </p>
-                        <img src={"null"} alt="Mobile Initial Design" className="w-full max-w-sm h-auto rounded-lg mt-6 border border-gray-400 shadow-xl" />
                     </div>
+                    
                     <div className="gap-y-6">
                         <p className="text-sm sm:text-base text-slate-400">
                         The Final mock-up provides an introduction and brief explanation to the product and service as well as any available local places, groups or initiatives on the homepage as well as providing a menu for additional features, services and information.<br/>

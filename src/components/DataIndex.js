@@ -78,6 +78,12 @@ export const Education = [
     company: "Coursera",
     description: "User Experience Design program covering UX/UI design, responsive web, wireframing, prototyping, user research & testing, journey mapping, empathy maps, ideation, storyboarding, personas, and design frameworks. Mastered Figma and Adobe XD. Produced Online portfolio."
   },
+    {
+    dateRange: "May 2024 – November 2024",
+    role: "IBM Front-End Web Developer Professional Certificate",
+    company: "Coursera",
+    description: "Front-End Web and Application Development: Using Meta’s React and React.js platform.Component-Based Architecture: Built dynamic user interfaces using modular building blocks, covering both traditional class components and modern functional components. State and Props Management: I can pass data down through your application using props, and manage interactive, changing data within individual components using states. React Hooks: Hands-on experience using built-in React hooks to manage component lifecycles and side effects smoothly without needing to write class components. Event Handling and Forms: I can capture user interactions, listen for browser events, and efficiently manage and validate user input from forms. Global State with Redux: Experience with Redux (specifically Redux Toolkit) to help you centralize and manage global application state as applications grow. Practical Application Building: I’ve built several digital product and service concepts through hands-on projects, typically culminating in building fully functional front-end applications like a web based store front with a shopping cart and a mobile budgeting A.I. application."
+  },
   {
     dateRange: "September 2010 – May 2013",
     role: "B.S. Industrial Design",

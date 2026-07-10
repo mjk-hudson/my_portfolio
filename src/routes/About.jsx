@@ -24,7 +24,7 @@ export default function About() {
         initial={{opacity: 0, x: -50}}
         transition={{duration: 1, delay: 0.4, ease: 'easeInOut'}}
         className="md:w-1/3">
-          <img src={ProfileImage} alt="Profile Image" className="rounded-xl w-1/4 h-auto"/>
+          <img src={ProfileImage} alt="Profile Image" className="rounded-xl w-3/4 h-auto"/>
         </motion.div>
 
         {/*About me text section */}
@@ -33,8 +33,8 @@ export default function About() {
         initial={{opacity: 0, x: 50}}
         transition={{duration: 1.5, delay: 0.5, ease: 'easeInOut'}}
         className="md:w-1/2 content-center">
-          <p className="text-lg text-neutral-400 pb-4">I'm a passionate UX designer with 5+ years of experience in creating user-centered digital products and services with a strong foundation in frontend web development and technologies. My journey in design began with a curiosity about how things work, creating viable products and services and it has evolved into a career where I build solutions that are both functional, useful, interactive and elegant.</p>
-          <p className="text-lg text-neutral-400 pb-4">I specialize in creating digital products and services as cross-platform responsive web and mobile applications using modern frameworks like React and Tailwind CSS and motion.dev. I also have experience with backend technologies such as Node.js. My approach to design is centered around viability, user experience & delight, and continuous improvement.</p>
+          <p className="text-lg text-neutral-400 pb-4">I'm a passionate UX designer with 6+ years of experience in creating user-centered digital products and services with a strong foundation in frontend web development and technologies. My journey in design began with a curiosity about how things work, creating viable products and services and it has evolved into a career where I build solutions that are both functional, useful, interactive and elegant.</p>
+          <p className="text-lg text-neutral-400 pb-4">I specialize in creating digital products and services as cross-platform responsive web and mobile applications using modern frameworks like React, Tailwind CSS and motion.dev. I also have experience with backend technologies such as Node.js. My approach to design is centered around viability, user experience - delight, and continuous improvement.</p>
         </motion.div>
       </div>
 
