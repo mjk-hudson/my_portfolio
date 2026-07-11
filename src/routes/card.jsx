@@ -26,12 +26,12 @@ export default function Card()
 	return( 
 		<>
 		{/*--Neighborgood First card--*/}	
-		<div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">
+		<div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden place-items-center">
 
 			{/*--Hero image--*/}
 			<img src={heroImage} 
 				alt="Neighborgood Platform image"
-				className="w-full h-auto rounded-lg"/>
+				className="w-3/4 h-auto rounded-lg"/>
 
 			{/*--project Title --*/}
     		<div className="space-y-3">      			
@@ -43,7 +43,7 @@ export default function Card()
 			</div>
 
 			{/*--Platform info graphic "info"--*/}
-			<div className=" px-12 py-4 justify-between items-center flex row-span-1 bg-orange-500 rounded-lg">
+			<div className=" px-12 py-4 justify-between items-center gap-8 flex row-span-1 bg-orange-500 rounded-lg">
 
 				<div className="">
 					<h2 className=" text-neutral-100 text-base">Platforms</h2>
@@ -101,12 +101,12 @@ export default function Card()
 		</AnimatePresence>
 		</div>
 		{/*--Bledger Second card--*/}
-		<div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">
+		<div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden place-items-center">
 
 			{/*--Hero image--*/}
 			<img src={bledgerBoard} 
 				alt="Bledger Platform image"
-				className="w-full h-auto rounded-lg"/>
+				className="w-3/4 h-auto rounded-lg"/>
 
 			{/*--project Title --*/}
     		<div className="space-y-3">      			
@@ -118,7 +118,7 @@ export default function Card()
 			</div>
 
 			{/*--Platform info graphic "info"--*/}
-			<div className=" px-12 py-4 justify-between items-center flex row-span-1 bg-cyan-500 rounded-lg">
+			<div className=" px-12 py-4 justify-between items-center gap-8 flex row-span-1 bg-cyan-500 rounded-lg">
 
 				<div className="">
 					<h2 className=" text-neutral-100 text-base">Platforms</h2>
@@ -163,12 +163,12 @@ export default function Card()
 		</AnimatePresence>
 		</div>
 		{/*Vibe Space Third card--*/}
-		<div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden">
+		<div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden place-items-center">
 
 			{/*--Hero image--*/}
 			<img src={vibeSpaceHero} 
 				alt="Vibe Space Platform image"
-				className="w-full h-auto rounded-lg"/>
+				className="w-3/4 h-auto rounded-lg"/>
 
 			{/*--project Title --*/}
     		<div className="space-y-3">      			
@@ -180,9 +180,9 @@ export default function Card()
 			</div>
 
 			{/*--Platform info graphic "info"--*/}
-			<div className=" px-12 py-4 justify-between items-center flex row-span-1 bg-rose-500 rounded-lg">
+			<div className=" px-8 gap-8 py-4 flex justify-between items-center flex-row-span-full bg-rose-500 rounded-lg">
 
-				<div className="">
+				<div className="flex row-span-1">
 					<h2 className=" text-neutral-100 text-base">Platforms</h2>
 				</div>
 				
