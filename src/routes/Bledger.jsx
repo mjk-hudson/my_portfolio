@@ -14,7 +14,9 @@ export default function Bledger()
             <div className="w-full p-6 md:p-4 gap-6 bg-slate-900/50 rounded-lg shadow-[2px_11px_6px_-4px_rgba(136,136,136,0.25)] mt-6 mx-auto max-w-6xl">
 
                 {/*--Hero Image--*/}
-                <img src={ProjectData.p1.intro.image} alt="Bledger App" className='w-full h-auto rounded-lg mb-10'/>
+                <div clasName="">
+                    <img src={ProjectData.p1.intro.image} alt="Bledger App" className='w-1/2 h-auto rounded-lg mb-10 mx-auto'/>
+                </div>
 
                 {/*--Project Overview--*/}
                 <div className="gap-4">
@@ -163,11 +165,11 @@ export default function Bledger()
                     {/*Final Iteration Images*/}
                     <h2 className="text-start text-slate-300 text-base sm:text-lg mt-6">Final Design Direction
                     </h2>
-                    <div classname='gap-x-4 gap-y-6 grid grid-cols-1 sm:grid-cols-2'>
-                        <img src={ProjectData.p1.prototype.finalImage1} alt="Bledger Iteration Sketches" className='w-1/2 h-auto rounded-lg mb-10 mt-4'/>
-                        <img src={ProjectData.p1.prototype.finalImage2} alt="Bledger Iteration Sketches" className='w-1/2 h-auto rounded-lg mb-10'/>
-                        <img src={ProjectData.p1.prototype.finalImage3} alt="Bledger Iteration Sketches" className='w-1/2 h-auto rounded-lg mb-10'/>
-                        <img src={ProjectData.p1.prototype.finalImage4} alt="Bledger Iteration Sketches" className='w-1/2 h-auto rounded-lg mb-10'/>
+                    <div classname='gap-4 grid grid-cols-1 justify-center sm:grid-cols-2 '>
+                        <img src={ProjectData.p1.prototype.finalImage1} alt="Bledger Iteration Sketches" className='w-1/2 h-auto rounded-lg mb-10 mt-4 mx-auto'/>
+                        <img src={ProjectData.p1.prototype.finalImage2} alt="Bledger Iteration Sketches" className='w-1/2 h-auto rounded-lg mb-10 mx-auto'/>
+                        <img src={ProjectData.p1.prototype.finalImage3} alt="Bledger Iteration Sketches" className='w-1/2 h-auto rounded-lg mb-10 mx-auto'/>
+                        <img src={ProjectData.p1.prototype.finalImage4} alt="Bledger Iteration Sketches" className='w-1/2 h-auto rounded-lg mb-10 mx-auto'/>
                     </div>
             </div>
 
@@ -179,13 +181,13 @@ export default function Bledger()
                 </p>
 
                 {/*Prototype Images*/}
-                <h2 className="text-start text-2xl font-bold text-white mt-4">Prototype user flow animations:</h2>
+                <h2 className="text-start text-2xl font-bold text-white mt-4">Prototype animations:</h2>
 
-                <div classname='gap-4 object-center'>
-                    <img src={ProjectData.p1.prototype.prototypeImage1} alt="Bledger Prototype Iterations" className='w-1/4 h-auto rounded-lg mb-10 mt-4'/>
-                    <img src={ProjectData.p1.prototype.prototypeImage2} alt="Bledger Prototype Iterations" className='w-1/4 h-auto rounded-lg mb-10'/>
-                    <img src={ProjectData.p1.prototype.prototypeImage3} alt="Bledger Prototype Iterations" className='w-1/4 h-auto rounded-lg mb-10'/>
-                    <img src={ProjectData.p1.prototype.prototypeImage4} alt="Bledger Prototype Iterations" className='w-1/4 h-auto rounded-lg mb-10'/>
+                <div classname="">
+                    <img src={ProjectData.p1.prototype.prototypeImage1} alt="Bledger Prototype Iterations" className='w-1/2 h-auto rounded-lg mb-10 mt-4 mx-auto'/>
+                    <img src={ProjectData.p1.prototype.prototypeImage2} alt="Bledger Prototype Iterations" className='w-1/2 h-auto rounded-lg mb-10 mx-auto'/>
+                    <img src={ProjectData.p1.prototype.prototypeImage3} alt="Bledger Prototype Iterations" className='w-1/2 h-auto rounded-lg mb-10 mx-auto'/>
+                    <img src={ProjectData.p1.prototype.prototypeImage4} alt="Bledger Prototype Iterations" className='w-1/2 h-auto rounded-lg mb-10 mx-auto'/>
                 </div>
 
                 {/*Rationale*/}
@@ -197,14 +199,14 @@ export default function Bledger()
 
                 {/*Final Prototype Images*/}
                 <div classname='gap-4'>
-                    <img src={ProjectData.p1.ideate.finalImage1} alt="Bledger Final Prototype" className='w-full h-auto rounded-lg mb-10'/>
-                    <img src={ProjectData.p1.ideate.finalImage2} alt="Bledger Final Prototype" className='w-full h-auto rounded-lg mb-10'/>
-                    <img src={ProjectData.p1.ideate.finalImage3} alt="Bledger Final Prototype" className='w-full h-auto rounded-lg mb-10'/>
-                    <img src={ProjectData.p1.ideate.finalImage4} alt="Bledger Final Prototype" className='w-full h-auto rounded-lg mb-10'/>
-                    <img src={ProjectData.p1.ideate.finalImage5} alt="Bledger Final Prototype" className='w-full h-auto rounded-lg mb-10'/>
-                    <img src={ProjectData.p1.ideate.finalImage6} alt="Bledger Final Prototype" className='w-full h-auto rounded-lg mb-10'/>
-                    <img src={ProjectData.p1.ideate.finalImage7} alt="Bledger Final Prototype" className='w-full h-auto rounded-lg mb-10'/>
-                    <img src={ProjectData.p1.ideate.finalImage8} alt="Bledger Final Prototype" className='w-full h-auto rounded-lg mb-10'/>
+                    <img src={ProjectData.p1.ideate.finalImage1} alt="Bledger Final Prototype" className='w-1/2 h-auto rounded-lg mb-10 mx-auto'/>
+                    <img src={ProjectData.p1.ideate.finalImage2} alt="Bledger Final Prototype" className='w-1/2 h-auto rounded-lg mb-10 mx-auto'/>
+                    <img src={ProjectData.p1.ideate.finalImage3} alt="Bledger Final Prototype" className='w-1/2 h-auto rounded-lg mb-10 mx-auto'/>
+                    <img src={ProjectData.p1.ideate.finalImage4} alt="Bledger Final Prototype" className='w-1/2 h-auto rounded-lg mb-10 mx-auto'/>
+                    <img src={ProjectData.p1.ideate.finalImage5} alt="Bledger Final Prototype" className='w-1/2 h-auto rounded-lg mb-10 mx-auto'/>
+                    <img src={ProjectData.p1.ideate.finalImage6} alt="Bledger Final Prototype" className='w-1/2 h-auto rounded-lg mb-10 mx-auto'/>
+                    <img src={ProjectData.p1.ideate.finalImage7} alt="Bledger Final Prototype" className='w-1/2 h-auto rounded-lg mb-10 mx-auto'/>
+                    <img src={ProjectData.p1.ideate.finalImage8} alt="Bledger Final Prototype" className='w-1/2 h-auto rounded-lg mb-10 mx-auto'/>
                 </div>
             </div>
 

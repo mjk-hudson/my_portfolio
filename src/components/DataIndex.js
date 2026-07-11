@@ -22,7 +22,7 @@ export const Experience= [
     dateRange: "February 2026 – June 2026",
     role: "Freelance Senior UX/Product Designer – AI Fintech",
     company: "Self-Directed Project (Remote)",
-    description: "Designed and prototyped BudgetWise AI, a mobile budgeting app for gig workers using AI nudges and gamified savings to prevent overspending. Led full UX cycle: user research (50+ interviews), Figma prototypes with micro-interactions, WCAG 2.1 AA compliance, and on-device AI (TensorFlow Lite). Simulated testing projected 25% engagement increase; created ethical-AI-focused portfolio case study."
+    description: "Designed and prototyped Bledger, a mobile budgeting app for gig workers using AI nudges and gamified savings to prevent overspending. Led full UX cycle: user research (50+ interviews), Figma prototypes with micro-interactions, WCAG 2.1 AA compliance, and on-device AI (TensorFlow Lite). Simulated testing projected 25% engagement increase; created ethical-AI-focused portfolio case study."
   },
   {
     dateRange: "September 2025 – June 2026",
@@ -34,13 +34,13 @@ export const Experience= [
     dateRange: "May 2025 – August 2025",
     role: "Freelance UX/UI Designer – Investment Dashboard",
     company: "Self-Directed Project (Remote)",
-    description: "Developed InvestFlow, a responsive web dashboard for novice investors with scenario sliders, narrative risk profiles, ESG scores, and offline PWA support. Iterated prototypes in Framer after heuristics and 30-user surveys; reduced decision time 35% in flows. Produced metrics-driven portfolio assets emphasizing empathetic data visualization."
+    description: "Developed In-Flow, a responsive web dashboard for novice investors with scenario sliders, narrative risk profiles, ESG scores, and offline PWA support. Iterated prototypes in Framer after heuristics and 30-user surveys; reduced decision time 35% in flows. Produced metrics-driven portfolio assets emphasizing empathetic data visualization."
   },
   {
     dateRange: "December 2024 – April 2025",
     role: "Freelance Product/UX Designer – Events Platform",
     company: "Self-Directed Project (Remote)",
-    description: "Created GigVibe Events, a responsive ticketing site with vibe-matching, mood quizzes, dynamic alerts, and sustainability features (carbon calculator, green badges). Built Webflow prototypes and tested accessibility; achieved 28% conversion uplift in prototypes. Delivered live demo and eco-conscious case study."
+    description: "Created Vibespace Events, a responsive ticketing site with vibe-matching, mood quizzes, dynamic alerts, and sustainability features (carbon calculator, green badges). Built Webflow prototypes and tested accessibility; achieved 28% conversion uplift in prototypes. Delivered live demo and eco-conscious case study."
   },
   {
     dateRange: "March 2023 – October 2024",
