@@ -212,12 +212,12 @@ export default function VibeSpace ()
                     <img className="w-full h-auto" src={ProjectData.p2.Prototype.Mock1} alt="Mock-Ups"/>
                     <img className="w-full h-auto" src={ProjectData.p2.Prototype.Mock2} alt="Mock-Ups"/>
                 </div>
-                <div className="gap-4 grid grid-cols-2">
+                <div className="gap-4 grid grid-cols-2 palce-items-center">
                     <img className="w-full h-auto" src={ProjectData.p2.Prototype.Mock3} alt="Mock-Ups"/>
                     <img className="w-full h-auto" src={ProjectData.p2.Prototype.Mock4} alt="Mock-Ups"/>
                 </div>
                 <div className="gap-4 grid grid-cols-2 place-items-center">
-                    <img className="w-full" src={ProjectData.p2.Prototype.Mock5} alt="Mock-Ups"/>
+                    <img className="w-3/4 h-auto" src={ProjectData.p2.Prototype.Mock5} alt="Mock-Ups"/>
                 </div>
                     <img className="w-full h-auto" src={ProjectData.p2.Prototype.Mock6} alt="Mock-Ups"/>
                 
@@ -247,7 +247,9 @@ export default function VibeSpace ()
                     <img className="w-full h-auto" src={ProjectData.p2.Prototype.Mockgif1} alt="Mock-Ups"/>
                     <img className="w-3/4 h-auto" src={ProjectData.p2.Prototype.Mockgif2} alt="Mock-Ups"/>
                     <img className="w-3/4 h-auto" src={ProjectData.p2.Prototype.Mockgif3} alt="Mock-Ups"/>
-                    <img className="w-full h-auto" src={ProjectData.p2.Prototype.Mockgif4} alt="Mock-Ups"/>
+                    <div className="gap-4 grid grid-cols-1 place-items-center">
+                        <img className="w-full h-auto" src={ProjectData.p2.Prototype.Mockgif4} alt="Mock-Ups"/>
+                    </div>
                 </div>
 
                 {/*Testing*/}
