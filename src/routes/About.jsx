@@ -24,7 +24,7 @@ export default function About() {
         initial={{opacity: 0, x: -50}}
         transition={{duration: 1, delay: 0.4, ease: 'easeInOut'}}
         className="md:w-1/3">
-          <img src={ProfileImage} alt="Profile Image" className="rounded-xl w-1/2 h-auto"/>
+          {/*<img src={ProfileImage} alt="Profile Image" className="rounded-xl w-1/2 h-auto"/>*/}
         </motion.div>
 
         {/*About me text section */}
