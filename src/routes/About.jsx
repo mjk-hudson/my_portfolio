@@ -19,13 +19,13 @@ export default function About() {
 
       {/*Profile Image*/}
       <div className="border-b border-cyan-800 flex flex-col md:flex-row gap-10 pb-20">
-        <motion.div 
+        {/*<motion.div 
         whileInView={{opacity: 1, x: 0}}
         initial={{opacity: 0, x: -50}}
         transition={{duration: 1, delay: 0.4, ease: 'easeInOut'}}
         className="md:w-1/3">
-          {/*<img src={ProfileImage} alt="Profile Image" className="rounded-xl w-1/2 h-auto"/>*/}
-        </motion.div>
+          <img src={ProfileImage} alt="Profile Image" className="rounded-xl w-1/2 h-auto"/>
+        </motion.div>*/}
 
         {/*About me text section */}
         <motion.div 
