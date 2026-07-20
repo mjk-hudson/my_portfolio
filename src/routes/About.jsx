@@ -13,7 +13,7 @@ export default function About() {
         initial={{opacity: 0, y: -50}}
         transition={{duration: 0.8, ease: 'easeInOut'}}>
         <motion.h1 
-        className="text-start text-2xl font-bold bg-clip-text text-transparent bg-linear-to-r from-pink-300 via-slate-500 to-purple-500 tracking-tight pb-10">Experience, Skills & Education.
+        className="text-start text-2xl font-bold bg-clip-text text-transparent bg-linear-to-r from-cyan-300 via-slate-500 to-purple-500 tracking-tight pb-10">Experience, Skills & Education.
         </motion.h1>
       </motion.div>
 
@@ -33,8 +33,8 @@ export default function About() {
         initial={{opacity: 0, x: 50}}
         transition={{duration: 1.5, delay: 0.5, ease: 'easeInOut'}}
         className="md:w-1/2 content-center">
-          <p className="text-lg text-neutral-400 pb-4">I'm a passionate UX designer with 6+ years of experience in creating user-centered digital products and services with a strong foundation in frontend web development and technologies. My journey in design began with a curiosity about how things work, creating viable products and services and it has evolved into a career where I build solutions that are both functional, useful, interactive and elegant.</p>
-          <p className="text-lg text-neutral-400 pb-4">I specialize in creating digital products and services as cross-platform responsive web and mobile applications using modern frameworks like React, Tailwind CSS and motion.dev. I also have experience with backend technologies such as Node.js. My approach to design is centered around viability, user experience - delight, and continuous improvement.</p>
+          <p className="text-lg text-neutral-700 pb-4">I'm a passionate UX designer with 6+ years of experience in creating user-centered digital products and services with a strong foundation in frontend web development and technologies. My journey in design began with a curiosity about how things work, creating viable products and services and it has evolved into a career where I build solutions that are both functional, useful, interactive and elegant.</p>
+          <p className="text-lg text-neutral-700 pb-4">I specialize in creating digital products and services as cross-platform responsive web and mobile applications using modern frameworks like React, Tailwind CSS and motion.dev. I also have experience with backend technologies such as Node.js. My approach to design is centered around viability, user experience - delight, and continuous improvement.</p>
         </motion.div>
       </div>
 
@@ -52,11 +52,11 @@ export default function About() {
       </div>
 
       {/*Dates, Role, Company, Description*/}
-      <div className="border-b border-cyan-800 gap-10">
+      <div className="border-b border-cyan-200 gap-10">
 
           {/*Date Range*/}
             {Experience.map((experience, index) => (
-              <div className="text-start text-neutral-300 flex flex-wrap">
+              <div className="text-start text-neutral-800 flex flex-wrap">
               <motion.div
               key={index}
               whileInView={{opacity: 1, x:0}}
@@ -76,9 +76,9 @@ export default function About() {
                 <h3 className="text-xl text-indigo-500 font-semibold">
                   {experience.role}
                 </h3>
-                <h4 className="text-lg bg-cyan-900/50 rounded p-1 text-cyan-400 italic mb-2">{experience.company}
+                <h4 className="text-lg bg-cyan-900 rounded p-1 text-cyan-400 italic mb-2">{experience.company}
                 </h4>
-                <p className="text-neutral-400 mt-4 mb-8">
+                <p className="text-neutral-700 mt-4 mb-8">
                   {experience.description}
                 </p>
               </motion.div>
@@ -146,7 +146,7 @@ export default function About() {
         initial={{opacity: 0, y: -20}}
         transition={{ duration: 0.8, delay: 0.8, ease: 'easeInOut'}}
         className="text-lg mb-4 text-start">
-          <p className="text-neutral-400">{Contact.phoneNo}</p>
+          <p className="text-neutral-700">{Contact.phoneNo}</p>
           <h2 className="text-cyan-400">{Contact.email}</h2>
         </motion.div>
       </div>

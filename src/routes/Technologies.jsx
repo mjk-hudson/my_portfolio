@@ -77,7 +77,7 @@ export default function Technologies() {
                   initial={{opacity: 0, y: 10, x: '-50%'}}
                   animate={{opacity: 1, y: 0, x: '-50%'}}
                   exit={{opacity: 0, y: 10, x: '-50%'}}
-                  className={`pointer-events-none absolute bg-neutral-950/95 -top-10 left-1/2 whitespace-nowrap px-3 py-1.5 text-xs shadow-lg ${tech.color}`}>
+                  className={`pointer-events-none absolute bg-neutral-250 -top-10 left-1/2 whitespace-nowrap px-3 py-1.5 text-xs shadow-lg ${tech.color}`}>
                    {tech.name}
                   </motion.span>
                 )}

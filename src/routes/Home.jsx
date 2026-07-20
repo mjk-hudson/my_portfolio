@@ -19,7 +19,7 @@ export default function Home() {
         initial={{opacity: 0, y: +50}}
         animate={{opacity: 1, y: 0}}
         transition={{duration: 1, delay: 0.5}} 
-        className="text-2xl font-bold bg-clip-text text-transparent bg-linear-to-r from-pink-300 via-slate-500 to-purple-500 tracking-tight">
+        className="text-2xl font-bold bg-clip-text text-transparent bg-linear-to-r from-cyan-300 via-slate-500 to-purple-500 tracking-tight">
           User Experience (UX) Designer.
         </motion.h1>
 
@@ -27,7 +27,7 @@ export default function Home() {
         initial={{opacity: 0, y: 20}}
         animate={{opacity: 1, y: 0}}
         transition={{delay: 0.8, duration: 1.5}}
-        className="mt-6 text-neutral-100 max-w-2xl text-start">
+        className="mt-6 text-neutral-700 max-w-2xl text-start">
           I’m Majik Hudson, a Hell’s Kitchen, N.Y.C. based User Experience (UX) Designer. I leverage
           Human Centered Design, Design Thinking, A.I. and motion to create desirable,
           viable, feasible and engaging digital products and experiences. Take a look at some of my case studies to get an idea of my design process and skills and potential.

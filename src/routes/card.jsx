@@ -26,7 +26,7 @@ export default function Card()
 	return( 
 		<>
 		{/*--Neighborgood First card--*/}	
-		<div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden place-items-center">
+		<div className="p-10 gap-x-16 space-y-12 rounded-xl outline-zinc-500/40 overflow-hidden place-items-center">
 
 			{/*--Hero image--*/}
 			<img src={heroImage} 
@@ -35,15 +35,15 @@ export default function Card()
 
 			{/*--project Title --*/}
     		<div className="space-y-3">      			
-						<h1 className=' text-neutral-200 text-left text-2xl font-bold'>Neighborgood
+						<h1 className=' text-neutral-800 text-left text-2xl font-bold'>Neighborgood
 						</h1>
 							{/* Project description */}
-            				<p className="text-neutral-300">Neighborgood helps you make a mark in your community even if you're not sure where to start? Our new webservice makes it easy to find local areas perfect for creating community hubs, hosting outreach events, and volunteering. With just a few clicks, you'll be able to discover the best spots in your area to bring people together and make a positive impact on your community. ➡️
+            				<p className="text-neutral-600">Neighborgood helps you make a mark in your community even if you're not sure where to start? Our new webservice makes it easy to find local areas perfect for creating community hubs, hosting outreach events, and volunteering. With just a few clicks, you'll be able to discover the best spots in your area to bring people together and make a positive impact on your community. ➡️
 							</p>      			
 			</div>
 
 			{/*--Platform info graphic "info"--*/}
-			<div className=" px-12 py-4 justify-between items-center gap-8 flex row-span-1 bg-orange-500 rounded-lg">
+			<div className=" px-2 py-2 justify-between items-center gap-8 flex row-span-1 bg-orange-500 rounded-lg">
 
 				<div className="">
 					<h2 className=" text-neutral-100 text-base">Platforms</h2>
@@ -101,7 +101,7 @@ export default function Card()
 		</AnimatePresence>
 		</div>
 		{/*--Bledger Second card--*/}
-		<div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden place-items-center">
+		<div className="p-10 gap-x-16 space-y-12 rounded-xl outline-zinc-500/40 overflow-hidden place-items-center">
 
 			{/*--Hero image--*/}
 			<img src={bledgerBoard} 
@@ -110,15 +110,15 @@ export default function Card()
 
 			{/*--project Title --*/}
     		<div className="space-y-3">      			
-						<h1 className=' text-neutral-200 text-left text-2xl font-bold'>Bledger
+						<h1 className=' text-neutral-800 text-left text-2xl font-bold'>Bledger
 						</h1>
 							{/* Project description */}
-            				<p className="text-neutral-300">Bledger is a mobile budgeting application that uses AI to predict and prevent overspending, targeting millennials and Gen Z in gig economies. It solves the pain of fragmented financial tracking by integrating bank APIs and offering "nudges" via gamified micro-challenges. Also keeps tracks of bills, rent other important scheduled payments and either (using agentic A.I.) makes sure there is enough money in the account to cover the expenses, or sends alerts.
+            				<p className="text-neutral-600">Bledger is a mobile budgeting application that uses AI to predict and prevent overspending, targeting millennials and Gen Z in gig economies. It solves the pain of fragmented financial tracking by integrating bank APIs and offering "nudges" via gamified micro-challenges. Also keeps tracks of bills, rent other important scheduled payments and either (using agentic A.I.) makes sure there is enough money in the account to cover the expenses, or sends alerts.
 							</p>      			
 			</div>
 
 			{/*--Platform info graphic "info"--*/}
-			<div className=" px-12 py-4 justify-between items-center gap-8 flex row-span-1 bg-cyan-500 rounded-lg">
+			<div className=" px-2 py-2 justify-between items-center gap-8 flex row-span-1 bg-cyan-500 rounded-lg">
 
 				<div className="">
 					<h2 className=" text-neutral-100 text-base">Platforms</h2>
@@ -163,7 +163,7 @@ export default function Card()
 		</AnimatePresence>
 		</div>
 		{/*Vibe Space Third card--*/}
-		<div className="p-10 gap-x-16 space-y-12 bg-slate-950/50 rounded-xl outline-zinc-500/40 overflow-hidden place-items-center">
+		<div className="p-10 gap-x-16 space-y-12 rounded-xl outline-zinc-500/40 overflow-hidden place-items-center">
 
 			{/*--Hero image--*/}
 			<img src={vibeSpaceHero} 
@@ -172,15 +172,15 @@ export default function Card()
 
 			{/*--project Title --*/}
     		<div className="space-y-3">      			
-						<h1 className=' text-neutral-200 text-left text-2xl font-bold'>Vibe Space
+						<h1 className=' text-neutral-800 text-left text-2xl font-bold'>Vibe Space
 						</h1>
 							{/* Project description */}
-            				<p className="text-neutral-300">Vibe Space is a responsive web based event matching-networking platform that connects people with similar interests and creates opportunities for meaningful interactions in local communities. By leveraging AI and user-generated content, Vibe Space helps users discover and join local events, activities, and groups that align with their passions. Whether you're looking to meet new friends, find a workout buddy, or explore new hobbies, Vibe Space is your go-to platform for building connections and fostering a sense of belonging in your community.
+            				<p className="text-neutral-600">Vibe Space is a responsive web based event matching-networking platform that connects people with similar interests and creates opportunities for meaningful interactions in local communities. By leveraging AI and user-generated content, Vibe Space helps users discover and join local events, activities, and groups that align with their passions. Whether you're looking to meet new friends, find a workout buddy, or explore new hobbies, Vibe Space is your go-to platform for building connections and fostering a sense of belonging in your community.
 							</p>      			
 			</div>
 
 			{/*--Platform info graphic "info"--*/}
-			<div className=" px-8 gap-8 py-4 flex justify-between items-center flex-row-span-full bg-rose-500 rounded-lg">
+			<div className=" px-2 gap-8 py-2 flex justify-between items-center flex-row-span-full bg-rose-500 rounded-lg">
 
 				<div className="flex row-span-1">
 					<h2 className=" text-neutral-100 text-base">Platforms</h2>

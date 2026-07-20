@@ -37,7 +37,7 @@ const itemVariants = {
 export default function HeaderBar()
 {
   return(
-    <nav className="fixed top-0 left-0 w-full z-50 px-4 bg-slate-950/50 backdrop-blur-md border-b border-white/10 selection:bg-pink-300 selection:text-pink-800">
+    <nav className="fixed top-0 left-0 w-full z-50 px-4 backdrop-blur-md border-b border-white/10 selection:bg-pink-300 selection:text-pink-800">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
 
           {/*Logo section */}
