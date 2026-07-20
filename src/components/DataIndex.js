@@ -28,7 +28,7 @@ export const Experience= [
     dateRange: "September 2025 – June 2026",
     role: "Freelance UX/Product Designer – Social AR Entertainment",
     company: "Self-Directed Project (Remote)",
-    description: "Built ReelQuest, a mobile app for film fans featuring AR scene remixing, collaborative playlists, and mood-based discovery. Created Figma prototypes with Lottie animations, inclusive subtitles, RTL support, and CO₂ tracking. Usability tests showed 40% faster quest joins and 30% higher retention; delivered inclusivity-focused case study."
+    description: "Built ReelQuest, a mobile app for film fans featuring AR scene remixing, collaborative playlists, and mood-based discovery. Created Figma prototypes with animations. Usability tests showed 40% faster quest joins and 30% higher retention; delivered inclusivity-focused case study."
   },
   {
     dateRange: "May 2025 – August 2025",
@@ -40,7 +40,7 @@ export const Experience= [
     dateRange: "December 2024 – April 2025",
     role: "Freelance Product/UX Designer – Events Platform",
     company: "Self-Directed Project (Remote)",
-    description: "Created Vibespace Events, a responsive ticketing site with vibe-matching, mood quizzes, dynamic alerts, and sustainability features (carbon calculator, green badges). Built Webflow prototypes and tested accessibility; achieved 28% conversion uplift in prototypes. Delivered live demo and eco-conscious case study."
+    description: "Created Vibespace, a responsive meeting and event platform for the web, with vibe-matching, mood quizzes, dynamic alerts, and sustainability features (carbon calculator, green badges). Built Webflow prototypes and tested accessibility; achieved 28% conversion uplift in prototypes. Delivered live demo and eco-conscious case study."
   },
   {
     dateRange: "March 2023 – October 2024",
@@ -73,23 +73,23 @@ export const Skills = [
 
 export const Education = [
   {
+    dateRange: "September 2010 – May 2013",
+    role: "B.S. Industrial Design",
+    company: "University of Bridgeport – Shintaro Akatsu School of Design (SASD)",
+    description: "IDSA NY Chapter member; Presidents’ Scholar 2013."
+  },
+  {
     dateRange: "August 2021 – July 2022",
     role: "Google UX Design Certificate",
     company: "Coursera",
     description: "User Experience Design program covering UX/UI design, responsive web, wireframing, prototyping, user research & testing, journey mapping, empathy maps, ideation, storyboarding, personas, and design frameworks. Mastered Figma and Adobe XD. Produced Online portfolio."
   },
-    {
+  {
     dateRange: "May 2024 – November 2024",
     role: "IBM Front-End Web Developer Professional Certificate",
     company: "Coursera",
     description: "Front-End Web and Application Development: Using Meta’s React and React.js platform.Component-Based Architecture: Built dynamic user interfaces using modular building blocks, covering both traditional class components and modern functional components. State and Props Management: I can pass data down through your application using props, and manage interactive, changing data within individual components using states. React Hooks: Hands-on experience using built-in React hooks to manage component lifecycles and side effects smoothly without needing to write class components. Event Handling and Forms: I can capture user interactions, listen for browser events, and efficiently manage and validate user input from forms. Global State with Redux: Experience with Redux (specifically Redux Toolkit) to help you centralize and manage global application state as applications grow. Practical Application Building: I’ve built several digital product and service concepts through hands-on projects, typically culminating in building fully functional front-end applications like a web based store front with a shopping cart and a mobile budgeting A.I. application."
   },
-  {
-    dateRange: "September 2010 – May 2013",
-    role: "B.S. Industrial Design",
-    company: "University of Bridgeport – Shintaro Akatsu School of Design (SASD)",
-    description: "IDSA NY Chapter member; Presidents’ Scholar 2013."
-    }
 ];
 
 

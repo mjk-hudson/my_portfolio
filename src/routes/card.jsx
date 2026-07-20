@@ -38,12 +38,12 @@ export default function Card()
 						<h1 className=' text-neutral-800 text-left text-2xl font-bold'>Neighborgood
 						</h1>
 							{/* Project description */}
-            				<p className="text-neutral-600">Neighborgood helps you make a mark in your community even if you're not sure where to start? Our new webservice makes it easy to find local areas perfect for creating community hubs, hosting outreach events, and volunteering. With just a few clicks, you'll be able to discover the best spots in your area to bring people together and make a positive impact on your community. ➡️
+            				<p className="text-neutral-600">Neighborgood helps you make a mark in your community even if you're not sure where to start? Our new webservice makes it easy to find local areas perfect for creating community hubs, hosting outreach events, and volunteering. With just a few clicks, you'll be able to discover the best spots in your area to bring people together and make a positive impact on your community.
 							</p>      			
 			</div>
 
 			{/*--Platform info graphic "info"--*/}
-			<div className=" px-2 py-2 justify-between items-center gap-8 flex row-span-1 bg-orange-500 rounded-lg">
+			<div className=" px-2 py-2 justify-between items-center gap-8 sm: ga-4 flex row-span-1 bg-orange-500 rounded-lg">
 
 				<div className="">
 					<h2 className=" text-neutral-100 text-base">Platforms</h2>
@@ -74,11 +74,6 @@ export default function Card()
 		<button
 			onClick={() => toggleExpand("Neighborgood")}
 			className="mt-6 flex items-center gap-3 text-orange-600 hover:text-orange-800 transition-colors focus:outline-none">
-			<img 
-			src={openIcon} 
-			className={`w-8 h-8 transition-transform duration-300 ${expandedProject ? 'rotate-180' : ''}`}
-			alt={expandedProject ? "Collapse case study" : "Expand case study"}
-			/>
 			<span className="font-medium">
 			{expandedProject === "Neighborgood" ? "Collapse Case Study" : "View Full Case Study"}
 			</span>
@@ -136,11 +131,6 @@ export default function Card()
 		<button
 			onClick={() => toggleExpand("Bledger")}
 			className="mt-6 flex items-center gap-3 text-cyan-600 hover:text-cyan-800 transition-colors focus:outline-none">
-			<img 
-			src={openIcon} 
-			className={`w-8 h-8 transition-transform duration-300 ${expandedProject === "Bledger" ? 'rotate-180' : ''}`}
-			alt={expandedProject === "Bledger" ? "Collapse case study" : "Expand case study"}
-			/>
 			<span className="font-medium">
 			{expandedProject === "Bledger" ? "Collapse Case Study" : "View Full Case Study"}
 			</span>
@@ -211,11 +201,6 @@ export default function Card()
 		<button
 			onClick={() => toggleExpand("vibespace")}
 			className="mt-6 flex items-center gap-3 text-rose-600 hover:text-rose-800 transition-colors focus:outline-none">
-			<img 
-			src={openIcon} 
-			className={`w-8 h-8 transition-transform duration-300 ${expandedProject === "vibespace" ? 'rotate-180' : ''}`}
-			alt={expandedProject === "vibespace" ? "Collapse case study" : "Expand case study"}
-			/>
 			<span className="font-medium">
 			{expandedProject === "vibespace" ? "Collapse Case Study" : "View Full Case Study"}
 			</span>
