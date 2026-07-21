@@ -75,7 +75,7 @@ export default function Card()
 			onClick={() => toggleExpand("Neighborgood")}
 			className="mt-6 flex items-center gap-3 text-orange-600 hover:text-orange-800 transition-colors focus:outline-none">
 			<span className="font-medium">
-			{expandedProject === "Neighborgood" ? "Collapse Case Study" : "View Full Case Study"}
+			{expandedProject === "Neighborgood" ? "Close Case Study" : "Open Case Study"}
 			</span>
 		</button>
 
@@ -132,7 +132,7 @@ export default function Card()
 			onClick={() => toggleExpand("Bledger")}
 			className="mt-6 flex items-center gap-3 text-cyan-600 hover:text-cyan-800 transition-colors focus:outline-none">
 			<span className="font-medium">
-			{expandedProject === "Bledger" ? "Collapse Case Study" : "View Full Case Study"}
+			{expandedProject === "Bledger" ? "Close Case Study" : "Open Case Study"}
 			</span>
 		</button>
 
@@ -202,7 +202,7 @@ export default function Card()
 			onClick={() => toggleExpand("vibespace")}
 			className="mt-6 flex items-center gap-3 text-rose-600 hover:text-rose-800 transition-colors focus:outline-none">
 			<span className="font-medium">
-			{expandedProject === "vibespace" ? "Collapse Case Study" : "View Full Case Study"}
+			{expandedProject === "vibespace" ? "Close Case Study" : "Open Case Study"}
 			</span>
 		</button>
 
