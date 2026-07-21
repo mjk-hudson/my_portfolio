@@ -10,7 +10,8 @@ export default function VibeSpace ()
 {
     return (
         <>
-            <div classname="w-full p-6 md:p-4 gap-6 bg-slate-900/50 rounded-lg shadow-[2px_11px_6px_-4px_rgba(136,136,136,0.25)] mt-6 mx-auto max-w-6xl">   
+            <div classname="w-full p-6 md:p-4 gap-6 rounded-lg shadow-[2px_11px_6px_-4px_rgba(136,136,136,0.25)] mt-6 mx-auto max-w-6xl">
+                  
                 {/*Vibe Space Hero Image*/}
                 <img src={vibeSpaceHero} alt="Vibe Space Hero" />
 
