@@ -16,27 +16,27 @@ export default function VibeSpace ()
                 <img src={vibeSpaceHero} alt="Vibe Space Hero" />
 
                 {/*Vibe Space Intro*/}
-                <h1 className="text-start text-3xl font-bold text-white mb-4">{ProjectData.p2.intro.title}
+                <h1 className="text-start text-3xl font-bold text-slate-500 mb-4">{ProjectData.p2.intro.title}
                 </h1>
-                <h2 className="text-start text-2xl font-bold text-white">Technologies and Platforms:
+                <h2 className="text-start text-2xl font-bold text-slate-500">Technologies and Platforms:
                 </h2>
-                <p className='text-start text-lg text-gray-300'>{ProjectData.p2.intro.technologies}
+                <p className='text-start text-lg text-slate-400'>{ProjectData.p2.intro.technologies}
                 </p>
-                <h2 className="text-start text-2xl font-bold text-white">Study description:
+                <h2 className="text-start text-2xl font-bold text-slate-500">Study description:
                 </h2>
                 <p className="text-start text-slate-400 text-small sm:text-base">{ProjectData.p2.intro.studyDescription}
                 </p>
                 <div className="gap-4 ">
                 </div>
-                <h2 className="text-start text-2xl font-bold text-white">Product description:
+                <h2 className="text-start text-2xl font-bold text-slate-500">Product description:
                 </h2>
                 <p className="text-start text-slate-400 text-small sm:text-base mb-4">{ProjectData.p2.intro.productDescription}
                 </p>
 
                 {/*Vibe Empathy*/}
-                <h1 className="text-start text-3xl font-bold text-white">{ProjectData.p2.empathy.title}
+                <h1 className="text-start text-3xl font-bold text-slate-500">{ProjectData.p2.empathy.title}
                 </h1>
-                <h2 className="text-start text-2xl font-bold text-white">Method: Usability Study
+                <h2 className="text-start text-2xl font-bold text-slate-500">Method: Usability Study
                 </h2>
                 <p className="text-start text-slate-400 text-small sm:text-base">{ProjectData.p2.empathy.studyDescription}
                 </p>
@@ -45,11 +45,11 @@ export default function VibeSpace ()
                 </div>
 
                 {/*Personas*/}
-                <h2 className="text-start text-2xl font-bold text-white">Personas:
+                <h2 className="text-start text-2xl font-bold text-slate-500">Personas:
                 </h2>
                 <p className="text-start text-slate-400 text-small sm:text-base">{ProjectData.p2.empathy.personaIntro}
                 </p>
-                <h2 className="text-start text-2xl font-bold text-white">Maya Chen:
+                <h2 className="text-start text-2xl font-bold text-slate-500">Maya Chen:
                 </h2>
                 <p className="text-start text-slate-400 text-small sm:text-base">{ProjectData.p2.empathy.persona1}
                 </p>
@@ -58,7 +58,7 @@ export default function VibeSpace ()
                     <img src={ProjectData.p2.empathy.empathyMapImage1} alt="Vibe Space Empathy Image 1"/>
                 </div>
                 
-                <h2 className="text-start text-2xl font-bold text-white">Marcus Vance:
+                <h2 className="text-start text-2xl font-bold text-slate-500">Marcus Vance:
                 </h2>
                 <p className="text-start text-slate-400 text-small sm:text-base">{ProjectData.p2.empathy.persona2}
                 </p>
@@ -66,7 +66,7 @@ export default function VibeSpace ()
                     <img src={ProjectData.p2.empathy.personaImage2} alt="Vibe Space Persona Image 2" />
                 </div>
                 <img src={ProjectData.p2.empathy.empathyMapImage2} alt="Vibe Space Empathy Image 2" />
-                <h2 className="text-start text-2xl font-bold text-white">Elena Rostova:
+                <h2 className="text-start text-2xl font-bold text-slate-500">Elena Rostova:
                 </h2>
                 <p className="text-start text-slate-400 text-small sm:text-base">
                 {ProjectData.p2.empathy.persona3}
@@ -77,7 +77,7 @@ export default function VibeSpace ()
                 <div className="gap-4">
                     <img src={ProjectData.p2.empathy.empathyMapImage3} alt="Vibe Space Empathy Image 3" />
                 </div>
-                <h2 className="text-start text-2xl font-bold text-white">Key Insights and Summary:
+                <h2 className="text-start text-2xl font-bold text-slate-500">Key Insights and Summary:
                 </h2>
                 <p className="text-start text-slate-400 text-small sm:text-base">
                 {ProjectData.p2.empathy.insights}
@@ -87,12 +87,12 @@ export default function VibeSpace ()
                 </p>
 
                 {/*Define*/}
-                <h1 className="text-start text-3xl font-bold text-white">Define
+                <h1 className="text-start text-3xl font-bold text-slate-500">Define
                 </h1>
                 <p className="text-start text-slate-400 text-small sm:text-base mb-2">
                 {ProjectData.p2.define.problemStatement}
                 </p>
-                <h2 className="text-start text-2xl font-bold text-white">Hypothesis Statement:
+                <h2 className="text-start text-2xl font-bold text-slate-500">Hypothesis Statement:
                 </h2>
                 <p className="text-start text-slate-400 text-small sm:text-base">
                 {ProjectData.p2.define.hypothesisStatement}
@@ -100,7 +100,7 @@ export default function VibeSpace ()
                 <p className="text-start text-slate-400 text-small sm:text-base">
                 {ProjectData.p2.define.designPrinciples}
                 </p>
-                <h2 className="text-start text-2xl font-bold text-white">Value Proposition:
+                <h2 className="text-start text-2xl font-bold text-slate-500">Value Proposition:
                 </h2>
                 <p className="text-start text-slate-400 text-small sm:text-base">
                 {ProjectData.p2.define.valueProposition}
@@ -111,18 +111,18 @@ export default function VibeSpace ()
                 <div className="gap-4">
                     <img src={ProjectData.p2.define.userFlows} alt="User Flows"/>
                 </div>
-                <h2 className="mt-4 text-start text-2xl font-bold text-white">Define Summary:
+                <h2 className="mt-4 text-start text-2xl font-bold text-slate-500">Define Summary:
                 </h2>
                 <p className="text-start text-slate-400 text-small sm:text-base mb-4">
                 {ProjectData.p2.define.defineSummary}
                 </p>
 
                 {/*Design*/}
-                <h1 className="text-start text-3xl font-bold text-white">Ideation
+                <h1 className="text-start text-3xl font-bold text-slate-500">Ideation
                 </h1>
-                <h2 className="text-start text-2xl font-bold text-white mt-4">Ideation Methods:
+                <h2 className="text-start text-2xl font-bold text-slate-500 mt-4">Ideation Methods:
                 </h2>
-                <h3 className="text-start text-white mt-1">{ProjectData.p2.Ideate.ideationMethods}
+                <h3 className="text-start text-slate-500 mt-1">{ProjectData.p2.Ideate.ideationMethods}
                 </h3>
                 <p className="text-start text-slate-400 text-small sm:text-base">
                 {ProjectData.p2.Ideate.designChallenge}
@@ -133,7 +133,7 @@ export default function VibeSpace ()
                 <div className="gap-4">
                 <p className="text-start text-slate-400 text-small sm:text-base">{ProjectData.p2.Ideate.earlySketches}</p>
                 </div>
-                <h3 className="text-start text-white mt-1">Concept Development:
+                <h3 className="text-start text-slate-500 mt-1">Concept Development:
                 </h3>
                 <p className="text-start text-slate-400 text-small sm:text-base">
                 {ProjectData.p2.Ideate.conceptDevelopment}
@@ -160,10 +160,6 @@ export default function VibeSpace ()
                 <img className="rounded-xl mt-6" src={ProjectData.p2.Ideate.ideation3} alt="Early Sketches"/>
                 </div>
 
-                <p className="text-start text-slate-400 text-small sm:text-base mb-4">
-                {ProjectData.p2.Ideate.iterationDescription}
-                </p>
-
                 <div className="gap-4 mt-6">
                 </div>
                 <div className="gap-4 mt-6 place-items-center">
@@ -178,7 +174,7 @@ export default function VibeSpace ()
                 </div>
 
                 {/*Prototype*/}
-                <h1 className="text-start text-3xl font-bold text-white mt-6">Prototype
+                <h1 className="text-start text-3xl font-bold text-slate-500 mt-6">Prototype
                 </h1>
                 <p className="mt-4 text-start text-slate-400 text-small sm:text-base">
                 {ProjectData.p2.Prototype.prototypeIntro}
@@ -207,7 +203,7 @@ export default function VibeSpace ()
                 </div>
 
                 {/*Mock-Ups*/}
-                <h1 className="text-start text-3xl font-bold text-white">Mock-Ups
+                <h1 className="text-start text-3xl font-bold text-slate-500">Mock-Ups
                 </h1>
                 <div className="gap-4 grid grid-cols-2">
                     <img className="w-full h-auto" src={ProjectData.p2.Prototype.Mock1} alt="Mock-Ups"/>
@@ -240,7 +236,7 @@ export default function VibeSpace ()
                     <img className="w-full" src={ProjectData.p2.Prototype.Mock12} alt="Mock-Ups"/>
 
                 {/*Vibe Space GIFs*/}
-                <h2 className="text-start text-2xl font-bold text-white mt-4">Prototype user flow animations:</h2>
+                <h2 className="text-start text-2xl font-bold text-slate-500 mt-4">Prototype user flow animations:</h2>
                 <p className="text-start text-slate-400 text-small sm:text-base my-4">
                 {ProjectData.p2.Prototype.Mockgifs}
                 </p>
@@ -254,38 +250,30 @@ export default function VibeSpace ()
                 </div>
 
                 {/*Testing*/}
-                <h1 className="text-start text-3xl font-bold text-white">Testing
+                <h1 className="text-start text-3xl font-bold text-slate-500">Testing
                 </h1>
-                <h2 className="text-start text-2xl font-bold text-white">
+                <h2 className="text-start text-2xl font-bold text-slate-500">
                 {ProjectData.p2.Test.testMethod}
                 </h2>
                 <p className="text-start text-slate-400 text-small sm:text-base">
                 {ProjectData.p2.Test.testDescription}
                 </p>
-                <div className="gap-4">
-                    <p className="text-start text-slate-400 text-small sm:text-base">
-                    {ProjectData.p2.Test.competitiveAudit}
-                    </p>
-                </div>
-                <div className="gap-4">
-                <img src={ProjectData.p2.Test.competitiveAuditImage} alt="Test Findings"/>
-                </div>
-                <h3 className="text-start text-2xl font-bold text-white">Test Results:
+                <h3 className="text-start text-2xl font-bold text-slate-500">Test Results:
                 </h3>
                 <p className="text-start text-slate-400 text-small sm:text-base">
                 {ProjectData.p2.Test.testResults}
                 </p>
-                <h3 className="text-start text-2xl font-bold text-white">Key Insights:
+                <h3 className="text-start text-2xl font-bold text-slate-500">Key Insights:
                 </h3>
                 <p className="text-start text-slate-400 text-small sm:text-base">
                 {ProjectData.p2.Test.resultInsights}
                 </p>
-                <h3 className="text-start text-2xl font-bold text-white">Test Summary:
+                <h3 className="text-start text-2xl font-bold text-slate-500">Test Summary:
                 </h3>
                 <div className="text-start text-slate-400 text-small sm:text-base">
                 {ProjectData.p2.Test.testSummary}
                 </div>
-                <h3 className="text-start text-2xl font-bold text-white">Conclusion:
+                <h3 className="text-start text-2xl font-bold text-slate-500">Conclusion:
                 </h3>
                 <div className="text-start text-slate-400 text-small sm:text-base">
                 {ProjectData.p2.Test.conclusion}
