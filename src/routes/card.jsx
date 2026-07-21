@@ -43,7 +43,7 @@ export default function Card()
 			</div>
 
 			{/*--Platform info graphic "info"--*/}
-			<div className=" px-2 py-2 justify-between items-center gap-8 sm: ga-4 flex row-span-1 bg-orange-500 rounded-lg">
+			<div className=" px-2 py-2 justify-between items-center gap-8 sm:gap-4 flex row-span-1 bg-orange-500 rounded-lg">
 
 				<div className="">
 					<h2 className=" text-neutral-100 text-base">Platforms</h2>
