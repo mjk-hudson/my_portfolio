@@ -26,7 +26,7 @@ export default function Card()
 	return( 
 		<>
 		{/*--Neighborgood First card--*/}	
-		<div className="p-10 gap-x-16 space-y-12 rounded-xl outline-zinc-500/40 overflow-hidden place-items-center">
+		<div className="w-full gap-x-8 space-y-12 rounded-xl outline-zinc-500/40 overflow-hidden place-items-center">
 
 			{/*--Hero image--*/}
 			<img src={heroImage} 
