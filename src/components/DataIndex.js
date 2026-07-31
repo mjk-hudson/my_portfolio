@@ -41,8 +41,8 @@ export const Experience= [
   },
   {
     dateRange: "June 2022 – August 2022",
-    role: "UX Designer",
-    company: "Neighborgood (New York, N.Y.)",
+    role: "UX Designer - Social Good and Community Engagement application",
+    company: "Independent Self-Directed Project",
     description: "Designed responsive website for location-based community space discovery, generating 500+ user interest in 3 months. Managed Lean UX process (journeys, sketches, prototypes, studies); A/B tested with 6 participants to achieve 30% NPS increase and strong case study."
   }
 ];
