@@ -52,13 +52,17 @@ export const Skills = [
     dateRange: null, // N/A – ongoing
     role: "Soft Skills",
     company: null,
-    description: "Collaboration, Feedback, Communication, Creative Thinking, Creative Problem Solving, Empathy, Critical Thinking, Adaptability."
+    description: "Collaboration, Feedback, Communication, Creative Thinking, Creative Problem Solving, Empathy, Critical Thinking, Adaptability, Collaboration, Leadership, Time Management, Teamwork"
   },
   {
     dateRange: null, // N/A – ongoing
     role: "Technical Skills",
     company: null,
-    description: "Design frameworks, Design Thinking, Lean UX, Double Diamond, HEART, 5 Elements of UX, User-Centered Design, Agile UX, Product Design, Storyboarding, Artificial Intelligence (A.I.), Figma, FigJam, Adobe Photoshop, Adobe XD, Adobe Illustrator, JIRA, Miro, Sketch, Google Workspace, Microsoft Office, User interace design, Visual Design, Motion Design, User Research, Testing, Ideation, Prototyping, Low Fidelity, High Fidelity, Wireframing, Mockups, Information Architecture, User Flows, User Journeys, Usability studies, design sprints, Interaction Design, Design Systems, Responsive Design,  Inclusive Design, Front-End web development, HTML5, CSS3, JavaScript, React, Node.js, Mongo Db, Webpack, Motion.dev, Tailwind CSS, Bootstrap, Git."
+    description: "Design Thinking, Lean UX, Double Diamond, User-Centered Design, Agile UX, Product Design, Storyboarding, Artificial Intelligence (A.I.), User interface design, Visual Design, Motion Design, User Research, Testing, Ideation, Prototyping, Low Fidelity, High Fidelity, Wireframing, Mockups, Information Architecture, User Flows, User Journeys, Usability studies, design sprints, Interaction Design, Design Systems, Responsive Design,  Inclusive Design, Front-End web development, HTML5, CSS3, JavaScript, React Native, React.js."
+  },
+  {
+    role: "Software",
+    description: "Figma, FigJam, Figma Make, Figma Weavy A.I., Adobe Photoshop, Adobe XD, Framer, Adobe Illustrator, Adobe InDesign, JIRA, Sketch, Google Workspace, Microsoft Office, Confluence, Claude Code, VS Code, Node.js, Mongo Db, Webpack, Motion.dev, Tailwind CSS, Bootstrap, Git."
   }
 ];
 
