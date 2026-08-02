@@ -19,15 +19,15 @@ export const resumeData ={
 
 export const Experience= [
   {
-    dateRange: "December 2025 – June 2026",
+    dateRange: "February 2026 – June 2026",
     role: "Product Designer – AI Fintech",
-    company: "Independent Self-Directed Project",
+    company: "Independent Self-Directed Project New York City,N.Y.",
     description: "Designed and prototyped Bledger, a mobile budgeting app for gig workers using AI nudges and gamified savings to prevent overspending. Led full UX cycle: user research (50+ interviews), Figma prototypes with micro-interactions, WCAG 2.1 AA compliance, and on-device AI (TensorFlow Lite). Simulated testing projected 25% engagement increase; created ethical-AI-focused portfolio case study."
   },
   {
     dateRange: "May 2025 – November 2025",
     role: "Product Designer – Conferencing & Collaboration Queue tool",
-    company: "Independent Self-Directed Project",
+    company: "Independent Self-Directed Project New York City,N.Y.",
     description: "Created Vibespace, a responsive conferencing and collaboration tool for the web, with vibe-matching, mood quizzes, dynamic alerts, and sustainability features (carbon calculator, green badges). Built Webflow prototypes and tested accessibility; achieved 28% conversion uplift in prototypes. Delivered live demo and eco-conscious case study."
   },
   // {
@@ -42,7 +42,7 @@ export const Experience= [
   {
     dateRange: "June 2022 – August 2022",
     role: "UX Designer - Social Good and Community Engagement application",
-    company: "Independent Self-Directed Project",
+    company: "Independent Self-Directed Project New York City,N.Y.",
     description: "Designed responsive website for location-based community space discovery, generating 500+ user interest in 3 months. Managed Lean UX process (journeys, sketches, prototypes, studies); A/B tested with 6 participants to achieve 30% NPS increase and strong case study."
   }
 ];
