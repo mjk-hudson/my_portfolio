@@ -38,7 +38,7 @@ export default function Card()
 						<h1 className=' text-neutral-800 text-left text-2xl font-bold'>Neighborgood
 						</h1>
 							{/* Project description */}
-            				<p className="text-neutral-600">Neighborgood helps you make a mark in your community even if you're not sure where to start? Our new webservice makes it easy to find local areas perfect for creating community hubs, hosting outreach events, and volunteering. With just a few clicks, you'll be able to discover the best spots in your area to bring people together and make a positive impact on your community.
+            				<p className="text-neutral-600">Navigating complex municipal zoning data to build local community hubs is often confusing and time-consuming. Neighborgood translates complex urban spatial data into an intuitive web service, enabling community leaders, volunteers, and organizers to effortlessly identify, vet, and activate underutilized local spaces for outreach events and neighborhood hubs.
 							</p>      			
 			</div>
 
@@ -108,7 +108,7 @@ export default function Card()
 						<h1 className=' text-neutral-800 text-left text-2xl font-bold'>Bledger
 						</h1>
 							{/* Project description */}
-            				<p className="text-neutral-600">Bledger is a mobile budgeting application that uses AI to predict and prevent overspending, targeting millennials and Gen Z in gig economies. It solves the pain of fragmented financial tracking by integrating bank APIs and offering "nudges" via gamified micro-challenges. Also keeps tracks of bills, rent other important scheduled payments and either (using agentic A.I.) makes sure there is enough money in the account to cover the expenses, or sends alerts.
+            				<p className="text-neutral-600">Traditional budgeting tools only track where your money went; Bledger ensures it stays where you need it. Purpose-built to navigate the volatile income streams of gig-economy workers, Bledger is an AI-driven personal finance platform that unifies fragmented tracking by pairing secure bank API integrations with agentic AI. By predicting cash-flow gaps, automating scheduled bill coverage, and delivering real-time gamified micro-nudges, Bledger proactively safeguards user liquidity and prevents overspending before it happens.
 							</p>      			
 			</div>
 
@@ -165,7 +165,7 @@ export default function Card()
 						<h1 className=' text-neutral-800 text-left text-2xl font-bold'>Vibe Space
 						</h1>
 							{/* Project description */}
-            				<p className="text-neutral-600">Vibe Space is a responsive web based event matching-networking platform that connects people with similar interests and creates opportunities for meaningful interactions in local communities. By leveraging AI and user-generated content, Vibe Space helps users discover and join local events, activities, and groups that align with their passions. Whether you're looking to meet new friends, find a workout buddy, or explore new hobbies, Vibe Space is your go-to platform for building connections and fostering a sense of belonging in your community.
+            				<p className="text-neutral-600">Generic event directories only show you where to go; Vibe Space ensures you find the right community to go with. Purpose-built to eliminate the friction of modern local discovery, Vibe Space is an AI-driven responsive networking platform that pairs intelligent interest-matching algorithms with user-generated content to connect people through shared passions. By streamlining hyper-local activity discovery and state-based event queuing, Vibe Space transforms social barriers into meaningful interactions—helping users effortlessly build local connections, find hobby partners, and foster genuine belonging in their communities.
 							</p>      			
 			</div>
 
