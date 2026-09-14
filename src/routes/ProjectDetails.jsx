@@ -8,6 +8,7 @@ import Barbjourney from '../assets/Barbara-Journey-Map.jpg';
 import Andresjourney from '../assets/Andres-Journey-Map.jpg';
 import { motion } from 'motion/react';
 import { useLocation } from "react-router-dom";
+import storyboard from '../assets/Neighborgood storyboard.png';
 
 //Sketches imports
 import MobileSketch from '../assets/neighborgood_sketches/PXL_20220801_174421456.MP.webp';
@@ -39,61 +40,41 @@ export default function ProjectDetails() {
             <div className="w-full gap-4">
                 <div className="gap-4">
                     <h1 className="text-slate-800 text-left font-semibold text-xl sm:text-lg">Neighborgood.<br/>
-                        A Responsive Web Application
+                        The Category
                     </h1>
                     <p className="text-left text-slate-600 text-sm sm:text-base">
-                        Neighborgood is a social media platform for outreach opportunities that allow individuals and groups find suitable locations for community engagement functions.
+                        Civic Technology & Urban Community Space Sourcing.
                     </p>
                 </div>
                 <div className="gap-4">
-                    <div className="my-6 text-left text-slate-600 gap-2">
-                        <h2 className="text-slate-700 text-sm sm:text-base gap-1"><b>Project Overview</b></h2>
-                        <ul>
-                            <li><b>Project Name: Neighborgood</b></li>
-                            <li><b>Role: UX/UI Designer</b></li>
-                            <li><b>Tools: Figma</b></li>
-                            <li><b>Duration: 3 months</b></li>
-                        </ul>
-                    </div>
                 </div>
-                {/* Design Process Overview */}
-                <div className="text-left text-slate-600 gap-6">
-                    <h2 className="gap-1 text-lg sm:text-xl text-slate-700 font-semibold">
-                        The design process includes...
-                    </h2>
-                    <ul className="list-disc my-4">
-                        <li>Problem Statement</li>
-                        <li>Competitive Analysis</li>
-                        <li>User Research</li>
-                        <li>Personas</li>
-                        <li>Journey Mapping</li>
-                        <li>Ideation</li>
-                        <li>Wireframing</li>
-                        <li>Prototyping</li>
-                        <li>User Testing</li>
-                        <li>Final Visual Design</li>
-                        <li>Next steps</li>
-                    </ul>
                     {/* Problem Statement */}
                     <div className="gap-4 p-0">
                     <h1 className="my-1 text-slate-800 font-semibold text-left text-lg sm:text-xl">
                         The Problem
                     </h1>
                     <p className="text-sm sm:text-base p-0 text-slate-600">
-                        Neighborgood will allow communities to organize and search for gaps they can designate for community outreach opportunities. The design is a responsive website suitable for most devices and breakpoints. Lead UX designer, UX researcher, Visual and Interaction designer. Responsibilities include (but not limited to) user research, problem defining, wireframing, prototyping, testing, visual and motion design.
+                        Local residents and community organizers struggle to navigate complex, fragmented municipal zoning data to identify usable locations for community hubs, leaving urban spaces underutilized and neighborhood initiatives stalled.
                     </p>
                     </div>
             
-                    {/* Competitive Analysis */}
+                    {/* The Methodology */}
                     <div className="gap-4 text-left">
-                        <h2 className="mt-4 text-slate-700 font-semibold text-lg sm:text-xl">
-                            Competitive Analysis of Web Platforms for Community Space Search
-                        </h2>
+                        <h1  className="mt-4 text-slate-700 font-semibold text-lg sm:text-xl">
+                            The Methodology
+                        </h1>
+                        <h2>The Empathy Phase</h2>
                         <p className="text-sm sm:text-base text-slate-600">
-                         This research covers web-based social media services enabling individuals and groups to search for and utilize open community spaces (e.g., parks, libraries, community centers) for free outreach and social good events. These platforms emphasize event discovery/posting with venue details, are free for basic user/organizer access, prioritize user-friendliness (intuitive interfaces, mobile apps), and support national (U.S.-wide) use. They incorporate social elements like user connections, groups, or sharing to foster community.
+                         Conducted storyboarding to understand the friction surrounding open-space location discovery. Used competitive analysis to identify gaps in existing solutions.Uncovered that community leaders needed direct, transparent access to zoning parameters without the bloat of traditional municipal databases.
                         </p>
                         <h2 className="mt-3 text-sm sm:text-base text-slate-700">
-                            Key Features Analyzed:
+                            User Storyboard
+                        </h2>
+                        <div>
+                            <img src={storyboard} alt="Neighborgood Storyboard" className="w-full h-auto rounded-lg mt-6 border border-gray-600 shadow-xl" />
+                        </div>
+                        <h2 className="mt-3 text-sm sm:text-base text-slate-700">
+                            Competitive Analysis: Features & Differentiators
                         </h2>
                         <ul className="list-disc mt-1 text-sm sm:text-base">
             
