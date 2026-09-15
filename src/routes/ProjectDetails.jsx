@@ -8,7 +8,7 @@ import Barbjourney from '../assets/Barbara-Journey-Map.jpg';
 import Andresjourney from '../assets/Andres-Journey-Map.jpg';
 import { motion } from 'motion/react';
 import { useLocation } from "react-router-dom";
-import storyboard from '../assets/Neighborgood storyboard.png';
+import storyboard from '../assets/Neighborgood_storyboard.png';
 
 //Sketches imports
 import MobileSketch from '../assets/neighborgood_sketches/PXL_20220801_174421456.MP.webp';
