@@ -39,9 +39,11 @@ export default function ProjectDetails() {
         <div className="p-6 md:p-4 gap-6 rounded-lg shadow-[2px_11px_6px_-4px_rgba(136,136,136,0.25)] mt-6 mx-auto max-w-6xl">
             <div className="w-full gap-4">
                 <div className="gap-4">
-                    <h1 className="text-slate-800 text-left font-semibold text-xl sm:text-lg">Neighborgood.<br/>
-                        The Category
+                    <h1 className="text-slate-800 text-left font-semibold text-xl sm:text-lg">Neighborgood.
                     </h1>
+                    <h2 className="text-slate-700 font-semibold sm:text-xl">
+                        The Category
+                    </h2>
                     <p className="text-left text-slate-600 text-sm sm:text-base">
                         Civic Technology & Urban Community Space Sourcing.
                     </p>
@@ -60,16 +62,16 @@ export default function ProjectDetails() {
             
                     {/* The Methodology */}
                     <div className="gap-4 text-left">
-                        <h1  className="mt-4 text-slate-700 font-semibold text-lg sm:text-xl">
+                        <h2  className="mt-4 text-slate-700 font-semibold sm:text-xl">
                             The Methodology
-                        </h1>
-                        <h2>The Empathy Phase</h2>
+                        </h2>
+                        <h3>The Empathy Phase</h3>
                         <p className="text-sm sm:text-base text-slate-600">
                          Conducted storyboarding to understand the friction surrounding open-space location discovery. Used competitive analysis to identify gaps in existing solutions.Uncovered that community leaders needed direct, transparent access to zoning parameters without the bloat of traditional municipal databases.
                         </p>
-                        <h2 className="mt-3 text-sm sm:text-base text-slate-700">
+                        <h3 className="mt-3 text-sm sm:text-base text-slate-700">
                             User Storyboard
-                        </h2>
+                        </h3>
                         <div>
                             <img src={storyboard} alt="Neighborgood Storyboard" className="w-full h-auto rounded-lg mt-6 border border-gray-600 shadow-xl" />
                         </div>
