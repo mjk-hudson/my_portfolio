@@ -424,6 +424,6 @@ export default function ProjectDetails() {
             {/* End of Project Content */}
             </div>
             </div>
-        </div>
-    );
+
+);
 }
