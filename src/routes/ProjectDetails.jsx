@@ -125,93 +125,145 @@ export default function ProjectDetails() {
                         After conducting a competitive analysis of existing platforms that facilitate community engagement and event planning, it was evident that there was a gap in the market for a user-friendly platform specifically focused on helping users find and reserve spaces for community outreach activities. Many existing solutions were either too complex or lacked the necessary features to effectively serve this purpose.
                     </p>
                     </div>
-                    {/*User Research*/}
-                    {/* Persona 1: Barbara Goode */}
-                    {/*<div className="grid-cols-1 sm:grid-cols-2 gap-4">
-                    <h2 className="text-left my-1 text-slate-800 font-semibold text-lg sm:text-xl">
-                        User Research
-                    </h2>
-                    <div className="gap-4 grid grid-cols-1">
-                    <h2 className=" text-slate-700 font-semibold text-base sm:text-lg">Target</h2>
-                    <p className="text-sm sm:text-base text-slate-600">
-                        The target audience are community organizers, non-profit organizations, local government agencies, and individuals looking to host community events for social good. The platform aims to facilitate the process of finding and reserving spaces for various community activities and events, promoting social engagement and collaboration.
-                    </p>
-                    <div className="gap-4 grid grid-cols-1 items-start sm:gap-6">
-                    <div className="">
-                        <p className="font-bold text-slate-600">Barbara Goode</p>
-                        <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-                        Age: 77<br/>
-                        Education: High School Graduate<br/>
-                        Occupation: Retired horticulturalist<br/>
-                        Family: 2 feisty cats 😹<br/>
-                        Hometown: Savannah, GA.<br/>
-                        </p>
+Ah, the mystery is solved! Seeing the whole block reveals exactly what caused the chain reaction of errors.
+
+### The Problem: Unclosed Comments & The "Nested Comment" Trap
+
+You tried to add some helpful section labels (User Research, Persona 2, Journey Mapping) using JSX comments, but **you forgot to close them with `*/}**`.
+
+For example, your code has this:
+
+```jsx
+{/* Persona 2: Andres Pacheco 
+<div className="mt-6 gap-y-4">
+
+```
+
+Instead of this:
+
+```jsx
+{/* Persona 2: Andres Pacheco */}
+<div className="mt-6 gap-y-4">
+
+```
+
+Because you forgot the closing `*/}`, Vite treated the *entire rest of your code* as one giant comment until it finally hit that stray `*/}` at the very bottom (which I had you delete in the previous step!).
+
+**Furthermore:** You cannot wrap a giant chunk of JSX in `{/* ... */}` if there are *already* comments inside of it. The first inner `*/}` will terminate the giant comment early, breaking everything below it.
+
+---
+
+### The Solution
+
+If your goal is to **temporarily hide this chunk of code from the page**, the safest way to do it in React isn't by using comment tags, but by using a `false` boolean block.
+
+Replace that entire chunk in your file with this fully repaired version. I have fixed all your missing `*/}` tags, and wrapped the whole thing in a `{false && ( ... )}` block.
+
+This tells React: *"Ignore this code and don't render it."*
+
+```jsx
+            {/* --- TEMPORARILY HIDDEN CODE START --- */}
+            {false && (
+                <>
+                    {/* User Research - Persona 1: Barbara Goode */}
+                    <div className="grid-cols-1 sm:grid-cols-2 gap-4">
+                        <h2 className="text-left my-1 text-slate-800 font-semibold text-lg sm:text-xl">
+                            User Research
+                        </h2>
+                        
+                        <div className="gap-4 grid grid-cols-1">
+                            <h2 className="text-slate-700 font-semibold text-base sm:text-lg">Target</h2>
+                            <p className="text-sm sm:text-base text-slate-600">
+                                The target audience are community organizers, non-profit organizations, local government agencies, and individuals looking to host community events for social good. The platform aims to facilitate the process of finding and reserving spaces for various community activities and events, promoting social engagement and collaboration.
+                            </p>
+                            
+                            <div className="gap-4 grid grid-cols-1 items-start sm:gap-6">
+                                <div className="">
+                                    <p className="font-bold text-slate-600">Barbara Goode</p>
+                                    <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
+                                        Age: 77<br/>
+                                        Education: High School Graduate<br/>
+                                        Occupation: Retired horticulturalist<br/>
+                                        Family: 2 feisty cats 😹<br/>
+                                        Hometown: Savannah, GA.<br/>
+                                    </p>
+                                </div>
+                                <div className="gap-y-4">
+                                    <img src={Barbara} alt="Barbara Goode Image" className="w-full max-w-sm h-auto rounded-lg" />
+                                    <p className=" mt-4 text-sm sm:text-base text-slate-600">
+                                        Barb is a retired horticulturalist who is currently head of events in her communities assisted living facility. She would like a service that would allow her to search and locate adequate and accessible park spaces for her outdoor peer group activities based on a criteria. Including gardening, fitness and social gatherings.
+                                    </p>
+                                    <p className="mt-6 text-slate-600 italic font-semibold text-sm sm:text-base">
+                                        "The local parks are overcrowded. They do not accommodate elderly visitors. The Traffic and pollution are also dangerous for my groups age." -Barb
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div className="gap-y-4">
-                    <img src={Barbara} alt="Barbara Goode Image" className="w-full max-w-sm h-auto rounded-lg" />
-                        <p className=" mt-4 text-sm sm:text-base text-slate-600">
-                        Barb is a retired horticulturalist who is currently head of events in her communities assisted living facility. She would like a service that would allow her to search and locate adequate and accessible park spaces for her outdoor peer group activities based on a criteria. Including gardening, fitness and social gatherings.
-                        </p>
-                        <p className="mt-6 text-slate-600 italic font-semibold text-sm sm:text-base">
-                            "The local parks are overcrowded. They do not accommodate elderly visitors. The Traffic and pollution are also dangerous for my groups age." -Barb
-                        </p>
-                    </div>
-                    </div>
-                    </div>
-                    {/* Persona 2: Andres Pacheco 
+
+                    {/* Persona 2: Andres Pacheco */}
                     <div className="mt-6 gap-y-4">
-                    <div className="gap-y-2">
-                    <p className="font-bold text-slate-600">Andres Pacheco</p>
-                    <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-                    Age: 37<br/>
-                    Education: College Grad<br/>
-                    Hometown: Salem, Oregon<br/>
-                    Family: Girlfriend, 2 dogs<br/>
-                    Occupation: Survivalist Trainer<br/>
-                    </p>
+                        <div className="gap-y-2">
+                            <p className="font-bold text-slate-600">Andres Pacheco</p>
+                            <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
+                                Age: 37<br/>
+                                Education: College Grad<br/>
+                                Hometown: Salem, Oregon<br/>
+                                Family: Girlfriend, 2 dogs<br/>
+                                Occupation: Survivalist Trainer<br/>
+                            </p>
+                        </div>
+                        <img src={Andres} alt="Andres Pacheco Image" className="my-4 w-full max-w-sm h-auto rounded-lg object-cover" />
                     </div>
-                    <img src={Andres} alt="Andres Pacheco Image" className="my-4 w-full max-w-sm h-auto rounded-lg object-cover" />
-                    </div>
+                    
                     <div className=" gap-y-4">
                         <p className=" my-4 text-sm sm:text-base text-slate-600">
-                        Andres, his girlfriend and dog enjoy being outdoors. As a survivalist and nature educator, Andres enjoys immersing the youth in his community into as much wilderness as possible for better hands on survival training, teaching them about flora and fauna.
+                            Andres, his girlfriend and dog enjoy being outdoors. As a survivalist and nature educator, Andres enjoys immersing the youth in his community into as much wilderness as possible for better hands on survival training, teaching them about flora and fauna.
                         </p>
                         <p className="my-4 text-slate-600 italic font-semibold text-sm sm:text-base">
-                        “I’d like to give my students in my community  a well rounded education in nature, but I can’t find adequate places.” -Andres
+                            “I’d like to give my students in my community a well rounded education in nature, but I can’t find adequate places.” -Andres
                         </p>
                     </div>
             
-                    {/* Journey Mapping 
+                    {/* Journey Mapping */}
                     <div className="gap-y-6">
-                    <h2 className="font-semibold text-lg sm:text-xl text-slate-700">
-                        Journey Mapping
-                    </h2>
-                    <p className="text-slate-600 text-sm sm:text-base">To better understand the user experience and identify pain points, a journey map was created outlining the typical steps a user would take when searching for and reserving a community space. This map highlighted key touchpoints, emotions, and potential obstacles that users might encounter throughout their journey.
-                    </p>
-                    <h2 className="font-semibold mt-6 text-sm sm:text-base text-slate-700">Barbara's Goal</h2>
-                    <p className="text-slate-600 text-sm sm:text-base">Find locations that are accessible and can accommodate gardening and social spaces for the elderly.</p>
-                    <h2 className="font-semibold mt-4 text-slate-700 text-base sm:text-lg">Problem Statement</h2>
-                    <p className="text-sm sm:text-base text-slate-600">
-                    Accommodations her peer groups access to nature and away from the overcrowding and noise of local parks.
-                    Frustrations
-                    Overcrowding, turbidity , noise lack of available spaces.
-                    </p>
-                    <div className='my-6'>
-                    <img src={Barbjourney} alt="Barbaras Journey Map" className="w-full h-auto rounded-lg mt-6 object-contain border border-gray-600 shadow-xl" />
+                        <h2 className="font-semibold text-lg sm:text-xl text-slate-700">
+                            Journey Mapping
+                        </h2>
+                        <p className="text-slate-600 text-sm sm:text-base">
+                            To better understand the user experience and identify pain points, a journey map was created outlining the typical steps a user would take when searching for and reserving a community space. This map highlighted key touchpoints, emotions, and potential obstacles that users might encounter throughout their journey.
+                        </p>
+                        
+                        <h2 className="font-semibold mt-6 text-sm sm:text-base text-slate-700">Barbara's Goal</h2>
+                        <p className="text-slate-600 text-sm sm:text-base">Find locations that are accessible and can accommodate gardening and social spaces for the elderly.</p>
+                        
+                        <h2 className="font-semibold mt-4 text-slate-700 text-base sm:text-lg">Problem Statement</h2>
+                        <p className="text-sm sm:text-base text-slate-600">
+                            Accommodations her peer groups access to nature and away from the overcrowding and noise of local parks.
+                            Frustrations: Overcrowding, turbidity, noise, lack of available spaces.
+                        </p>
+                        <div className='my-6'>
+                            <img src={Barbjourney} alt="Barbaras Journey Map" className="w-full h-auto rounded-lg mt-6 object-contain border border-gray-600 shadow-xl" />
+                        </div>
+                        
+                        <h2 className="font-semibold text-base sm:text-lg text-slate-700">Andres' Goal</h2>
+                        <p className="text-sm sm:text-base text-slate-600">
+                            Find adequate park locations for survival training and environmental education.
+                            Frustrations: Cannot find suitable locations with biodiversity in order to educate youth in the field.
+                        </p>
+                        
+                        <h2 className="font-semibold text-base sm:text-lg text-slate-700">Problem Statement</h2>
+                        <p className="text-sm sm:text-base text-slate-600">
+                            Andres is a survivalist who needs nature space to educate the community youth because current public spaces do not have the materials needed to teach his skills.
+                        </p>
+                        <div>
+                            <img src={Andresjourney} alt="Andres Journey Map" className="my-6 w-full h-auto rounded-lg border border-gray-600 shadow-xl" />
+                        </div>
                     </div>
-                    <h2 className="font-semibold text-base sm:text-lg text-slate-700">Andres' Goal</h2>
-                    <p className="text-sm sm:text-base text-slate-600">
-                    Find adequate park locations for survival training and environmental education.
-                    Frustrations
-                    Cannot find suitable locations with biodiversity in order to educate youth in the field.
-                    </p>
-                    <h2 className="font-semibold text-base sm:text-lg text-slate-700">Problem Statement</h2>
-                    <p className="text-sm sm:text-base text-slate-600">Andres is a survivalist who needs nature space to educate the community youth because current public spaces do not have the materials needed to teach his skills.
-                    </p>
-                    <div>
-                    <img src={Andresjourney} alt="Andres Journey Map" className="my-6 w-full h-auto rounded-lg border border-gray-600 shadow-xl" />
-                    </div>*/}
-                    </div>
+                </>
+            )}
+            {/* --- TEMPORARILY HIDDEN CODE END --- */}
+            </div>
             <div className="gap-y-4">
                     
                     <h1 className="my-1 text-slate-800 font-semibold text-lg sm:text-xl">
@@ -222,7 +274,6 @@ export default function ProjectDetails() {
                     </p>
             </div>
         </div>
-            
             {/*Ideation - Crazy 8's*/}
             <div className="my-4 gap-y-8">
                 <h2 className="text-slate-700 text-left font-semibold text-base sm:text-xl">
@@ -428,5 +479,5 @@ export default function ProjectDetails() {
                     </h1>
             {/* End of Project Content */}
             </div>
-    );
+        );
 }
