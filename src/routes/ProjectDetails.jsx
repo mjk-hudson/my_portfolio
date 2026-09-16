@@ -125,43 +125,6 @@ export default function ProjectDetails() {
                         After conducting a competitive analysis of existing platforms that facilitate community engagement and event planning, it was evident that there was a gap in the market for a user-friendly platform specifically focused on helping users find and reserve spaces for community outreach activities. Many existing solutions were either too complex or lacked the necessary features to effectively serve this purpose.
                     </p>
                     </div>
-Ah, the mystery is solved! Seeing the whole block reveals exactly what caused the chain reaction of errors.
-
-### The Problem: Unclosed Comments & The "Nested Comment" Trap
-
-You tried to add some helpful section labels (User Research, Persona 2, Journey Mapping) using JSX comments, but **you forgot to close them with `*/}**`.
-
-For example, your code has this:
-
-```jsx
-{/* Persona 2: Andres Pacheco 
-<div className="mt-6 gap-y-4">
-
-```
-
-Instead of this:
-
-```jsx
-{/* Persona 2: Andres Pacheco */}
-<div className="mt-6 gap-y-4">
-
-```
-
-Because you forgot the closing `*/}`, Vite treated the *entire rest of your code* as one giant comment until it finally hit that stray `*/}` at the very bottom (which I had you delete in the previous step!).
-
-**Furthermore:** You cannot wrap a giant chunk of JSX in `{/* ... */}` if there are *already* comments inside of it. The first inner `*/}` will terminate the giant comment early, breaking everything below it.
-
----
-
-### The Solution
-
-If your goal is to **temporarily hide this chunk of code from the page**, the safest way to do it in React isn't by using comment tags, but by using a `false` boolean block.
-
-Replace that entire chunk in your file with this fully repaired version. I have fixed all your missing `*/}` tags, and wrapped the whole thing in a `{false && ( ... )}` block.
-
-This tells React: *"Ignore this code and don't render it."*
-
-```jsx
             {/* --- TEMPORARILY HIDDEN CODE START --- */}
             {false && (
                 <>
