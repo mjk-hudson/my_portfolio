@@ -210,8 +210,8 @@ export default function ProjectDetails() {
                     </p>
                     <div>
                     <img src={Andresjourney} alt="Andres Journey Map" className="my-6 w-full h-auto rounded-lg border border-gray-600 shadow-xl" />
-                    </div>
                     </div>*/}
+                    </div>
             <div className="gap-y-4">
                     
                     <h1 className="my-1 text-slate-800 font-semibold text-lg sm:text-xl">
