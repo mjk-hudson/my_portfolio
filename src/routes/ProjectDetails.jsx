@@ -41,7 +41,7 @@ export default function ProjectDetails() {
                 <div className="gap-4">
                     <h1 className="text-slate-800 text-left font-semibold text-xl sm:text-lg">Neighborgood.
                     </h1>
-                    <h2 className="text-slate-700 font-semibold sm:text-xl">
+                    <h2 className="text-left text-slate-700 font-semibold sm:text-xl">
                         The Category
                     </h2>
                     <p className="text-left text-slate-600 text-sm sm:text-base">
@@ -52,9 +52,9 @@ export default function ProjectDetails() {
                 </div>
                     {/* Problem Statement */}
                     <div className="gap-4 p-0">
-                    <h1 className="my-1 text-slate-800 font-semibold text-left text-lg sm:text-xl">
+                    <h2 className="my-1 text-slate-700 font-semibold text-left text-lg sm:text-xl">
                         The Problem
-                    </h1>
+                    </h2>
                     <p className="text-sm sm:text-base p-0 text-slate-600">
                         Local residents and community organizers struggle to navigate complex, fragmented municipal zoning data to identify usable locations for community hubs, leaving urban spaces underutilized and neighborhood initiatives stalled.
                     </p>
@@ -65,7 +65,9 @@ export default function ProjectDetails() {
                         <h2  className="mt-4 text-slate-700 font-semibold sm:text-xl">
                             The Methodology
                         </h2>
-                        <h3>The Empathy Phase</h3>
+                        <h3 className="text-left font-semibold text-slate-700">
+                            The Empathy Phase
+                        </h3>
                         <p className="text-sm sm:text-base text-slate-600">
                          Conducted storyboarding to understand the friction surrounding open-space location discovery. Used competitive analysis to identify gaps in existing solutions.Uncovered that community leaders needed direct, transparent access to zoning parameters without the bloat of traditional municipal databases.
                         </p>
@@ -125,10 +127,10 @@ export default function ProjectDetails() {
                     </div>
                     {/*User Research*/}
                     {/* Persona 1: Barbara Goode */}
-                    <div className="grid-cols-1 sm:grid-cols-2 gap-4">
-                    <h1 className="my-1 text-slate-800 font-semibold text-lg sm:text-xl">
+                    {/*<div className="grid-cols-1 sm:grid-cols-2 gap-4">
+                    <h2 className="text-left my-1 text-slate-800 font-semibold text-lg sm:text-xl">
                         User Research
-                    </h1>
+                    </h2>
                     <div className="gap-4 grid grid-cols-1">
                     <h2 className=" text-slate-700 font-semibold text-base sm:text-lg">Target</h2>
                     <p className="text-sm sm:text-base text-slate-600">
@@ -156,7 +158,7 @@ export default function ProjectDetails() {
                     </div>
                     </div>
                     </div>
-                    {/* Persona 2: Andres Pacheco */}
+                    {/* Persona 2: Andres Pacheco 
                     <div className="mt-6 gap-y-4">
                     <div className="gap-y-2">
                     <p className="font-bold text-slate-600">Andres Pacheco</p>
@@ -179,7 +181,7 @@ export default function ProjectDetails() {
                         </p>
                     </div>
             
-                    {/* Journey Mapping */}
+                    {/* Journey Mapping 
                     <div className="gap-y-6">
                     <h2 className="font-semibold text-lg sm:text-xl text-slate-700">
                         Journey Mapping
@@ -210,7 +212,8 @@ export default function ProjectDetails() {
                     <img src={Andresjourney} alt="Andres Journey Map" className="my-6 w-full h-auto rounded-lg border border-gray-600 shadow-xl" />
                     </div>
                     </div>
-                    <div className="gap-y-4">
+                    <div className="gap-y-4">*/}
+                    
                     <h1 className="my-1 text-slate-800 font-semibold text-lg sm:text-xl">
                         Ideation
                     </h1>
