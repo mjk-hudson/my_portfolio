@@ -211,8 +211,8 @@ export default function ProjectDetails() {
                     <div>
                     <img src={Andresjourney} alt="Andres Journey Map" className="my-6 w-full h-auto rounded-lg border border-gray-600 shadow-xl" />
                     </div>
-                    </div>
-                    <div className="gap-y-4">*/}
+                    </div>*/}
+            <div className="gap-y-4">
                     
                     <h1 className="my-1 text-slate-800 font-semibold text-lg sm:text-xl">
                         Ideation
@@ -225,7 +225,7 @@ export default function ProjectDetails() {
             
             {/*Ideation - Crazy 8's*/}
             <div className="my-4 gap-y-8">
-                <h2 className=" text-slate-700 text-left font-semibold text-base sm:text-xl">
+                <h2 className="text-slate-700 text-left font-semibold text-base sm:text-xl">
                     Early Sketches
                 </h2>
                 <p className="text-start text-wrap text-slate-600 text-sm sm:text-base">
@@ -235,7 +235,7 @@ export default function ProjectDetails() {
                     <img src={MobileSketch} alt="Early Sketches" className="my-4 w-sm h-auto rounded-lg mt-6 border border-gray-600 shadow-xl" />
                     <img src={MobileSketch2} alt="Early Sketches" className="w-sm h-auto rounded-lg mt-6 border border-gray-600 shadow-xl" />
                     <img src={MobileSketch3} alt="Early Sketches" className="w-sm h-auto rounded-lg mt-6 border border-gray-600 shadow-xl" />
-                    </div>
+                </div>
                     <p className="text-sm sm:text-base text-slate-600">
                     These sketches helped to explore different solutions and options for user interface elements, allowing for quick iteration and refinement of ideas before moving on to more detailed wireframes and prototypes.
                     </p>
@@ -318,10 +318,11 @@ export default function ProjectDetails() {
                     <p className="text-sm sm:text-base text-slate-600">
                         More data, specifically related to crime, zoning, environmental and more detailed demographic data of the neighborhoods and communities of these locations.
                         Users wanted options that filtered more versatile locations that allow more ideas and different events for the locations.<br/>
-                        Next step information and guides that provide information on how processes that will help them secure these spaces for their purposes, as well as allowing communities to organize and participate
+                        Next step information and guides that provide information on how processes that will help them secure these spaces for their purposes, as well as allowing communities to organize and participate.
                     </p>
                     <ul className="text-start text-slate-600 list-decimal gap-y-6 ml-6 text-sm sm:text-base">
-                        <p className="text-start text-slate-600 font-semibold">Refining the Design</p>
+                        <p className="text-start text-slate-600 font-semibold">Refining the Design
+                        </p>
                         <li>
                             Mock-Ups
                         </li>
@@ -394,7 +395,7 @@ export default function ProjectDetails() {
                     <p className="text-sm sm:text-base text-slate-600">
                         Updates made to the design after user feedback improved overall usability of the website. Users where able to search and find results that were closer to the results they were expecting from this type of service.
                         What was learned?
-                        With this product iteration having a larger assortment of options to choose from each category of questions made the service more inclusive for a wider range of public space scenarios. Among those choices are accessibility considerations, amenities etc. were appreciated and gave users more complete and narrow search results when looking for public space locations
+                        With this product iteration having a larger assortment of options to choose from each category of questions made the service more inclusive for a wider range of public space scenarios. Among those choices are accessibility considerations, amenities etc. were appreciated and gave users more complete and narrow search results when looking for public space locations.
                     </p>
                     <h2 className="my-4 text-start text-slate-700 font-semibold text-base sm:text-lg">
                         Next Steps
