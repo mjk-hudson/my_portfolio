@@ -220,9 +220,8 @@ export default function ProjectDetails() {
                     <p className="text-sm sm:text-base text-slate-600">
                         Using the insights gained from user research, journey mapping and a competitive analysis, the next steps involve ideation, wireframing, prototyping, and user testing to refine the design and ensure it effectively meets the needs of the target audience.
                     </p>
-                    </div>
-                </div>
             </div>
+        </div>
             
             {/*Ideation - Crazy 8's*/}
             <div className="my-4 gap-y-8">
@@ -427,8 +426,6 @@ export default function ProjectDetails() {
                         Thank You!
                     </h1>
             {/* End of Project Content */}
-            </div>
-            </div>
-
-);
+        </div>
+    );
 }
