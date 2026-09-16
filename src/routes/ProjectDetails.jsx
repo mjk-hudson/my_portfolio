@@ -426,6 +426,6 @@ export default function ProjectDetails() {
                         Thank You!
                     </h1>
             {/* End of Project Content */}
-        </div>
+            </div>
     );
 }
