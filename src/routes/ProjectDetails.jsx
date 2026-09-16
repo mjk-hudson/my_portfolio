@@ -43,7 +43,7 @@ export default function ProjectDetails() {
                     <h1 className="text-slate-800 text-left font-semibold text-xl sm:text-lg">Neighborgood.
                     </h1>
                     <h2 className="text-left text-slate-700 font-semibold sm:text-xl">
-                        The Category
+                    The Category
                     </h2>
                     <p className="text-left text-slate-600 text-sm sm:text-base">
                         Civic Technology & Urban Community Space Sourcing.
@@ -63,7 +63,7 @@ export default function ProjectDetails() {
             
                     {/* The Methodology */}
                     <div className="gap-4 text-left">
-                        <h2  className="mt-4 text-slate-700 font-semibold sm:text-xl">
+                        <h2  className="my-1 text-slate-700 font-semibold sm:text-xl">
                             The Methodology
                         </h2>
                         <h3 className="text-left font-semibold text-slate-700">
