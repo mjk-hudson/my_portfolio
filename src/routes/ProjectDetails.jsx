@@ -18,12 +18,12 @@ import MobileSketch from '../assets/neighborgood_sketches/PXL_20220801_174421456
 import MobileSketch2 from '../assets/neighborgood_sketches/PXL_20220801_174609290.webp'
 import MobileSketch3 from '../assets/neighborgood_sketches/PXL_20220801_174621091.webp'
 import DesignSketchMobile from '../assets/neighborgood_sketches/mobile sketch.png'
-import DesignSketchTablet from '../assets/neighborgood_sketches/wireframes/Tablet_Sketch.png'
+import DesignSketchTablet from '../assets/Tablet_Sketch.png'
 import DesignSketchDesktop from '../assets/neighborgood_sketches/wireframes/Desktop_Sketch.png'
 
 //Wireframe Image imports
-import MobileWireframe from '../assets/neighborgood_sketches/mobile wireframe.png';
-import TabletWireframe from '../assets/neighborgood_sketches/wireframes/Tablet_Wireframe.png';
+import MobileWireframe from '../assets/mobile_wireframe-Amenity_Taggin.png';
+import TabletWireframe from '../assets/Tablet_Wireframe.png';
 import DesktopWireframe from '../assets/neighborgood_sketches/wireframes/Desktop_Wireframe.png';
 
 //Breakpoint Image imports
@@ -159,11 +159,28 @@ export default function ProjectDetails() {
                     </div>
 
                     <div className="my-4 text-left text-slate-700 text-base sm:text-lg">
-                        <h1 className="text-left text-slate-700 font-semibold text-base sm:text-lg">The Execution Phase</h1>
+                        <h1 className="mt-6 text-left text-slate-700 font-semibold text-base sm:text-lg">The Execution Phase</h1>
                         <h2 className="text-left text-slate-700 font-semibold text-base sm:text-xl">Design Ideation & Strategy</h2>
                         <p className="text-sm sm:text-base text-slate-600">
-                            I Mapped complete user journeys and storyboards to transform civic data into an approachable interface. Constructed sketches, wireframes, and high-fidelity prototypes in Figma to simplify complex spatial information.
+                            I completed user journeys and transformed pain points and civic data into an approachable interface. Constructed wireframes and high-fidelity prototypes in Figma to simplify complex spatial information.
                         </p>
+                        <h3>User Journeys</h3>
+                        <img src={Barbjourney} alt="User Journey" className="block w-full h-auto block rounded-lg mt-6 border border-gray-600 shadow-xl" />
+                        <img src={Andresjourney} alt="User Journey" className="block w-full h-auto block rounded-lg mt-6 border border-gray-600 shadow-xl" />
+                    </div>
+
+                    <div className="my-4 text-left text-slate-700 text-base sm:text-lg">
+                        <h3>Sketches</h3>
+                        <img src={DesignSketchMobile} alt="Sketches" className="w-1/3 h-auto rounded-lg mt-6 border border-gray-600 shadow-xl" />
+                        <img src={DesignSketchTablet} alt="Sketches" className="w-full h-auto rounded-lg mt-6 border border-gray-600 shadow-xl" />
+                        <img src={DesignSketchDesktop} alt="Sketches" className="w-full h-auto rounded-lg mt-6 border border-gray-600 shadow-xl" />
+                    </div>
+
+                    <div className="my-4 text-left text-slate-700 text-base sm:text-lg">
+                        <h3>Wireframes</h3>
+                        <img src={MobileWireframe} alt="Wireframes" className="w-1/3 h-auto rounded-lg mt-6 border border-gray-600 shadow-xl" />
+                        <img src={TabletWireframe} alt="Wireframes" className="w-full h-auto rounded-lg mt-6 border border-gray-600 shadow-xl" />
+                        <img src={DesktopWireframe} alt="Wireframes" className="w-full h-auto rounded-lg mt-6 border border-gray-600 shadow-xl" />
                     </div>
             </div>
             <div className="gap-y-4">
