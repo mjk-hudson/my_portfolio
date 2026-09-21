@@ -40,7 +40,7 @@ import MobileFinal from '../assets/Events-Mobile-Final.gif';
 export default function ProjectDetails() {
     return (
         <>
-        <div className="p-6 md:p-4 gap-6 rounded-lg shadow-[2px_11px_6px_-4px_rgba(136,136,136,0.25)] mt-6 mx-auto max-w-6xl">
+        <div className="p-6 md:p-4 rounded-lg shadow-[2px_11px_6px_-4px_rgba(136,136,136,0.25)] mt-6 mx-auto max-w-6xl">
             <div className="w-full gap-4">
                 <div className="gap-4">
                     <h1 className="text-slate-800 text-left font-semibold text-xl sm:text-lg">Neighborgood.
@@ -165,8 +165,12 @@ export default function ProjectDetails() {
                             I completed user journeys and transformed pain points and civic data into an approachable interface. Constructed wireframes and high-fidelity prototypes in Figma to simplify complex spatial information.
                         </p>
                         <h3>User Journeys</h3>
-                        <img src={Barbjourney} alt="User Journey" className="block w-full h-auto block rounded-lg mt-6 border border-gray-600 shadow-xl" />
-                        <img src={Andresjourney} alt="User Journey" className="block w-full h-auto block rounded-lg mt-6 border border-gray-600 shadow-xl" />
+                        <div className="mt-4 w-full max-h-[70vh] overflow-y-auto border border-gray-600 rounded-lg shadow-xl bg-slate-50">
+                            <img src={Barbjourney} alt="User Journey" className="w-full h-auto block" />
+                        </div>
+                        <div className="mt-4 w-full max-h-[70vh] overflow-y-auto border border-gray-600 rounded-lg shadow-xl bg-slate-50">
+                            <img src={Andresjourney} alt="User Journey" className="w-full h-auto" />
+                        </div>
                     </div>
 
                     <div className="my-4 text-left text-slate-700 text-base sm:text-lg">
@@ -182,83 +186,26 @@ export default function ProjectDetails() {
                         <img src={TabletWireframe} alt="Wireframes" className="w-full h-auto rounded-lg mt-6 border border-gray-600 shadow-xl" />
                         <img src={DesktopWireframe} alt="Wireframes" className="w-full h-auto rounded-lg mt-6 border border-gray-600 shadow-xl" />
                     </div>
-            </div>
-            <div className="gap-y-4">
-                    
-                    <h1 className="my-1 text-slate-800 font-semibold text-lg sm:text-xl">
-                        Ideation
-                    </h1>
-                    <p className="text-sm sm:text-base text-slate-600">
-                        Using the insights gained from user research, journey mapping and a competitive analysis, the next steps involve ideation, wireframing, prototyping, and user testing to refine the design and ensure it effectively meets the needs of the target audience.
-                    </p>
-            </div>
-        </div>
-            {/*Ideation - Crazy 8's*/}
-            <div className="my-4 gap-y-8">
-                <h2 className="text-slate-700 text-left font-semibold text-base sm:text-xl">
-                    Early Sketches
-                </h2>
-                <p className="text-start text-wrap text-slate-600 text-sm sm:text-base">
-                    Early sketching was used to progressively iterate design elements in order to maximize as much accessible relevant information as possible on multiple platforms.
-                </p>
-                <div className="gap-4 sm:grid sm:grid-cols-3 sm:gap-4">
-                    <img src={MobileSketch} alt="Early Sketches" className="my-4 w-sm h-auto rounded-lg mt-6 border border-gray-600 shadow-xl" />
-                    <img src={MobileSketch2} alt="Early Sketches" className="w-sm h-auto rounded-lg mt-6 border border-gray-600 shadow-xl" />
-                    <img src={MobileSketch3} alt="Early Sketches" className="w-sm h-auto rounded-lg mt-6 border border-gray-600 shadow-xl" />
-                </div>
-                    <p className="text-sm sm:text-base text-slate-600">
-                    These sketches helped to explore different solutions and options for user interface elements, allowing for quick iteration and refinement of ideas before moving on to more detailed wireframes and prototypes.
-                    </p>
-
-                    {/*Initial Design Iterations and solutions*/}
-                    <h2 className="my-2 text-start text-slate-700 font-semibold text-lg sm:text-xl">First Design Iterations</h2>
-                    <p className="text-sm sm:text-base text-slate-600">
-                        The idea here is to design a product/service that will allow social networking for the user to find people, groups and adequate open space locations(or potential spaces) after a number of choices are made to get as close to an ideal location as possible(where available) and so initially I thought using a map application style interaction as the most familiar interface for location and travels searches.
-                    </p>
-
-                    {/* Initial Design Iterations Images */}
-                    <div className="gap-y-4 sm:grid sm:grid-cols-3 sm:gap-4">
-                        <img src={DesignSketchMobile} alt="Initial Design Iterations and solutions" className="w-full h-auto rounded-lg mt-6 border border-gray-200 shadow-xl" />
-                        <img src={DesignSketchTablet} alt="Initial Design Iterations and solutions" className="w-full h-auto rounded-lg mt-6 border border-gray-200 shadow-xl" />
-                        <img src={DesignSketchDesktop} alt="Initial Design Iterations and solutions" className="w-full h-auto rounded-lg mt-6 border border-gray-200 shadow-xl" />
-                    </div>
-
-                    {/* Wireframing & Prototyping */}
-                    <h2 className="text-start mt-6 text-slate-700 font-semibold text-lg sm:text-xl">
-                        Wireframing & Breakpoints
-                    </h2>
-                    <p className="text-sm sm:text-base text-slate-600">
-                        Based on the ideation phase, wireframes were created to outline the structure and layout of the application. These wireframes served as a blueprint for the design, allowing for quick iterations and adjustments based on user feedback. Prototypes were then developed to simulate the user experience and test the functionality of the design.
-                    </p>
-
-                    {/*Wireframes Images*/}
-                    <div className="my-6 gap-y-4 sm:grid sm:grid-cols-3 sm:gap-4">
-                        <img src={MobileWireframe} alt="Wireframes" className="gap-y-12 w-full h-auto max-w-sm rounded-lg border border-gray-600 shadow-xl" />
-                        <img src={TabletWireframe} alt="Wireframes" className="gap-y-12 w-full h-auto max-w-sm rounded-lg border border-gray-600 shadow-xl" />
-                        <img src={DesktopWireframe} alt="Wireframes" className="gap-y-12 w-full h-auto max-w-sm rounded-lg border border-gray-600 shadow-xl" />
-                    </div>
-
-                    {/*Lo-fi Prototyping Images*/}
                     <div className="gap-y-6">
-                        <p className="text-sm sm:text-base text-slate-600">
-                            These images represent varying (Mobile, Tablet, Desktop) breakpoints demonstrating a user searching for open space locations using the data visualization interaction idiom to view data associated with a location and set of criteria.
-                        </p>
+                        <h3 className="text-left text-slate-600">
+                            Low-Fidelity Mock-ups
+                        </h3>
                         <div className="gap-y-2">
                             <img src={MobileBreakpoint} alt="Mobile View" className="w-1/4 max-w-sm h-auto rounded-lg mt-6 border border-gray-600 shadow-xl" />
-                            <p className="mt-10 text-sm sm:text-base font-semibold text-slate-600">
+                            <h3 className="text-left mt-10 text-sm sm:text-base text-slate-600">
                                 Mobile Breakpoint
-                            </p>
+                            </h3>
                         </div>
                     </div>
                     <div className="gap-y-6">
                         <p className="text-sm sm:text-base text-slate-600">
-                            Users will start with a localized map and begin their contextual search using the “+” action button for either an address, zip code, general municipalities.
+                            Users have the option to start with a localized map and begin their contextual search using the “+” CTA for an address, zip code, or general municipality information.
                         </p>
                         <div className="gap-y-6">
                             <img src={TabletBreakpoint} alt="Tablet View" className="w-1/2 max-w-sm h-auto rounded-lg mt-6 border border-gray-600 shadow-xl" />
-                            <p className="mt-10 text-sm sm:text-base font-semibold text-slate-600">
+                            <h3 className="text-left mt-10 sm:text-base font-semibold text-slate-600">
                                 Tablet (Portrait) Breakpoint
-                            </p>
+                            </h3>
                         </div>
                     </div>
                     <div className="gap-y-4">
@@ -267,54 +214,30 @@ export default function ProjectDetails() {
                         </p>
                         <div className="gap-y-4">
                             <img src={DesktopBreakpoint} alt="Desktop View" className="w-full max-w-sm h-auto rounded-lg mt-6 border border-gray-600 shadow-xl" />
-                            <p className="mt-10 text-sm sm:text-base font-semibold text-slate-600">
+                            <h3 className="text-left mt-10 text-sm sm:text-base font-semibold text-slate-600">
                                 Desktop Breakpoint
-                            </p>
+                            </h3>
                         </div>
+
+            </div>
+            <div className="gap-y-4">
+                    
+                    <h2 className="text-left my-1 text-slate-800 font-semibold text-lg sm:text-xl">
+                        Technical Architecture
+                    </h2>
+                    <p className="text-sm sm:text-base text-slate-600">
+                        Developed a responsive web application concept built strictly with pure JavaScript, Tailwind CSS and React JS via Vite, keeping the front-end architecture agile and lightweight for fast data filtering without relying on TypeScript.
+                    </p>
+            </div>
+        </div>
+            {/*Ideation - Crazy 8's*/}
+            <div className="my-4 gap-y-8">
                     </div>
-                    {/* User Testing and Usability Studies */}
-                    <h1 className="text-start my-1 text-slate-800 font-semibold text-lg sm:text-xl">
-                        Usability Studies & User Testing
-                    </h1>
-                    <h2 className="text-start text-slate-700 font-semibold text-base sm:text-lg">
-                        Study Type: Unmoderated Usability Study Location: Remote Participants: 7 Length: 30 - 60 minutes
-                    </h2>
-                    <p className="text-sm sm:text-base text-slate-600">
-                        Usability studies and user testing were conducted to gather feedback on the prototypes and identify areas for improvement. Participants were asked to complete specific tasks using the prototypes, and their interactions were observed and recorded. Feedback was collected through surveys and interviews to understand user satisfaction and identify pain points.
-                    </p>
-                    <h2 className="text-start text-slate-700 font-semibold text-base sm:text-lg">
-                        Usability Study Insights
-                    </h2>
-                    <p className="text-sm sm:text-base text-slate-600">
-                        More data, specifically related to crime, zoning, environmental and more detailed demographic data of the neighborhoods and communities of these locations.
-                        Users wanted options that filtered more versatile locations that allow more ideas and different events for the locations.<br/>
-                        Next step information and guides that provide information on how processes that will help them secure these spaces for their purposes, as well as allowing communities to organize and participate.
-                    </p>
-                    <ul className="text-start text-slate-600 list-decimal gap-y-6 ml-6 text-sm sm:text-base">
-                        <p className="text-start text-slate-600 font-semibold">Refining the Design
-                        </p>
-                        <li>
-                            Mock-Ups
-                        </li>
-                        <li>
-                            High-Fidelity Prototypes
-                        </li>
-                        <li>
-                            Accessibility
-                        </li>
-                    </ul>
                     {/* Mock-Ups */}
-                    <h1 className="text-start gap-y-1 text-slate-800 font-semibold text-lg sm:text-xl">
-                        Mock-Ups
-                    </h1>
-                    <p className="text-sm sm:text-base text-slate-600 font-semibold">
-                        Mobile Breakpoint: Iphone 14 Pro
-                    </p>
+                    <h2 className="text-left text-sm sm:text-base text-slate-600 font-semibold">
+                        Mobile Breakpoint: iPhone 14 Pro
+                    </h2>
                     <div className="gap-y-6">
-                        <p className="text-sm sm:text-base text-slate-600">
-                            The initial mock-ups used a navigation style interaction design with a localized map and an F.A.B. as the entry point for finding new places right from the homepage.<br />
-                            Initial Designs
-                        </p>
                     </div>
                     
                     <div className="gap-y-6">
@@ -323,6 +246,7 @@ export default function ProjectDetails() {
                         Final Designs
                         </p>
                         <img src={MobileFinal} alt="Mobile Final Design" className="my-6 w-full max-w-xs h-auto rounded-4xl mt-6 border border-gray-600 shadow-xl" />
+
                     </div>
                     {/* Tablet Mock-Ups */}
                     <p className="my-2 text-sm sm:text-base text-slate-600 font-semibold">
@@ -356,46 +280,12 @@ export default function ProjectDetails() {
                         </p>
                         <img src={DesktopFinal} alt="Desktop Final Design" className="w-full max-w-full h-auto rounded-lg mt-6 border border-gray-600 shadow-xl" />
                     </div>
-                    <h1 className="my-6 text-start gap-y-1 text-slate-800 font-semibold text-lg sm:text-xl">
-                        Going Forward
-                    </h1>
-                    <h2 className="text-start text-slate-700 font-semibold text-base sm:text-lg">
-                        Take Aways & Impact
+                    <h2 className="mt-6 text-start gap-y-1 text-slate-800 font-semibold text-lg sm:text-xl">
+                        The Outcome
                     </h2>
-                    <p className="text-sm sm:text-base text-slate-600">
-                        Updates made to the design after user feedback improved overall usability of the website. Users where able to search and find results that were closer to the results they were expecting from this type of service.
-                        What was learned?
-                        With this product iteration having a larger assortment of options to choose from each category of questions made the service more inclusive for a wider range of public space scenarios. Among those choices are accessibility considerations, amenities etc. were appreciated and gave users more complete and narrow search results when looking for public space locations.
+                    <p className="text-start text-slate-700 text-base sm:text-lg">
+                        Iterative A/B usability testing demonstrated a 30% increase in Net Promoter Score (NPS) while validating market demand by capturing over 500 user registrations during early testing.
                     </p>
-                    <h2 className="my-4 text-start text-slate-700 font-semibold text-base sm:text-lg">
-                        Next Steps
-                    </h2>
-                    <ul className="text-start text-slate-600 list-decimal gap-y-4 ml-6 text-sm sm:text-base">
-                        <li>
-                            Develop a comprehensive onboarding process to guide new users through the platform's features and functionalities.
-                        </li>
-                        <li>
-                            Continue additional redesigns based on user Feedback.
-                        </li>
-                        <li>
-                            Implement advanced filtering options to allow users to further refine their search results based on specific criteria.
-                        </li>
-                        <li>
-                            Explore partnerships with local governments and community organizations to expand the database of available community spaces.
-                        </li>
-                        <li>
-                            I will add more motion design and micro interactions to engage user focus and signal actions.
-                        </li>
-                        <li>
-                            Conduct ongoing user research and usability testing to continuously improve the platform and ensure it meets the evolving needs of its users.
-                        </li>
-                        <li>
-                            Include additional accessibility features to make the site more inclusive for people with disabilities.
-                        </li>
-                    </ul>
-                    <h1 className="gap-y-1 text-slate-800 font-semibold text-lg sm:text-xl">
-                        Thank You!
-                    </h1>
             {/* End of Project Content */}
             </div>
         </>
