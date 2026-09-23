@@ -125,20 +125,20 @@ export const ProjectData = {
         intro:
         {
             title: 'Bledger',
-            technologies: 'Figma, TensorFlow Lite, iOS/Android,',
-            studyDescription: 'Designed and prototyped Bledger, a mobile Agentic budgeting app for gig workers using AI and gamification to prevent overspending. Led full UX cycle: user research (10+ interviews), Figma prototypes with micro-interactions, WCAG 2.1 AA compliance, and on-device AI (TensorFlow Lite). Simulated testing projected 25% engagement increase; created ethical-AI-focused portfolio case study.',
+            technologies: 'Figma, VS Code, TensorFlow Lite, iOS/Android,',
+            studyDescription: 'Gig-Economy,Financial Technology & Predictive Wealth Management.',
             image: BledgerHero,
-            productDescription: 'Bledger is an Agentic budgeting app designed to help gig workers manage their finances effciently. It uses AI and gamification to encourage savings, budgeting and investing. Bledger offers features to prevent overspending and encourage better financial habits. The app provides personalized budgeting advice based on user behavior, expenses and financial goals, making it easier for people to stay on top of their finances.'
+            productDescription: 'Millennials and Gen Z workers in the gig economy face volatile, inconsistent income streams, yet standard budgeting applications rely on reactive, manual entry that causes high user drop-off. The market lacked a proactive financial tool that could anticipate cash-flow dips and incentivize savings without feeling like a traditional, intimidating ledger.'
         },
         empathy:
         {
-            title: 'Empathy',
-            methods: 'User Interviews, User Research, Empathy Maps, User Journey Mapping and Insights',
-            StudyDescription: 'Conducted 10+ user interviews with gig workers to understand their financial challenges and needs. Developed detailed user personas and journey maps to identify pain points and opportunities for Bledger\'s design.',
+            title: 'The Methodology:',
+            methods: 'Empathy Phase',
+            StudyDescription: 'Conducted 10+ user interviews with gig workers to understand their financial challenges and needs. Developed detailed user personas, journey - empathy maps and competitor auditto identify pain points and opportunities for Bledger\'s design.',
             image: 'https://via.placeholder.com/150',
             userResearch: 'Target audience: Everyday people who simply want an easy, clean, non-technical way to track their personal budget and spending — no spreadsheets, no financial jargon, just calm, consumable clarity.',
             personaIntro: 'Created user personas representing different types of gig workers, such as a rideshare driver, a freelance designer, and a delivery worker. Each persona included insights into their financial habits, challenges, and goals.',
-            persona1:' Maya Rodriguez Age: 28 Occupation: Freelance Graphic Designer Location: Brooklyn, NY Background: Maya is a creative freelancer with irregular income from client projects. She juggles multiple gigs but often feels anxious about unexpected expenses like software subscriptions or equipment upgrades. Goals: Build an emergency fund and track spending proactively without manual effort. Pain Points: Forgets to categorize transactions; surprised by low balances mid-month. Behaviors: Checks her phone multiple times a day; appreciates gamified nudges and simple visuals. Quote: "I need something that feels like a friend reminding me to save, not a boring spreadsheet."',
+            persona1:'Maya Rodriguez Age: 28 Occupation: Freelance Graphic Designer Location: Brooklyn, NY Background: Maya is a creative freelancer with irregular income from client projects. She juggles multiple gigs but often feels anxious about unexpected expenses like software subscriptions or equipment upgrades. Goals: Build an emergency fund and track spending proactively without manual effort. Pain Points: Forgets to categorize transactions; surprised by low balances mid-month. Behaviors: Checks her phone multiple times a day; appreciates gamified nudges and simple visuals. Quote: "I need something that feels like a friend reminding me to save, not a boring spreadsheet."',
             personaImage1: BledgerMaya,
             persona2:' Jamal Thompson Age: 35 Occupation: Rideshare Driver Location: Atlanta, GA Background: Jamal relies on rideshare driving for income but faces unpredictable earnings due to fluctuating demand and expenses like car maintenance. He struggles to save consistently and often feels overwhelmed by financial management. Goals: Create a stable budget that adapts to his variable income and helps him save for future expenses. Pain Points: Difficulty tracking irregular income; stressed about unexpected costs. Behaviors: Uses budgeting apps but finds them too rigid; values real-time insights and actionable advice. Quote: "I need a budget that understands my hustle and helps me stay ahead of the game."',
             personaImage2: BledgerJamal,
@@ -151,7 +151,7 @@ export const ProjectData = {
         },
         define:
         {
-            problemStatement: 'Jamal is a freelance gig worker with a fluctuating income who needs a predictive, automated way to manage volatile cash flow because manual tracking is too time-consuming and often fails to prevent overdrafts before they happen.',
+            problemStatement: 'Transitioned directly from these insights to strict product constraints. Scoped the core architecture around predictive AI nudges and micro-savings challenges, ensuring the UI felt encouraging rather than punitive before any wireframing began.',
             HypothesisStatement:'If we provide Jamal with a glanceable, agentic AI dashboard that predicts overspending and autonomously safeguards bill payments, then he will experience reduced financial anxiety and fewer late fees, regardless of his weekly income volatility.',
             designPrinciples: '1. Simplicity: The app should be easy to use and understand, with a clean and intuitive interface that minimizes cognitive load. 2. Transparency: Users should feel in control of the AI features, with clear explanations of how recommendations are generated and the ability to intervene or veto suggestions. 3. Personalization: The app should provide tailored advice and insights based on individual user behavior, preferences, and financial goals. 4. Proactivity: The app should anticipate user needs and provide timely notifications and recommendations to help prevent financial issues before they arise. 5. Inclusivity: The design should be accessible to a diverse range of users, including those with varying levels of financial literacy and different types of gig work.',
             valueProposition: 'This defines why a user would choose Bledger over a traditional competitor like Mint or Rocket Money. Predictive Foresight, Unlike apps that tell you what you already spent, Bledger uses AI to warn you about spending "thresholds" before you cross them.Agentic Automation, The "Co-Pilot" mode goes beyond alerts by autonomously ensuring rent is covered and executing micro-investments in stocks or crypto based on your goals.Minimalist Clarity, A "glanceable" UI designed for high-speed decision-making, removing the "financial fog" of complex banking spreadsheets.Gamified Discipline, Micro-challenges and reward points turn the chore of saving into a feedback loop that encourages long-term financial health.',
@@ -166,7 +166,7 @@ export const ProjectData = {
         },
         ideate:
         {
-            ideationMethods: 'Brainstorming, "How Might We?" Questions, Concept Development and Crazy 8s Sketching',  
+            ideationMethods: '"How Might We?", Crazy 8s Sketching, Wireframing and Design Iterations.',  
             designChallenge: 'How might we create an intuitive budgeting app that uses AI to help gig workers manage their finances effectively, providing real-time insights and proactive recommendations to prevent overspending and encourage savings?',
             crazy8s: 'I generated a few ideas for features and design directions, such as predictive spending alerts, automated bill payments, gamified savings challenges, and a minimalist dashboard for quick insights.',
             conceptDevelopment: 'I Selected the most promising ideas from the how might we session and developed them into more detailed screens',
