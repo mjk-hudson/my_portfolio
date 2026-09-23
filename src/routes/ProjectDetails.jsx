@@ -2,8 +2,7 @@ import React from "react";
 import './projectDetails.css';
 import { Link } from "react-router-dom";
 import Nbgca from '../assets/nbgca.html?raw';
-import Barbara from '../assets/danie-franco-l9I93gZKTG4-unsplash.webp';
-import Andres from '../assets/andres-molina-J7sCh_kM9kQ-unsplash+thumbnail.webp';
+
 import Barbjourney from '../assets/Barbara-Journey-Map.jpg';
 import Andresjourney from '../assets/Andres-Journey-Map.jpg';
 import { motion } from 'motion/react';
@@ -12,6 +11,13 @@ import storyboard from '../assets/Neighborgood_storyboard.png';
 import coreProblems from '../assets/Neighborgood_core_problem.png';
 import userPainPoints from '../assets/Neighborgood_user_pain_points.png';
 import howMightWe from '../assets/Neighborgood_how_mw.png';
+import MobileCodeString from '../components/MobileCodeString.jsx?raw';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
+
+//Rendered UI components
+import MobileCode from '../components/MobileCodeString.jsx';
+
 
 //Sketches imports
 import MobileSketch from '../assets/neighborgood_sketches/PXL_20220801_174421456.MP.webp';
@@ -192,6 +198,7 @@ export default function ProjectDetails() {
                         </h3>
                         <div className="gap-y-2">
                             <img src={MobileBreakpoint} alt="Mobile View" className="w-1/4 max-w-sm h-auto rounded-lg mt-6 border border-gray-600 shadow-xl" />
+
                             <h3 className="text-left mt-10 text-sm sm:text-base text-slate-600">
                                 Mobile Breakpoint
                             </h3>
@@ -226,11 +233,34 @@ export default function ProjectDetails() {
                         Technical Architecture
                     </h2>
                     <p className="text-sm sm:text-base text-slate-600">
-                        Developed a responsive web application concept built strictly with pure JavaScript, Tailwind CSS and React JS via Vite, keeping the front-end architecture agile and lightweight for fast data filtering without relying on TypeScript.
+                        Developed a responsive web application concept built strictly with pure JavaScript, Tailwind CSS and React JS via Vite, keeping the front-end architecture agile and lightweight for fast data filtering without relying on TypeScript. The code below is an example of the mobile breakpoint code for the Neighborgood project, demonstrating the use of React components and Tailwind CSS for styling.
                     </p>
+                    {/* Scrollable code container */}
+                    <div className="w-full max-w-full min-w-0 mt-6 bg-slate-800 rounded-lg border-gray-600 shadow-xl h-full max-h-[500px] scrollbar-thin scrollbar-thumb-slate-700 overflow-hidden">
+                        <SyntaxHighlighter 
+                        language="jsx"
+                        style={vscDarkPlus}
+                        wrapLongLines={true}
+                        customStyle={{
+                            margin:0,
+                            padding:'1rem',
+                            maxHeight:'500px',
+                            fontSize:'.875rem',
+                            lineHeight:'1.5',
+                            backgroundColor:'#1e293b',
+                            overflowX:'auto',
+                        }}
+                        codeTagProps={{
+                            style:{
+                                wordBreak: 'break-word',
+                                whiteSpace: 'pre-wrap',
+                            }
+                        }}>
+                            {MobileCodeString}
+                        </SyntaxHighlighter>
+                    </div>
             </div>
         </div>
-            {/*Ideation - Crazy 8's*/}
             <div className="my-4 gap-y-8">
                     </div>
                     {/* Mock-Ups */}
@@ -242,11 +272,15 @@ export default function ProjectDetails() {
                     
                     <div className="gap-y-6">
                         <p className="mt-4 text-sm sm:text-base text-slate-600">
-                        The Final mock-up provides an introduction and brief explanation to the product and service as well as any available local places, groups or initiatives on the homepage as well as providing a menu for additional features, services and information.<br/>
+                        The calendar view provides a clear overview of upcoming events and deadlines for locations that users have already solicited and reserved.<br/>
                         Final Designs
                         </p>
-                        <img src={MobileFinal} alt="Mobile Final Design" className="my-6 w-full max-w-xs h-auto rounded-4xl mt-6 border border-gray-600 shadow-xl" />
-
+                        
+                        <div className="w-full flex justify-center items-center overflow-x-auto py-6">
+                          <div className="shrink-0 min-w-[384px]">
+                            <MobileCode />
+                          </div>
+                        </div>
                     </div>
                     {/* Tablet Mock-Ups */}
                     <p className="my-2 text-sm sm:text-base text-slate-600 font-semibold">
