@@ -3,6 +3,8 @@ import { Link, Outlet} from 'react-router-dom';
 import { AnimatePresence, motion } from "motion/react";
 import { useState } from 'react';
 import {ProjectData} from '../components/ProjectData.jsx';
+import BledgerHMW from '../assets/Bledger_How_might_we.png'
+
 
 
 export default function Bledger()
@@ -52,7 +54,7 @@ export default function Bledger()
                         <img src={ProjectData.p1.empathy.personaImage1} alt="Bledger User Persona" className='mt-4 w-full h-auto rounded-lg mb-10'/>
 
                         {/*Second Persona*/}
-                        <h2 className="text-start text-slate-400 text-base sm:text-lg">Jamal Johnson</h2>
+                        <h2 className="text-start text-slate-400 text-base sm:text-lg">Ben Johnson</h2>
                         <p className="text-left text-slate-400 text-small sm:text-base">{ProjectData.p1.empathy.persona2}
                         </p>
                         <img src={ProjectData.p1.empathy.personaImage2} alt="Bledger User Persona" className='mt-4 w-full h-auto rounded-lg mb-10'/>
@@ -100,10 +102,15 @@ export default function Bledger()
                     </h2>
                     <p className="text-left text-slate-400 text-small sm:text-base">Completed ideation phase artifacts. Constructed low-to-high fidelity wireframes in Figma, integrating ethical AI considerations (TensorFlow Lite) and conducting WCAG 2.1 AA accessibility audits. Explored node-based generative AI workflows using Figma Weave to rapidly iterate on layout variants.
                     </p>
-                    <h3 className="mt-4 text-start text-slate-400 text-base sm:text-lg">Ideation
+                    <h3 className="mt-4 text-start text-slate-400 text-base sm:text-lg">Ideation Artifacts
                     </h3>
                     <p className='text-left text-slate-400 text-small sm:text-base'>{ProjectData.p1.ideate.ideationMethods}
                     </p>
+                    <div>
+                        <h2 className="mt-4 text-start text-slate-400 text-base sm:text-lg">How Might We....?
+                        </h2>
+                        <img src={BledgerHMW} alt="Bledger How Might We" className='w-full h-auto rounded-lg mt-1'/>
+                    </div>
                     <h2 className="mt-6 text-start text-slate-400 text-base sm:text-lg">Crazy 8s
                     </h2>
                     <p className='text-left text-slate-400 text-small sm:text-base'>{ProjectData.p1.ideate.crazy8s}
