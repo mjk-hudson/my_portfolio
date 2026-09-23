@@ -171,7 +171,7 @@ export const ProjectData = {
             ideationMethods: '"How Might We?", Crazy 8s Sketching, Wireframing and Design Iterations.',  
             designChallenge: 'How might we create an intuitive budgeting app that uses AI to help gig workers manage their finances effectively, providing real-time insights and proactive recommendations to prevent overspending and encourage savings?',
             crazy8s: 'I generated a few ideas for features and design directions, such as predictive spending alerts, automated bill payments, gamified savings challenges, and a minimalist dashboard for quick insights.',
-            conceptDevelopment: 'I Selected the most promising ideas from the how might we session and developed them into more detailed screens',
+            conceptDevelopment: 'I Selected the most promising ideas from the how might we session and developed them into higher fidelity screens.',
             earlySketches: BledgerSketches,
             ideationSummary: 'Through a structured ideation process, I was able to generate and refine innovative ideas for Bledger that directly address the needs and challenges of gig workers. This phase was crucial in shaping the overall design and functionality of the app, ensuring it provides real value to its users.',
             iterationImage1:BledgerIteration1,
