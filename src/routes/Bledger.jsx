@@ -4,6 +4,9 @@ import { AnimatePresence, motion } from "motion/react";
 import { useState } from 'react';
 import {ProjectData} from '../components/ProjectData.jsx';
 import BledgerHMW from '../assets/Bledger_How_might_we.png'
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import BledgerHome from "../components/BledgerHome.jsx?raw";
 
 
 
@@ -155,60 +158,85 @@ export default function Bledger()
                     </div>
                 </div>
             </div>
+
                 {/*Technical Architecture*/}
                 <div>
                     <h2 className="text-start text-slate-500 font-semibold text-lg sm:text-xl mt-4">Technical Architecture
                     </h2>
-                    <p className="text-left text-slate-400 text-small sm:text-base">Bridged the gap between design and engineering by building functional front-end components. Architected the prototype strictly using pure JavaScript and React via Vite, deliberately avoiding TypeScript to maintain a lightweight, highly flexible development environment.
+                    <p className="text-left text-slate-400 text-small sm:text-base">Bridged the gap between design and engineering by building functional front-end components. Architected the prototype strictly using pure JavaScript and React via Vite, deliberately avoiding TypeScript to maintain a lightweight, highly flexible development environment. Below is a code snippet of the BledgerHome.jsx component, which serves as the main entry point for the application, demonstrating the integration of React, Vite, and Tailwind CSS to create a responsive and interactive user interface.
                     </p>
+
+                    {/*Code Snippet*/}
+                    <div className="w-full max-w-full min-w-0 mt-6 bg-slate-800 rounded-lg border-gray-600 shadow-xl h-full max-h-[500px] scrollbar-thin scrollbar-thumb-slate-700 overflow-hidden">
+                        <SyntaxHighlighter 
+                        language="jsx"
+                        style={vscDarkPlus}
+                        wrapLongLines={true}
+                        customStyle={{
+                            margin:0,
+                            padding:'1rem',
+                            maxHeight:'500px',
+                            fontSize:'.875rem',
+                            lineHeight:'1.5',
+                            backgroundColor:'#1e293b',
+                            overflowX:'auto',
+                        }}
+                        codeTagProps={{
+                            style:{
+                                wordBreak: 'break-word',
+                                whiteSpace: 'pre-wrap',
+                            }
+                        }}>
+                            {BledgerHome}
+                        </SyntaxHighlighter>
+                    </div>
                 </div>
-                {/*Interaction Design*/}
+
+            {/*Interaction Design*/}
+            <div>
+                <h2 className="text-start text-slate-500 font-semibold text-lg sm:text-xl mt-4">Interaction Design.
+                </h2>
+                <p className="text-left text-slate-400 text-small sm:text-base">Engineered fluid UI transitions, state-based animations, and responsive micro-interactions using "import { motion } from 'motion/react'", proving the design's viability in a production-ready web environment.
+                </p>
+
+                {/*Animations*/}
                 <div>
-                    <h2 className="text-start text-slate-500 font-semibold text-lg sm:text-xl mt-4">Interaction Design.
+                    <h2 className="text-start text-lg font-bold text-slate-500 mt-4">Animations                   
                     </h2>
-                    <p className="text-left text-slate-400 text-small sm:text-base">Engineered fluid UI transitions, state-based animations, and responsive micro-interactions using "import { motion } from 'motion/react'", proving the design's viability in a production-ready web environment.
-                    </p>
 
-                    {/*Animations*/}
-                    <div>
-                        <h2 className="text-start text-lg font-bold text-slate-500 mt-4">Animations                   
-                        </h2>
-
-                        <div className="gap-12 grid grid-cols-2 justify-center sm:grid-cols-2">
-                            <img src={ProjectData.p1.prototype.prototypeImage1} alt="Bledger Prototype Iterations" className='w-full h-auto rounded-lg mb-10 mt-4'
-                            />
-                            <img src={ProjectData.p1.prototype.prototypeImage2} alt="Bledger Prototype Iterations" className='w-full h-auto rounded-lg mb-10'
-                            />
-                            <img src={ProjectData.p1.prototype.prototypeImage3} alt="Bledger Prototype Iterations" className='w-full h-auto rounded-lg mb-10'
-                            />
-                            <img src={ProjectData.p1.prototype.prototypeImage4} alt="Bledger Prototype Iterations" className='w-full h-auto rounded-lg mb-10'
-                            />
-                        </div>
-
+                    <div className="gap-12 grid grid-cols-2 justify-center sm:grid-cols-2">
+                        <img src={ProjectData.p1.prototype.prototypeImage1} alt="Bledger Prototype Iterations" className='w-full h-auto rounded-lg mb-10 mt-4'
+                        />
+                        <img src={ProjectData.p1.prototype.prototypeImage2} alt="Bledger Prototype Iterations" className='w-full h-auto rounded-lg mb-10'
+                        />
+                        <img src={ProjectData.p1.prototype.prototypeImage3} alt="Bledger Prototype Iterations" className='w-full h-auto rounded-lg mb-10'
+                        />
+                        <img src={ProjectData.p1.prototype.prototypeImage4} alt="Bledger Prototype Iterations" className='w-full h-auto rounded-lg mb-10'
+                        />
                     </div>
 
-                    {/*Mock-Up Images*/}
-                    <div>
-                        <h2 className="text-start text-slate-500 font-semibold text-lg sm:text-xl mt-4">Mock-Up Images
-                        </h2>
-                        <p className="text-left text-slate-400 text-small sm:text-base">Finalized high-fidelity mockups, incorporating user feedback and accessibility standards, to create a polished and user-friendly interface. They include the home screen, insights, spending tracker and settings screens respectively.
-                        </p>
-                        <div className='grid gap-8 grid-cols-1 justify-center sm:grid-cols-2'>
-                            <img src={ProjectData.p1.ideate.finalImage1} alt="Bledger Final Prototype" className='w-full h-auto rounded-lg mb-10 mx-auto'/>
-                            <img src={ProjectData.p1.ideate.finalImage2} alt="Bledger Final Prototype" className='w-full h-auto rounded-lg mb-10 mx-auto'/>
-                            <img src={ProjectData.p1.ideate.finalImage3} alt="Bledger Final Prototype" className='w-full h-auto rounded-lg mb-10 mx-auto'/>
-                            <img src={ProjectData.p1.ideate.finalImage4} alt="Bledger Final Prototype" className='w-full h-auto rounded-lg mb-10 mx-auto'/>
-                            <img src={ProjectData.p1.ideate.finalImage5} alt="Bledger Final Prototype" className='w-full h-auto rounded-lg mb-10 mx-auto'/>
-                            <img src={ProjectData.p1.ideate.finalImage6} alt="Bledger Final Prototype" className='w-full h-auto rounded-lg mb-10 mx-auto'/>
-                            <img src={ProjectData.p1.ideate.finalImage7} alt="Bledger Final Prototype" className='w-full h-auto rounded-lg mb-10 mx-auto'/>
-                            <img src={ProjectData.p1.ideate.finalImage8} alt="Bledger Final Prototype" className='w-full h-auto rounded-lg mb-10 mx-auto'/>
-                        </div>
+                </div>
+
+                {/*Mock-Up Images*/}
+                <div>
+                    <h2 className="text-start text-slate-500 font-semibold text-lg sm:text-xl mt-4">Mock-Up Images
+                    </h2>
+                    <p className="text-left text-slate-400 text-small sm:text-base">Finalized high-fidelity mockups, incorporating user feedback and accessibility standards, to create a polished and user-friendly interface. They include the home screen, insights, spending tracker and settings screens respectively.
+                    </p>
+                    <div className='grid gap-8 grid-cols-1 justify-center sm:grid-cols-2'>
+                        <img src={ProjectData.p1.ideate.finalImage1} alt="Bledger Final Prototype" className='w-full h-auto rounded-lg mb-10 mx-auto'/>
+                        <img src={ProjectData.p1.ideate.finalImage2} alt="Bledger Final Prototype" className='w-full h-auto rounded-lg mb-10 mx-auto'/>
+                        <img src={ProjectData.p1.ideate.finalImage3} alt="Bledger Final Prototype" className='w-full h-auto rounded-lg mb-10 mx-auto'/>
+                        <img src={ProjectData.p1.ideate.finalImage4} alt="Bledger Final Prototype" className='w-full h-auto rounded-lg mb-10 mx-auto'/>
+                        <img src={ProjectData.p1.ideate.finalImage5} alt="Bledger Final Prototype" className='w-full h-auto rounded-lg mb-10 mx-auto'/>
+                        <img src={ProjectData.p1.ideate.finalImage6} alt="Bledger Final Prototype" className='w-full h-auto rounded-lg mb-10 mx-auto'/>
+                        <img src={ProjectData.p1.ideate.finalImage7} alt="Bledger Final Prototype" className='w-full h-auto rounded-lg mb-10 mx-auto'/>
+                        <img src={ProjectData.p1.ideate.finalImage8} alt="Bledger Final Prototype" className='w-full h-auto rounded-lg mb-10 mx-auto'/>
                     </div>
                 </div>
-                
+            </div>
 
-
-            {/*Test*/}
+            {/*Outcome*/}
             <div classname='gap-4'>
                 <h2 className="text-start text-slate-500 font-semibold text-lg sm:text-xl">The Outcome:
                 </h2>
