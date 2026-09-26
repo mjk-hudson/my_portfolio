@@ -4,6 +4,15 @@ import { AnimatePresence, motion } from "motion/react";
 import { useState } from 'react';
 import vibeSpaceHero from '../assets/Vibe-Space-Hero.png';
 import {ProjectData} from '../components/ProjectData.jsx';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import PreMeet from '../components/PreMeetScreen.jsx?raw';
+
+{/*Images*/}
+import VibeJourneyMap from '../assets/vibe_space_initial_journey_map.png';
+import VibeIA from '../assets/vibe_space_IA.png';
+import VibeIA2 from '../assets/Vibe_IA2.png';
+import PreMeetLobby from '../assets/vibespace/lobby-ready-mobile.png';
 
 
 export default function VibeSpace ()
@@ -16,69 +25,51 @@ export default function VibeSpace ()
                 <img src={vibeSpaceHero} alt="Vibe Space Hero" />
 
                 {/*Vibe Space Intro*/}
-                <h1 className="text-start text-3xl font-bold text-slate-800 mb-4">{ProjectData.p2.intro.title}
-                </h1>
-                <h2 className="text-start text-2xl font-bold text-slate-700">Technologies and Platforms:
+                <h2 className="mt-6 text-start text-2xl font-bold text-slate-700">Executive Summary
                 </h2>
                 <p className='text-start text-lg text-slate-600'>{ProjectData.p2.intro.technologies}
                 </p>
-                <h2 className="text-start text-2xl font-bold text-slate-700">Study description:
+                <h2 className="mt-2 text-start text-2xl font-bold text-slate-700">The Category
                 </h2>
                 <p className="text-start text-slate-600 text-small sm:text-base">{ProjectData.p2.intro.studyDescription}
                 </p>
                 <div className="gap-4 ">
                 </div>
-                <h2 className="text-start text-2xl font-bold text-slate-700">Product description:
-                </h2>
+                <h1 className="mt-6 text-start text-2xl font-bold text-slate-700">The Problem
+                </h1>
                 <p className="text-start text-slate-600 text-small sm:text-base mb-4">{ProjectData.p2.intro.productDescription}
                 </p>
 
                 {/*Vibe Empathy*/}
-                <h1 className="text-start text-3xl font-bold text-slate-800">{ProjectData.p2.empathy.title}
-                </h1>
-                <h2 className="text-start text-2xl font-bold text-slate-700">Method: Usability Study
+                <h2 className="mt-4 text-start text-2xl font-bold text-slate-700">The Methodology:
                 </h2>
-                <p className="text-start text-slate-600 text-small sm:text-base">{ProjectData.p2.empathy.studyDescription}
+                <h3 className="mt-4 text-start font-bold text-slate-700">{ProjectData.p2.empathy.title}
+                </h3>
+                <p className="mt-2 text-start text-slate-600 text-small sm:text-base">{ProjectData.p2.empathy.studyDescription}
                 </p>
-                <div className="gap-4 ">
-                <img src={ProjectData.p2.empathy.VibeStudyImage} alt="Vibe Space Empathy" />
-                </div>
 
                 {/*Personas*/}
-                <h2 className="text-start text-2xl font-bold text-slate-700">Personas:
+                <h2 className='mt-4 text-left text-slate-700'>Intial User Journey Map</h2>
+                <div className="">
+                    <img src={VibeJourneyMap} alt="Vibe Space Empathy Image 3" />
+                </div>
+
+                <h2 className="mt-4 text-start text-2xl font-bold text-slate-700">Persona 1
                 </h2>
-                <p className="text-start text-slate-600 text-small sm:text-base">{ProjectData.p2.empathy.personaIntro}
-                </p>
-                <h2 className="text-start text-2xl font-bold text-slate-700">Maya Chen:
-                </h2>
-                <p className="text-start text-slate-600 text-small sm:text-base">{ProjectData.p2.empathy.persona1}
-                </p>
                 <div className="gap-4">
-                    <img src={ProjectData.p2.empathy.personaImage1} alt="Vibe Space Persona Image 1" />
                     <img src={ProjectData.p2.empathy.empathyMapImage1} alt="Vibe Space Empathy Image 1"/>
                 </div>
                 
-                <h2 className="text-start text-2xl font-bold text-slate-700">Marcus Vance:
+                <h2 className="mt-4 text-start text-2xl font-bold text-slate-700">Persona 2
                 </h2>
-                <p className="text-start text-slate-600 text-small sm:text-base">{ProjectData.p2.empathy.persona2}
-                </p>
-                <div className="gap-4">
-                    <img src={ProjectData.p2.empathy.personaImage2} alt="Vibe Space Persona Image 2" />
-                </div>
                 <img src={ProjectData.p2.empathy.empathyMapImage2} alt="Vibe Space Empathy Image 2" />
-                <h2 className="text-start text-2xl font-bold text-slate-700">Elena Rostova:
+                <h2 className="mt-4 text-start text-2xl font-bold text-slate-700">Persona 3
                 </h2>
-                <p className="text-start text-slate-600 text-small sm:text-base">
-                {ProjectData.p2.empathy.persona3}
-                </p>
-                <div className="gap-4">
-                    <img src={ProjectData.p2.empathy.personaImage3} alt="Vibe Space Persona Image 3" />
-                </div>
+
+
                 <div className="gap-4">
                     <img src={ProjectData.p2.empathy.empathyMapImage3} alt="Vibe Space Empathy Image 3" />
                 </div>
-                <h2 className="text-start text-2xl font-bold text-slate-700">Key Insights and Summary:
-                </h2>
                 <p className="text-start text-slate-600 text-small sm:text-base">
                 {ProjectData.p2.empathy.insights}
                 </p>
@@ -87,157 +78,149 @@ export default function VibeSpace ()
                 </p>
 
                 {/*Define*/}
-                <h1 className="text-start text-3xl font-bold text-slate-800">Define
-                </h1>
+                <h3 className="text-start font-bold text-slate-700">Define Phase
+                </h3>
                 <p className="text-start text-slate-600 text-small sm:text-base mb-2">
                 {ProjectData.p2.define.problemStatement}
                 </p>
-                <h2 className="text-start text-2xl font-bold text-slate-700">Hypothesis Statement:
-                </h2>
-                <p className="text-start text-slate-600 text-small sm:text-base">
-                {ProjectData.p2.define.hypothesisStatement}
-                </p>
-                <p className="text-start text-slate-600 text-small sm:text-base">
-                {ProjectData.p2.define.designPrinciples}
-                </p>
-                <h2 className="text-start text-2xl font-bold text-slate-700">Value Proposition:
-                </h2>
+                <h3 className="mt-4 text-start font-bold text-slate-700">Value Proposition:
+                </h3>
                 <p className="text-start text-slate-600 text-small sm:text-base">
                 {ProjectData.p2.define.valueProposition}
                 </p>
-                <div className="gap-4 mb-4">
+                <div className="mt-4 mb-4">
                     <img src={ProjectData.p2.define.informationArchitecture} alt="Information Architecture"/>
                 </div>
-                <div className="gap-4">
+                <div className="mt-4">
                     <img src={ProjectData.p2.define.userFlows} alt="User Flows"/>
                 </div>
-                <h2 className="mt-4 text-start text-2xl font-bold text-slate-700">Define Summary:
-                </h2>
-                <p className="text-start text-slate-600 text-small sm:text-base mb-4">
-                {ProjectData.p2.define.defineSummary}
-                </p>
 
                 {/*Design*/}
-                <h1 className="text-start text-3xl font-bold text-slate-800">Ideation
+                <h1 className="mt-6 text-start text-3xl font-bold text-slate-800">The Execution
                 </h1>
-                <h2 className="text-start text-2xl font-bold text-slate-700 mt-4">Ideation Methods:
+                <h2 className="text-start text-2xl font-bold text-slate-700 mt-4">Design & Strategy:
                 </h2>
-                <h3 className="text-start text-slate-600 mt-1">{ProjectData.p2.Ideate.ideationMethods}
-                </h3>
                 <p className="text-start text-slate-600 text-small sm:text-base">
                 {ProjectData.p2.Ideate.designChallenge}
                 </p>
                 <div className="gap-4">
-                <p className="text-start text-slate-600 text-small sm:text-base">{ProjectData.p2.Ideate.crazy8s}</p>
-                </div>
-                <div className="gap-4">
                 <p className="text-start text-slate-600 text-small sm:text-base">{ProjectData.p2.Ideate.earlySketches}</p>
                 </div>
-                <h3 className="text-start text-slate-600 mt-1">Concept Development:
+                <h3 className="mt-8 text-start text-slate-600 mt-1">Information Architecture:Mobile Breakpoints.
                 </h3>
-                <p className="text-start text-slate-600 text-small sm:text-base">
-                {ProjectData.p2.Ideate.conceptDevelopment}
-                </p>
-                <div className="gap-4 mt-6">
-                <img className="rounded-xl" src={ProjectData.p2.Ideate.crazy8Images1} alt="Crazy 8s Images"/>
+                <div className="mt-2">
+                    <img className="rounded-xl" src={VibeIA} alt="Information Architecture"/>
                 </div>
-                <div className="gap-4 mt-6">
-                <img className="rounded-xl" src={ProjectData.p2.Ideate.crazy8Images2} alt="Crazy 8s Images"/>
-                </div>
-                <div className="gap-4 mt-6">
-                    <img className="rounded-xl" src={ProjectData.p2.Ideate.crazy8Images3} alt="Crazy 8s Images"/>
-                    <img className="rounded-xl mt-6" src={ProjectData.p2.Ideate.crazy8Images4} alt="Crazy 8s Images"/>
-                    <img className="rounded-xl mt-6" src={ProjectData.p2.Ideate.crazy8Images5} alt="Crazy 8s Images"/>
-                    <img className="rounded-xl mt-6" src={ProjectData.p2.Ideate.crazy8Images6} alt="Crazy 8s Images"/>
-                    <img className="rounded-xl mt-6" src={ProjectData.p2.Ideate.crazy8Images7} alt="Crazy 8s Images"/>
-                </div>
-                <p className="my-5 text-start text-slate-600 text-small sm:text-base">
-                {ProjectData.p2.Ideate.ideationSummary}
-                </p>
-                <div className="gap-4">
-                <img className="rounded-xl mt-6" src={ProjectData.p2.Ideate.ideation1} alt="Early Sketches"/>
-                <img className="rounded-xl mt-6" src={ProjectData.p2.Ideate.ideation2} alt="Early Sketches"/>
-                <img className="rounded-xl mt-6" src={ProjectData.p2.Ideate.ideation3} alt="Early Sketches"/>
+                {/*Mobile wireframes*/}
+                <div className="mt-6">
+                    <h2 className='text-start text-slate-700'>Mobile Breakpoint Wireframes
+                    </h2>
+                    <img className="rounded-xl my-4" src={ProjectData.p2.Ideate.crazy8Images3} alt="Crazy 8s Images"/>
+                    <img className="rounded-xl" src={ProjectData.p2.Ideate.crazy8Images2} alt="Crazy 8s Images"/>
                 </div>
 
-                <div className="gap-4 mt-6">
-                </div>
-                <div className="gap-4 mt-6 place-items-center">
-                <img className="w-1/2" src={ProjectData.p2.Prototype.iterationImage1} alt="Iteration Images"/>
-                <img className="w-full mt-6" src={ProjectData.p2.Prototype.iterationImage2} alt="Iteration Images"/>
-                </div>
-                <div className="gap-4 mt-6">
-                <img src={ProjectData.p2.Prototype.iterationImage3} alt="Iteration Images"/>
-                <img className="w-full place-items-center mt-6" src={ProjectData.p2.Prototype.iterationImage4} alt="Iteration Images"/>
-                <img className="w-full place-items-center mt-6" src={ProjectData.p2.Prototype.iterationImage5} alt="Iteration Images"/>
-                <img className="w-full place-items-center mt-6" src={ProjectData.p2.Prototype.iterationImage6} alt="Iteration Images"/>
+                {/*Desktop IA*/}
+                <div className="mt-14">
+                    <h2 className='text-start text-slate-700'>Information Architecture: Desktop- Tablet Breakpoints.
+                    </h2>
+                    <img className="mt-4 rounded-xl" src={VibeIA2} alt="Information Architecture"/>
                 </div>
 
-                {/*Prototype*/}
-                <h1 className="text-start text-3xl font-bold text-slate-800 mt-6">Prototype
-                </h1>
-                <p className="mt-4 text-start text-slate-600 text-small sm:text-base">
-                {ProjectData.p2.Prototype.prototypeIntro}
-                </p>
+                {/*Desktop Breakpoint wireframes*/}
+                <h2 className='mt-12 text-start text-slate-700'>Desktop Breakpoint Wireframes (Dark Mode)
+                </h2>
+                <div className="gap-4 grid grid-cols-2 place-items-center">
+                    <img className="rounded-xl mt-4" src={ProjectData.p2.Ideate.crazy8Images4} alt="Crazy 8s Images"/>
+                    <img className="rounded-xl mt-4" src={ProjectData.p2.Ideate.crazy8Images5} alt="Crazy 8s Images"/>
+                    <img className="rounded-xl mt-4" src={ProjectData.p2.Ideate.crazy8Images6} alt="Crazy 8s Images"/>
+                    <img className="rounded-xl mt-4" src={ProjectData.p2.Ideate.crazy8Images7} alt="Crazy 8s Images"/>
+                </div>
 
-                {/*Iteration Images and Rationale*/}
-
+                {/*Final Designs*/}
+                <h2 className='mt-18 text-start text-2xl text-slate-700'>Final Designs
+                </h2>
                 <p className="text-start text-slate-600 text-small sm:text-base">
                 {ProjectData.p2.Prototype.rationale}
                 </p>
 
-                <div className="gap-4 mt-6 place-items-center">
-                    <img className="w-1/2 h-auto" src={ProjectData.p2.Prototype.finalImage1} alt="Final Images"/>
-                </div>
-                <div className="gap-4 mt-6 place-items-center">
-                    <img className="w-1/2 h-auto" src={ProjectData.p2.Prototype.finalImage2} alt="Final Images"/>
-                </div>
-                <div className="gap-4 mt-6 place-items-center">
-                    <img className="w-1/2 h-auto" src={ProjectData.p2.Prototype.finalImage3} alt="Final Images"/>
-
-                    <img className="w-1/2 h-auto mt-6 place-items-center" src={ProjectData.p2.Prototype.finalImage4} alt="Final Images"/>
-
-                    <img className="w-1/2 h-auto mt-6 place-items-center" src={ProjectData.p2.Prototype.finalImage5} alt="Final Images"/>
-
-                    <img className="w-1/2 h-auto mt-6 place-items-center" src={ProjectData.p2.Prototype.finalImage6} alt="Final Images"/>
+                {/*Mobile final designs*/}
+                <h2 className='mt-12 text-start text-slate-700'>Mobile Breakpoint Final Design
+                </h2>
+                <div className="gap-4 mt-2">
+                    <img className="w-full mt-6" src={ProjectData.p2.Prototype.iterationImage2} alt="Iteration Images"/>
                 </div>
 
-                {/*Mock-Ups*/}
-                <h1 className="text-start text-3xl font-bold text-slate-800">Mock-Ups
-                </h1>
-                <div className="gap-4 grid grid-cols-2">
-                    <img className="w-full h-auto" src={ProjectData.p2.Prototype.Mock1} alt="Mock-Ups"/>
-                    <img className="w-full h-auto" src={ProjectData.p2.Prototype.Mock2} alt="Mock-Ups"/>
+                <div className="mt-14 gap-4">
+                    <h2 className='mt-2 text-start text-slate-700'>Tablet/Desktop Breakpoints Final Design
+                    </h2>
+                    <img className="rounded-xl mt-6" src={ProjectData.p2.Ideate.ideation2} alt="Early Sketches"/>
+                    <img className="rounded-xl mt-6" src={ProjectData.p2.Ideate.ideation3} alt="Early Sketches"/>
+                    <img className="w-full place-items-center mt-6" src={ProjectData.p2.Prototype.iterationImage5} alt="Iteration Images"/>
                 </div>
-                <div className="gap-4 grid grid-cols-2 palce-items-center">
-                    <img className="w-full h-auto" src={ProjectData.p2.Prototype.Mock3} alt="Mock-Ups"/>
-                    <img className="w-full h-auto" src={ProjectData.p2.Prototype.Mock4} alt="Mock-Ups"/>
-                </div>
+
+
+                {/*Hi-Fi Mocks*/}
+                <h2 className="text-start text-2xl font-bold text-slate-800 mt-22">Hi-Fidelity Mock-Ups
+                </h2>
+
+
+                {/*Hi-Fi Mock Breakpoints*/}
                 <div className="gap-4 grid grid-cols-2 place-items-center">
-                    <img className="w-3/4 h-auto" src={ProjectData.p2.Prototype.Mock5} alt="Mock-Ups"/>
+                    <img className="w-1/2 h-auto" src={ProjectData.p2.Prototype.finalImage1} alt="Final Images"/>
+
+                    <img className="w-full h-auto mt-6 place-items-center" src={ProjectData.p2.Prototype.finalImage4} alt="Final Images"/>
+
+                    <img className="w-1/2 h-auto" src={ProjectData.p2.Prototype.finalImage2} alt="Final Images"/>
+
+                    <img className="w-full h-auto mt-6 place-items-center" src={ProjectData.p2.Prototype.finalImage5} alt="Final Images"/>
+
+                    <img className="w-1/2 h-auto" src={ProjectData.p2.Prototype.finalImage3} alt="Final Images"/>
+                    
+                    <img className="w-full h-auto mt-6 place-items-center" src={ProjectData.p2.Prototype.finalImage6} alt="Final Images"/>
                 </div>
-                    <img className="w-full h-auto" src={ProjectData.p2.Prototype.Mock6} alt="Mock-Ups"/>
-                
-                {/*Darkmode Mock-Ups*/}
-                <p className="text-start text-slate-600 text-small sm:text-base my-4">
-                {ProjectData.p2.Prototype.darkmode}
 
+                {/*Technical Architecture*/}
+                <h2 className="text-start text-2xl font-bold text-slate-700 mt-24">Technical Architecture:
+                </h2>
+                <p className="text-start text-slate-600 text-small sm:text-base mt-2">
+                Engineered the responsive web platform using pure JavaScript and React via Vite. This strictly bypassed TypeScript to maintain a lightweight, agile development environment while proving robust front-end structural competency in managing complex state.
                 </p>
-                    <img className="w-1/2" src={ProjectData.p2.Prototype.Mock7} alt="Mock-Ups"/>
 
-                    <img className="w-full" src={ProjectData.p2.Prototype.Mock8} alt="Mock-Ups"/>
+                {/*Code Snippet*/}
+                    <div className="w-full max-w-full min-w-0 mt-6 bg-slate-800 rounded-lg border-gray-600 shadow-xl h-full max-h-[500px] scrollbar-thin scrollbar-thumb-slate-700 overflow-hidden">
+                        <SyntaxHighlighter 
+                        language="jsx"
+                        style={vscDarkPlus}
+                        wrapLongLines={true}
+                        customStyle={{
+                            margin:0,
+                            padding:'1rem',
+                            maxHeight:'500px',
+                            fontSize:'.875rem',
+                            lineHeight:'1.5',
+                            backgroundColor:'#1e293b',
+                            overflowX:'auto',
+                        }}
+                        codeTagProps={{
+                            style:{
+                                wordBreak: 'break-word',
+                                whiteSpace: 'pre-wrap',
+                            }
+                        }}>
+                            {PreMeet}
+                        </SyntaxHighlighter>
+                    </div>
 
-                    <img className="w-1/2" src={ProjectData.p2.Prototype.Mock9} alt="Mock-Ups"/>
-
-                    <img className="w-full" src={ProjectData.p2.Prototype.Mock10} alt="Mock-Ups"/>
-
-                    <img className="w-1/2" src={ProjectData.p2.Prototype.Mock11} alt="Mock-Ups"/>
-
-                    <img className="w-full" src={ProjectData.p2.Prototype.Mock12} alt="Mock-Ups"/>
-
-                {/*Vibe Space GIFs*/}
-                <h2 className="text-start text-2xl font-bold text-slate-700 mt-4">Prototype user flow animations:</h2>
-                <p className="text-start text-slate-600 text-small sm:text-base my-4">
+                {/*Rendered UI*/}
+                <h2 className='mt-10 text-start text-slate-700 text-xl'>Rendered UI</h2>
+                <div className='grid grid-cols-1 place-items-center mt-2'>
+                    <img className="w-1/3 h-auto mt-6" src={PreMeetLobby} alt="Pre-Meet Lobby"/>
+                </div>
+                    
+                
+                {/*Interaction Design*/}
+                <h2 className="text-start text-2xl font-bold text-slate-700 mt-24">Interaction Design:</h2>
+                <p className="text-start text-slate-600 text-small sm:text-base mt-2">
                 {ProjectData.p2.Prototype.Mockgifs}
                 </p>
                 <div className="gap-4 grid grid-cols-2 my-4">
@@ -250,34 +233,10 @@ export default function VibeSpace ()
                 </div>
 
                 {/*Testing*/}
-                <h1 className="text-start text-3xl font-bold text-slate-800">Testing
+                <h1 className="mt-26 text-start text-2xl font-bold text-slate-800">The Outcome
                 </h1>
-                <h2 className="text-start text-2xl font-bold text-slate-700">
-                {ProjectData.p2.Test.testMethod}
-                </h2>
-                <p className="text-start text-slate-600 text-small sm:text-base">
-                {ProjectData.p2.Test.testDescription}
-                </p>
-                <h3 className="text-start text-2xl font-bold text-slate-600">Test Results:
+                <h3 className="mt-8 text-start text-l font-semibold text-slate-500">Delivered a scalable, state-based networking architecture that effectively leverages AI to foster local belonging, streamline event discovery, and actively reduce event no-shows through intelligent queuing mechanics.
                 </h3>
-                <p className="text-start text-slate-600 text-small sm:text-base">
-                {ProjectData.p2.Test.testResults}
-                </p>
-                <h3 className="text-start text-2xl font-bold text-slate-600">Key Insights:
-                </h3>
-                <p className="text-start text-slate-600 text-small sm:text-base">
-                {ProjectData.p2.Test.resultInsights}
-                </p>
-                <h3 className="text-start text-2xl font-bold text-slate-600">Test Summary:
-                </h3>
-                <div className="text-start text-slate-600 text-small sm:text-base">
-                {ProjectData.p2.Test.testSummary}
-                </div>
-                <h3 className="text-start text-2xl font-bold text-slate-600">Conclusion:
-                </h3>
-                <div className="text-start text-slate-600 text-small sm:text-base">
-                {ProjectData.p2.Test.conclusion}
-                </div>
             </div>
         </>
     );

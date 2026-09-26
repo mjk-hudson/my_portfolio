@@ -217,16 +217,16 @@ export const ProjectData = {
         intro:
         {
             title: 'Vibe Space',
-            technologies: 'Figma,web,',
-            studyDescription: 'Designed and prototyped "Vibe Space", a responsive web event matching platform. I executed a full UX cycle: user research, Figma prototypes and React JS development.',
+            technologies: 'AI-Driven Community & Event Queuing responsive web platform.',
+            studyDescription: 'Social networking,event organization, community building, special interest.',
             image: 'https://via.placeholder.com/150',
-            productDescription: 'Vibe Space is an event matching platform that connects users with local events based on their interests and social vibes. The platform uses a unique algorithm to match users with events and people that align with their preferences, creating a personalized event and peer discovery experience. Vibe Space aims to foster community engagement and help users find events and people that resonate with their social and or professional vibe, making it easier for them to connect with like-minded individuals and explore new experiences in their area.'
+            productDescription: 'Individuals frequently struggle to find meaningful, hyper-local connections that genuinely align with their specific passions and hobbies. Furthermore, managing local event attendance and mitigating user drop-off or no-shows creates significant logistical friction, requiring a reliable queuing and state-based management system for both community organizers and attendees.'
         },
         empathy:
         {
-            title: 'Empathy',
+            title: 'Empathy Phase',
             methods: 'User Research, Empathy Maps, competitive audit, Insights',
-            studyDescription: 'I conducted 10+ user interviews with gig workers to understand their financial challenges and needs. Developed detailed user personas and journey maps to identify pain points and opportunities for Bledger\'s design.',
+            studyDescription: 'Constructed detailed empathy maps and user journey maps to understand the emotional barriers users face when trying to find local workout buddies, hobby groups, or new friends. Uncovered that users require highly tailored, AI-driven interest matching rather than generic, overwhelming event feeds.',
             VibeStudyImage: VibeStudy,
             competitiveAudit:'Conducted a competitive audit of existing event matching platforms to identify strengths, weaknesses, and opportunities for differentiation. Analyzed features, user experience, and market positioning to inform the design of Vibe Space.',
             competitiveAuditImage: VibeCompetitiveAudit,
@@ -245,10 +245,10 @@ export const ProjectData = {
         },
         define:
         {
-            problemStatement: '"Professional event attendees experience high friction and low ROI during networking events because static scheduling cannot account for real-world human behavior (no-shows and late arrivals). This results in \'dead time,\' awkward waiting periods, and a loss of momentum, ultimately leading to platform abandonment."',
-            hypothesisStatement:'I\'m proposing the implementation of a mandatory pre-session "Check-In" gate along with an automated, state-aware JIT (Just-In-Time) rerouting system to enhance the user experience during sessions.',
+            problemStatement: 'Directly translated these qualitative insights into strict structural constraints. Scoped the core architecture around an AI and user-generated content matching engine, alongside a robust state-based event queuing system; mandatory pre-session "Check-In" gate along with an automated, state-aware JIT (Just-In-Time) rerouting system to enhance the user experience during sessions to manage attendance and no-shows, establishing these rules before any visual ideation began.',
+            hypothesisStatement:'I\'m proposing the implementation of a mandatory pre-session "Check-In" gate along with an automated, state-aware JIT (Just-In-Time) rerouting system to enhance the user experience during sessions. In addition to AI ',
             designPrinciples: ' ',
-            valueProposition: '"The Self-Healing Network" For: High-stakes professional networkers and event organizers. Who: Are tired of wasted sessions, empty rooms, and the "spreadsheet hell" of manual rerouting. My Platform is: A dynamic matching ecosystem. That: Automatically detects no-shows and reroutes "stranded" attendees to new, verified partners in real-time. Unlike: Legacy event apps that rely on static calendars and leave you staring at a blank screen. It Provides: Guaranteed engagement and "Context-First" connections that ensure not one minute of your event is ever wasted.',
+            valueProposition: '"The Self-Healing Network" For: High-stakes networkers, event organizers and online community members. Who: Are tired of wasted sessions, empty rooms, and manual rerouting. My Platform is: A dynamic matching ecosystem. That: Automatically detects no-shows and reroutes "stranded" attendees to new, verified partners in real-time. Unlike: Legacy event apps that rely on static calendars and leave you staring at a blank screen. It Provides: Guaranteed engagement and "Context-First" connections that ensure not one minute of your event is ever wasted.',
             informationArchitecture:VibeInfoArch,
             userFlows:VibeJourneyMap,
             wireframes:VibeWireframes,
@@ -258,7 +258,7 @@ export const ProjectData = {
         Ideate:
         {
             ideationMethods: 'Brainstorming, "How Might We?" Questions, Concept Development and Crazy 8s Sketching',  
-            designChallenge: 'Developed varied concepts and solutions to address the identified pain points and enhance the user experience of the event matching platform.',
+            designChallenge: 'Developed comprehensive information architecture maps and wireframes to map the networking flows. Designed the platforms branding logos and a highly polished desktop dark mode interface to enhance visual focus and modernize the user experience.',
             crazy8s: 'Crazy 8s Sketches were generated to explore a wide range of ideas and potential solutions for the event matching platform. The sketches focused on different aspects of the user experience, including the check-in process, rerouting system, and overall interface design. Each sketch aimed to address the pain points identified during the empathy phase and provide innovative ways to enhance user engagement and satisfaction.',
             earlySketches: 'The early digital sketches represent initial ideas and concepts for the Vibe Space platform, exploring various layouts, interactions, and visual designs. These sketches served as a foundation for further development and refinement of the user experience.',
             conceptDevelopment: 'I selected the most promising ideas from the how might we session and developed them into more detailed concepts, including user flows, wireframes, and interactive prototypes.',
@@ -307,7 +307,7 @@ export const ProjectData = {
             Mock11:WaitingMobileDark3Q,
             Mock12:WaitingDesktopDark3Q,
 
-            Mockgifs: 'These images illustrate the micro-interactions and transitions within the Vibe Space platform, showcasing how users navigate through the check-in process, experience the automated rerouting system, and engage with the overall interface. The animations provide a dynamic view of the user experience, highlighting the responsiveness and fluidity of the platform in real-time scenarios.',
+            Mockgifs: 'Brought the networking and queuing interface to life with fluid state transitions and responsive micro-interactions utilizing import { motion } from motion/react, ensuring the platform feels dynamic and production-ready.',
             Mockgif1: LobbyDesktop,
             Mockgif2: LobbyMobile,
             Mockgif3: MatchDesktop,

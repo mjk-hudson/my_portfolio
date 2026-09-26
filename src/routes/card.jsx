@@ -35,8 +35,6 @@ export default function Card()
 
 			{/*--project Title --*/}
     		<div className="space-y-3">      			
-						<h1 className=' text-neutral-800 text-left text-2xl font-bold'>Neighborgood
-						</h1>
 							{/* Project description */}
             				<p className="text-neutral-600">Navigating complex municipal zoning data to build local community hubs is often confusing and time-consuming. Neighborgood translates complex urban spatial data into an intuitive web service, enabling community leaders, volunteers, and organizers to effortlessly identify, vet, and activate underutilized local spaces for outreach events and neighborhood hubs.
 							</p>      			
@@ -95,6 +93,7 @@ export default function Card()
 			)}
 		</AnimatePresence>
 		</div>
+
 		{/*--Bledger Second card--*/}
 		<div className="p-10 gap-x-16 space-y-12 rounded-xl outline-zinc-500/40 overflow-hidden place-items-center">
 
@@ -105,8 +104,6 @@ export default function Card()
 
 			{/*--project Title --*/}
     		<div className="space-y-3">      			
-						<h1 className=' text-neutral-800 text-left text-2xl font-bold'>Bledger
-						</h1>
 							{/* Project description */}
             				<p className="text-neutral-600">Traditional budgeting tools only track where your money went; Bledger ensures it stays where you need it. Purpose-built to navigate the volatile income streams of gig-economy workers, Bledger is an AI-driven personal finance platform that unifies fragmented tracking by pairing secure bank API integrations with agentic AI. By predicting cash-flow gaps, automating scheduled bill coverage, and delivering real-time gamified micro-nudges, Bledger proactively safeguards user liquidity and prevents overspending before it happens.
 							</p>      			
@@ -152,6 +149,7 @@ export default function Card()
 			)}
 		</AnimatePresence>
 		</div>
+
 		{/*Vibe Space Third card--*/}
 		<div className="p-10 gap-x-16 space-y-12 rounded-xl outline-zinc-500/40 overflow-hidden place-items-center">
 
@@ -162,8 +160,6 @@ export default function Card()
 
 			{/*--project Title --*/}
     		<div className="space-y-3">      			
-						<h1 className=' text-neutral-800 text-left text-2xl font-bold'>Vibe Space
-						</h1>
 							{/* Project description */}
             				<p className="text-neutral-600">Generic event directories only show you where to go; Vibe Space ensures you find the right community to go with. Purpose-built to eliminate the friction of modern local discovery, Vibe Space is an AI-driven responsive networking platform that pairs intelligent interest-matching algorithms with user-generated content to connect people through shared passions. By streamlining hyper-local activity discovery and state-based event queuing, Vibe Space transforms social barriers into meaningful interactions—helping users effortlessly build local connections, find hobby partners, and foster genuine belonging in their communities.
 							</p>      			
