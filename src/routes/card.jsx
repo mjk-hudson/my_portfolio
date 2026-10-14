@@ -15,6 +15,8 @@ import bledgerBoard from '../assets/bledger/mockups/iPhone-3q-view3.png';
 import vibeSpaceHero from '../assets/vibespace/mockups/match-tablet-dark-full.png';
 import Bledger from './Bledger.jsx';
 import VibeSpace from './VibeSpace.jsx';
+import PazeBofa from './PazeBofa.jsx';
+import PazeLogo from '../assets/Paze_Logo.jpg';
 
 export default function Card()
 {	const [expandedProject, setExpandedProject] = useState(null);
@@ -26,7 +28,69 @@ export default function Card()
 	return( 
 		<>
 
-		{/*--Bledger Second card--*/}
+		{/*--Paze--*/}
+		<div className="p-10 gap-x-16 space-y-4 rounded-xl outline-zinc-500/40 overflow-hidden place-items-center">
+
+			{/*--Hero image--*/}
+			<img src={PazeLogo} 
+				alt="Bank of America, Paze Digital wallet platform image"
+				className="w-1/2 h-auto rounded-lg"/>
+				
+				{/*--project Title --*/}
+				<div className="space-y-3">
+					<h1 className="text-2xl font-semibold text-neutral-800">
+						Paze
+					</h1> 
+
+					{/* Project description */}
+					<p className="text-neutral-600">Waiting for physical payment cards creates unnecessary friction and delays in enterprise digital banking; Bank of America’s implementation of Paze digital wallet technology bridges that gap between account approval and immediate purchasing power. Purpose-built to navigate complex cross-functional stakeholders and 2025 FDIC regulatory requirements, this initiative leveraged evaluative user research—uncovering that 87% of customers preferred instant digital access—to deliver an instant card provisioning experience that achieved a 93% customer adoption rating.
+					</p>      			
+				</div>
+				
+				{/*--Platform info graphic "info"--*/}
+				<div className=" px-2 py-2 justify-between items-center gap-8 flex row-span-1 bg-blue-700 rounded-lg">
+				
+					<div className="">
+					<h2 className=" text-neutral-100 text-base">Platforms</h2>
+					</div>
+				
+					{/*-- Icons --*/}
+					<div className="justify-items-center gap-2">
+					<img src={phoneIcon}
+					alt="Mobile"/>
+					<p className="text-neutral-100 mt-2 text-xs">Mobile</p>
+					</div>
+				</div>
+				
+				{/* Expand / Collapse button */}
+				<button
+				onClick={() => toggleExpand("Paze")}
+				className="mt-6 flex items-center gap-3 text-cyan-600 hover:text-cyan-800 transition-colors focus:outline-none">
+				<span className="font-medium">
+				{expandedProject === "Paze" ? "Close Case Study" : "Open Case Study"}
+				</span>
+				</button>
+				
+				{/* Animated details section */}
+				<AnimatePresence>
+				{expandedProject === "Paze" && (
+					<motion.div
+					initial={{ height: 0, opacity: 0 }}
+					animate={{ height: "auto", opacity: 1 }}
+					exit={{ height: 0, opacity: 0 }}
+					transition={{ duration: 0.7, ease: "easeInOut" }}
+					className="overflow-hidden">
+					<div className="pt-8 border-t border-gray-200">
+					<PazeBofa />
+					</div>
+					</motion.div>
+				)}
+				</AnimatePresence>
+				
+				
+		</div>
+
+		{/*--Bledger--*/}
 		<div className="p-10 gap-x-16 space-y-4 rounded-xl outline-zinc-500/40 overflow-hidden place-items-center">
 
 			{/*--Hero image--*/}
@@ -36,16 +100,16 @@ export default function Card()
 				
 				{/*--project Title --*/}
 				<div className="space-y-3">
-					<h2 className="text-2xl font-semibold text-neutral-800">
+					<h1 className="text-2xl font-semibold text-neutral-800">
 						Bledger
-					</h2>      			
+					</h1>      			
 					{/* Project description */}
 					<p className="text-neutral-600">Traditional budgeting tools only track where your money went; Bledger ensures it stays where you need it. Purpose-built to navigate the volatile income streams of gig-economy workers, Bledger is an AI-driven personal finance platform that unifies fragmented tracking by pairing secure bank API integrations with agentic AI. By predicting cash-flow gaps, automating scheduled bill coverage, and delivering real-time gamified micro-nudges, Bledger proactively safeguards user liquidity and prevents overspending before it happens.
 					</p>      			
 				</div>
 				
 				{/*--Platform info graphic "info"--*/}
-				<div className=" px-2 py-2 justify-between items-center gap-8 flex row-span-1 bg-cyan-500 rounded-lg">
+				<div className=" px-2 py-2 justify-between items-center gap-8 flex row-span-1 bg-lime-400 rounded-lg">
 				
 					<div className="">
 					<h2 className=" text-neutral-100 text-base">Platforms</h2>
@@ -87,7 +151,7 @@ export default function Card()
 				
 		</div>
 
-		{/*Vibe Space Third card--*/}
+		{/*Vibe Space--*/}
 		<div className="p-10 gap-x-16 space-y-12 rounded-xl outline-zinc-500/40 overflow-hidden place-items-center">
 				{/*--Hero image--*/}
 				<img src={vibeSpaceHero} 
@@ -95,9 +159,9 @@ export default function Card()
 				className="w-3/4 h-auto rounded-lg"/>
 				
 				{/*--project Title --*/}
-				<h2 className="text-start text-2xl font-semibold text-neutral-800">
+				<h1 className="text-start text-2xl font-semibold text-neutral-800">
 					Vibe Space
-				</h2>
+				</h1>
 				<div className="space-y-3">      			
 				{/* Project description */}
 					<p className="text-neutral-600">Generic event directories only show you where to go; Vibe Space ensures you find the right community to go with. Purpose-built to eliminate the friction of modern local discovery, Vibe Space is an AI-driven responsive networking platform that pairs intelligent interest-matching algorithms with user-generated content to connect people through shared passions. By streamlining hyper-local activity discovery and state-based event queuing, Vibe Space transforms social barriers into meaningful interactions—helping users effortlessly build local connections, find hobby partners, and foster genuine belonging in their communities.
@@ -158,7 +222,7 @@ export default function Card()
 		</AnimatePresence>
 		</div>
 		
-		{/*--Neighborgood First card--*/}	
+		{/*--Neighborgood--*/}	
 		<div className="p-10 w-full gap-x-8 space-y-12 rounded-xl outline-zinc-500/40 overflow-hidden place-items-center">
 
 			{/*--Hero image--*/}
@@ -167,10 +231,13 @@ export default function Card()
 				className="w-3/4 h-auto rounded-lg"/>
 
 			{/*--project Title --*/}
-			<div className="space-y-3">      			
-							{/* Project description */}
-							<p className="text-neutral-600">Navigating complex municipal zoning data to build local community hubs is often confusing and time-consuming. Neighborgood translates complex urban spatial data into an intuitive web service, enabling community leaders, volunteers, and organizers to effortlessly identify, vet, and activate underutilized local spaces for outreach events and neighborhood hubs.
-							</p>      			
+			<div className="space-y-3">
+				<h1 className="text-2xl font-semibold text-neutral-800">
+					Neighborgood
+				</h1>      			
+				{/* Project description */}
+				<p className="text-neutral-600">Navigating complex municipal zoning data to build local community hubs is often confusing and time-consuming. Neighborgood translates complex urban spatial data into an intuitive web service, enabling community leaders, volunteers, and organizers to effortlessly identify, vet, and activate underutilized local spaces for outreach events and neighborhood hubs.
+				</p>      			
 			</div>
 
 			{/*--Platform info graphic "info"--*/}

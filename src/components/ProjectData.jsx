@@ -127,15 +127,15 @@ export const ProjectData = {
         intro:
         {
             title: 'Bledger',
-            technologies: 'Figma, VS Code, TensorFlow Lite, iOS/Android,',
+            technologies: 'Figma, VS Code, TensorFlow Lite, iOS/Android',
             studyDescription: 'Gig-Economy,Financial Technology & Predictive Wealth Management.',
             image: BledgerHero,
             productDescription: 'Millennials and Gen Z workers in the gig economy face volatile, inconsistent income streams, yet standard budgeting applications rely on reactive, manual entry that causes high user drop-off. The market lacked a proactive financial tool that could anticipate cash-flow dips and incentivize savings without feeling like a traditional, intimidating ledger.'
         },
         empathy:
         {
-            title: 'The Methodology:',
-            methods: 'Empathy Phase',
+            title: 'The Methodology',
+            methods: 'Empathy Phase:',
             StudyDescription: 'Conducted 10+ user interviews with gig workers to understand their financial challenges and needs. Developed detailed user personas, journey - empathy maps and competitor auditto identify pain points and opportunities for Bledger\'s design.',
             image: 'https://via.placeholder.com/150',
             userResearch: 'Target audience: Everyday people who simply want an easy, clean, non-technical way to track their personal budget and spending — no spreadsheets, no financial jargon, just calm, consumable clarity.',
@@ -171,7 +171,7 @@ export const ProjectData = {
             ideationMethods: '"How Might We?", Crazy 8s Sketching, Wireframing and Design Iterations.',  
             designChallenge: 'How might we create an intuitive budgeting app that uses AI to help gig workers manage their finances effectively, providing real-time insights and proactive recommendations to prevent overspending and encourage savings?',
             crazy8s: 'I generated a few ideas for features and design directions, such as predictive spending alerts, automated bill payments, gamified savings challenges, and a minimalist dashboard for quick insights.',
-            conceptDevelopment: 'I Selected the most promising ideas from the how might we session and developed them into higher fidelity screens.',
+            conceptDevelopment: 'I Selected the most promising ideas from the how might we session and developed them into higher fidelity screens with the goal of making the customers most important financial infomartion accessible at a glance per screen.',
             earlySketches: BledgerSketches,
             ideationSummary: 'Through a structured ideation process, I was able to generate and refine innovative ideas for Bledger that directly address the needs and challenges of gig workers. This phase was crucial in shaping the overall design and functionality of the app, ensuring it provides real value to its users.',
             iterationImage1:BledgerIteration1,

@@ -22,7 +22,6 @@ export default function VibeSpace ()
             <div classname="w-full p-6 md:p-4 gap-6 rounded-lg shadow-[2px_11px_6px_-4px_rgba(136,136,136,0.25)] mt-6 mx-auto max-w-6xl">
                   
                 {/*Vibe Space Hero Image*/}
-                <img src={vibeSpaceHero} alt="Vibe Space Hero" />
 
                 {/*Vibe Space Intro*/}
                 <h2 className="mt-6 text-start text-2xl font-bold text-slate-700">Executive Summary
