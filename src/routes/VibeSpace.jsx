@@ -21,70 +21,68 @@ export default function VibeSpace ()
         <>
             <div classname="w-full p-6 md:p-4 gap-6 rounded-lg shadow-[2px_11px_6px_-4px_rgba(136,136,136,0.25)] mt-6 mx-auto max-w-6xl">
                   
-                {/*Vibe Space Hero Image*/}
-
                 {/*Vibe Space Intro*/}
-                <h2 className="mt-6 text-start text-2xl font-bold text-slate-700">Executive Summary
+                <h2 className="mt-6 text-center text-2xl font-bold text-slate-700">Executive Summary
                 </h2>
-                <p className='text-start text-lg text-slate-600'>{ProjectData.p2.intro.technologies}
+                <p className='text-center text-lg text-slate-600'>{ProjectData.p2.intro.technologies}
                 </p>
-                <h2 className="mt-2 text-start text-2xl font-bold text-slate-700">The Category
+                <h2 className="mt-2 text-center text-2xl font-bold text-slate-700">The Category
                 </h2>
-                <p className="text-start text-slate-600 text-small sm:text-base">{ProjectData.p2.intro.studyDescription}
+                <p className="text-center text-slate-600 text-small sm:text-base">{ProjectData.p2.intro.studyDescription}
                 </p>
                 <div className="gap-4 ">
                 </div>
-                <h1 className="mt-6 text-start text-2xl font-bold text-slate-700">The Problem
+                <h1 className="mt-6 text-center text-2xl font-bold text-slate-700">The Problem
                 </h1>
-                <p className="text-start text-slate-600 text-small sm:text-base mb-4">{ProjectData.p2.intro.productDescription}
+                <p className="text-center text-slate-600 text-small sm:text-base mb-4">{ProjectData.p2.intro.productDescription}
                 </p>
 
                 {/*Vibe Empathy*/}
-                <h2 className="mt-4 text-start text-2xl font-bold text-slate-700">The Methodology:
+                <h2 className="mt-4 text-center text-2xl font-bold text-slate-700">The Methodology:
                 </h2>
-                <h3 className="mt-4 text-start font-bold text-slate-700">{ProjectData.p2.empathy.title}
+                <h3 className="mt-4 text-center font-bold text-slate-700">{ProjectData.p2.empathy.title}
                 </h3>
-                <p className="mt-2 text-start text-slate-600 text-small sm:text-base">{ProjectData.p2.empathy.studyDescription}
+                <p className="mt-2 text-center text-slate-600 text-small sm:text-base">{ProjectData.p2.empathy.studyDescription}
                 </p>
 
                 {/*Personas*/}
-                <h2 className='mt-4 text-left text-slate-700'>Intial User Journey Map</h2>
+                <h2 className='mt-4 text-center text-slate-700'>Intial User Journey Map</h2>
                 <div className="">
                     <img src={VibeJourneyMap} alt="Vibe Space Empathy Image 3" />
                 </div>
 
-                <h2 className="mt-4 text-start text-2xl font-bold text-slate-700">Persona 1
+                <h2 className="mt-4 text-center text-2xl font-bold text-slate-700">Persona 1
                 </h2>
                 <div className="gap-4">
                     <img src={ProjectData.p2.empathy.empathyMapImage1} alt="Vibe Space Empathy Image 1"/>
                 </div>
                 
-                <h2 className="mt-4 text-start text-2xl font-bold text-slate-700">Persona 2
+                <h2 className="mt-4 text-center text-2xl font-bold text-slate-700">Persona 2
                 </h2>
                 <img src={ProjectData.p2.empathy.empathyMapImage2} alt="Vibe Space Empathy Image 2" />
-                <h2 className="mt-4 text-start text-2xl font-bold text-slate-700">Persona 3
+                <h2 className="mt-4 text-center text-2xl font-bold text-slate-700">Persona 3
                 </h2>
 
 
                 <div className="gap-4">
                     <img src={ProjectData.p2.empathy.empathyMapImage3} alt="Vibe Space Empathy Image 3" />
                 </div>
-                <p className="text-start text-slate-600 text-small sm:text-base">
+                <p className="text-center text-slate-600 text-small sm:text-base">
                 {ProjectData.p2.empathy.insights}
                 </p>
-                <p className="text-start text-slate-600 text-small sm:text-base mb-4">
+                <p className="text-center text-slate-600 text-small sm:text-base mb-4">
                 {ProjectData.p2.empathy.summary}
                 </p>
 
                 {/*Define*/}
-                <h3 className="text-start font-bold text-slate-700">Define Phase
+                <h3 className="text-center font-bold text-slate-700">Define Phase
                 </h3>
-                <p className="text-start text-slate-600 text-small sm:text-base mb-2">
+                <p className="text-center text-slate-600 text-small sm:text-base mb-2">
                 {ProjectData.p2.define.problemStatement}
                 </p>
-                <h3 className="mt-4 text-start font-bold text-slate-700">Value Proposition:
+                <h3 className="mt-4 text-center font-bold text-slate-700">Value Proposition:
                 </h3>
-                <p className="text-start text-slate-600 text-small sm:text-base">
+                <p className="text-center text-slate-600 text-small sm:text-base">
                 {ProjectData.p2.define.valueProposition}
                 </p>
                 <div className="mt-4 mb-4">
@@ -95,24 +93,24 @@ export default function VibeSpace ()
                 </div>
 
                 {/*Design*/}
-                <h1 className="mt-6 text-start text-3xl font-bold text-slate-800">The Execution
+                <h1 className="mt-6 text-center text-3xl font-bold text-slate-800">The Execution
                 </h1>
-                <h2 className="text-start text-2xl font-bold text-slate-700 mt-4">Design & Strategy:
+                <h2 className="text-center text-2xl font-bold text-slate-700 mt-4">Design & Strategy:
                 </h2>
-                <p className="text-start text-slate-600 text-small sm:text-base">
+                <p className="text-center text-slate-600 text-small sm:text-base">
                 {ProjectData.p2.Ideate.designChallenge}
                 </p>
                 <div className="gap-4">
-                <p className="text-start text-slate-600 text-small sm:text-base">{ProjectData.p2.Ideate.earlySketches}</p>
+                <p className="text-center text-slate-600 text-small sm:text-base">{ProjectData.p2.Ideate.earlySketches}</p>
                 </div>
-                <h3 className="mt-8 text-start text-slate-600 mt-1">Information Architecture:Mobile Breakpoints.
+                <h3 className="mt-8 text-center text-slate-600 mt-1">Information Architecture:Mobile Breakpoints.
                 </h3>
                 <div className="mt-2">
                     <img className="rounded-xl" src={VibeIA} alt="Information Architecture"/>
                 </div>
                 {/*Mobile wireframes*/}
                 <div className="mt-6">
-                    <h2 className='text-start text-slate-700'>Mobile Breakpoint Wireframes
+                    <h2 className='text-center text-slate-700'>Mobile Breakpoint Wireframes
                     </h2>
                     <img className="rounded-xl my-4" src={ProjectData.p2.Ideate.crazy8Images3} alt="Crazy 8s Images"/>
                     <img className="rounded-xl" src={ProjectData.p2.Ideate.crazy8Images2} alt="Crazy 8s Images"/>
@@ -120,13 +118,13 @@ export default function VibeSpace ()
 
                 {/*Desktop IA*/}
                 <div className="mt-14">
-                    <h2 className='text-start text-slate-700'>Information Architecture: Desktop- Tablet Breakpoints.
+                    <h2 className='text-center text-slate-700'>Information Architecture: Desktop- Tablet Breakpoints.
                     </h2>
                     <img className="mt-4 rounded-xl" src={VibeIA2} alt="Information Architecture"/>
                 </div>
 
                 {/*Desktop Breakpoint wireframes*/}
-                <h2 className='mt-12 text-start text-slate-700'>Desktop Breakpoint Wireframes (Dark Mode)
+                <h2 className='mt-12 text-center text-slate-700'>Desktop Breakpoint Wireframes (Dark Mode)
                 </h2>
                 <div className="gap-4 grid grid-cols-2 place-items-center">
                     <img className="rounded-xl mt-4" src={ProjectData.p2.Ideate.crazy8Images4} alt="Crazy 8s Images"/>
@@ -136,21 +134,21 @@ export default function VibeSpace ()
                 </div>
 
                 {/*Final Designs*/}
-                <h2 className='mt-18 text-start text-2xl text-slate-700'>Final Designs
+                <h2 className='mt-18 text-center text-2xl text-slate-700'>Final Designs
                 </h2>
-                <p className="text-start text-slate-600 text-small sm:text-base">
+                <p className="text-center text-slate-600 text-small sm:text-base">
                 {ProjectData.p2.Prototype.rationale}
                 </p>
 
                 {/*Mobile final designs*/}
-                <h2 className='mt-12 text-start text-slate-700'>Mobile Breakpoint Final Design
+                <h2 className='mt-12 text-center text-slate-700'>Mobile Breakpoint Final Design
                 </h2>
                 <div className="gap-4 mt-2">
                     <img className="w-full mt-6" src={ProjectData.p2.Prototype.iterationImage2} alt="Iteration Images"/>
                 </div>
 
                 <div className="mt-14 gap-4">
-                    <h2 className='mt-2 text-start text-slate-700'>Tablet/Desktop Breakpoints Final Design
+                    <h2 className='mt-2 text-center text-slate-700'>Tablet/Desktop Breakpoints Final Design
                     </h2>
                     <img className="rounded-xl mt-6" src={ProjectData.p2.Ideate.ideation2} alt="Early Sketches"/>
                     <img className="rounded-xl mt-6" src={ProjectData.p2.Ideate.ideation3} alt="Early Sketches"/>
@@ -159,7 +157,7 @@ export default function VibeSpace ()
 
 
                 {/*Hi-Fi Mocks*/}
-                <h2 className="text-start text-2xl font-bold text-slate-800 mt-22">Hi-Fidelity Mock-Ups
+                <h2 className="text-center text-2xl font-bold text-slate-800 mt-22">Hi-Fidelity Mock-Ups
                 </h2>
 
 
@@ -179,9 +177,9 @@ export default function VibeSpace ()
                 </div>
 
                 {/*Technical Architecture*/}
-                <h2 className="text-start text-2xl font-bold text-slate-700 mt-24">Technical Architecture:
+                <h2 className="text-center text-2xl font-bold text-slate-700 mt-24">Technical Architecture:
                 </h2>
-                <p className="text-start text-slate-600 text-small sm:text-base mt-2">
+                <p className="text-center text-slate-600 text-small sm:text-base mt-2">
                 Engineered the responsive web platform using pure JavaScript and React via Vite. This strictly bypassed TypeScript to maintain a lightweight, agile development environment while proving robust front-end structural competency in managing complex state.
                 </p>
 
@@ -211,15 +209,15 @@ export default function VibeSpace ()
                     </div>
 
                 {/*Rendered UI*/}
-                <h2 className='mt-10 text-start text-slate-700 text-xl'>Rendered UI</h2>
+                <h2 className='mt-10 text-center text-slate-700 text-xl'>Rendered UI</h2>
                 <div className='grid grid-cols-1 place-items-center mt-2'>
                     <img className="w-1/3 h-auto mt-6" src={PreMeetLobby} alt="Pre-Meet Lobby"/>
                 </div>
                     
                 
                 {/*Interaction Design*/}
-                <h2 className="text-start text-2xl font-bold text-slate-700 mt-24">Interaction Design:</h2>
-                <p className="text-start text-slate-600 text-small sm:text-base mt-2">
+                <h2 className="text-center text-2xl font-bold text-slate-700 mt-24">Interaction Design:</h2>
+                <p className="text-center text-slate-600 text-small sm:text-base mt-2">
                 {ProjectData.p2.Prototype.Mockgifs}
                 </p>
                 <div className="gap-4 grid grid-cols-2 my-4">
@@ -232,9 +230,9 @@ export default function VibeSpace ()
                 </div>
 
                 {/*Testing*/}
-                <h1 className="mt-26 text-start text-2xl font-bold text-slate-800">The Outcome
+                <h1 className="mt-26 text-center text-2xl font-bold text-slate-800">The Outcome
                 </h1>
-                <h3 className="mt-8 text-start text-l font-semibold text-slate-500">Delivered a scalable, state-based networking architecture that effectively leverages AI to foster local belonging, streamline event discovery, and actively reduce event no-shows through intelligent queuing mechanics.
+                <h3 className="mt-8 text-center text-l font-semibold text-slate-500">Delivered a scalable, state-based networking architecture that effectively leverages AI to foster local belonging, streamline event discovery, and actively reduce event no-shows through intelligent queuing mechanics.
                 </h3>
             </div>
         </>

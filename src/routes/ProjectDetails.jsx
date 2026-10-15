@@ -49,12 +49,12 @@ export default function ProjectDetails() {
         <div className="p-6 md:p-4 rounded-lg shadow-[2px_11px_6px_-4px_rgba(136,136,136,0.25)] mt-6 mx-auto max-w-6xl">
             <div className="w-full gap-4">
                 <div className="gap-4">
-                    <h1 className="text-slate-800 text-left font-semibold text-xl sm:text-lg">Neighborgood.
+                    <h1 className="text-slate-800 text-center font-semibold text-xl sm:text-lg">Neighborgood.
                     </h1>
-                    <h2 className="text-left text-slate-700 font-semibold sm:text-xl">
+                    <h2 className="text-center text-slate-700 font-semibold sm:text-xl">
                     The Category
                     </h2>
-                    <p className="text-left text-slate-600 text-sm sm:text-base">
+                    <p className="text-center text-slate-600 text-sm sm:text-base">
                         Civic Technology & Urban Community Space Sourcing.
                     </p>
                 </div>
@@ -62,7 +62,7 @@ export default function ProjectDetails() {
                 </div>
                     {/* Problem Statement */}
                     <div className="gap-4 p-0">
-                    <h2 className="my-1 text-slate-700 font-semibold text-left text-lg sm:text-xl">
+                    <h2 className="my-1 text-slate-700 font-semibold text-center text-lg sm:text-xl">
                         The Problem
                     </h2>
                     <p className="text-sm sm:text-base p-0 text-slate-600">
@@ -71,11 +71,11 @@ export default function ProjectDetails() {
                     </div>
             
                     {/* The Methodology */}
-                    <div className="gap-4 text-left">
+                    <div className="gap-4 text-center">
                         <h2  className="my-1 text-slate-700 font-semibold sm:text-xl">
                             The Methodology
                         </h2>
-                        <h3 className="text-left font-semibold text-slate-700">
+                        <h3 className="text-center font-semibold text-slate-700">
                             The Empathy Phase
                         </h3>
                         <p className="text-sm sm:text-base text-slate-600">
@@ -87,10 +87,10 @@ export default function ProjectDetails() {
                         <div>
                             <img src={storyboard} alt="Neighborgood Storyboard" className="w-full h-auto rounded-lg mt-6 border border-gray-600 shadow-xl" />
                         </div>
-                        <h2 className="mt-3 text-sm sm:text-base text-slate-700">
+                        <h2 className="text-center mt-3 text-sm sm:text-base text-slate-700">
                             Competitive Analysis: Features & Differentiators
                         </h2>
-                        <ul className="list-disc mt-1 text-sm sm:text-base">
+                        <ul className="text-left list-disc mt-1 text-sm sm:text-base">
             
                             <li>
                                 Search Posting for Spaces: Ability to find topost events with venue info (e.g., free public spaces).
@@ -128,45 +128,45 @@ export default function ProjectDetails() {
                         </div>
                     </div>            
                     <div className="my-4 p-0">
-                    <h2 className="text-left text-slate-700 font-semibold text-base sm:text-lg">
+                    <h2 className="text-center text-slate-700 font-semibold text-base sm:text-lg">
                         Competitive Analysis Insights
                     </h2>
-                    <p className="text-sm sm:text-base text-left text-slate-600">
+                    <p className="text-sm sm:text-base text-center text-slate-600">
                         After conducting a competitive analysis of existing platforms that facilitate community engagement and event planning, it was evident that there was a gap in the market for a user-friendly platform specifically focused on helping users find and reserve spaces for community outreach activities. Many existing solutions were either too complex or lacked the necessary features to effectively serve this purpose.
                     </p>
                     </div>
                     <div>
-                        <h2 className="text-left text-slate-700 font-semibold text-base sm:text-lg">
+                        <h2 className="text-center text-slate-700 font-semibold text-base sm:text-lg">
                             The Define Phase
                         </h2>
-                        <p className="text-sm sm:text-base text-left text-slate-600">
+                        <p className="text-sm sm:text-base text-center text-slate-600">
                             I Managed the project using the Lean UX Framework to explore the core problem even further and rapidly translate user pain points into strict architectural requirements within a 3-month timeline, prioritizing open-space mapping and zoning clarity solutions using how might we scenarios before visual design began.
                         </p>
                     </div>
                     <div className="my-4 p-0">
-                        <h3 className="text-left text-slate-700 font-semibold text-base sm:text-lg">
+                        <h3 className="text-center text-slate-700 font-semibold text-base sm:text-lg">
                             The Core Problem
                         </h3>
                         <img src={coreProblems} alt="Core Problem" className="w-full h-auto rounded-lg mt-6 border border-gray-600 shadow-xl" />
                     </div>
 
                     <div className="my-4 p-0">
-                        <h3 className="text-left text-slate-700 font-semibold text-base sm:text-lg">
+                        <h3 className="text-center text-slate-700 font-semibold text-base sm:text-lg">
                             User Pain Points
                         </h3>
                         <img src={userPainPoints} alt="User Pain Points" className="w-full h-auto rounded-lg mt-6 border border-gray-600 shadow-xl" />
                     </div>
 
                     <div className="my-4 p-0">
-                        <h3 className="text-left text-slate-700 font-semibold text-base sm:text-lg">
+                        <h3 className="text-center text-slate-700 font-semibold text-base sm:text-lg">
                             How Might We...?
                         </h3>
                         <img src={howMightWe} alt="How Might We" className="w-full h-auto rounded-lg mt-6 border border-gray-600 shadow-xl" />
                     </div>
 
-                    <div className="my-4 text-left text-slate-700 text-base sm:text-lg">
-                        <h1 className="mt-6 text-left text-slate-700 font-semibold text-base sm:text-lg">The Execution Phase</h1>
-                        <h2 className="text-left text-slate-700 font-semibold text-base sm:text-xl">Design Ideation & Strategy</h2>
+                    <div className="my-4 text-center text-slate-700 text-base sm:text-lg">
+                        <h1 className="mt-8 text-center text-slate-700 font-semibold text-base sm:text-lg">The Execution Phase</h1>
+                        <h2 className="mt-8 text-center text-slate-700 font-semibold text-base sm:text-xl">Design Ideation & Strategy</h2>
                         <p className="text-sm sm:text-base text-slate-600">
                             I completed user journeys and transformed pain points and civic data into an approachable interface. Constructed wireframes and high-fidelity prototypes in Figma to simplify complex spatial information.
                         </p>
@@ -179,38 +179,50 @@ export default function ProjectDetails() {
                         </div>
                     </div>
 
-                    <div className="my-4 text-left text-slate-700 text-base sm:text-lg">
+                    <div className="my-4 text-center text-slate-700 text-base sm:text-lg">
                         <h3>Sketches</h3>
-                        <img src={DesignSketchMobile} alt="Sketches" className="w-1/3 h-auto rounded-lg mt-6 border border-gray-600 shadow-xl" />
+
+                        <div className='flex flex-wrap justify-center gap-4'>
+                            <img src={DesignSketchMobile} alt="Sketches" className="w-1/3 h-auto rounded-lg mt-6 border border-gray-600 shadow-xl" />
+                        </div>
                         <img src={DesignSketchTablet} alt="Sketches" className="w-full h-auto rounded-lg mt-6 border border-gray-600 shadow-xl" />
                         <img src={DesignSketchDesktop} alt="Sketches" className="w-full h-auto rounded-lg mt-6 border border-gray-600 shadow-xl" />
                     </div>
 
-                    <div className="my-4 text-left text-slate-700 text-base sm:text-lg">
-                        <h3>Wireframes</h3>
-                        <img src={MobileWireframe} alt="Wireframes" className="w-1/3 h-auto rounded-lg mt-6 border border-gray-600 shadow-xl" />
+                    <div className="my-4 text-slate-700 text-base sm:text-lg">
+                       
+                        <h3 className="text-center">Wireframes</h3>
+                       
+                        <div className='flex flex-wrap justify-center gap-4'>
+                            <img src={MobileWireframe} alt="Wireframes" className="w-1/3 h-auto rounded-lg mt-6 border border-gray-600 shadow-xl" />
+                        </div>
+
                         <img src={TabletWireframe} alt="Wireframes" className="w-full h-auto rounded-lg mt-6 border border-gray-600 shadow-xl" />
+                        
                         <img src={DesktopWireframe} alt="Wireframes" className="w-full h-auto rounded-lg mt-6 border border-gray-600 shadow-xl" />
                     </div>
-                    <div className="gap-y-6">
-                        <h3 className="text-left text-slate-600">
+                    <div className="gap-y-4">
+                        <h3 className="pt-8 text-center text-slate-600">
                             Low-Fidelity Mock-ups
                         </h3>
-                        <div className="gap-y-2">
-                            <img src={MobileBreakpoint} alt="Mobile View" className="w-1/4 max-w-sm h-auto rounded-lg mt-6 border border-gray-600 shadow-xl" />
 
-                            <h3 className="text-left mt-10 text-sm sm:text-base text-slate-600">
-                                Mobile Breakpoint
-                            </h3>
+                        <div className="flex flex-wrap justify-center gap-4">
+                            <img src={MobileBreakpoint} alt="Mobile View" className="w-1/4 max-w-sm h-auto rounded-lg mt-6 border border-gray-600 shadow-xl" />
                         </div>
+
+                        <h3 className="text-center mt-10 text-sm sm:text-base text-slate-600">
+                            Mobile Breakpoint
+                        </h3>
                     </div>
                     <div className="gap-y-6">
                         <p className="text-sm sm:text-base text-slate-600">
                             Users have the option to start with a localized map and begin their contextual search using the “+” CTA for an address, zip code, or general municipality information.
                         </p>
                         <div className="gap-y-6">
-                            <img src={TabletBreakpoint} alt="Tablet View" className="w-1/2 max-w-sm h-auto rounded-lg mt-6 border border-gray-600 shadow-xl" />
-                            <h3 className="text-left mt-10 sm:text-base font-semibold text-slate-600">
+                            <div className="flex flex-wrap justify-center gap-4">
+                                <img src={TabletBreakpoint} alt="Tablet View" className="w-1/2 max-w-sm h-auto rounded-lg mt-6 border border-gray-600 shadow-xl" />
+                            </div>
+                            <h3 className="text-center mt-10 sm:text-base font-semibold text-slate-600">
                                 Tablet (Portrait) Breakpoint
                             </h3>
                         </div>
@@ -220,21 +232,23 @@ export default function ProjectDetails() {
                             Once a location is chosen the user is given filters to use in order to narrows the results to more relevant locations that will meet the users needs.
                         </p>
                         <div className="gap-y-4">
-                            <img src={DesktopBreakpoint} alt="Desktop View" className="w-full max-w-sm h-auto rounded-lg mt-6 border border-gray-600 shadow-xl" />
-                            <h3 className="text-left mt-10 text-sm sm:text-base font-semibold text-slate-600">
+                            <div className="flex flex-wrap justify-center gap-4">
+                                <img src={DesktopBreakpoint} alt="Desktop View" className="w-full max-w-sm h-auto rounded-lg mt-6 border border-gray-600 shadow-xl" />
+                            </div>
+                            <h3 className="text-center mt-10 text-sm sm:text-base font-semibold text-slate-600">
                                 Desktop Breakpoint
                             </h3>
                         </div>
 
             </div>
-            <div className="gap-y-4">
-                    
-                    <h2 className="text-left my-1 text-slate-800 font-semibold text-lg sm:text-xl">
+            <div className="mt-10">
+                    <h2 className="text-center my-1 text-slate-600 text-lg sm:text-xl">
                         Technical Architecture
                     </h2>
                     <p className="text-sm sm:text-base text-slate-600">
                         Developed a responsive web application concept built strictly with pure JavaScript, Tailwind CSS and React JS via Vite, keeping the front-end architecture agile and lightweight for fast data filtering without relying on TypeScript. The code below is an example of the mobile breakpoint code for the Neighborgood project, demonstrating the use of React components and Tailwind CSS for styling.
                     </p>
+                    
                     {/* Scrollable code container */}
                     <div className="w-full max-w-full min-w-0 mt-6 bg-slate-800 rounded-lg border-gray-600 shadow-xl h-full max-h-[500px] scrollbar-thin scrollbar-thumb-slate-700 overflow-hidden">
                         <SyntaxHighlighter 
@@ -261,14 +275,10 @@ export default function ProjectDetails() {
                     </div>
             </div>
         </div>
-            <div className="my-4 gap-y-8">
-                    </div>
                     {/* Mock-Ups */}
-                    <h2 className="text-left text-sm sm:text-base text-slate-600 font-semibold">
+                    <h2 className="mt-10 text-center text-sm sm:text-base text-slate-600 font-semibold">
                         Mobile Breakpoint: iPhone 14 Pro
                     </h2>
-                    <div className="gap-y-6">
-                    </div>
                     
                     <div className="gap-y-6">
                         <p className="mt-4 text-sm sm:text-base text-slate-600">
@@ -282,45 +292,45 @@ export default function ProjectDetails() {
                           </div>
                         </div>
                     </div>
+
                     {/* Tablet Mock-Ups */}
-                    <p className="my-2 text-sm sm:text-base text-slate-600 font-semibold">
+                    <h2 className="text-center my-8 text-sm sm:text-base text-slate-600">
                         Tablet Breakpoint: iPad Pro 12.9"
-                    </p>
+                    </h2>
                     <div className="gap-y-6">
-                        <p className="text-sm sm:text-base text-slate-600">
+                        <p className="text-center sm:text-base text-slate-600">
                             Environmental information is gathered and added from databases. This additional information is identified through labeled icons.
                         </p>
                     </div>
-                    <div className="gap-y-6">
-                        <p className="mt-2 text-sm sm:text-base text-slate-600">
+                    <div className="flex flex-wrap justify-center gap-y-6">
+                        <p className="mt-2 text-center sm:text-base text-slate-600">
                             Additional information includes links local zoning, demographic, weather databases.
                         </p>
                         <img src={TabletFinal} alt="Tablet Final Design" className="w-full max-w-xl h-auto rounded-4xl my-6 border border-gray-600 shadow-xl" />
                     </div>
                     {/* Desktop Mock-Ups */}
-                    <p className="my-4 text-sm sm:text-base text-slate-600 font-semibold">
+                    <h2 className="text-center my-8 sm:text-base text-slate-600">
                         Desktop Breakpoint: Macbook Pro 16"
-                    </p>
+                    </h2>
                     <div className="gap-y-6">
-                        <p className="text-sm sm:text-base text-slate-600">
+                        <p className="text-center sm:text-base text-slate-600">
                             The initial mock-ups used a navigation style interaction design with a localized map and an F.A.B. as the entry point for finding new places right from the homepage.<br/>
                             Initial Designs
                         </p>
                     </div>
                     <div className="gap-y-6">
-                        <p className="text-sm sm:text-base text-slate-600">
+                        <p className="text-center sm:text-base text-slate-600">
                         The Final mock-up provides an introduction and brief explanation to the product and service as well as any available local places, groups or initiatives on the homepage as well as providing a menu for additional features, services and information.<br/>
                         Final Designs
                         </p>
                         <img src={DesktopFinal} alt="Desktop Final Design" className="w-full max-w-full h-auto rounded-lg mt-6 border border-gray-600 shadow-xl" />
                     </div>
-                    <h2 className="mt-6 text-start gap-y-1 text-slate-800 font-semibold text-lg sm:text-xl">
+                    <h1 className="mt-6 text-center gap-y-1 text-slate-800 font-semibold text-lg sm:text-xl">
                         The Outcome
-                    </h2>
-                    <p className="text-start text-slate-700 text-base sm:text-lg">
+                    </h1>
+                    <p className="text-center text-slate-700 text-base sm:text-lg">
                         Iterative A/B usability testing demonstrated a 30% increase in Net Promoter Score (NPS) while validating market demand by capturing over 500 user registrations during early testing.
                     </p>
-            {/* End of Project Content */}
             </div>
         </>
         );
