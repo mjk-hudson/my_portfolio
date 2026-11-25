@@ -43,7 +43,7 @@ export default function Card()
 					</h1> 
 
 					{/* Project description */}
-					<p className="text-neutral-600">Waiting for physical payment cards creates unnecessary friction and delays in enterprise digital banking; Bank of America’s implementation of Paze digital wallet technology bridges that gap between account approval and immediate purchasing power. Purpose-built to navigate complex cross-functional stakeholders and 2025 FDIC regulatory requirements, this initiative leveraged evaluative user research—uncovering that 87% of customers preferred instant digital access—to deliver an instant card provisioning experience that achieved a 93% customer adoption rating.
+					<p className="text-neutral-600">In a crowded digital wallet landscape, Bank of America needed to introduce Paze to millions of customers without adding checkout friction or eroding trust. As Senior Experience Designer, I led the end-to-end UX strategy for key enrollment and payment flows—translating user research and strict financial compliance requirements into a cohesive, scalable interface. By validating complex state transitions through interactive prototypes early, I aligned product, legal, and engineering teams around a seamless experience built for enterprise-scale adoption.
 					</p>      			
 				</div>
 				
@@ -104,7 +104,7 @@ export default function Card()
 						Bledger
 					</h1>      			
 					{/* Project description */}
-					<p className="text-neutral-600">Traditional budgeting tools only track where your money went; Bledger ensures it stays where you need it. Purpose-built to navigate the volatile income streams of gig-economy workers, Bledger is an AI-driven personal finance platform that unifies fragmented tracking by pairing secure bank API integrations with agentic AI. By predicting cash-flow gaps, automating scheduled bill coverage, and delivering real-time gamified micro-nudges, Bledger proactively safeguards user liquidity and prevents overspending before it happens.
+					<p className="text-neutral-600">Traditional budgeting apps fail gig-economy workers whose income fluctuates week to week, leading to high churn and financial anxiety. I designed Bledger from 0 to 1 as an AI-driven personal finance platform tailored to variable cash flow—owning the product strategy, information architecture, and modular design system. By pairing predictive insights with interactive motion and functional prototypes, I transformed complex financial forecasting into an intuitive, low-friction daily habit.
 					</p>      			
 				</div>
 				
@@ -164,7 +164,7 @@ export default function Card()
 				</h1>
 				<div className="space-y-3">      			
 				{/* Project description */}
-					<p className="text-neutral-600">Generic event directories only show you where to go; Vibe Space ensures you find the right community to go with. Purpose-built to eliminate the friction of modern local discovery, Vibe Space is an AI-driven responsive networking platform that pairs intelligent interest-matching algorithms with user-generated content to connect people through shared passions. By streamlining hyper-local activity discovery and state-based event queuing, Vibe Space transforms social barriers into meaningful interactions—helping users effortlessly build local connections, find hobby partners, and foster genuine belonging in their communities.
+					<p className="text-neutral-600">Event discovery platforms often suffer from high RSVP-to-attendance drop-off, leaving organizers with empty rooms and users with fragmented social experiences. I designed Vibe Space to close that gap through a just-in-time check-in and dynamic rerouting system that adapts to real-world user behavior. Leading the responsive web architecture and interactive state choreography, I created a resilient platform that keeps attendees engaged from discovery through arrival.
 					</p>      			
 				</div>
 				
@@ -236,7 +236,7 @@ export default function Card()
 					Neighborgood
 				</h1>      			
 				{/* Project description */}
-				<p className="text-neutral-600">Navigating complex municipal zoning data to build local community hubs is often confusing and time-consuming. Neighborgood translates complex urban spatial data into an intuitive web service, enabling community leaders, volunteers, and organizers to effortlessly identify, vet, and activate underutilized local spaces for outreach events and neighborhood hubs.
+				<p className="text-neutral-600">Local community spaces are vital neighborhood assets, yet discovering and booking them is often buried behind outdated, fragmented processes. For Neighborgood, I led end-to-end service and product design—synthesizing user interviews and journey maps into a streamlined, WCAG-accessible reservation platform. Through rapid wireframing and high-fidelity interactive prototyping, I simplified multi-step scheduling for both residents and space organizers.
 				</p>      			
 			</div>
 
